@@ -1,0 +1,17 @@
+{
+  "_comment": "Reference values for xtb-singlepoint-gfn2 (xtb 6.7.1, GFN2-xTB single point on acetonitrile). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:0dbcabd1fe7a1560dd789bb238cd174c7eb0c597684ea27ffa58ad68c8e0f9a2",
+  "asset_hashes": {
+    "assets/acetonitrile.xyz": "sha256:b1b2c75b4a796073fe0782d80a7191e18541def8b19cf93c18aea76cf64410e2"
+  },
+  "total_energy_Eh_ref": -8.6869439682,
+  "total_energy_Eh_tol": 1e-06,
+  "homo_lumo_gap_eV_ref": 5.910752,
+  "homo_lumo_gap_eV_tol": 0.001,
+  "consistency_energy_tol_Eh": 1e-09,
+  "consistency_gap_tol_eV": 1e-06,
+  "crossverify_energy_tol_Eh": 1e-08,
+  "_calibration_note": "xtb 6.7.1 official grimme-lab binary release (sha256-pinned in Dockerfile), OMP_NUM_THREADS=1. 5 oracle runs produced identical values (spread 0). Cross-verify: verifier re-runs the same single point on the pinned asset geometry; bit-identical, tol 1e-8 Eh."
+}

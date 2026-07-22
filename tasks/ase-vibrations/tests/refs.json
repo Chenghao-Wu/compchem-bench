@@ -1,0 +1,19 @@
+{
+  "_comment": "Reference values for ase-vibrations (ASE 3.23.0, EMT, Cu4 tetrahedron, BFGS fmax<0.01, Vibrations delta=0.01). Calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:8e9eb3975f7e08489ddde5d8dc5b861643f83e01230e9d82932749659e6494ca",
+  "fmax_threshold_eV_per_A": 0.01,
+  "cache_consistency_tol_cm1": 1.0,
+  "crossverify_freq_tol_cm1": 1.0,
+  "freqs_cm1_ref": [
+    110.235299,
+    111.800913,
+    186.681859,
+    186.910561,
+    189.328619,
+    335.582106
+  ],
+  "freqs_cm1_tol": 2.0,
+  "_calibration_note": "5 oracle runs on the CI image produced identical frequencies (spread 0; deterministic finite displacements on a deterministic minimum). Tolerances cover float-print and cache round-trip resolution only."
+}

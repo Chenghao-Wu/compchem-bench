@@ -1,0 +1,21 @@
+version = "1.0"
+
+[metadata]
+name = "cp2k-basis-convergence"
+difficulty = "hard"
+category = "analysis"
+tags = ["cp2k", "dft", "basis-set", "analysis", "cross-verify"]
+author = "compchem-bench"
+created = "2026-07-20"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 2
+memory_gb = 4
+network = false
+
+[agent]
+timeout_sec = 3600
+
+[verifier]
+timeout_sec = 300

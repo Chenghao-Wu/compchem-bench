@@ -1,0 +1,16 @@
+{
+  "_comment": "Reference values for rdkit-script-debug (RDKit 2024.9.5, parse+Cleanup+canonical SMILES+MolWt pipeline over input.smi). Deterministic; calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:a8c3f45a0029da0b2b4fc1a6db7fb805b2604e8ad7d183158323b917d1b410fd",
+  "asset_hashes": {
+    "assets/input.smi": "sha256:34caddf8e964231fd30f89ff416a659ddcdc2d07304ae4900881e6783a4751cc",
+    "assets/analyze_mols.py": "sha256:bae7ef7d00710856484cf3585b5530badc2830dea1927d259bf5395b5e5123b7"
+  },
+  "mw_mean_tol": 0.0001,
+  "n_parsed_expected": 8,
+  "n_failed_expected": 1,
+  "mw_mean_ref": 71.338,
+  "mw_mean_ref_tol": 0.001,
+  "_calibration_note": "Verifier re-runs the agent's fixed script (exit 0, regenerates outputs) and independently replays parse->Cleanup->canonical/MW from the pinned input; counts exact, mw_mean 1e-4. 5 oracle runs identical (spread 0). Asset integrity: sha256 of input.smi AND the broken analyze_mols.py pinned and validated before rerun (P2 B1 convention); cheat_asset_tamper.sh confirms a tampered input is a hard fail."
+}

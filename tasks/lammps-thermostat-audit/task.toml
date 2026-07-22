@@ -1,0 +1,21 @@
+version = "1.0"
+
+[metadata]
+name = "lammps-thermostat-audit"
+difficulty = "hard"
+category = "debugging"
+tags = ["lammps", "classical-md", "thermostat", "debugging", "cross-verify"]
+author = "compchem-bench"
+created = "2026-07-20"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 1
+memory_gb = 2
+network = false
+
+[agent]
+timeout_sec = 1200
+
+[verifier]
+timeout_sec = 180

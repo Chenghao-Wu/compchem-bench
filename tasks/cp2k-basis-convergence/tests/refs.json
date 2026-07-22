@@ -1,0 +1,18 @@
+{
+  "_comment": "Reference values for cp2k-basis-convergence (CP2K 2024.1, PBE, methanol single points with SZV/DZVP/TZVP-MOLOPT-GTH). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:f02ea250926f7ec76da76a20bcab296503d5df3becef967a397957c27d766c0d",
+  "asset_hashes": {
+    "assets/methanol.xyz": "sha256:a5d99093a86961d9c30e5018962f13a30c7f2dd17fa5b4c760ea3d66df790bc5"
+  },
+  "energy_szv_Ha_ref": -23.9747453110,
+  "energy_szv_Ha_tol": 1e-06,
+  "energy_dzvp_Ha_ref": -24.0821114946,
+  "energy_dzvp_Ha_tol": 1e-06,
+  "energy_tzvp_Ha_ref": -24.0831748512,
+  "energy_tzvp_Ha_tol": 1e-06,
+  "consistency_energy_tol_Ha": 1e-08,
+  "crossverify_energy_tol_Ha": 1e-06,
+  "_calibration_note": "5 oracle runs per basis produced identical values (spreads: SZV 0, DZVP 8e-15, TZVP 2e-14 Ha; deterministic). Energies decrease monotonically (SZV > DZVP > TZVP by 0.107 and 0.00106 Ha). Tolerances 1e-6 Ha. Cross-verify: verifier re-runs the SZV point on the pinned asset geometry; deterministic to ~1e-14, tol 1e-6."
+}

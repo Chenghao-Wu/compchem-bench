@@ -1,0 +1,21 @@
+{
+  "_comment": "Reference values for qe-ecutwfc-convergence (QE 7.4 conda-forge build hac89879_0, PBE, Si diamond 2-atom cell celldm(1)=10.26, ecutrho fixed 480 Ry, 4x4x4 shifted MP grid, conv_thr 1e-10). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:f86066463d92d84f161ba4b9f564772ef2476bb727af3ec5d87b27e383d8ba05",
+  "energy_Ry_ref": {
+    "20": -22.83759282,
+    "30": -22.83939259,
+    "40": -22.83951348,
+    "50": -22.83960522,
+    "60": -22.83962434
+  },
+  "energy_Ry_tol": 1e-05,
+  "consistency_energy_tol_Ry": 1e-08,
+  "crossverify_energy_tol_Ry": 1e-06,
+  "converged_ecutwfc_ref": 40.0,
+  "asset_hashes": {
+    "assets/pseudo/Si.pbe-n-rrkjus_psl.1.0.0.UPF": "sha256:669fb75395a9d26973b0ea1ce8223bbcb30d3396c5d48bf5e794d1243c52375a"
+  },
+  "_calibration_note": "5 calibration runs (probe + 4 more) produced identical energies at the 1e-8 Ry print resolution (spread 0), 8-9 SCF iterations per point, ~3-6 s per run. Per-atom deltas: 20->30 = 12.2 meV (>1), 30->40 = 0.82 meV (<1), 40->50 = 0.62 meV, 50->60 = 0.13 meV — converged cutoff 40 Ry with a comfortable margin on both sides of the criterion. Tolerance 1e-5 Ry = physical print-resolution floor; L4 recompute of the ecut=20 point must match the agent log to 1e-6 Ry."
+}

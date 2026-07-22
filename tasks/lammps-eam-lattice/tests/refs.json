@@ -1,0 +1,17 @@
+{
+  "_comment": "Reference values for lammps-eam-lattice. Calibrated on x86_64 with compchem-bench/lammps-eam-lattice:ci (LAMMPS 7Jan2022, Mishin Cu EAM, box/relax from a=3.7 A).",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:39bc46b98bd7f426fb5fc94fc63e4533f857f5acd8bd571415199dae71d0e0a4",
+  "asset_hashes": {
+    "assets/Cu_mishin1.eam.alloy": "sha256:213fbe42fa3df6dfc12138426db23659ff16e46feefe7f5fb7c34fb769911d41"
+  },
+  "a0_ref": 3.614925,
+  "a0_tol": 0.005,
+  "ecoh_ref": -3.5402183,
+  "ecoh_tol": 0.01,
+  "a0_box_tol": 0.02,
+  "ecoh_log_tol": 0.001,
+  "l4_pe_tol": 0.0001,
+  "_calibration_note": "Minimization from a=3.7 A with fix box/relax converges deterministically (5 oracle runs identical): a0=3.614925 A, ecoh=-3.5402183 eV/atom. Headline tolerances per spec (0.005 A / 0.01 eV). L4 run-0 of final.data reproduces the log last line exactly (print precision); tol 1e-4 eV/atom. A hand-rolled a=3.60 A lattice misses by 2.2e-3 eV/atom -> forgery fails L4."
+}

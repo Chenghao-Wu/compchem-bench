@@ -1,0 +1,612 @@
+{
+  "model": "deepseek-v4-flash",
+  "model_id": "deepseek-v4-flash",
+  "provider": "deepseek",
+  "agent": "claude-code",
+  "agent_version": "2.1.215",
+  "harness": "harbor 0.20.0",
+  "compat_layer": "litellm 1.93.0 proxy (Anthropic /v1/messages -> DeepSeek OpenAI-compatible)",
+  "benchmark_commit": "1fb9fa1",
+  "arch": "x86_64",
+  "date": "2026-07-21",
+  "protocol": {
+    "k": 1,
+    "attempts_per_task": 1,
+    "n_concurrent": 6,
+    "metric": "accuracy = mean per-task success rate = mean over the 40 tasks of (passing attempts / valid attempts); with a uniform number of attempts per task this equals total passes / (n_tasks * k)"
+  },
+  "summary": {
+    "n_tasks": 40,
+    "k": 1,
+    "n_pass": 34,
+    "n_fail": 6,
+    "n_error": 0,
+    "accuracy": 0.85
+  },
+  "by_software": {
+    "ase": {
+      "n": 8,
+      "pass": 8,
+      "fail": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "cp2k": {
+      "n": 6,
+      "pass": 5,
+      "fail": 1,
+      "error": 0,
+      "accuracy": 0.8333
+    },
+    "lammps": {
+      "n": 9,
+      "pass": 5,
+      "fail": 4,
+      "error": 0,
+      "accuracy": 0.5556
+    },
+    "qe": {
+      "n": 7,
+      "pass": 6,
+      "fail": 1,
+      "error": 0,
+      "accuracy": 0.8571
+    },
+    "rdkit": {
+      "n": 7,
+      "pass": 7,
+      "fail": 0,
+      "error": 0,
+      "accuracy": 1.0
+    },
+    "xtb": {
+      "n": 3,
+      "pass": 3,
+      "fail": 0,
+      "error": 0,
+      "accuracy": 1.0
+    }
+  },
+  "by_difficulty": {
+    "easy": {
+      "n": 10,
+      "pass": 9,
+      "fail": 1,
+      "error": 0,
+      "accuracy": 0.9
+    },
+    "hard": {
+      "n": 12,
+      "pass": 10,
+      "fail": 2,
+      "error": 0,
+      "accuracy": 0.8333
+    },
+    "medium": {
+      "n": 18,
+      "pass": 15,
+      "fail": 3,
+      "error": 0,
+      "accuracy": 0.8333
+    }
+  },
+  "by_category": {
+    "analysis": {
+      "n": 11,
+      "pass": 9,
+      "fail": 2,
+      "error": 0,
+      "accuracy": 0.8182
+    },
+    "debugging": {
+      "n": 6,
+      "pass": 5,
+      "fail": 1,
+      "error": 0,
+      "accuracy": 0.8333
+    },
+    "execution": {
+      "n": 13,
+      "pass": 12,
+      "fail": 1,
+      "error": 0,
+      "accuracy": 0.9231
+    },
+    "input-prep": {
+      "n": 6,
+      "pass": 5,
+      "fail": 1,
+      "error": 0,
+      "accuracy": 0.8333
+    },
+    "workflow": {
+      "n": 4,
+      "pass": 3,
+      "fail": 1,
+      "error": 0,
+      "accuracy": 0.75
+    }
+  },
+  "tasks": [
+    {
+      "task": "ase-custom-calculator",
+      "difficulty": "hard",
+      "category": "workflow",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:38:13.513874Z",
+      "finished_at": "2026-07-21T11:40:05.125229Z"
+    },
+    {
+      "task": "ase-eos-cu",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "ase",
+      "agent_timeout_sec": 300,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:37:01.008933Z",
+      "finished_at": "2026-07-21T11:38:10.625730Z"
+    },
+    {
+      "task": "ase-format-convert",
+      "difficulty": "medium",
+      "category": "input-prep",
+      "software": "ase",
+      "agent_timeout_sec": 600,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:43:45.330424Z",
+      "finished_at": "2026-07-21T11:45:24.437375Z"
+    },
+    {
+      "task": "ase-geoopt-h2o",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:44:33.383266Z",
+      "finished_at": "2026-07-21T11:45:48.689960Z"
+    },
+    {
+      "task": "ase-neb-adatom",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:39:10.965761Z",
+      "finished_at": "2026-07-21T11:41:13.852376Z"
+    },
+    {
+      "task": "ase-script-debug",
+      "difficulty": "medium",
+      "category": "debugging",
+      "software": "ase",
+      "agent_timeout_sec": 600,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:33:40.230518Z",
+      "finished_at": "2026-07-21T11:35:11.048877Z"
+    },
+    {
+      "task": "ase-structure-build",
+      "difficulty": "easy",
+      "category": "input-prep",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:45:24.443684Z",
+      "finished_at": "2026-07-21T11:46:44.268158Z"
+    },
+    {
+      "task": "ase-vibrations",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:40:13.130899Z",
+      "finished_at": "2026-07-21T11:41:58.174150Z"
+    },
+    {
+      "task": "cp2k-aimd-water",
+      "difficulty": "hard",
+      "category": "execution",
+      "software": "cp2k",
+      "agent_timeout_sec": 2400,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:41:35.704841Z",
+      "finished_at": "2026-07-21T11:44:33.380033Z"
+    },
+    {
+      "task": "cp2k-basis-convergence",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "cp2k",
+      "agent_timeout_sec": 3600,
+      "reward": 0.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:35:13.668583Z",
+      "finished_at": "2026-07-21T11:38:36.839312Z"
+    },
+    {
+      "task": "cp2k-cell-opt-nacl",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "cp2k",
+      "agent_timeout_sec": 1800,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:41:03.330447Z",
+      "finished_at": "2026-07-21T11:44:09.839722Z"
+    },
+    {
+      "task": "cp2k-geoopt-nh3",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "cp2k",
+      "agent_timeout_sec": 1800,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:39:16.200251Z",
+      "finished_at": "2026-07-21T11:41:35.697667Z"
+    },
+    {
+      "task": "cp2k-h2o-sp",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "cp2k",
+      "agent_timeout_sec": 1200,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:43:30.625000Z",
+      "finished_at": "2026-07-21T11:45:10.610818Z"
+    },
+    {
+      "task": "cp2k-input-debug",
+      "difficulty": "easy",
+      "category": "debugging",
+      "software": "cp2k",
+      "agent_timeout_sec": 1200,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:34:58.521527Z",
+      "finished_at": "2026-07-21T11:37:17.682088Z"
+    },
+    {
+      "task": "lammps-data-build",
+      "difficulty": "medium",
+      "category": "input-prep",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:35:11.058021Z",
+      "finished_at": "2026-07-21T11:38:13.504587Z"
+    },
+    {
+      "task": "lammps-eam-lattice",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "reward": 0.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:45:10.613636Z",
+      "finished_at": "2026-07-21T11:47:14.113430Z"
+    },
+    {
+      "task": "lammps-input-fix",
+      "difficulty": "easy",
+      "category": "debugging",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "reward": 0.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:41:38.489620Z",
+      "finished_at": "2026-07-21T11:44:47.084121Z"
+    },
+    {
+      "task": "lammps-lj-melt",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:35:12.302306Z",
+      "finished_at": "2026-07-21T11:37:36.996112Z"
+    },
+    {
+      "task": "lammps-msd-diffusion",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "lammps",
+      "agent_timeout_sec": 1200,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:37:21.801418Z",
+      "finished_at": "2026-07-21T11:39:16.188624Z"
+    },
+    {
+      "task": "lammps-nvt-rdf",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "lammps",
+      "agent_timeout_sec": 600,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:40:05.131931Z",
+      "finished_at": "2026-07-21T11:41:38.482674Z"
+    },
+    {
+      "task": "lammps-polymer-setup",
+      "difficulty": "hard",
+      "category": "workflow",
+      "software": "lammps",
+      "agent_timeout_sec": 1800,
+      "reward": 0.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:38:01.302523Z",
+      "finished_at": "2026-07-21T11:41:03.328524Z"
+    },
+    {
+      "task": "lammps-restart-continue",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "reward": 0.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:44:09.843065Z",
+      "finished_at": "2026-07-21T11:46:58.494751Z"
+    },
+    {
+      "task": "lammps-thermostat-audit",
+      "difficulty": "hard",
+      "category": "debugging",
+      "software": "lammps",
+      "agent_timeout_sec": 1200,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:38:23.515397Z",
+      "finished_at": "2026-07-21T11:40:13.124159Z"
+    },
+    {
+      "task": "qe-bands-si",
+      "difficulty": "hard",
+      "category": "workflow",
+      "software": "qe",
+      "agent_timeout_sec": 3000,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:33:40.239000Z",
+      "finished_at": "2026-07-21T11:37:00.999321Z"
+    },
+    {
+      "task": "qe-ecutwfc-convergence",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "qe",
+      "agent_timeout_sec": 1800,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:40:10.380432Z",
+      "finished_at": "2026-07-21T11:42:07.249276Z"
+    },
+    {
+      "task": "qe-error-diagnose",
+      "difficulty": "hard",
+      "category": "debugging",
+      "software": "qe",
+      "agent_timeout_sec": 3000,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:44:47.093493Z",
+      "finished_at": "2026-07-21T11:46:44.543127Z"
+    },
+    {
+      "task": "qe-input-relax",
+      "difficulty": "medium",
+      "category": "input-prep",
+      "software": "qe",
+      "agent_timeout_sec": 1800,
+      "reward": 0.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:33:40.235175Z",
+      "finished_at": "2026-07-21T11:35:13.666527Z"
+    },
+    {
+      "task": "qe-output-parse",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "qe",
+      "agent_timeout_sec": 1200,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:38:10.635087Z",
+      "finished_at": "2026-07-21T11:39:10.958129Z"
+    },
+    {
+      "task": "qe-relax-co",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "qe",
+      "agent_timeout_sec": 1800,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:42:32.535251Z",
+      "finished_at": "2026-07-21T11:46:11.663625Z"
+    },
+    {
+      "task": "qe-scf-si",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "qe",
+      "agent_timeout_sec": 1800,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:35:50.391259Z",
+      "finished_at": "2026-07-21T11:37:21.796653Z"
+    },
+    {
+      "task": "rdkit-conformer-cluster",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "rdkit",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:37:17.688662Z",
+      "finished_at": "2026-07-21T11:38:01.299131Z"
+    },
+    {
+      "task": "rdkit-conformer-mmff",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "rdkit",
+      "agent_timeout_sec": 300,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:41:58.181020Z",
+      "finished_at": "2026-07-21T11:43:30.621116Z"
+    },
+    {
+      "task": "rdkit-descriptors-batch",
+      "difficulty": "easy",
+      "category": "analysis",
+      "software": "rdkit",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:34:53.691850Z",
+      "finished_at": "2026-07-21T11:35:50.387462Z"
+    },
+    {
+      "task": "rdkit-mol-standardize",
+      "difficulty": "medium",
+      "category": "input-prep",
+      "software": "rdkit",
+      "agent_timeout_sec": 600,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:33:40.216639Z",
+      "finished_at": "2026-07-21T11:34:53.683621Z"
+    },
+    {
+      "task": "rdkit-reaction-enumerate",
+      "difficulty": "hard",
+      "category": "workflow",
+      "software": "rdkit",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:41:13.854432Z",
+      "finished_at": "2026-07-21T11:42:32.521780Z"
+    },
+    {
+      "task": "rdkit-script-debug",
+      "difficulty": "medium",
+      "category": "debugging",
+      "software": "rdkit",
+      "agent_timeout_sec": 600,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:38:36.845550Z",
+      "finished_at": "2026-07-21T11:40:10.372364Z"
+    },
+    {
+      "task": "rdkit-smiles-canonicalize",
+      "difficulty": "easy",
+      "category": "input-prep",
+      "software": "rdkit",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:33:40.227863Z",
+      "finished_at": "2026-07-21T11:34:58.519520Z"
+    },
+    {
+      "task": "xtb-freq-thermo",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "xtb",
+      "agent_timeout_sec": 1200,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:33:40.229242Z",
+      "finished_at": "2026-07-21T11:35:12.296281Z"
+    },
+    {
+      "task": "xtb-geoopt-caffeine",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "xtb",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:42:07.255773Z",
+      "finished_at": "2026-07-21T11:43:45.328192Z"
+    },
+    {
+      "task": "xtb-singlepoint-gfn2",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "xtb",
+      "agent_timeout_sec": 900,
+      "reward": 1.0,
+      "exception": null,
+      "timed_out": false,
+      "started_at": "2026-07-21T11:37:37.002534Z",
+      "finished_at": "2026-07-21T11:38:23.508826Z"
+    }
+  ]
+}

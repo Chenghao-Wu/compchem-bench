@@ -1,0 +1,14 @@
+{
+  "_comment": "Reference values for rdkit-conformer-mmff (RDKit 2024.9.5, ETKDGv3 randomSeed=0xf00d, MMFF94, ibuprofen). Calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:13909b5a99e11ca129f3a3e8bbe7cdd7122e2e37d9ebc35430fe14613dbfc2d9",
+  "mmff_energy_ref_kcal": 24.615822,
+  "mmff_energy_tol_kcal": 0.01,
+  "crossverify_energy_tol_kcal": 0.0001,
+  "reopt_max_energy_drop_kcal": 0.001,
+  "_calibration_note": "ETKDGv3 with fixed seed is deterministic for a given RDKit version/platform. 3 oracle runs must agree; tolerance = physical minimum resolution. Asset integrity: sha256 of target.smi pinned; verifier validates before identity/recompute checks (P2 convention).",
+  "asset_hashes": {
+    "assets/target.smi": "sha256:34aa4f6b280ef05314f6ce2f6ab2538f28192925e50380f57621f91ecd210971"
+  }
+}

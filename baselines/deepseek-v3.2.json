@@ -1,0 +1,1035 @@
+{
+  "model": "deepseek-v3.2",
+  "model_id": "deepseek/deepseek-v3.2",
+  "provider": "openrouter",
+  "agent": "claude-code",
+  "agent_version": "2.1.215",
+  "harness": "harbor 0.20.0",
+  "compat_layer": "litellm 1.93.0 proxy (Anthropic /v1/messages -> OpenRouter OpenAI-compatible)",
+  "benchmark_commit": "aed9c17",
+  "arch": "x86_64",
+  "date": "2026-07-22",
+  "protocol": {
+    "k": 5,
+    "attempts_per_task": 5,
+    "n_concurrent": 6,
+    "metric": "accuracy = mean per-task success rate = mean over the 40 tasks of (passing attempts / valid attempts); with a uniform number of attempts per task this equals total passes / (n_tasks * k)"
+  },
+  "summary": {
+    "n_tasks": 40,
+    "k": 5,
+    "total_attempts": 205,
+    "error_attempts": 5,
+    "valid_attempts": 200,
+    "n_pass": 143,
+    "accuracy": 0.715
+  },
+  "by_software": {
+    "ase": {
+      "n_tasks": 8,
+      "valid_attempts": 40,
+      "n_pass": 32,
+      "n_error": 1,
+      "accuracy": 0.8
+    },
+    "cp2k": {
+      "n_tasks": 6,
+      "valid_attempts": 30,
+      "n_pass": 25,
+      "n_error": 2,
+      "accuracy": 0.8333
+    },
+    "lammps": {
+      "n_tasks": 9,
+      "valid_attempts": 45,
+      "n_pass": 23,
+      "n_error": 2,
+      "accuracy": 0.5111
+    },
+    "qe": {
+      "n_tasks": 7,
+      "valid_attempts": 35,
+      "n_pass": 20,
+      "n_error": 0,
+      "accuracy": 0.5714
+    },
+    "rdkit": {
+      "n_tasks": 7,
+      "valid_attempts": 35,
+      "n_pass": 30,
+      "n_error": 0,
+      "accuracy": 0.8571
+    },
+    "xtb": {
+      "n_tasks": 3,
+      "valid_attempts": 15,
+      "n_pass": 13,
+      "n_error": 0,
+      "accuracy": 0.8667
+    }
+  },
+  "by_difficulty": {
+    "hard": {
+      "n_tasks": 12,
+      "valid_attempts": 60,
+      "n_pass": 41,
+      "n_error": 1,
+      "accuracy": 0.6833
+    },
+    "medium": {
+      "n_tasks": 18,
+      "valid_attempts": 90,
+      "n_pass": 66,
+      "n_error": 2,
+      "accuracy": 0.7333
+    },
+    "easy": {
+      "n_tasks": 10,
+      "valid_attempts": 50,
+      "n_pass": 36,
+      "n_error": 2,
+      "accuracy": 0.72
+    }
+  },
+  "by_category": {
+    "workflow": {
+      "n_tasks": 4,
+      "valid_attempts": 20,
+      "n_pass": 10,
+      "n_error": 0,
+      "accuracy": 0.5
+    },
+    "analysis": {
+      "n_tasks": 11,
+      "valid_attempts": 55,
+      "n_pass": 39,
+      "n_error": 2,
+      "accuracy": 0.7091
+    },
+    "input-prep": {
+      "n_tasks": 6,
+      "valid_attempts": 30,
+      "n_pass": 23,
+      "n_error": 1,
+      "accuracy": 0.7667
+    },
+    "execution": {
+      "n_tasks": 13,
+      "valid_attempts": 65,
+      "n_pass": 48,
+      "n_error": 1,
+      "accuracy": 0.7385
+    },
+    "debugging": {
+      "n_tasks": 6,
+      "valid_attempts": 30,
+      "n_pass": 23,
+      "n_error": 1,
+      "accuracy": 0.7667
+    }
+  },
+  "tasks": [
+    {
+      "task": "ase-custom-calculator",
+      "difficulty": "hard",
+      "category": "workflow",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": []
+    },
+    {
+      "task": "ase-eos-cu",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "ase",
+      "agent_timeout_sec": 300,
+      "attempts": 6,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        null,
+        1.0,
+        0.0
+      ],
+      "n_pass": 4,
+      "n_error": 1,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "asyncio.exceptions.CancelledError"
+      ]
+    },
+    {
+      "task": "ase-format-convert",
+      "difficulty": "medium",
+      "category": "input-prep",
+      "software": "ase",
+      "agent_timeout_sec": 600,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "ase-geoopt-h2o",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "n_pass": 1,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.2,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "ase-neb-adatom",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": []
+    },
+    {
+      "task": "ase-script-debug",
+      "difficulty": "medium",
+      "category": "debugging",
+      "software": "ase",
+      "agent_timeout_sec": 600,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "ase-structure-build",
+      "difficulty": "easy",
+      "category": "input-prep",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "ase-vibrations",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "ase",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "cp2k-aimd-water",
+      "difficulty": "hard",
+      "category": "execution",
+      "software": "cp2k",
+      "agent_timeout_sec": 2400,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": []
+    },
+    {
+      "task": "cp2k-basis-convergence",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "cp2k",
+      "agent_timeout_sec": 3600,
+      "attempts": 6,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        null,
+        0.0,
+        0.0
+      ],
+      "n_pass": 1,
+      "n_error": 1,
+      "n_timeouts": 0,
+      "accuracy": 0.2,
+      "exceptions": [
+        "asyncio.exceptions.CancelledError"
+      ]
+    },
+    {
+      "task": "cp2k-cell-opt-nacl",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "cp2k",
+      "agent_timeout_sec": 1800,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "cp2k-geoopt-nh3",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "cp2k",
+      "agent_timeout_sec": 1800,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": []
+    },
+    {
+      "task": "cp2k-h2o-sp",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "cp2k",
+      "agent_timeout_sec": 1200,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "cp2k-input-debug",
+      "difficulty": "easy",
+      "category": "debugging",
+      "software": "cp2k",
+      "agent_timeout_sec": 1200,
+      "attempts": 6,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        null,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 1,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": [
+        "asyncio.exceptions.CancelledError"
+      ]
+    },
+    {
+      "task": "lammps-data-build",
+      "difficulty": "medium",
+      "category": "input-prep",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "attempts": 6,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        null,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 1,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": [
+        "asyncio.exceptions.CancelledError"
+      ]
+    },
+    {
+      "task": "lammps-eam-lattice",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "n_pass": 0,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.0,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "lammps-input-fix",
+      "difficulty": "easy",
+      "category": "debugging",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "lammps-lj-melt",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "attempts": 6,
+      "valid_attempts": 5,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        null,
+        0.0,
+        1.0
+      ],
+      "n_pass": 1,
+      "n_error": 1,
+      "n_timeouts": 0,
+      "accuracy": 0.2,
+      "exceptions": [
+        "asyncio.exceptions.CancelledError"
+      ]
+    },
+    {
+      "task": "lammps-msd-diffusion",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "lammps",
+      "agent_timeout_sec": 1200,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": []
+    },
+    {
+      "task": "lammps-nvt-rdf",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "lammps",
+      "agent_timeout_sec": 600,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": []
+    },
+    {
+      "task": "lammps-polymer-setup",
+      "difficulty": "hard",
+      "category": "workflow",
+      "software": "lammps",
+      "agent_timeout_sec": 1800,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "n_pass": 0,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.0,
+      "exceptions": []
+    },
+    {
+      "task": "lammps-restart-continue",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "lammps",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "n_pass": 0,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.0,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "lammps-thermostat-audit",
+      "difficulty": "hard",
+      "category": "debugging",
+      "software": "lammps",
+      "agent_timeout_sec": 1200,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": []
+    },
+    {
+      "task": "qe-bands-si",
+      "difficulty": "hard",
+      "category": "workflow",
+      "software": "qe",
+      "agent_timeout_sec": 3000,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "n_pass": 0,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.0,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "qe-ecutwfc-convergence",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "qe",
+      "agent_timeout_sec": 1800,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "n_pass": 3,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.6,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "qe-error-diagnose",
+      "difficulty": "hard",
+      "category": "debugging",
+      "software": "qe",
+      "agent_timeout_sec": 3000,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "n_pass": 3,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.6,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "qe-input-relax",
+      "difficulty": "medium",
+      "category": "input-prep",
+      "software": "qe",
+      "agent_timeout_sec": 1800,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "n_pass": 2,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.4,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "qe-output-parse",
+      "difficulty": "medium",
+      "category": "analysis",
+      "software": "qe",
+      "agent_timeout_sec": 1200,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": []
+    },
+    {
+      "task": "qe-relax-co",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "qe",
+      "agent_timeout_sec": 1800,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "qe-scf-si",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "qe",
+      "agent_timeout_sec": 1800,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "rdkit-conformer-cluster",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "rdkit",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": []
+    },
+    {
+      "task": "rdkit-conformer-mmff",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "rdkit",
+      "agent_timeout_sec": 300,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 1,
+      "accuracy": 1.0,
+      "exceptions": [
+        "harbor.trial.errors.AgentTimeoutError",
+        "stderr"
+      ]
+    },
+    {
+      "task": "rdkit-descriptors-batch",
+      "difficulty": "easy",
+      "category": "analysis",
+      "software": "rdkit",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "rdkit-mol-standardize",
+      "difficulty": "medium",
+      "category": "input-prep",
+      "software": "rdkit",
+      "agent_timeout_sec": 600,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "rdkit-reaction-enumerate",
+      "difficulty": "hard",
+      "category": "workflow",
+      "software": "rdkit",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "rdkit-script-debug",
+      "difficulty": "medium",
+      "category": "debugging",
+      "software": "rdkit",
+      "agent_timeout_sec": 600,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 3,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.6,
+      "exceptions": []
+    },
+    {
+      "task": "rdkit-smiles-canonicalize",
+      "difficulty": "easy",
+      "category": "input-prep",
+      "software": "rdkit",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "xtb-freq-thermo",
+      "difficulty": "hard",
+      "category": "analysis",
+      "software": "xtb",
+      "agent_timeout_sec": 1200,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "xtb-geoopt-caffeine",
+      "difficulty": "medium",
+      "category": "execution",
+      "software": "xtb",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 4,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 0.8,
+      "exceptions": [
+        "stderr"
+      ]
+    },
+    {
+      "task": "xtb-singlepoint-gfn2",
+      "difficulty": "easy",
+      "category": "execution",
+      "software": "xtb",
+      "agent_timeout_sec": 900,
+      "attempts": 5,
+      "valid_attempts": 5,
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "n_pass": 5,
+      "n_error": 0,
+      "n_timeouts": 0,
+      "accuracy": 1.0,
+      "exceptions": []
+    }
+  ]
+}

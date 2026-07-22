@@ -1,0 +1,10 @@
+{
+  "_comment": "Reference values for cp2k-input-debug (CP2K 2024.1, PBE/DZVP-MOLOPT-SR-GTH, CH4 single point, CUTOFF 300 Ha). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:35fdcf8bce739d29b7d396ae157208c73bacaa4976763ef7bfaeb405ba16d5be",
+  "total_energy_Ha_ref": -8.0745959684,
+  "total_energy_Ha_tol": 1e-06,
+  "consistency_energy_tol_Ha": 1e-08,
+  "_calibration_note": "5 oracle runs produced identical values (energy spread 3.6e-15 Ha, deterministic). Tolerance set to 1e-6 Ha: the broken-input cutoff unit error ([eV] 300 = 11 Ha effective) shifts the energy by ~0.9 Ha, and an informed guess at 4-5 decimals misses by >= 1e-5 Ha, so the tolerance cleanly separates a real fixed run from both failure modes."
+}

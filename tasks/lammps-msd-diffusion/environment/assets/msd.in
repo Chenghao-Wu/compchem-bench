@@ -1,0 +1,35 @@
+# LAMMPS MSD / diffusion input — CompChemBench lammps-msd-diffusion
+# Fixed seed, single-threaded: deterministic trajectory.
+# Equilibrate NVT 2000 steps, then produce 10000 NVT steps with an MSD
+# column in the thermo output and an unwrapped-coordinate dump.
+
+units           lj
+atom_style      atomic
+dimension       3
+boundary        p p p
+
+lattice         fcc 0.8442
+region          box block 0 6 0 6 0 6
+create_box      1 box
+create_atoms    1 box
+mass            1 1.0
+
+pair_style      lj/cut 2.5
+pair_coeff      1 1 1.0 1.0 2.5
+
+neighbor        0.3 bin
+neigh_modify    every 20 delay 0 check no
+
+velocity        all create 1.2 31415 loop geom
+
+thermo          100
+thermo_style    custom step temp pe
+
+fix             1 all nvt temp 1.2 1.2 0.5
+run             2000
+
+# Production: MSD computed from this point; unwrapped dump every 100 steps
+compute         msd all msd
+thermo_style    custom step temp pe c_msd[4]
+dump            d all custom 100 traj.dump id type xu yu zu
+run             10000

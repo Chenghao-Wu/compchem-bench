@@ -1,0 +1,12 @@
+{
+  "_comment": "Reference values for ase-script-debug (ASE 3.23.0, EMT, fcc Cu a=3.615 A primitive cell). Deterministic; calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:026741bc34202f452fde188270dd020ee9e5b2b3d77a5679ccbbaf680873c053",
+  "energy_kj_mol_ref": -0.476255040247073,
+  "energy_kj_mol_tol": 0.001,
+  "nn_distance_A_ref": 2.556191013989367,
+  "crossverify_energy_tol_kjmol": 0.001,
+  "crossverify_nn_tol_A": 0.0001,
+  "_calibration_note": "EMT energies are relative to the equilibrium-crystal reference state, so the magnitude is small by design. 5 oracle runs produced identical values; tolerances are the physical minimum resolution (float print)."
+}

@@ -1,0 +1,12 @@
+role,smiles
+acid,CC(=O)O
+acid,O=C(O)c1ccccc1
+acid,CCC(=O)O
+acid,C=CC(=O)O
+acid,O=C(O)c1cccnc1
+amine,CN
+amine,CCN
+amine,Nc1ccccc1
+amine,CC[C@H](C)N
+amine,N1CCCCC1
+amine,NCCN

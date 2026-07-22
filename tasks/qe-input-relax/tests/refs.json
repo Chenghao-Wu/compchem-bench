@@ -1,0 +1,19 @@
+{
+  "_comment": "Reference values for qe-input-relax (QE 7.4 conda-forge build hac89879_0). The deliverable is an input deck, so refs pin the semantic thresholds, the zinc-blende SiC reference structure, and the pseudopotential hashes; the L4-lite truncated single point is the execution check (no energy reference needed — ecutwfc/k-grid are agent-chosen above the stated minima). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:65a94a266c2ae365d3370f386174023e2292f1b6c860cdd08e4f2684045c576d",
+  "conv_thr_max": 1e-08,
+  "forc_conv_thr_max": 1e-04,
+  "ecutwfc_min_Ry": 40.0,
+  "kgrid_min": 4,
+  "lattice_A_ref": 4.3596,
+  "lattice_A_tol": 0.002,
+  "position_crystal_tol": 0.005,
+  "l4lite_timeout_sec": 240,
+  "asset_hashes": {
+    "assets/pseudo/Si.pbe-n-rrkjus_psl.1.0.0.UPF": "sha256:669fb75395a9d26973b0ea1ce8223bbcb30d3396c5d48bf5e794d1243c52375a",
+    "assets/pseudo/C.pbe-n-kjpaw_psl.1.0.0.UPF": "sha256:8a25fbf64c4fa257c68c01dc9a96e5b23c6a5ac0b09f45f271e1c946a65ed657"
+  },
+  "_calibration_note": "L4-lite truncated scf of the oracle deck (ecutwfc=50/ecutrho=400, 4x4x4 shifted grid, conv_thr 1e-8) runs in ~6 s and converges in 18 iterations (E=-29.89286497 Ry, not used as a gate). Verified deterministic across the probe run and 3/3 CI oracle runs. The verifier executes the agent's own deck (truncated to scf), so runtime scales with the agent's cutoff/grid choices; timeout budget 240 s is ~40x the oracle's."
+}

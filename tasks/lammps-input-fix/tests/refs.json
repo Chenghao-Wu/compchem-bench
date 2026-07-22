@@ -1,0 +1,14 @@
+{
+  "_comment": "Reference values for lammps-input-fix. Calibrated on x86_64 with compchem-bench/lammps-input-fix:ci.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:8b8fa944764297bab599abaf60a5b4d2375e9ff9dee4ac6a2ab933c8474f6126",
+  "expected_thermo_lines": 11,
+  "final_temp_ref": 0.61439509,
+  "final_temp_tol": 0.001,
+  "final_pe_ref": -5.9058774,
+  "final_pe_tol": 0.001,
+  "consistency_temp_tol": 0.0001,
+  "consistency_pe_tol": 0.0001,
+  "_calibration_note": "Fixed input = NVE LJ fluid, 500 atoms, seed 12345, single-threaded. 5 oracle runs produced identical values (deterministic). Tolerance set to physical minimum resolution 0.001 since observed std=0."
+}

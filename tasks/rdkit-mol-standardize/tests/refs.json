@@ -1,0 +1,14 @@
+{
+  "_comment": "Reference values for rdkit-mol-standardize (RDKit 2024.9.5, SDMolSupplier -> LargestFragmentChooser -> Uncharger -> canonical isomeric dedup). Deterministic; calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:16cb6e1fa1f05ab9aa1a627243d00a8ec902fb3575eccb5d256fe41ba267ac10",
+  "asset_hashes": {
+    "assets/messy.sdf": "sha256:aea6de03a277e2863898bda5381e0d6464d1e18933dc03a8fcd19db1f430f07f"
+  },
+  "n_input_expected": 12,
+  "n_parsed_expected": 11,
+  "n_failed_expected": 1,
+  "n_unique_expected": 8,
+  "_calibration_note": "Verifier replays the pinned recipe and compares the standardized set exactly (plus sorted-order and no-duplicates checks); refs pin the replayed counts as drift anchors. 5 oracle runs identical (spread 0). Asset integrity: sha256 of messy.sdf pinned and validated before replay (P2 B1 convention); cheat_asset_tamper.sh confirms a tampered asset is a hard fail."
+}

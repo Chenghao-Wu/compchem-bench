@@ -1,0 +1,17 @@
+{
+  "_comment": "Reference values for rdkit-conformer-cluster (RDKit 2024.9.5, ETKDGv3 randomSeed=0xf00d numConfs=50, MMFF94 numThreads=1 maxIters=2000, GetConformerRMSMatrix prealigned=False, Butina 1.0 A reordering; target = 3-phenoxypropanoic acid O=C(O)CCOc1ccccc1). Calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:d39061edabea7c2b639faf9095137c490ccb8c6acef72ff80d7d11fdb60dded1",
+  "asset_hashes": {
+    "assets/target.smi": "sha256:2481d3b6524392f46f8ac05a22a89af244c9038aa1455c81f6eb064f01bab916"
+  },
+  "n_conformers_expected": 50,
+  "n_clusters_expected": 16,
+  "min_energy_ref_kcal": -14.703253,
+  "min_energy_tol_kcal": 0.001,
+  "crossverify_energy_tol_kcal": 0.0001,
+  "per_conformer_energy_tol_kcal": 0.001,
+  "reopt_max_energy_drop_kcal": 0.001,
+  "_calibration_note": "ETKDGv3 with fixed seed is deterministic for a given RDKit version/platform; 5 oracle runs identical (spread 0). Verifier recomputes MMFF energy per submitted conformer, re-optimizes each (kills un-optimized submissions), re-clusters from the SDF (kills fabricated cluster counts), and regenerates the pinned-seed ensemble matching energies per conformer (kills different-seed honest ensembles). per_conformer tol 0.001 covers SDF coordinate precision (~3e-5 observed); min-energy ref tolerance = physical minimum resolution. Asset integrity: sha256 of target.smi pinned and validated before all checks (P2 B1 convention); cheat_asset_tamper.sh confirms a tampered target is a hard fail."
+}

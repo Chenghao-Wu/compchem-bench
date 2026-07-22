@@ -1,0 +1,24 @@
+{
+  "_comment": "Reference values for qe-error-diagnose (QE 7.4 conda-forge build hac89879_0, PBE). case1: Si diamond celldm(1)=10.26, ecutwfc=45/ecutrho=360, 4x4x4 shifted grid, conv_thr 1e-10. case2: same cell, ecutwfc=35/ecutrho=280. case3: CO in a 20-bohr cubic box (bond 1.20 Ang), ecutwfc=50/ecutrho=400, gamma, smearing mv 0.01, conv_thr 1e-9. Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:009fc4dfc527639e433ebe212937c21b87cea0539e2b3fa15a82f9b3a33b7f3a",
+  "energy_Ry_ref": {
+    "case1": -22.83956417,
+    "case2": -22.83946403,
+    "case3": -59.99734591
+  },
+  "energy_Ry_tol": 1e-05,
+  "consistency_energy_tol_Ry": 1e-08,
+  "si_lattice_A_ref": 5.42866,
+  "si_lattice_A_tol": 0.002,
+  "co_distance_A_ref": 1.2,
+  "co_distance_A_tol": 0.01,
+  "asset_hashes": {
+    "assets/case1_pseudo/pseudo/Si.pbe-n-rrkjus_psl.1.0.0.UPF": "sha256:669fb75395a9d26973b0ea1ce8223bbcb30d3396c5d48bf5e794d1243c52375a",
+    "assets/case2_cell/pseudo/Si.pbe-n-rrkjus_psl.1.0.0.UPF": "sha256:669fb75395a9d26973b0ea1ce8223bbcb30d3396c5d48bf5e794d1243c52375a",
+    "assets/case3_scf/pseudo/C.pbe-n-kjpaw_psl.1.0.0.UPF": "sha256:8a25fbf64c4fa257c68c01dc9a96e5b23c6a5ac0b09f45f271e1c946a65ed657",
+    "assets/case3_scf/pseudo/O.pbe-n-kjpaw_psl.1.0.0.UPF": "sha256:6d4f573d1f5d8fab1d334ed76fefbac21fdbb2c406af7f85ab8c6aab0e84ccc0"
+  },
+  "_calibration_note": "5 oracle runs produced identical energies at the 1e-8 Ry print resolution (spread 0). Each case runs in ~5-15 s (case3 SCF converges in 10 iterations at mixing_beta=0.5; the broken input needs 37 at mixing_beta=0.05, so electron_maxstep=20 fails with a >1.8x margin). Case settings deliberately avoid every cutoff published elsewhere in the repo: case1's -22.83956417 sits 4.1e-5 Ry from the published ecut=50 value and 5.4e-5 from qe-scf-si's; case2's -22.83946403 sits 4.9e-5 from the published ecut=40 value; case3's -59.99734591 sits 1.3e-2 from qe-relax-co's published energy — all outside the 1e-5 tolerance, so reusing any published number fails."
+}

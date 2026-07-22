@@ -1,0 +1,39 @@
+# LAMMPS NVT RDF input — CompChemBench lammps-nvt-rdf
+# Fixed seed for reproducibility; single-threaded for determinism
+
+units           lj
+atom_style      atomic
+dimension       3
+boundary        p p p
+
+lattice         fcc 0.8442
+region          box block 0 5 0 5 0 5
+create_box      1 box
+create_atoms    1 box
+
+mass            1 1.0
+
+pair_style      lj/cut 2.5
+pair_coeff      1 1 1.0 1.0 2.5
+
+neighbor        0.3 bin
+neigh_modify    every 20 delay 0 check no
+
+# Fixed seed — same result every run
+velocity        all create 1.2 98734 loop geom
+
+thermo          500
+thermo_style    custom step temp pe
+
+# Equilibration: NVT for 2000 steps
+fix             1 all nvt temp 1.2 1.2 0.5
+run             2000
+unfix           1
+
+# Production: NVT for 3000 steps, compute RDF
+fix             2 all nvt temp 1.2 1.2 0.5
+compute         myRDF all rdf 100
+fix             3 all ave/time 10 300 5000 c_myRDF[*] file rdf.dat mode vector
+run             3000
+
+write_data      final.data

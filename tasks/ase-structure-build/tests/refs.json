@@ -1,0 +1,13 @@
+{
+  "_comment": "Reference values for ase-structure-build (4x4x4 fcc Cu, a=3.615 A). Deterministic construction -> analytic reference values; calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:700df140de8eba897035cc262e693092282988a54dea608d4783b928601d6d31",
+  "n_atoms_expected": 256,
+  "lattice_constant_A_ref": 3.615,
+  "cell_length_A_ref": 14.46,
+  "cell_length_A_tol": 0.001,
+  "nn_distance_A_ref": 2.5561910139893693,
+  "nn_distance_A_tol": 0.001,
+  "_calibration_note": "nn distance = a/sqrt(2) exactly; cell = 4*a. Structure check is a full re-derivation (deterministic), tolerances are the physical minimum resolution for an extxyz round-trip."
+}

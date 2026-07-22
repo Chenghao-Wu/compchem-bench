@@ -1,0 +1,20 @@
+{
+  "_comment": "Reference values for qe-relax-co (QE 7.4 conda-forge build hac89879_0, PBE, CO in 20-bohr box, ecutwfc=50 Ry / ecutrho=400 Ry, Gamma-only, mv smearing 0.01, BFGS relax). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:608c0d20d3c469eeb46b1ec62fd60923dc1f97c4f2cc1bcd696294878fce18eb",
+  "final_energy_Ry_ref": -60.0105359247,
+  "final_energy_Ry_tol": 1e-05,
+  "co_bond_A_ref": 1.139770,
+  "co_bond_A_tol": 0.01,
+  "consistency_energy_tol_Ry": 1e-08,
+  "consistency_bond_tol_A": 0.001,
+  "xml_energy_tol_Ry": 1e-06,
+  "crossverify_energy_tol_Ry": 1e-06,
+  "asset_hashes": {
+    "assets/co_relax.in": "sha256:d4d41222394c5ce238e221ca466f84363073d8976a3043c95180494db7b0627a",
+    "assets/pseudo/C.pbe-n-kjpaw_psl.1.0.0.UPF": "sha256:8a25fbf64c4fa257c68c01dc9a96e5b23c6a5ac0b09f45f271e1c946a65ed657",
+    "assets/pseudo/O.pbe-n-kjpaw_psl.1.0.0.UPF": "sha256:6d4f573d1f5d8fab1d334ed76fefbac21fdbb2c406af7f85ab8c6aab0e84ccc0"
+  },
+  "_calibration_note": "QE 7.4 from conda-forge (channel carries no 7.3.1; 7.4 is the closest 7.x release), PSlibrary 1.0.0 kjpaw UPFs for C/O, 1 MPI rank + OMP_NUM_THREADS=2. 5 oracle runs produced identical values (energy spread 0 at 1e-8 Ry, bond spread 0, 5 BFGS steps every run, ~2 min per run). Bond tolerance per spec ±0.01 Å; energy at physical minimum resolution 1e-5 Ry. Cross-verify (L4): verifier reruns an SCF single point on the agent's final geometry; deterministic to ~1e-8, tol 1e-6."
+}

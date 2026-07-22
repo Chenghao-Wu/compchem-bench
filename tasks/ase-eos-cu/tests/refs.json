@@ -1,0 +1,14 @@
+{
+  "_comment": "Reference values for ase-eos-cu (ASE 3.23.0, EMT, FCC Cu, a=3.5..3.7 Å, 7 points). Calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:a6a888b387d81e82ec2ed6af8897bc2753cb8199706fced940e1d645c7a59464",
+  "V0_A3_ref": 11.565,
+  "V0_tol_percent": 1.0,
+  "B0_GPa_ref": 134.0,
+  "B0_tol_percent": 5.0,
+  "crossverify_energy_tol_eV": 1e-06,
+  "crossverify_V0_tol_A3": 0.5,
+  "crossverify_B0_tol_GPa": 10.0,
+  "_calibration_note": "EMT Cu EOS, deterministic: oracle reproduced V0=11.5654 Å³, B0≈134 GPa exactly across runs. Tolerances tightened from 2%/8% to 1%/5% per calibration note. Cross-verify recomputes every CSV point with EMT (tol 1e-6 eV)."
+}

@@ -1,0 +1,14 @@
+{
+  "_comment": "Reference values for lammps-thermostat-audit. Calibrated on x86_64 with compchem-bench/lammps-thermostat-audit:ci (LAMMPS 7Jan2022).",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:0e97b2eddbd1c53ed3b6914cd4b4659082a0971009d736584289097050f66d7a",
+  "expected_thermo_lines": 51,
+  "n_frames_expected": 51,
+  "target_temp": 1.2,
+  "avg_temp_tol_frac": 0.03,
+  "avg_temp_consistency_tol": 0.0001,
+  "l4_temp_tol_frac": 0.01,
+  "l4_pe_tol": 0.001,
+  "_calibration_note": "Fixed run (thermostat ALL, dt=0.005, seed 2718) is deterministic: 5 oracle runs identical; avg_temp(steps>=2500)=1.19642 (target 1.2, tol 3%). L4: kinetic T from dumped velocities matches thermo to dump print precision (tol 1%); run-0 PE of the dumped final frame matches the log last line (tol 1e-3)."
+}

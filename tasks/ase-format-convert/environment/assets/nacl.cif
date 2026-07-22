@@ -1,0 +1,25 @@
+data_NaCl
+_chemical_name_common                  'Sodium chloride'
+_cell_length_a                         5.6402
+_cell_length_b                         5.6402
+_cell_length_c                         5.6402
+_cell_angle_alpha                      90.0
+_cell_angle_beta                       90.0
+_cell_angle_gamma                      90.0
+_space_group_name_H-M_alt              'P 1'
+_space_group_IT_number                 1
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+Na1  Na  0.0  0.0  0.0  1.0
+Na2  Na  0.0  0.5  0.5  1.0
+Na3  Na  0.5  0.0  0.5  1.0
+Na4  Na  0.5  0.5  0.0  1.0
+Cl1  Cl  0.5  0.5  0.5  1.0
+Cl2  Cl  0.5  0.0  0.0  1.0
+Cl3  Cl  0.0  0.5  0.0  1.0
+Cl4  Cl  0.0  0.0  0.5  1.0

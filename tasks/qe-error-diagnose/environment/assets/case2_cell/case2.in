@@ -1,0 +1,29 @@
+&CONTROL
+  calculation = 'scf'
+  prefix = 'pwscf'
+  outdir = './outdir'
+  pseudo_dir = './pseudo'
+/
+&SYSTEM
+  ibrav = 2
+  celldm(1) = 10.26
+  nat = 2
+  ntyp = 1
+  ecutwfc = 35.0
+  ecutrho = 280.0
+/
+&ELECTRONS
+  conv_thr = 1.0d-10
+  mixing_beta = 0.7
+/
+ATOMIC_SPECIES
+  Si 28.0855 Si.pbe-n-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS alat
+  Si 0.00 0.00 0.00
+  Si 0.25 0.25 0.25
+CELL_PARAMETERS angstrom
+  0.000000  2.714329  2.714329
+  2.714329  0.000000  2.714329
+  2.714329  2.714329  0.000000
+K_POINTS automatic
+  4 4 4 1 1 1

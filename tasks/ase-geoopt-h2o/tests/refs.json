@@ -1,0 +1,15 @@
+{
+  "_comment": "Reference values for ase-geoopt-h2o (ASE 3.23.0, LennardJones epsilon=0.01/sigma=1.0/rc=5.0, H2O BFGS fmax<0.05). Calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:76f537a7d81de1dd1d7d18e9aa53a1ea9fa23fb5fe37885554931939953789fc",
+  "fmax_threshold_eV_per_A": 0.05,
+  "final_energy_eV_ref": -0.02104561,
+  "final_energy_eV_tol": 1e-06,
+  "oh_bond_A_ref": 1.085333,
+  "oh_bond_A_tol": 0.005,
+  "crossverify_energy_tol_eV": 1e-06,
+  "crossverify_fmax_tol_eV_per_A": 0.001,
+  "crossverify_bond_tol_A": 0.005,
+  "_calibration_note": "Deterministic pair potential: 5 oracle runs on the CI image produced identical values. Tolerances set to physical minimum resolution."
+}

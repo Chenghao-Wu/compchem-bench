@@ -1,0 +1,15 @@
+{
+  "_comment": "Reference values for rdkit-descriptors-batch (RDKit 2024.9.5, Descriptors.MolWt / Crippen.MolLogP / rdMolDescriptors.CalcTPSA / Lipinski donors-acceptors). Deterministic; calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:3c69f0b7f8f276515fa45711b68cc999f01b66a6bd314540bb3b96be54236848",
+  "asset_hashes": {
+    "assets/input_smiles.txt": "sha256:c4509ebfd136148eaf645dd8215c428972f5724c842d2fae17d99b1d8013d3fc"
+  },
+  "descriptor_tol": 0.0001,
+  "n_input_expected": 12,
+  "n_rows_expected": 12,
+  "mw_sum_ref": 1345.555,
+  "mw_sum_tol": 0.001,
+  "_calibration_note": "Verifier recomputes all five descriptors for all 12 input lines and compares row by row (floats 1e-4, ints/canonical SMILES exact); refs only pin counts and the MW sum as drift anchors. 5 oracle runs produced identical values (spread 0); tolerances are the physical minimum resolution. Asset integrity: sha256 of input_smiles.txt pinned and validated before recompute (P2 B1 convention); cheat_asset_tamper.sh confirms a tampered asset is a hard fail."
+}

@@ -1,0 +1,11 @@
+FROM python:3.11.9-slim
+
+# Pin RDKit version for reproducibility (canonical SMILES are version-stable
+# but we pin anyway per dataset policy)
+RUN pip install --no-cache-dir "rdkit==2024.9.5" "numpy==1.26.4"
+
+COPY assets/ /workspace/assets/
+
+WORKDIR /workspace
+
+CMD ["/bin/bash"]

@@ -1,0 +1,14 @@
+{
+  "_comment": "Reference values for ase-format-convert (NaCl rocksalt conventional cell, a=5.6402 A, ASE 3.23.0 + LAMMPS 2023.8.2). Static asset -> deterministic. Calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:3a56af8a834028bcbd40a8ad03dc1937bd6b78668fc7d13a7a6b6f80f4c0c018",
+  "asset_hashes": {
+    "assets/nacl.cif": "sha256:f9c8090a2bbc457e1148b852c55361849d94f6a9bbdd486ad98b1e2dd62f7a55"
+  },
+  "n_atoms_expected": 8,
+  "lattice_A_ref": 5.6402,
+  "cell_tol_A": 0.0001,
+  "position_tol_frac": 0.0001,
+  "_calibration_note": "Conversion fidelity is checked against the hash-pinned CIF itself (deterministic); tolerances are the extxyz/lammps-data text round-trip resolution. L4-lite: LAMMPS engine read_data + run 0 must succeed and reproduce the box."
+}

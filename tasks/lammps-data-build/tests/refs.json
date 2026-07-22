@@ -1,0 +1,16 @@
+{
+  "_comment": "Reference values for lammps-data-build. Calibrated on x86_64 with compchem-bench/lammps-data-build:ci (LAMMPS 7Jan2022, Mishin Cu EAM).",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:2ce7069d88e7c9d11820af67cc35d2dabc3b3f2bd8df3d7e994e4d80fed91e42",
+  "asset_hashes": {
+    "assets/cu_fcc.xyz": "sha256:d014b11bc64ed903458181e93136afcecdf6674cfd185567199c5ce1570c38b2",
+    "assets/Cu_mishin1.eam.alloy": "sha256:213fbe42fa3df6dfc12138426db23659ff16e46feefe7f5fb7c34fb769911d41"
+  },
+  "box_tol_A": 0.05,
+  "position_tol_frac": 0.0001,
+  "mass_tol": 0.01,
+  "initial_pe_ref": -3.5402165,
+  "initial_pe_tol": 0.0002,
+  "_calibration_note": "L4 run-0 PE of the exact 3x3x3 FCC supercell (a=3.615 A) is deterministic: 5 oracle runs identical, total PE -382.34358 eV / 108 atoms. Tolerance 2e-4 eV/atom is ~4x the observed deviation of a hand-rolled a=3.60 A lattice (7.9e-4 eV/atom) below which a forgery cannot pass; the correct structure reproduces the ref exactly (print precision)."
+}

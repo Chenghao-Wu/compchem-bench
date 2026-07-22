@@ -1,0 +1,31 @@
+{
+  "_comment": "Reference values for lammps-nvt-rdf. Calibrated on x86_64 with compchem-bench/lammps-nvt-rdf:ci.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:e6152a82a0b8d70944fd60b961bfaec1c5cfc7efcc5f753c71d85b6133b79c75",
+  "expected_thermo_segments": [
+    {
+      "n_lines": 5,
+      "first_step": 0,
+      "last_step": 2000
+    },
+    {
+      "n_lines": 7,
+      "first_step": 2000,
+      "last_step": 5000
+    }
+  ],
+  "n_rdf_bins_expected": 100,
+  "rdf_cutoff": 2.5,
+  "final_data_atoms": 500,
+  "first_peak_r_ref": 1.062,
+  "first_peak_r_tol": 0.05,
+  "first_peak_gr_ref": 2.676,
+  "first_peak_gr_tol_frac": 0.05,
+  "crossverify_r_tol": 0.05,
+  "crossverify_gr_tol_frac": 0.02,
+  "crossverify_pe_tol": 0.0001,
+  "_calibration_note": "LJ fluid at T*=1.2, rho*=0.8442, fixed seed, single-threaded. 5 oracle runs produced identical values. Tolerance set to physical minimum resolution since observed std=0. Cross-verify: 0-step LAMMPS PE evaluation of final.data is deterministic, tol 1e-4. final_pe_ref pinned (seed fixed, run length fixed -> deterministic; thermo prints 7 digits so tol 1e-3).",
+  "final_pe_ref": -5.2151832,
+  "final_pe_tol": 0.001
+}

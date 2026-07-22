@@ -1,0 +1,19 @@
+{
+  "_comment": "Reference values for cp2k-aimd-water (CP2K 2024.1, PBE/DZVP-MOLOPT-SR-GTH, single H2O NVE AIMD, 20 x 0.5 fs, T_init 300 K). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:cab2c78c4cfb7efc63e52a0acfd938ee67fc75d75e3f3a163afa60140429b715",
+  "expected_ener_rows": 21,
+  "expected_xyz_frames": 21,
+  "final_potential_Ha_ref": -17.219828886,
+  "final_potential_Ha_tol": 1e-06,
+  "mean_temperature_K_ref": 245.7689,
+  "mean_temperature_K_tol": 0.5,
+  "drift_threshold_Ha": 1e-05,
+  "cons_kin_pot_tol_Ha": 1e-06,
+  "consistency_pot_tol_Ha": 1e-08,
+  "consistency_temp_tol_K": 0.001,
+  "consistency_drift_tol_Ha": 1e-09,
+  "crossverify_energy_tol_Ha": 1e-06,
+  "_calibration_note": "CP2K uses a fixed default RNG seed for the initial Maxwell velocities, so the trajectory is deterministic: 5 oracle runs gave identical .ener files (final_potential spread 0, mean-T spread 9.5e-11 K). Observed conserved-quantity drift 2.77e-6 Ha over the run; threshold set to 1e-5 Ha (~4x observed). Cross-verify: single point on the final trajectory frame must equal the last .ener Pot; deterministic to ~1e-12, tol 1e-6."
+}

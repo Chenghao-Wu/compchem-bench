@@ -1,0 +1,21 @@
+version = "1.0"
+
+[metadata]
+name = "ase-eos-cu"
+difficulty = "medium"
+category = "analysis"
+tags = ["ase", "classical-md", "equation-of-state", "emt", "analysis"]
+author = "compchem-bench"
+created = "2026-07-10"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 1
+memory_gb = 2
+network = false
+
+[agent]
+timeout_sec = 300
+
+[verifier]
+timeout_sec = 120

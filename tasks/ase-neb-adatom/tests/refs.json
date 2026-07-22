@@ -1,0 +1,21 @@
+{
+  "_comment": "Reference values for ase-neb-adatom (ASE 3.23.0, EMT, Cu(100) 3x3x4 slab + adatom, 7 images, climb, MDMin fmax<0.05). Calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:86f4d4f02362034606643450bc0e880431fe416ce86383b9fdc84686450f17e9",
+  "asset_hashes": {
+    "assets/initial.xyz": "sha256:b2f6a8c65f078caf431f05a12a343de3d4c44ca45586574689aa6595355c040a",
+    "assets/final.xyz": "sha256:7339886796fef2802b33fb9be063c787c1e5c2aeaa7368226d721a165f728848"
+  },
+  "n_images_expected": 7,
+  "n_atoms_expected": 37,
+  "endpoint_pos_tol_A": 0.05,
+  "min_adatom_displacement_A": 0.5,
+  "endpoint_degeneracy_tol_eV": 0.02,
+  "crossverify_barrier_tol_eV": 0.01,
+  "saddle_fmax_threshold": 0.1,
+  "saddle_fmax_tol": 0.05,
+  "barrier_eV_ref": 0.42178705494097635,
+  "barrier_eV_tol": 0.01,
+  "_calibration_note": "EMT/MDMin deterministic: oracle reproduced barrier=0.421787 eV across 5 runs (spread 0). Tolerance 10 meV per P2 spec. L4 recomputes every frame energy + the saddle force from the band geometries."
+}

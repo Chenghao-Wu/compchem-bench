@@ -1,0 +1,18 @@
+{
+  "_comment": "Reference values for xtb-freq-thermo (xtb 6.7.1, GFN2-xTB opt + Hessian of ethanol, thermochemistry at 298.15 K). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:1e932a92400c34c49a8f9405fbee2ea6aa0e1524a0b3c7d78c85286d3a81284b",
+  "total_energy_Eh_ref": -11.3943386801,
+  "total_energy_Eh_tol": 1e-06,
+  "zpe_Eh_ref": 0.0781286212,
+  "zpe_Eh_tol": 1e-05,
+  "free_energy_298_Eh_ref": -11.3415812577,
+  "free_energy_298_Eh_tol": 1e-05,
+  "min_real_freq_cm1": 50.0,
+  "tr_mode_absmax_cm1": 20.0,
+  "zpe_recompute_tol_Eh": 1e-05,
+  "consistency_energy_tol_Eh": 1e-09,
+  "crossverify_energy_tol_Eh": 1e-08,
+  "_calibration_note": "xtb 6.7.1 official grimme-lab binary release (sha256-pinned in Dockerfile), OMP_NUM_THREADS=1. 5 oracle runs produced identical values (spread 0). Lowest genuine mode 225.97 cm^-1 (threshold 50). Independent ZPE re-derivation from the agent's vibspectrum (0.5 * sum(hc*nu), 1 cm^-1 = 4.556335252912e-6 Eh) matches xtb's own ZPE to 6.7e-8 Eh (constant rounding); tol 1e-5. Cross-verify: single point on the agent's xtbopt.xyz; bit-identical, tol 1e-8 Eh."
+}

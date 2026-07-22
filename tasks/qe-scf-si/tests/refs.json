@@ -1,0 +1,11 @@
+{
+  "_comment": "Reference values for qe-scf-si (QE 7.4 conda-forge build hac89879_0, PBE, Si diamond 2-atom cell, ecutwfc=40 Ry / ecutrho=320 Ry, 4x4x4 shifted k-grid). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:9e80f63831404407d2d155edbddc7016fdc9bc956a3e0a636ba401c4fc80d582",
+  "total_energy_Ry_ref": -22.83951051,
+  "total_energy_Ry_tol": 1e-05,
+  "consistency_energy_tol_Ry": 1e-08,
+  "xml_energy_tol_Ry": 1e-06,
+  "_calibration_note": "QE 7.4 from conda-forge (channel carries no 7.3.1; 7.4 is the closest 7.x release), PSlibrary 1.0.0 Si.pbe-n-rrkjus_psl UPF, 1 MPI rank + OMP_NUM_THREADS=2. 5 oracle runs produced identical values (energy spread 0 at the 1e-8 Ry print resolution, 9 SCF iterations every run). Tolerance set to physical minimum resolution 1e-5 Ry. Double-source check: stdout '! total energy' vs XML <etot> (Ha -> Ry) must agree to 1e-6 Ry."
+}

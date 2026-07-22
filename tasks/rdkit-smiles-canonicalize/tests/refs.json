@@ -1,0 +1,12 @@
+{
+  "_comment": "Reference values for rdkit-smiles-canonicalize (RDKit 2024.9.5, default MolToSmiles isomeric canonicalization). Static assets -> deterministic.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:423b085398c67b3020bc537c6fbb461ec812b457bf81c0962ff6ab1d4d05864f",
+  "asset_hashes": {
+    "assets/input_smiles.txt": "sha256:ad3c4551daca120669eca9a029bd8aa34c4aaafeaaf682ea797548a8c62c4a99"
+  },
+  "n_input_expected": 8,
+  "n_unique_expected": 8,
+  "_calibration_note": "Verifier recomputes canonical SMILES for every input line and compares exactly; refs only pin the counts. Asset integrity: the verifier validates sha256 of every asset listed in asset_hashes BEFORE recomputing — a tampered /workspace/assets copy is a hard fail."
+}

@@ -1,0 +1,17 @@
+{
+  "_comment": "Reference values for lammps-msd-diffusion. Calibrated on x86_64 with compchem-bench/lammps-msd-diffusion:ci (LAMMPS 7Jan2022).",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:1be949d2d0d67ffb44a6d58951cfb16564d2e646acffb58a227aacf5b2acef26",
+  "expected_thermo_segments": [
+    {"n_lines": 21, "first_step": 0, "last_step": 2000},
+    {"n_lines": 101, "first_step": 2000, "last_step": 12000}
+  ],
+  "n_frames_expected": 101,
+  "diffusion_D_ref": 0.072063,
+  "diffusion_D_tol_frac": 0.15,
+  "consistency_D_tol_frac": 0.02,
+  "l4_msd_tol_frac": 0.01,
+  "l4_D_tol_frac": 0.05,
+  "_calibration_note": "LJ fluid 864 atoms, rho*=0.8442, T*=1.2, seed 31415, single-threaded: 5 oracle runs produced identical D=0.0720633 (deterministic). D tolerance +/-15% per spec. Consistency refit (log MSD, steps>=7000) tol 2%. L4: dump-recomputed MSD matches the log to dump print precision at the final frame (tol 1%) and the refit D to 5%."
+}

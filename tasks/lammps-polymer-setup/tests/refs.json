@@ -1,0 +1,15 @@
+{
+  "_comment": "Reference values for lammps-polymer-setup. Calibrated on x86_64 with compchem-bench/lammps-polymer-setup:ci (LAMMPS 7Jan2022).",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:7a3a06f2d277265d38dc805990875e50b41a6e288f9f336d5522a0e05229d74d",
+  "n_chains_expected": 10,
+  "density_tol": 0.005,
+  "expected_thermo_lines": 31,
+  "final_pe_min": 10.0,
+  "final_pe_max": 30.0,
+  "consistency_pe_tol": 0.0001,
+  "l4_pe_tol": 0.001,
+  "evolution_rms_min": 0.3,
+  "_calibration_note": "Oracle (snake-grid builder, seed 8675309) is deterministic: 5 runs identical, initial PE 21.743459, final PE 20.112237 after 3000 NVT steps. final_pe window [10, 30] deliberately wide: agent-built initial configurations legitimately differ (FENE-bond-dominated PE ~18-22/atom); the real gates are the topology/density checks, L4a (run-0 of polymer.data == log first line, tol 1e-3), evolution RMS >= 0.3, and L4b (run-0 of final.data == log last line, tol 1e-3)."
+}

@@ -1,0 +1,21 @@
+version = "1.0"
+
+[metadata]
+name = "rdkit-mol-standardize"
+difficulty = "medium"
+category = "input-prep"
+tags = ["rdkit", "cheminformatics", "standardization", "input-prep"]
+author = "compchem-bench"
+created = "2026-07-20"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 1
+memory_gb = 2
+network = false
+
+[agent]
+timeout_sec = 600
+
+[verifier]
+timeout_sec = 120

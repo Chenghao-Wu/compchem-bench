@@ -1,0 +1,16 @@
+{
+  "_comment": "Reference values for lammps-restart-continue. Calibrated on x86_64 with compchem-bench/lammps-restart-continue:ci (LAMMPS 7Jan2022).",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:a7c6b5a7ca2b795ea4abb98694534623192b4ffbc6bd012d0992a9d0088ce3d4",
+  "expected_thermo_lines": 21,
+  "first_pe_ref": -5.2230444,
+  "first_pe_tol": 0.001,
+  "final_pe_ref": -5.2225305,
+  "final_pe_tol": 0.001,
+  "final_temp_ref": 1.1836902,
+  "final_temp_tol": 0.001,
+  "consistency_tol": 0.0001,
+  "l4_pe_tol": 0.0001,
+  "_calibration_note": "Restart written after 1000 NVT steps (seed 99999); 2000-step NVE continuation is deterministic — 5 oracle runs identical. Tolerances at physical minimum resolution 0.001. L4 run-0 PE of final.data reproduces the log last line to print precision; tol 1e-4."
+}

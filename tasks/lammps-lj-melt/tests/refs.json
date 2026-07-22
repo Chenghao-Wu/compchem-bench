@@ -1,0 +1,14 @@
+{
+  "_comment": "Reference values for lammps-lj-melt. Calibrated on x86_64 with compchem-bench/lammps-lj-melt:ci.",
+  "calibration_date": "2026-07-14",
+  "arch": "x86_64",
+  "image_digest": "sha256:5c5520a9ef60300a5d84094ccf7ca814ae2e0dbc51df6638b717753047d79a44",
+  "expected_thermo_lines": 51,
+  "final_step_expected": 5000,
+  "final_temp_ref": 0.7007,
+  "final_temp_tol": 0.001,
+  "final_pe_ref": -5.6755,
+  "final_pe_tol": 0.001,
+  "consistency_temp_tol": 0.0001,
+  "_calibration_note": "NVE LJ fluid from seed 87287. 5 oracle runs produced identical values (deterministic). Tolerance set to physical minimum resolution 0.001 since observed std=0."
+}

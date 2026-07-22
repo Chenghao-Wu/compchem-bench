@@ -1,0 +1,16 @@
+{
+  "_comment": "Reference values for rdkit-reaction-enumerate (RDKit 2024.9.5, amide SMARTS x 5 acids x 6 amines, sanitize -> InChIKey dedup -> MW[150,350]/rot<=8 filter). Deterministic; calibrated on x86_64.",
+  "calibration_date": "2026-07-20",
+  "arch": "x86_64",
+  "image_digest": "sha256:824b63175f04f3af41d93f1e1104b9a67683227ace088d75ae5937d109f7415a",
+  "asset_hashes": {
+    "assets/reaction.smirks": "sha256:1e5d9b6d5838559a92cc92015743a30fad7679dedc482f1d4faaf7d23667cd27",
+    "assets/building_blocks.csv": "sha256:ccdc412d89d2f404096e42163c307b034426a070b291abb8c36a493aa794f3c7"
+  },
+  "n_pairs_expected": 30,
+  "n_raw_products_expected": 35,
+  "n_failed_sanitize_expected": 0,
+  "n_unique_expected": 30,
+  "n_kept_expected": 9,
+  "_calibration_note": "Verifier replays the full enumeration pipeline and compares the kept set exactly (stereo included, order-independent) plus all five counts; refs pin the counts as drift anchors. n_raw(35) > n_unique(30): the symmetric bifunctional ethylenediamine yields duplicate products collapsed by InChIKey. 5 oracle runs identical (spread 0). Asset integrity: sha256 of both assets pinned and validated before replay (P2 B1 convention); cheat_asset_tamper.sh confirms a tampered library is a hard fail."
+}

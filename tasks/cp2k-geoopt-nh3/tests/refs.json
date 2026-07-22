@@ -1,0 +1,13 @@
+{
+  "_comment": "Reference values for cp2k-geoopt-nh3 (CP2K 2024.1, PBE/DZVP-MOLOPT-SR-GTH, NH3 geoopt). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-07-20",
+  "image_digest": "sha256:5ab7bafae2e9e910dd66e232c5d20dae1cad79abaaf9362b36f96085d4d4c81f",
+  "final_energy_Ha_ref": -11.73786935,
+  "final_energy_Ha_tol": 1e-05,
+  "nh_bond_A_ref": 1.021094,
+  "nh_bond_A_tol": 0.001,
+  "crossverify_nh_tol_A": 0.005,
+  "crossverify_energy_tol_Ha": 1e-06,
+  "_calibration_note": "NH3 PBE/DZVP-MOLOPT-SR-GTH geoopt, 6 BFGS steps. 6 oracle runs produced identical values (energy spread 2e-15 Ha, bond spread 0). Tolerances set to physical minimum resolution: energy 1e-5 Ha, bond 1e-3 A. Cross-verify: verifier reruns a single point on the agent's final geometry; deterministic to ~1e-10, tol 1e-6."
+}

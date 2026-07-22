@@ -1,0 +1,52 @@
+# Single-point DFT energy of methane (CH4).
+# Method: PBE / DZVP-MOLOPT-SR-GTH + GTH-PBE pseudopotentials.
+# Plane-wave cutoff 300 Ha (rel_cutoff 60), 10 Ang cubic box, non-periodic.
+&GLOBAL
+  PROJECT ch4_sp
+  RUN_TYPE ENERGY
+  PRINT_LEVEL MEDIUM
+&END GLOBAL
+
+&FORCE_EVAL
+  METHOD Quickstep
+  &DFT
+    BASIS_SET_FILE_NAME BASIS_MOLOPT
+    POTENTIAL_FILE_NAME GTH_POTENTIALS
+    &MGRID
+      CUTOFF [eV] 300
+      REL_CUTOFF 60
+    &END MGRID
+    &QS
+      EPS_DEFAULT 1.0E-12
+    &END QS
+    &SCF
+      SCF_GUESS ATOMIC
+      EPS_SCF 1.0E-7
+      MAX_SCF 50
+    &XC
+      &XC_FUNCTIONAL PBE
+      &END XC_FUNCTIONAL
+    &END XC
+  &END DFT
+  &SUBSYS
+    &CELL
+      ABC 10.0 10.0 10.0
+      PERIODIC NONE
+    &END CELL
+    &COORD
+      C   -0.000000   -0.000000   -0.000000
+      H   -0.675343    0.854123   -0.085361
+      H   -0.394946   -0.835938   -0.581485
+      H    0.084754   -0.293741    1.048538
+      H    0.985535    0.275556   -0.381692
+    &END COORD
+    &KIND C
+      BASIS_SET DZVP-MOLOPT-SR-GTHH
+      POTENTIAL GTH-PBE-q4
+    &END KIND
+    &KIND H
+      BASIS_SET DZVP-MOLOPT-SR-GTH
+      POTENTIAL GTH-PBE-q1
+    &END KIND
+  &END SUBSYS
+&END FORCE_EVAL

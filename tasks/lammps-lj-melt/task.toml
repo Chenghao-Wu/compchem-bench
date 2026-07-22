@@ -1,0 +1,21 @@
+version = "1.0"
+
+[metadata]
+name = "lammps-lj-melt"
+difficulty = "easy"
+category = "execution"
+tags = ["lammps", "classical-md", "lennard-jones", "execution"]
+author = "compchem-bench"
+created = "2026-07-10"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 1
+memory_gb = 2
+network = false
+
+[agent]
+timeout_sec = 900
+
+[verifier]
+timeout_sec = 60
