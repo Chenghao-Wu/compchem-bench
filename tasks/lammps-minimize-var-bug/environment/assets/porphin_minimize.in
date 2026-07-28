@@ -1,0 +1,81 @@
+# ============================================
+# LAMMPS Input: Energy Minimization
+# ============================================
+# System: Porphin molecule with GAFF2 force field
+
+# ---------------------
+# Initialization
+# ---------------------
+units           real
+atom_style      full
+boundary        p p p
+
+# ---------------------
+# Read Structure Data
+# ---------------------
+read_data       "assets/system_gaff2.data"
+
+# ---------------------
+# Force Field (GAFF2)
+# ---------------------
+bond_style      harmonic
+angle_style     harmonic
+dihedral_style  fourier
+improper_style  cvff
+pair_style      lj/charmm/coul/long 8.0 10.0
+kspace_style    ewald 0.0001
+
+# Load GAFF2 parameters
+include         "assets/system_gaff2.in.settings"
+
+# ---------------------
+# Neighbor List
+# ---------------------
+neighbor        2.0 bin
+neigh_modify    every 1 delay 0 check yes
+
+# ---------------------
+# Output Settings
+# ---------------------
+# Dump trajectory to "porphin_min.lammpstrj" every 10 steps
+dump            1 all atom 10 porphin_min.lammpstrj
+
+# ---------------------
+# Initial Energy (before minimization)
+# ---------------------
+thermo_style    custom step pe ke etotal temp press atoms
+thermo          10
+run             0
+
+variable        E_initial equal pe
+print           "============================================"
+print           "  INITIAL ENERGY (before minimization)"
+print           "  Potential Energy: ${E_initial} kcal/mol"
+print           "============================================"
+
+# ---------------------
+# Energy Minimization
+# ---------------------
+min_style       cg
+minimize        1.0e-4 1.0e-6 1000 10000
+
+# ---------------------
+# Final Energy (after minimization)
+# ---------------------
+variable        E_final equal pe
+variable        Delta_E equal ${E_final}-${E_initial}
+
+print           ""
+print           "============================================"
+print           "  ENERGY MINIMIZATION COMPLETE"
+print           "============================================"
+print           "  Initial Energy:  ${E_initial} kcal/mol"
+print           "  Final Energy:    ${E_final} kcal/mol"
+print           "  Energy Change:   ${Delta_E} kcal/mol"
+print           "============================================"
+
+# Write minimized structure
+write_data      "porphin_minimized.data"
+print           ""
+print           "  Minimized structure written to: porphin_minimized.data"
+print           "============================================"

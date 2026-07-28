@@ -32,20 +32,20 @@ decisions differentiate it from static QA-style benchmarks:
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
 | ASE | 2 | 2 | 2 | 1 | 1 | **8** |
-| LAMMPS | 1 | 2 | 3 | 2 | 1 | **9** |
+| LAMMPS | 1 | 2 | 3 | 3 | 1 | **10** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **6** | **4** | **40** |
+| **Total** | **6** | **13** | **11** | **7** | **4** | **41** |
 
 ### Difficulty distribution
 
 | Difficulty | Count | Share |
 |---|---|---|
-| easy | 10 | 25% |
-| medium | 18 | 45% |
-| hard | 12 | 30% |
+| easy | 10 | 24% |
+| medium | 18 | 44% |
+| hard | 13 | 32% |
 
 ### Complete task list
 
@@ -62,7 +62,7 @@ decisions differentiate it from static QA-style benchmarks:
 | `ase-vibrations` | hard | analysis | Finite-displacement vibrational analysis of a Cu4 cluster. |
 | `ase-custom-calculator` | hard | workflow | Implement a custom Morse-potential ASE calculator and relax a cluster. |
 
-**LAMMPS (9)**
+**LAMMPS (10)**
 
 | Task | Difficulty | Category | Summary |
 |---|---|---|---|
@@ -75,6 +75,7 @@ decisions differentiate it from static QA-style benchmarks:
 | `lammps-msd-diffusion` | hard | analysis | Self-diffusion coefficient from mean-squared displacement. |
 | `lammps-thermostat-audit` | hard | debugging | Audit a thermostat setup for correctness. |
 | `lammps-polymer-setup` | hard | workflow | Build and equilibrate a bead-spring polymer melt. |
+| `lammps-minimize-var-bug` | hard | debugging | Repair a minimisation report that claims the energy never changed. |
 
 **CP2K (6)**
 
@@ -124,8 +125,9 @@ category); lint enforces that agreement mechanically.
 
 ## 3. Anti-Cheat Design
 
-Scoring is terminal-state verification hardened in four layers, plus a static
-asset-integrity layer and CI baselines that every task must pass before merge.
+Scoring is terminal-state verification hardened in four layers (five for
+script-repair tasks), plus a static asset-integrity layer and CI baselines
+that every task must pass before merge.
 
 - **Layer 0 — asset integrity.** `/workspace/assets` is agent-writable, so the
   verifier never trusts the workspace copy of any asset it consumes. Every
@@ -145,6 +147,16 @@ asset-integrity layer and CI baselines that every task must pass before merge.
   binary, LAMMPS, `pw.x`, …) from the agent's final state and require the
   native log, `results.json`, and the recomputed value to agree. Missing or
   abnormal intermediate structures are a hard fail, never a warning or skip.
+- **Layer 5 — generalisation probe** (debugging tasks whose deliverable is a
+  *repaired script*). Checking the repaired script's output on the original
+  system cannot distinguish a real fix from constants pasted in from a log —
+  both produce identical, entirely genuine artefacts. So the verifier re-runs
+  the agent's own repaired script against a **deterministically perturbed
+  copy of the same system**, computes that system's true answer
+  independently, and requires the script's report to be correct there too.
+  `lammps-minimize-var-bug` is the reference implementation: its cheat script
+  runs the real calculation, harvests the true energies, and hardcodes them —
+  passing layers 0-4 completely — and is caught only here.
 
 **Informed-cheat baseline.** Every task ships a cheat script that produces a
 *plausible, self-consistent, domain-aware* forgery of all required files — not
@@ -241,7 +253,7 @@ python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # lint one task
 | Quantum ESPRESSO | **7.4** (conda-forge build `hac89879_0`) | 7 |
 | xtb | **6.7.1** (official static linux-x86_64 tarball, sha256-verified) | 3 |
 | CP2K | **2024.1** (`cp2k/cp2k:2024.1_mpich_generic_psmp`) | 6 |
-| LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 9 |
+| LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 10 |
 | RDKit | **2024.9.5** (pip, on `python:3.11.9-slim`) | 7 |
 | ASE | **3.23.0** (pip, on `python:3.11.9-slim`, numpy 1.26.4) | 8 |
 
