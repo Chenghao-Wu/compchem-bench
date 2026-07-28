@@ -22,19 +22,19 @@ for the current leaderboard.
 > **Please do not train on it.** See [Data contamination policy](#data-contamination-policy)
 > below.
 
-## Coverage (v1.1 — 40 tasks)
+## Coverage (v1.2 — 43 tasks)
 
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
 | ASE | 2 | 2 | 2 | 1 | 1 | **8** |
-| LAMMPS | 1 | 2 | 3 | 2 | 1 | **9** |
+| LAMMPS | 1 | 2 | 3 | 4 | 2 | **12** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **6** | **4** | **40** |
+| **Total** | **6** | **13** | **11** | **8** | **5** | **43** |
 
-Difficulty distribution: **10 easy / 18 medium / 12 hard** (25% / 45% / 30%).
+Difficulty distribution: **10 easy / 18 medium / 15 hard** (23% / 42% / 35%).
 The full per-task list with summaries is in
 [DATASET_CARD.md §2](DATASET_CARD.md#2-coverage).
 
@@ -52,7 +52,7 @@ Local CI (requires Docker):
 ```bash
 python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # structural lint for one task
 .ci/run_ci.sh tasks/ase-geoopt-h2o              # full 5-step CI gate for one task
-.ci/run_all.sh                                  # re-run the CI gate over all 40 tasks
+.ci/run_all.sh                                  # re-run the CI gate over all 43 tasks
 ```
 
 ## Repository layout
@@ -98,6 +98,10 @@ asset-integrity layer — details in [DATASET_CARD.md §3](DATASET_CARD.md#3-ant
   state with the in-image software (ASE calculator, CP2K binary, LAMMPS,
   `pw.x`, …) and requires the native log, the reported `results.json`, and the
   recomputed value to agree within a tight tolerance.
+- **Generalisation probe.** Where the deliverable is a repaired script, the
+  verifier re-runs it against a perturbed copy of the system and requires the
+  report to be correct there too — constants pasted in from a real log
+  produce genuine artefacts and are caught only here.
 - **Informed-cheat baseline.** Every task ships a cheat script producing a
   plausible, self-consistent forgery of all required files, and CI requires it
   to fail — alongside the oracle (must pass 3/3) and null-agent (must fail)
@@ -138,7 +142,7 @@ policy:
   `solution/` enters the runtime image.
 - A **held-out private split** (fresh parameterized instances with
   re-calibrated references, kept out of this repository) is the planned
-  follow-up for probing contamination and overfitting against the public 40
+  follow-up for probing contamination and overfitting against the public 43
   tasks. See [DATASET_CARD.md §7](DATASET_CARD.md#7-data-contamination-policy-and-held-out-plan).
 
 ## Commercial-software policy

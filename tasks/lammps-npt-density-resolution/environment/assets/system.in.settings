@@ -1,0 +1,4090 @@
+pair_coeff 1 1 0.030 2.460
+pair_coeff 2 2 0.020 2.556
+pair_coeff 3 3 0.018 2.126
+pair_coeff 4 4 0.05 3.25
+pair_coeff 5 5 0.05 3.60
+pair_coeff 6 6 0.068 3.550
+pair_coeff 7 7 0.170 3.250
+pair_coeff 8 8 0.170 3.000
+pair_coeff 9 9 0.060 2.900
+pair_coeff 10 10 0.069 2.780
+pair_coeff 11 11 0.003 3.330
+pair_coeff 12 12 0.05 3.40
+pair_coeff 13 13 0.10 4.05
+pair_coeff 14 14 0.10 4.00
+pair_coeff 15 15 0.200 3.740
+pair_coeff 16 16 0.355 3.600
+pair_coeff 17 17 0.300 3.400
+pair_coeff 18 18 0.234 3.401
+pair_coeff 19 19 0.100 2.0
+pair_coeff 20 20 0.470 3.470
+pair_coeff 21 21 0.58 3.55
+pair_coeff 22 22 0.066 3.550
+pair_coeff 23 23 0.072 3.400
+pair_coeff 24 24 0.070 3.340
+pair_coeff 25 25 0.066 3.510
+pair_coeff 26 26 0.066 3.500
+pair_coeff 27 27 0.066 3.500
+pair_coeff 28 28 0.026 2.480
+pair_coeff 29 29 0.066 3.550
+pair_coeff 30 30 0.066 3.510
+pair_coeff 31 31 0.066 3.500
+pair_coeff 32 32 0.066 3.500
+pair_coeff 33 33 0.294 3.730
+pair_coeff 34 34 0.207 3.775
+pair_coeff 35 35 0.175 3.905
+pair_coeff 36 36 0.160 3.910
+pair_coeff 37 37 0.145 3.960
+pair_coeff 38 38 0.118 3.905
+pair_coeff 39 39 0.140 3.850
+pair_coeff 40 40 0.080 3.850
+pair_coeff 41 41 0.115 3.800
+pair_coeff 42 42 0.110 3.750
+pair_coeff 43 43 0.050 3.800
+pair_coeff 44 44 0.105 3.750
+pair_coeff 45 45 0.170 3.070
+pair_coeff 46 46 0.0 0.0
+pair_coeff 47 47 0.207 3.775
+pair_coeff 48 48 0.118 3.905
+pair_coeff 49 49 0.250 3.700
+pair_coeff 50 50 0.250 3.550
+pair_coeff 51 51 0.250 3.550
+pair_coeff 52 52 0.250 3.550
+pair_coeff 53 53 0.0 0.0
+pair_coeff 54 54 0.0 0.0
+pair_coeff 55 55 0.207 3.775
+pair_coeff 56 56 0.118 3.905
+pair_coeff 57 57 0.170 3.800
+pair_coeff 58 58 0.118 3.800
+pair_coeff 59 59 0.170 3.800
+pair_coeff 60 60 0.118 3.800
+pair_coeff 61 61 0.170 3.200
+pair_coeff 62 62 0.150 3.650
+pair_coeff 63 63 0.207 3.775
+pair_coeff 64 64 0.0 0.0
+pair_coeff 65 65 0.020 2.556
+pair_coeff 66 66 0.069 2.780
+pair_coeff 67 67 0.2339 3.401
+pair_coeff 68 68 0.3170 3.624
+pair_coeff 69 69 0.4330 3.935
+pair_coeff 70 70 0.080 3.850
+pair_coeff 71 71 0.050 3.800
+pair_coeff 72 72 0.170 3.000
+pair_coeff 73 73 0.170 3.800
+pair_coeff 74 74 0.118 3.800
+pair_coeff 75 75 0.118 3.800
+pair_coeff 76 76 0.300 3.400
+pair_coeff 77 77 0.080 3.800
+pair_coeff 78 78 0.300 3.470
+pair_coeff 79 79 0.050 3.800
+pair_coeff 80 80 0.266 3.470
+pair_coeff 81 81 0.395 3.56
+pair_coeff 82 82 0.280 2.93
+pair_coeff 83 83 0.160 3.81
+pair_coeff 84 84 0.170 3.42
+pair_coeff 85 85 0.0 0.0
+pair_coeff 86 86 0.210 2.960
+pair_coeff 87 87 0.170 3.250
+pair_coeff 88 88 0.115 3.800
+pair_coeff 89 89 0.170 3.80
+pair_coeff 90 90 0.066 3.500
+pair_coeff 91 91 0.066 3.500
+pair_coeff 92 92 0.066 3.500
+pair_coeff 93 93 0.060 3.570
+pair_coeff 94 94 0.066 3.500
+pair_coeff 95 95 0.030 2.500
+pair_coeff 96 96 0.076 3.550
+pair_coeff 97 97 0.076 3.550
+pair_coeff 98 98 0.076 3.550
+pair_coeff 99 99 0.030 2.420
+pair_coeff 100 100 0.068 3.550
+pair_coeff 101 101 0.030 2.420
+pair_coeff 102 102 0.068 3.550
+pair_coeff 103 103 0.066 3.500
+pair_coeff 104 104 0.066 3.500
+pair_coeff 105 105 0.076 3.550
+pair_coeff 106 106 0.300 3.400
+pair_coeff 107 107 0.066 3.500
+pair_coeff 108 108 0.030 2.500
+pair_coeff 109 109 0.170 3.120
+pair_coeff 110 110 0.0 0.0
+pair_coeff 111 111 0.030 2.500
+pair_coeff 112 112 0.066 3.500
+pair_coeff 113 113 0.066 3.500
+pair_coeff 114 114 0.066 3.500
+pair_coeff 115 115 0.170 3.150
+pair_coeff 116 116 0.068 3.550
+pair_coeff 117 117 0.068 3.550
+pair_coeff 118 118 0.170 3.070
+pair_coeff 119 119 0.0 0.0
+pair_coeff 120 120 0.170 3.070
+pair_coeff 121 121 0.0 0.0
+pair_coeff 122 122 0.170 3.070
+pair_coeff 123 123 0.0 0.0
+pair_coeff 124 124 0.066 3.510
+pair_coeff 125 125 0.066 3.500
+pair_coeff 126 126 0.066 3.500
+pair_coeff 127 127 0.026 2.480
+pair_coeff 128 128 0.140 2.900
+pair_coeff 129 129 0.076 3.550
+pair_coeff 130 130 0.140 2.900
+pair_coeff 131 131 0.120 2.900
+pair_coeff 132 132 0.066 3.500
+pair_coeff 133 133 0.066 3.500
+pair_coeff 134 134 0.066 3.500
+pair_coeff 135 135 0.066 3.500
+pair_coeff 136 136 0.026 2.480
+pair_coeff 137 137 0.140 2.900
+pair_coeff 138 138 0.170 3.070
+pair_coeff 139 139 0.0 0.0
+pair_coeff 140 140 0.066 3.500
+pair_coeff 141 141 0.030 2.500
+pair_coeff 142 142 0.066 3.500
+pair_coeff 143 143 0.030 2.500
+pair_coeff 144 144 0.066 3.500
+pair_coeff 145 145 0.030 2.500
+pair_coeff 146 146 0.066 3.500
+pair_coeff 147 147 0.030 2.500
+pair_coeff 148 148 0.066 3.500
+pair_coeff 149 149 0.066 3.500
+pair_coeff 150 150 0.068 3.550
+pair_coeff 151 151 0.425 3.600
+pair_coeff 152 152 0.250 3.700
+pair_coeff 153 153 0.355 3.600
+pair_coeff 154 154 0.355 3.600
+pair_coeff 155 155 0.0 0.0
+pair_coeff 156 156 0.0 0.0
+pair_coeff 157 157 0.066 3.500
+pair_coeff 158 158 0.066 3.500
+pair_coeff 159 159 0.066 3.500
+pair_coeff 160 160 0.066 3.500
+pair_coeff 161 161 0.066 3.500
+pair_coeff 162 162 0.066 3.500
+pair_coeff 163 163 0.066 3.500
+pair_coeff 164 164 0.066 3.500
+pair_coeff 165 165 0.066 3.500
+pair_coeff 166 166 0.066 3.500
+pair_coeff 167 167 0.066 3.500
+pair_coeff 168 168 0.066 3.500
+pair_coeff 169 169 0.066 3.500
+pair_coeff 170 170 0.066 3.500
+pair_coeff 171 171 0.066 3.500
+pair_coeff 172 172 0.068 3.550
+pair_coeff 173 173 0.355 3.600
+pair_coeff 174 174 0.066 3.500
+pair_coeff 175 175 0.066 3.500
+pair_coeff 176 176 0.066 3.500
+pair_coeff 177 177 0.300 3.400
+pair_coeff 178 178 0.076 3.550
+pair_coeff 179 179 0.068 3.550
+pair_coeff 180 180 0.066 3.500
+pair_coeff 181 181 0.066 3.500
+pair_coeff 182 182 0.105 3.750
+pair_coeff 183 183 0.105 3.750
+pair_coeff 184 184 0.105 3.750
+pair_coeff 185 185 0.105 3.750
+pair_coeff 186 186 0.105 3.750
+pair_coeff 187 187 0.210 2.960
+pair_coeff 188 188 0.170 3.250
+pair_coeff 189 189 0.170 3.250
+pair_coeff 190 190 0.170 3.250
+pair_coeff 191 191 0.0 0.0
+pair_coeff 192 192 0.0 0.0
+pair_coeff 193 193 0.066 3.500
+pair_coeff 194 194 0.066 3.500
+pair_coeff 195 195 0.066 3.500
+pair_coeff 196 196 0.066 3.500
+pair_coeff 197 197 0.066 3.500
+pair_coeff 198 198 0.105 3.750
+pair_coeff 199 199 0.210 2.960
+pair_coeff 200 200 0.170 3.250
+pair_coeff 201 201 0.0 0.0
+pair_coeff 202 202 0.170 3.250
+pair_coeff 203 203 0.105 3.750
+pair_coeff 204 204 0.210 2.960
+pair_coeff 205 205 0.000 0.000
+pair_coeff 206 206 0.020 2.500
+pair_coeff 207 207 0.066 3.500
+pair_coeff 208 208 0.066 3.500
+pair_coeff 209 209 0.066 3.500
+pair_coeff 210 210 0.066 3.500
+pair_coeff 211 211 0.068 3.550
+pair_coeff 212 212 0.150 3.650
+pair_coeff 213 213 0.170 3.200
+pair_coeff 214 214 0.068 3.550
+pair_coeff 215 215 0.300 3.400
+pair_coeff 216 216 0.170 3.250
+pair_coeff 217 217 0.068 3.550
+pair_coeff 218 218 0.105 3.750
+pair_coeff 219 219 0.170 3.000
+pair_coeff 220 220 0.210 2.960
+pair_coeff 221 221 0.0 0.0
+pair_coeff 222 222 0.105 3.750
+pair_coeff 223 223 0.210 2.960
+pair_coeff 224 224 0.066 3.500
+pair_coeff 225 225 0.066 3.500
+pair_coeff 226 226 0.066 3.500
+pair_coeff 227 227 0.066 3.500
+pair_coeff 228 228 0.105 3.750
+pair_coeff 229 229 0.210 2.960
+pair_coeff 230 230 0.030 2.420
+pair_coeff 231 231 0.105 3.750
+pair_coeff 232 232 0.210 2.960
+pair_coeff 233 233 0.015 2.420
+pair_coeff 234 234 0.066 3.500
+pair_coeff 235 235 0.066 3.500
+pair_coeff 236 236 0.066 3.500
+pair_coeff 237 237 0.290 3.480
+pair_coeff 238 238 0.290 3.480
+pair_coeff 239 239 0.290 3.480
+pair_coeff 240 240 0.0 0.0
+pair_coeff 241 241 0.0 0.0
+pair_coeff 242 242 0.066 3.500
+pair_coeff 243 243 0.066 3.500
+pair_coeff 244 244 0.066 3.500
+pair_coeff 245 245 0.066 3.500
+pair_coeff 246 246 0.066 3.500
+pair_coeff 247 247 0.066 3.500
+pair_coeff 248 248 0.066 3.500
+pair_coeff 249 249 0.066 3.500
+pair_coeff 250 250 0.066 3.500
+pair_coeff 251 251 0.170 3.250
+pair_coeff 252 252 0.0 0.0
+pair_coeff 253 253 0.050 3.550
+pair_coeff 254 254 0.170 3.250
+pair_coeff 255 255 0.0 0.0
+pair_coeff 256 256 0.066 3.500
+pair_coeff 257 257 0.066 3.500
+pair_coeff 258 258 0.066 3.500
+pair_coeff 259 259 0.066 3.500
+pair_coeff 260 260 0.290 3.480
+pair_coeff 261 261 0.0 0.0
+pair_coeff 262 262 0.17 3.25
+pair_coeff 263 263 0.08 3.50
+pair_coeff 264 264 0.17 3.25
+pair_coeff 265 265 0.0 0.0
+pair_coeff 266 266 0.08 3.50
+pair_coeff 267 267 0.05 2.50
+pair_coeff 268 268 0.08 3.50
+pair_coeff 269 269 0.05 2.50
+pair_coeff 270 270 0.17 3.25
+pair_coeff 271 271 0.105 3.75
+pair_coeff 272 272 0.17 3.25
+pair_coeff 273 273 0.105 3.75
+pair_coeff 274 274 0.08 3.50
+pair_coeff 275 275 0.08 3.50
+pair_coeff 276 276 0.0 0.0
+pair_coeff 277 277 0.210 2.96
+pair_coeff 278 278 0.0 0.0
+pair_coeff 279 279 0.210 2.96
+pair_coeff 280 280 0.05 2.50
+pair_coeff 281 281 0.05 2.50
+pair_coeff 282 282 0.08 3.50
+pair_coeff 283 283 0.05 2.50
+pair_coeff 284 284 0.17 3.25
+pair_coeff 285 285 0.105 3.75
+pair_coeff 286 286 0.17 3.25
+pair_coeff 287 287 0.08 3.50
+pair_coeff 288 288 0.08 3.50
+pair_coeff 289 289 0.08 3.50
+pair_coeff 290 290 0.0 0.0
+pair_coeff 291 291 0.21 2.96
+pair_coeff 292 292 0.17 3.25
+pair_coeff 293 293 0.0 0.0
+pair_coeff 294 294 0.0 0.0
+pair_coeff 295 295 0.05 2.50
+pair_coeff 296 296 0.05 2.50
+pair_coeff 297 297 0.17 3.25
+pair_coeff 298 298 0.08 3.50
+pair_coeff 299 299 0.17 3.25
+pair_coeff 300 300 0.08 3.50
+pair_coeff 301 301 0.08 3.50
+pair_coeff 302 302 0.08 3.50
+pair_coeff 303 303 0.17 3.25
+pair_coeff 304 304 0.08 3.50
+pair_coeff 305 305 0.17 3.25
+pair_coeff 306 306 0.05 2.50
+pair_coeff 307 307 0.17 3.25
+pair_coeff 308 308 0.0 0.0
+pair_coeff 309 309 0.0 0.0
+pair_coeff 310 310 0.05 2.50
+pair_coeff 311 311 0.0 0.0
+pair_coeff 312 312 0.17 3.25
+pair_coeff 313 313 0.08 3.50
+pair_coeff 314 314 0.17 3.25
+pair_coeff 315 315 0.08 3.50
+pair_coeff 316 316 0.08 3.50
+pair_coeff 317 317 0.105 3.75
+pair_coeff 318 318 0.0 0.0
+pair_coeff 319 319 0.17 3.25
+pair_coeff 320 320 0.0 0.0
+pair_coeff 321 321 0.21 2.96
+pair_coeff 322 322 0.08 3.50
+pair_coeff 323 323 0.05 2.50
+pair_coeff 324 324 0.08 3.50
+pair_coeff 325 325 0.05 2.50
+pair_coeff 326 326 0.08 3.50
+pair_coeff 327 327 0.05 2.50
+pair_coeff 328 328 0.17 3.25
+pair_coeff 329 329 0.105 3.75
+pair_coeff 330 330 0.17 3.25
+pair_coeff 331 331 0.08 3.50
+pair_coeff 332 332 0.08 3.50
+pair_coeff 333 333 0.08 3.50
+pair_coeff 334 334 0.0 0.0
+pair_coeff 335 335 0.21 2.96
+pair_coeff 336 336 0.0 0.0
+pair_coeff 337 337 0.17 3.25
+pair_coeff 338 338 0.0 0.0
+pair_coeff 339 339 0.0 0.0
+pair_coeff 340 340 0.05 2.50
+pair_coeff 341 341 0.05 2.50
+pair_coeff 342 342 0.08 3.50
+pair_coeff 343 343 0.05 2.50
+pair_coeff 344 344 0.200 3.740
+pair_coeff 345 345 0.210 2.960
+pair_coeff 346 346 0.170 3.000
+pair_coeff 347 347 0.066 3.550
+pair_coeff 348 348 0.08 3.50
+pair_coeff 349 349 0.300 3.400
+pair_coeff 350 350 0.076 3.550
+pair_coeff 351 351 0.71 3.05
+pair_coeff 352 352 0.71 4.02
+pair_coeff 353 353 0.71 4.28
+pair_coeff 354 354 0.71 4.81
+pair_coeff 355 355 0.0005 5.34
+pair_coeff 356 356 0.0005 2.87
+pair_coeff 357 357 0.0005 4.07
+pair_coeff 358 358 0.0005 5.17
+pair_coeff 359 359 0.0005 5.60
+pair_coeff 360 360 0.0005 6.20
+pair_coeff 361 361 0.875044 1.644471
+pair_coeff 362 362 0.449657 2.412031
+pair_coeff 363 363 0.118226 3.102688
+pair_coeff 364 364 0.047096 3.816610
+pair_coeff 365 365 0.30 4.20
+pair_coeff 366 366 0.05 2.50
+pair_coeff 367 367 0.50 4.25
+pair_coeff 368 368 0.30 4.20
+pair_coeff 369 369 0.05 2.50
+pair_coeff 370 370 0.25 3.15
+pair_coeff 371 371 0.30 4.20
+pair_coeff 372 372 0.05 2.50
+pair_coeff 373 373 0.15 3.65
+pair_coeff 374 374 0.25 3.40
+pair_coeff 375 375 0.30 4.20
+pair_coeff 376 376 0.05 2.50
+pair_coeff 377 377 0.25 3.40
+pair_coeff 378 378 0.05 2.50
+pair_coeff 379 379 0.30 4.20
+pair_coeff 380 380 0.05 2.50
+pair_coeff 381 381 0.30 4.20
+pair_coeff 382 382 0.05 2.50
+pair_coeff 383 383 0.0 0.0
+pair_coeff 384 384 0.250 3.200
+pair_coeff 385 385 0.0 0.0
+pair_coeff 386 386 0.400 2.81524
+pair_coeff 387 387 0.200 3.11815
+pair_coeff 388 388 0.066 3.50
+pair_coeff 389 389 0.140 2.90
+pair_coeff 390 390 0.200 3.74
+pair_coeff 391 391 0.200 3.15
+pair_coeff 392 392 0.140 2.90
+pair_coeff 393 393 0.066 3.50
+pair_coeff 394 394 0.030 2.50
+pair_coeff 395 395 0.200 3.74
+pair_coeff 396 396 0.200 3.15
+pair_coeff 397 397 0.140 2.90
+pair_coeff 398 398 0.066 3.50
+pair_coeff 399 399 0.030 2.50
+pair_coeff 400 400 0.200 3.74
+pair_coeff 401 401 0.200 3.15
+pair_coeff 402 402 0.140 2.90
+pair_coeff 403 403 0.066 3.50
+pair_coeff 404 404 0.030 2.50
+pair_coeff 405 405 0.066 3.50
+pair_coeff 406 406 0.030 2.50
+pair_coeff 407 407 0.068 3.55
+pair_coeff 408 408 0.066 3.50
+pair_coeff 409 409 0.030 2.50
+pair_coeff 410 410 0.068 3.55
+pair_coeff 411 411 0.066 3.50
+pair_coeff 412 412 0.030 2.50
+pair_coeff 413 413 0.068 3.55
+pair_coeff 414 414 0.066 3.500
+pair_coeff 415 415 0.105 3.750
+pair_coeff 416 416 0.140 2.960
+pair_coeff 417 417 0.120 3.000
+pair_coeff 418 418 0.066 3.500
+pair_coeff 419 419 0.026 2.480
+pair_coeff 420 420 0.105 3.750
+pair_coeff 421 421 0.105 3.750
+pair_coeff 422 422 0.068 3.550
+pair_coeff 423 423 0.170 3.000
+pair_coeff 424 424 0.25 3.55
+pair_coeff 425 425 0.17 2.96
+pair_coeff 426 426 0.066 3.50
+pair_coeff 427 427 0.030 2.50
+pair_coeff 428 428 0.170 3.250
+pair_coeff 429 429 0.0 0.0
+pair_coeff 430 430 0.170 3.250
+pair_coeff 431 431 0.0 0.0
+pair_coeff 432 432 0.066 3.50
+pair_coeff 433 433 0.030 2.50
+pair_coeff 434 434 0.066 3.50
+pair_coeff 435 435 0.030 2.50
+pair_coeff 436 436 0.066 3.50
+pair_coeff 437 437 0.030 2.50
+pair_coeff 438 438 0.068 3.55
+pair_coeff 439 439 0.068 3.55
+pair_coeff 440 440 0.066 3.500
+pair_coeff 441 441 0.066 3.500
+pair_coeff 442 442 0.066 3.500
+pair_coeff 443 443 0.25 3.55
+pair_coeff 444 444 0.17 2.96
+pair_coeff 445 445 0.395 3.56
+pair_coeff 446 446 0.395 3.56
+pair_coeff 447 447 0.280 2.93
+pair_coeff 448 448 0.066 3.500
+pair_coeff 449 449 0.066 3.500
+pair_coeff 450 450 0.070 3.550
+pair_coeff 451 451 0.070 3.550
+pair_coeff 452 452 0.070 3.550
+pair_coeff 453 453 0.170 3.250
+pair_coeff 454 454 0.000 0.000
+pair_coeff 455 455 0.066 3.500
+pair_coeff 456 456 0.070 3.550
+pair_coeff 457 457 0.070 3.550
+pair_coeff 458 458 0.070 3.550
+pair_coeff 459 459 0.070 3.550
+pair_coeff 460 460 0.070 3.550
+pair_coeff 461 461 0.170 3.250
+pair_coeff 462 462 0.170 3.250
+pair_coeff 463 463 0.000 0.000
+pair_coeff 464 464 0.070 3.550
+pair_coeff 465 465 0.066 3.500
+pair_coeff 466 466 0.066 3.500
+pair_coeff 467 467 0.076 3.550
+pair_coeff 468 468 0.076 3.550
+pair_coeff 469 469 0.068 3.550
+pair_coeff 470 470 0.170 3.250
+pair_coeff 471 471 0.070 3.550
+pair_coeff 472 472 0.070 3.550
+pair_coeff 473 473 0.070 3.550
+pair_coeff 474 474 0.030 2.420
+pair_coeff 475 475 0.030 2.420
+pair_coeff 476 476 0.030 2.420
+pair_coeff 477 477 0.170 3.250
+pair_coeff 478 478 0.070 3.550
+pair_coeff 479 479 0.030 2.420
+pair_coeff 480 480 0.170 3.250
+pair_coeff 481 481 0.070 3.550
+pair_coeff 482 482 0.070 3.550
+pair_coeff 483 483 0.070 3.550
+pair_coeff 484 484 0.030 2.420
+pair_coeff 485 485 0.030 2.420
+pair_coeff 486 486 0.030 2.420
+pair_coeff 487 487 0.170 3.250
+pair_coeff 488 488 0.070 3.550
+pair_coeff 489 489 0.070 3.550
+pair_coeff 490 490 0.030 2.420
+pair_coeff 491 491 0.030 2.420
+pair_coeff 492 492 0.170 3.250
+pair_coeff 493 493 0.070 3.550
+pair_coeff 494 494 0.070 3.550
+pair_coeff 495 495 0.000 0.000
+pair_coeff 496 496 0.030 2.420
+pair_coeff 497 497 0.030 2.420
+pair_coeff 498 498 0.170 3.250
+pair_coeff 499 499 0.170 3.250
+pair_coeff 500 500 0.070 3.550
+pair_coeff 501 501 0.070 3.550
+pair_coeff 502 502 0.070 3.550
+pair_coeff 503 503 0.000 0.000
+pair_coeff 504 504 0.030 2.420
+pair_coeff 505 505 0.030 2.420
+pair_coeff 506 506 0.030 2.420
+pair_coeff 507 507 0.170 3.250
+pair_coeff 508 508 0.070 3.550
+pair_coeff 509 509 0.170 3.250
+pair_coeff 510 510 0.070 3.550
+pair_coeff 511 511 0.070 3.550
+pair_coeff 512 512 0.000 0.000
+pair_coeff 513 513 0.030 2.420
+pair_coeff 514 514 0.030 2.420
+pair_coeff 515 515 0.030 2.420
+pair_coeff 516 516 0.140 2.900
+pair_coeff 517 517 0.070 3.550
+pair_coeff 518 518 0.076 3.550
+pair_coeff 519 519 0.030 2.420
+pair_coeff 520 520 0.030 2.420
+pair_coeff 521 521 0.140 2.900
+pair_coeff 522 522 0.070 3.550
+pair_coeff 523 523 0.170 3.250
+pair_coeff 524 524 0.070 3.550
+pair_coeff 525 525 0.070 3.550
+pair_coeff 526 526 0.030 2.420
+pair_coeff 527 527 0.030 2.420
+pair_coeff 528 528 0.030 2.420
+pair_coeff 529 529 0.140 2.900
+pair_coeff 530 530 0.170 3.250
+pair_coeff 531 531 0.070 3.550
+pair_coeff 532 532 0.070 3.550
+pair_coeff 533 533 0.070 3.550
+pair_coeff 534 534 0.030 2.420
+pair_coeff 535 535 0.030 2.420
+pair_coeff 536 536 0.030 2.420
+pair_coeff 537 537 0.170 3.250
+pair_coeff 538 538 0.070 3.550
+pair_coeff 539 539 0.070 3.550
+pair_coeff 540 540 0.070 3.550
+pair_coeff 541 541 0.070 3.550
+pair_coeff 542 542 0.070 3.550
+pair_coeff 543 543 0.070 3.550
+pair_coeff 544 544 0.070 3.550
+pair_coeff 545 545 0.070 3.550
+pair_coeff 546 546 0.000 0.000
+pair_coeff 547 547 0.030 2.420
+pair_coeff 548 548 0.030 2.420
+pair_coeff 549 549 0.030 2.420
+pair_coeff 550 550 0.030 2.420
+pair_coeff 551 551 0.030 2.420
+pair_coeff 552 552 0.030 2.420
+pair_coeff 553 553 0.170 3.250
+pair_coeff 554 554 0.070 3.550
+pair_coeff 555 555 0.070 3.550
+pair_coeff 556 556 0.070 3.550
+pair_coeff 557 557 0.070 3.550
+pair_coeff 558 558 0.070 3.550
+pair_coeff 559 559 0.070 3.550
+pair_coeff 560 560 0.070 3.550
+pair_coeff 561 561 0.070 3.550
+pair_coeff 562 562 0.070 3.550
+pair_coeff 563 563 0.030 2.420
+pair_coeff 564 564 0.030 2.420
+pair_coeff 565 565 0.030 2.420
+pair_coeff 566 566 0.030 2.420
+pair_coeff 567 567 0.030 2.420
+pair_coeff 568 568 0.030 2.420
+pair_coeff 569 569 0.030 2.420
+pair_coeff 570 570 0.170 3.250
+pair_coeff 571 571 0.070 3.550
+pair_coeff 572 572 0.170 3.250
+pair_coeff 573 573 0.070 3.550
+pair_coeff 574 574 0.070 3.550
+pair_coeff 575 575 0.070 3.550
+pair_coeff 576 576 0.170 3.250
+pair_coeff 577 577 0.070 3.550
+pair_coeff 578 578 0.170 3.250
+pair_coeff 579 579 0.030 2.420
+pair_coeff 580 580 0.030 2.420
+pair_coeff 581 581 0.030 2.420
+pair_coeff 582 582 0.000 0.000
+pair_coeff 583 583 0.355 3.600
+pair_coeff 584 584 0.070 3.550
+pair_coeff 585 585 0.170 3.250
+pair_coeff 586 586 0.070 3.550
+pair_coeff 587 587 0.070 3.550
+pair_coeff 588 588 0.030 2.420
+pair_coeff 589 589 0.030 2.420
+pair_coeff 590 590 0.030 2.420
+pair_coeff 591 591 0.170 3.250
+pair_coeff 592 592 0.070 3.550
+pair_coeff 593 593 0.030 2.420
+pair_coeff 594 594 0.070 3.550
+pair_coeff 595 595 0.066 3.500
+pair_coeff 596 596 0.170 3.250
+pair_coeff 597 597 0.070 3.550
+pair_coeff 598 598 0.070 3.550
+pair_coeff 599 599 0.070 3.550
+pair_coeff 600 600 0.070 3.550
+pair_coeff 601 601 0.070 3.550
+pair_coeff 602 602 0.070 3.550
+pair_coeff 603 603 0.030 2.420
+pair_coeff 604 604 0.030 2.420
+pair_coeff 605 605 0.030 2.420
+pair_coeff 606 606 0.030 2.420
+pair_coeff 607 607 0.170 3.250
+pair_coeff 608 608 0.070 3.550
+pair_coeff 609 609 0.170 3.250
+pair_coeff 610 610 0.070 3.550
+pair_coeff 611 611 0.070 3.550
+pair_coeff 612 612 0.066 3.500
+pair_coeff 613 613 0.030 2.420
+pair_coeff 614 614 0.030 2.420
+pair_coeff 615 615 0.030 2.420
+pair_coeff 616 616 0.030 2.500
+pair_coeff 617 617 0.066 3.500
+pair_coeff 618 618 0.066 3.500
+pair_coeff 619 619 0.066 3.500
+pair_coeff 620 620 0.066 3.500
+pair_coeff 621 621 0.066 3.500
+pair_coeff 622 622 0.066 3.500
+pair_coeff 623 623 0.066 3.500
+pair_coeff 624 624 0.066 3.500
+pair_coeff 625 625 0.066 3.500
+pair_coeff 626 626 0.066 3.500
+pair_coeff 627 627 0.066 3.500
+pair_coeff 628 628 0.066 3.500
+pair_coeff 629 629 0.066 3.500
+pair_coeff 630 630 0.066 3.500
+pair_coeff 631 631 0.066 3.500
+pair_coeff 632 632 0.425 3.600
+pair_coeff 633 633 0.0 0.0
+pair_coeff 634 634 0.070 3.550
+pair_coeff 635 635 0.105 3.750
+pair_coeff 636 636 0.170 3.250
+pair_coeff 637 637 0.066 3.500
+pair_coeff 638 638 0.066 3.500
+pair_coeff 639 639 0.066 3.500
+pair_coeff 640 640 0.070 3.550
+pair_coeff 641 641 0.070 3.550
+pair_coeff 642 642 0.070 3.550
+pair_coeff 643 643 0.070 3.550
+pair_coeff 644 644 0.070 3.550
+pair_coeff 645 645 0.070 3.550
+pair_coeff 646 646 0.355 3.600
+pair_coeff 647 647 0.054 3.473
+pair_coeff 648 648 0.050 3.300
+pair_coeff 649 649 0.050 3.300
+pair_coeff 650 650 0.076 3.550
+pair_coeff 651 651 0.066 3.500
+pair_coeff 652 652 0.030 2.500
+pair_coeff 653 653 0.060 3.750
+pair_coeff 654 654 0.054 3.473
+pair_coeff 655 655 0.050 3.300
+pair_coeff 656 656 0.050 3.300
+pair_coeff 657 657 0.040 2.950
+pair_coeff 658 658 0.076 3.550
+pair_coeff 659 659 0.300 3.400
+pair_coeff 660 660 0.030 2.420
+pair_coeff 661 661 0.088 3.430
+pair_coeff 662 662 0.088 3.430
+pair_coeff 663 663 0.088 3.430
+pair_coeff 664 664 0.077 3.470
+pair_coeff 665 665 0.077 3.470
+pair_coeff 666 666 0.077 3.470
+pair_coeff 667 667 0.068 3.550
+pair_coeff 668 668 0.061 2.850
+pair_coeff 669 669 0.068 3.550
+pair_coeff 670 670 0.061 2.850
+pair_coeff 671 671 0.470 3.470
+pair_coeff 672 672 0.118 3.905
+pair_coeff 673 673 0.068 3.550
+pair_coeff 674 674 0.062 3.250
+pair_coeff 675 675 0.061 2.940
+pair_coeff 676 676 0.068 3.550
+pair_coeff 677 677 0.061 2.850
+pair_coeff 678 678 0.068 3.550
+pair_coeff 679 679 0.450 3.470
+pair_coeff 680 680 0.068 3.550
+pair_coeff 681 681 0.580 3.800
+pair_coeff 682 682 0.066 3.500
+pair_coeff 683 683 0.425 3.600
+pair_coeff 684 684 0.068 3.550
+pair_coeff 685 685 0.068 3.550
+pair_coeff 686 686 0.068 3.550
+pair_coeff 687 687 0.068 3.550
+pair_coeff 688 688 0.068 3.550
+pair_coeff 689 689 0.030 2.420
+pair_coeff 690 690 0.030 2.420
+pair_coeff 691 691 0.050 3.550
+pair_coeff 692 692 0.170 3.250
+pair_coeff 693 693 0.000 0.000
+pair_coeff 694 694 0.000 0.000
+pair_coeff 695 695 0.030 2.420
+pair_coeff 696 696 0.066 3.500
+pair_coeff 697 697 0.066 3.500
+pair_coeff 698 698 0.17 3.25
+pair_coeff 699 699 0.17 3.25
+pair_coeff 700 700 0.17 3.25
+pair_coeff 701 701 0.050 3.550
+pair_coeff 702 702 0.170 3.200
+pair_coeff 703 703 0.066 3.300
+pair_coeff 704 704 0.066 3.300
+pair_coeff 705 705 0.066 3.300
+pair_coeff 706 706 0.066 3.300
+pair_coeff 707 707 0.066 3.300
+pair_coeff 708 708 0.015 2.500
+pair_coeff 709 709 0.12 3.25
+pair_coeff 710 710 0.17 2.96
+pair_coeff 711 711 0.066 3.500
+pair_coeff 712 712 0.015 2.500
+pair_coeff 713 713 0.066 3.500
+pair_coeff 714 714 0.066 3.500
+pair_coeff 715 715 0.066 3.500
+pair_coeff 716 716 0.12 3.25
+pair_coeff 717 717 0.068 3.550
+pair_coeff 718 718 0.066 3.300
+pair_coeff 719 719 0.170 3.250
+pair_coeff 720 720 0.210 2.960
+pair_coeff 721 721 0.105 3.750
+pair_coeff 722 722 0.170 3.000
+pair_coeff 723 723 0.066 3.500
+pair_coeff 724 724 0.066 3.500
+pair_coeff 725 725 0.066 3.500
+pair_coeff 726 726 0.015 2.420
+pair_coeff 727 727 0.015 2.420
+pair_coeff 728 728 0.015 2.420
+pair_coeff 729 729 0.140 2.90
+pair_coeff 730 730 0.200 3.740
+pair_coeff 731 731 0.066 3.500
+pair_coeff 732 732 0.066 3.500
+pair_coeff 733 733 0.030 2.500
+pair_coeff 734 734 0.200 3.740
+pair_coeff 735 735 0.061 3.1181
+pair_coeff 736 736 0.170 3.150
+pair_coeff 737 737 0.210 2.860
+pair_coeff 738 738 0.066 3.500
+pair_coeff 739 739 0.068 3.550
+pair_coeff 740 740 0.062 3.250
+pair_coeff 741 741 0.061 2.940
+pair_coeff 742 742 0.068 3.550
+pair_coeff 743 743 0.030 2.500
+pair_coeff 744 744 0.060 3.570
+pair_coeff 745 745 0.026 2.480
+pair_coeff 746 746 0.170 3.300
+pair_coeff 747 747 0.170 3.300
+pair_coeff 748 748 0.170 3.300
+pair_coeff 749 749 0.066 3.500
+pair_coeff 750 750 0.066 3.500
+pair_coeff 751 751 0.066 3.500
+pair_coeff 752 752 0.066 3.500
+pair_coeff 753 753 0.066 3.500
+pair_coeff 754 754 0.066 3.500
+pair_coeff 755 755 0.0 0.0
+pair_coeff 756 756 0.0 0.0
+pair_coeff 757 757 0.015 2.500
+pair_coeff 758 758 0.066 3.500
+pair_coeff 759 759 0.066 3.500
+pair_coeff 760 760 0.066 3.500
+pair_coeff 761 761 0.066 3.500
+pair_coeff 762 762 0.068 3.550
+pair_coeff 763 763 0.068 3.550
+pair_coeff 764 764 0.068 3.550
+pair_coeff 765 765 0.066 3.500
+pair_coeff 766 766 0.066 3.500
+pair_coeff 767 767 0.066 3.500
+pair_coeff 768 768 0.066 3.500
+pair_coeff 769 769 0.066 3.500
+pair_coeff 770 770 0.066 3.500
+pair_coeff 771 771 0.110 3.500
+pair_coeff 772 772 0.015 2.420
+pair_coeff 773 773 0.066 3.550
+pair_coeff 774 774 0.066 3.510
+pair_coeff 775 775 0.066 3.500
+pair_coeff 776 776 0.066 3.500
+pair_coeff 777 777 0.066 3.500
+pair_coeff 778 778 0.066 3.500
+pair_coeff 779 779 0.066 3.500
+pair_coeff 780 780 0.170 3.120
+pair_coeff 781 781 0.0 0.0
+pair_coeff 782 782 0.17 3.25
+pair_coeff 783 783 0.17 3.25
+pair_coeff 784 784 0.17 3.25
+pair_coeff 785 785 0.210 3.300
+pair_coeff 786 786 0.290 3.480
+pair_coeff 787 787 0.0 0.0
+pair_coeff 788 788 0.066 3.500
+pair_coeff 789 789 0.066 3.500
+pair_coeff 790 790 0.066 3.500
+pair_coeff 791 791 0.066 3.500
+pair_coeff 792 792 0.070 3.550
+pair_coeff 793 793 0.076 3.550
+pair_coeff 794 794 0.070 3.550
+pair_coeff 795 795 0.070 3.550
+pair_coeff 796 796 0.030 2.500
+pair_coeff 797 797 0.066 3.500
+pair_coeff 798 798 0.105 3.750
+pair_coeff 799 799 0.290 3.480
+pair_coeff 800 800 0.210 2.960
+pair_coeff 801 801 0.0 0.0
+pair_coeff 802 802 0.061 2.940
+pair_coeff 803 803 0.066 3.500
+pair_coeff 804 804 0.030 2.500
+pair_coeff 805 805 0.066 3.500
+pair_coeff 806 806 0.066 3.500
+pair_coeff 807 807 0.066 3.500
+pair_coeff 808 808 0.066 3.500
+pair_coeff 809 809 0.066 3.500
+pair_coeff 810 810 0.097 3.500
+pair_coeff 811 811 0.053 2.950
+pair_coeff 812 812 0.062 3.250
+pair_coeff 813 813 0.030 2.500
+pair_coeff 814 814 0.066 3.500
+pair_coeff 815 815 0.066 3.500
+pair_coeff 816 816 0.300 3.400
+pair_coeff 817 817 0.066 3.500
+pair_coeff 818 818 0.030 2.500
+pair_coeff 819 819 0.066 3.500
+pair_coeff 820 820 0.066 3.500
+pair_coeff 821 821 0.470 3.470
+pair_coeff 822 822 0.066 3.500
+pair_coeff 823 823 0.030 2.500
+pair_coeff 824 824 0.066 3.500
+pair_coeff 825 825 0.066 3.500
+pair_coeff 826 826 0.061 2.940
+pair_coeff 827 827 0.300 3.400
+pair_coeff 828 828 0.470 3.470
+pair_coeff 829 829 0.068 3.550
+pair_coeff 830 830 0.140 2.900
+pair_coeff 831 831 0.066 3.500
+pair_coeff 832 832 0.060 2.900
+pair_coeff 833 833 0.170 3.250
+pair_coeff 834 834 0.068 3.550
+pair_coeff 835 835 0.066 3.500
+pair_coeff 836 836 0.105 3.750
+pair_coeff 837 837 0.105 3.750
+pair_coeff 838 838 0.210 2.960
+pair_coeff 839 839 0.170 3.250
+pair_coeff 840 840 0.000 0.000
+pair_coeff 841 841 0.170 3.120
+pair_coeff 842 842 0.000 0.000
+pair_coeff 843 843 0.066 3.500
+pair_coeff 844 844 0.066 3.500
+pair_coeff 845 845 0.070 3.550
+pair_coeff 846 846 0.070 3.550
+pair_coeff 847 847 0.070 3.550
+pair_coeff 848 848 0.070 3.550
+pair_coeff 849 849 0.068 3.550
+pair_coeff 850 850 0.0125 1.960
+pair_coeff 851 851 0.0 0.0
+pair_coeff 852 852 0.0 0.0
+pair_coeff 853 853 0.0 0.0
+pair_coeff 854 854 0.068 3.550
+pair_coeff 855 855 0.300 3.400
+pair_coeff 856 856 0.066 3.500
+pair_coeff 857 857 0.066 3.500
+pair_coeff 858 858 0.066 3.500
+pair_coeff 859 859 0.600 3.750
+pair_coeff 860 860 0.030 2.500
+pair_coeff 861 861 0.068 3.550
+pair_coeff 862 862 0.470 3.470
+pair_coeff 863 863 0.068 3.550
+pair_coeff 864 864 0.600 3.750
+pair_coeff 865 865 0.170 3.250
+pair_coeff 866 866 0.068 3.550
+pair_coeff 867 867 0.140 2.900
+pair_coeff 868 868 0.066 3.500
+pair_coeff 869 869 0.066 3.500
+pair_coeff 870 870 0.066 3.500
+pair_coeff 871 871 0.030 2.500
+pair_coeff 872 872 0.068 3.550
+pair_coeff 873 873 0.170 3.250
+pair_coeff 874 874 0.068 3.550
+pair_coeff 875 875 0.105 3.750
+pair_coeff 876 876 0.210 2.960
+pair_coeff 877 877 0.170 3.250
+pair_coeff 878 878 0.066 3.500
+pair_coeff 879 879 0.066 3.500
+pair_coeff 880 880 0.066 3.500
+pair_coeff 881 881 0.066 3.500
+pair_coeff 882 882 0.015 2.420
+pair_coeff 883 883 0.105 3.750
+pair_coeff 884 884 0.210 2.960
+pair_coeff 885 885 0.015 2.420
+pair_coeff 886 886 0.066 3.500
+pair_coeff 887 887 0.066 3.500
+pair_coeff 888 888 0.066 3.500
+pair_coeff 889 889 0.066 3.500
+pair_coeff 890 890 0.066 3.500
+pair_coeff 891 891 0.066 3.500
+pair_coeff 892 892 0.066 3.500
+pair_coeff 893 893 0.066 3.500
+pair_coeff 894 894 0.066 3.500
+pair_coeff 895 895 0.066 3.500
+pair_coeff 896 896 0.10 4.00
+pair_coeff 897 897 0.10 4.00
+pair_coeff 898 898 0.10 4.00
+pair_coeff 899 899 0.10 4.00
+pair_coeff 900 900 0.03 2.50
+pair_coeff 901 901 0.066 3.500
+pair_coeff 902 902 0.066 3.500
+pair_coeff 903 903 0.066 3.500
+pair_coeff 904 904 0.066 3.500
+pair_coeff 905 905 0.070 3.550
+pair_coeff 906 906 0.10 4.00
+pair_coeff 907 907 0.10 4.00
+pair_coeff 908 908 0.10 4.00
+pair_coeff 909 909 0.17 3.12
+pair_coeff 910 910 0.00 0.00
+pair_coeff 911 911 0.10 4.00
+pair_coeff 912 912 0.10 4.00
+pair_coeff 913 913 0.10 4.00
+pair_coeff 914 914 0.14 2.90
+pair_coeff 915 915 0.10 4.00
+pair_coeff 916 916 0.10 4.00
+pair_coeff 917 917 0.10 4.00
+pair_coeff 918 918 0.10 4.00
+pair_coeff 919 919 0.10 4.00
+pair_coeff 920 920 0.10 4.00
+pair_coeff 921 921 0.070 3.550
+pair_coeff 922 922 0.030 2.420
+pair_coeff 923 923 0.070 3.550
+pair_coeff 924 924 0.030 2.420
+pair_coeff 925 925 0.72000 3.08
+pair_coeff 926 926 0.11779 4.18
+pair_coeff 927 927 0.09000 4.51
+pair_coeff 928 928 0.07000 5.15
+pair_coeff 929 929 0.018279 2.70
+pair_coeff 930 930 0.002772 3.35
+pair_coeff 931 931 0.000328 4.06
+pair_coeff 932 932 0.000171 4.32
+pair_coeff 933 933 0.000081 4.82
+pair_coeff 934 934 0.875044 2.91
+pair_coeff 935 935 0.449657 3.47
+pair_coeff 936 936 0.118226 3.82
+pair_coeff 937 937 0.047096 4.18
+pair_coeff 938 938 0.066 3.500
+pair_coeff 939 939 0.066 3.500
+pair_coeff 940 940 0.066 3.500
+pair_coeff 941 941 0.066 3.500
+pair_coeff 942 942 0.030 2.500
+pair_coeff 943 943 0.290 3.480
+pair_coeff 944 944 0.068 3.550
+pair_coeff 945 945 0.290 3.480
+pair_coeff 946 946 0.068 3.550
+pair_coeff 947 947 0.076 3.550
+pair_coeff 948 948 0.076 3.550
+pair_coeff 949 949 0.030 2.420
+pair_coeff 950 950 0.086 3.300
+pair_coeff 951 951 0.086 3.300
+pair_coeff 952 952 0.086 3.300
+pair_coeff 953 953 0.086 3.300
+pair_coeff 954 954 0.086 3.300
+pair_coeff 955 955 0.210 2.960
+pair_coeff 956 956 0.06762 2.620
+pair_coeff 957 957 0.188814 2.930
+pair_coeff 958 958 0.066 3.500
+pair_coeff 959 959 0.355 3.600
+pair_coeff 960 960 0.070 3.550
+pair_coeff 961 961 0.170 3.250
+pair_coeff 962 962 0.070 3.550
+pair_coeff 963 963 0.070 3.550
+pair_coeff 964 964 0.030 2.420
+pair_coeff 965 965 0.030 2.420
+pair_coeff 966 966 0.066 3.500
+pair_coeff 967 967 0.062 3.250
+pair_coeff 968 968 0.170 3.070
+pair_coeff 969 969 0.000 0.00
+pair_coeff 970 970 0.061 2.940
+pair_coeff 971 971 0.030 2.500
+pair_coeff 972 972 0.088 3.430
+pair_coeff 973 973 0.076 3.550
+pair_coeff 974 974 0.088 3.430
+pair_coeff 975 975 0.110 3.500
+pair_coeff 976 976 0.102 3.188
+pair_coeff 977 977 0.0 0.0
+pair_coeff 978 978 0.16275 3.16435
+pair_coeff 979 979 0.0 0.0
+pair_coeff 980 980 0.0 1.0
+pair_coeff 981 981 0.1780 3.0970
+pair_coeff 982 982 0.0 1.0
+pair_coeff 983 983 0.0 1.0
+pair_coeff 984 984 0.1553 3.166
+pair_coeff 985 985 0.1553 3.166
+pair_coeff 986 986 0.0 0.0
+pair_coeff 987 987 0.0 0.0
+pair_coeff 988 988 0.21280 3.166552
+pair_coeff 989 989 0.0 0.0
+pair_coeff 990 990 0.0 1.781797
+bond_coeff 1 317. 1.495 # TRP(OL)
+bond_coeff 2 388. 1.459 # TRP
+bond_coeff 3 546. 1.352 # TRP
+bond_coeff 4 546. 1.352 # TRP
+bond_coeff 5 317. 1.495 # TRP(OL)
+bond_coeff 6 546. 1.352 # TRP
+bond_coeff 7 340. 1.08 # 
+bond_coeff 8 320. 1.486 # wlj temp borate B3LYP
+bond_coeff 9 385. 1.460 # wlj
+bond_coeff 10 385. 1.38 # MKD MP2(full)/6-311G(d,p)
+bond_coeff 11 385. 1.460 # wlj
+bond_coeff 12 385. 1.460 # wlj
+bond_coeff 13 385. 1.460 # wlj
+bond_coeff 14 385. 1.460 # wlj
+bond_coeff 15 385. 1.460 # wlj
+bond_coeff 16 385. 1.460 # wlj
+bond_coeff 17 385. 1.460 # wlj
+bond_coeff 18 427. 1.381 # MKD changed from 1.440 to 1.381
+bond_coeff 19 483. 1.339 # wlj
+bond_coeff 20 385. 1.42 # 
+bond_coeff 21 532.8 1.084 # wlj - "
+bond_coeff 22 260. 1.526 # AA(OL)
+bond_coeff 23 260. 1.526 # ILE(OL)
+bond_coeff 24 317. 1.51 # PHE,TYR
+bond_coeff 25 317. 1.504 # HIS
+bond_coeff 26 317. 1.51 # PHE,TYR
+bond_coeff 27 260. 1.526 # AA,SUG
+bond_coeff 28 367. 1.38 # wlj
+bond_coeff 29 337. 1.463 # ARG(OL)
+bond_coeff 30 367. 1.471 # LYS(OL)
+bond_coeff 31 382. 1.448 # JACS 112, 8314 (90)
+bond_coeff 32 337. 1.449 # GLY(OL)
+bond_coeff 33 386. 1.425 # SUG(OL),SER
+bond_coeff 34 320. 1.425 # SUG(OL)
+bond_coeff 35 222. 1.81 # CYS(OL)
+bond_coeff 36 222. 1.81 # CYX(OL)
+bond_coeff 37 260. 1.526 # Ethane
+bond_coeff 38 260. 1.526 # ALA
+bond_coeff 39 317. 1.51 # THY(use std C-C)
+bond_coeff 40 337. 1.463 # ARG(OL)
+bond_coeff 41 367. 1.471 # 
+bond_coeff 42 382. 1.448 # "
+bond_coeff 43 337. 1.449 # est
+bond_coeff 44 337. 1.475 # 9 methyl bases
+bond_coeff 45 386. 1.425 # SUG(OL),SER
+bond_coeff 46 320. 1.425 # DMP
+bond_coeff 47 222. 1.81 # CYS(OL)
+bond_coeff 48 222. 1.81 # MET(OL)
+bond_coeff 49 317. 1.50 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 50 317. 1.50 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 51 530. 1.34 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 52 317. 1.50 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 53 317. 1.50 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 54 317. 1.50 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 55 317. 1.50 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 56 530. 1.34 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 57 530. 1.34 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 58 317. 1.50 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 59 317. 1.50 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 60 530. 1.34 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 61 530. 1.34 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 62 530. 1.34 # OPLS hydrocarbons ff (jtr 5-14-91)
+bond_coeff 63 385. 1.460 # wlj 1,3-diene 3/97
+bond_coeff 64 317. 1.51 # wlj
+bond_coeff 65 400. 1.426 # wlj 9/06
+bond_coeff 66 385. 1.460 # wlj acrolein
+bond_coeff 67 340. 1.08 # wlj
+bond_coeff 68 340. 1.08 # wlj
+bond_coeff 69 481. 1.340 # wlj
+bond_coeff 70 415. 1.428 # wlj azadiene 9/02
+bond_coeff 71 457. 1.290 # imine
+bond_coeff 72 481. 1.340 # wlj
+bond_coeff 73 300. 1.87 # wlj
+bond_coeff 74 469. 1.40 # 
+bond_coeff 75 427. 1.433 # 
+bond_coeff 76 469. 1.40 # TRP,TYR,PHE
+bond_coeff 77 469. 1.404 # ADE
+bond_coeff 78 469. 1.40 # TRP
+bond_coeff 79 469. 1.40 # PHE,TYR
+bond_coeff 80 427. 1.433 # CYT
+bond_coeff 81 427. 1.433 # 
+bond_coeff 82 469. 1.40 # TRP
+bond_coeff 83 317. 1.51 # PHE,TYR
+bond_coeff 84 546. 1.367 # pyrrole - wlj
+bond_coeff 85 317. 1.49 # wlj
+bond_coeff 86 400. 1.451 # wlj 9/98
+bond_coeff 87 300. 1.725 # wlj
+bond_coeff 88 427. 1.433 # 
+bond_coeff 89 420. 1.354 # wlj
+bond_coeff 90 367. 1.080 # PHE, etc.
+bond_coeff 91 250. 2.08 # wlj
+bond_coeff 92 481. 1.340 # ARG
+bond_coeff 93 400. 1.45 # LYS(OL)
+bond_coeff 94 427. 1.381 # GUA
+bond_coeff 95 414. 1.391 # Added DSM (from CB-NB)
+bond_coeff 96 483. 1.339 # ADE,GUA,CYT
+bond_coeff 97 400. 1.460 # wlj nitro
+bond_coeff 98 481. 1.340 # wlj/rr anilines
+bond_coeff 99 382. 1.385 # jtr - neutral Arg; MLL
+bond_coeff 100 400. 1.410 # wlj 10/04 isonitrile
+bond_coeff 101 427. 1.381 # Added DSM (from GUA)
+bond_coeff 102 450. 1.364 # 
+bond_coeff 103 450. 1.364 # wlj
+bond_coeff 104 220. 1.78 # 
+bond_coeff 105 250. 1.74 # wlj
+bond_coeff 106 250. 1.76 # thioanisole copy from CW-S rcr HIVRT
+bond_coeff 107 469. 1.40 # 
+bond_coeff 108 520. 1.370 # ADE,GUA
+bond_coeff 109 469. 1.40 # TRP
+bond_coeff 110 447. 1.419 # TRP
+bond_coeff 111 317. 1.51 # Added DSM (from CA-CT)
+bond_coeff 112 520. 1.410 # ADE,GUA
+bond_coeff 113 436. 1.374 # wlj
+bond_coeff 114 414. 1.391 # ADE,GUA,HIS
+bond_coeff 115 461. 1.354 # ADE,GUA
+bond_coeff 116 436. 1.374 # ADE,GUA
+bond_coeff 117 340. 1.360 # wlj
+bond_coeff 118 520. 1.370 # Added DSM (from CB-CB)
+bond_coeff 119 512. 1.375 # HIS
+bond_coeff 120 518. 1.371 # HIS
+bond_coeff 121 317. 1.504 # HIS
+bond_coeff 122 512. 1.375 # HIS
+bond_coeff 123 518. 1.371 # HIS
+bond_coeff 124 422. 1.385 # HIS
+bond_coeff 125 410. 1.394 # ADE,GUA,HIS
+bond_coeff 126 469. 1.40 # TRP
+bond_coeff 127 469. 1.40 # TRP,TYR,PHE
+bond_coeff 128 469. 1.40 # TRP
+bond_coeff 129 529. 1.304 # ADE,GUA
+bond_coeff 130 440. 1.371 # ADE,GUA
+bond_coeff 131 268. 1.529 # wlj JPC 105, 4118 (2001)
+bond_coeff 132 367. 1.332 # wlj JPCA 105, 4118 (2001)
+bond_coeff 133 410. 1.394 # ADE,GUA,HIS
+bond_coeff 134 427. 1.381 # TRP,HIS
+bond_coeff 135 260. 1.526 # SUG(as in CH-C2),ILE
+bond_coeff 136 382. 1.448 # wlj - MM3 based
+bond_coeff 137 337. 1.449 # AA
+bond_coeff 138 337. 1.475 # ADE,GUA,CYT,URA
+bond_coeff 139 386. 1.425 # RSUG,THR
+bond_coeff 140 320. 1.425 # SUG
+bond_coeff 141 502. 1.324 # ADE
+bond_coeff 142 549. 1.350 # URA,CYT
+bond_coeff 143 549. 1.350 # THY
+bond_coeff 144 448. 1.365 # URA,CYT
+bond_coeff 145 367. 1.08 # 
+bond_coeff 146 340. 1.08 # 
+bond_coeff 147 440. 1.371 # 
+bond_coeff 148 529. 1.304 # 
+bond_coeff 149 440. 1.371 # 
+bond_coeff 150 300. 1.90 # wlj
+bond_coeff 151 549. 1.340 # wlj
+bond_coeff 152 549. 1.340 # wlj
+bond_coeff 153 317. 1.51 # wlj
+bond_coeff 154 317. 1.51 # hept, copy from CM-CT rcr HIVRT
+bond_coeff 155 400. 1.426 # wlj 9/06
+bond_coeff 156 300. 1.725 # wlj
+bond_coeff 157 420. 1.340 # wlj
+bond_coeff 158 367. 1.08 # 
+bond_coeff 159 340. 1.08 # wlj
+bond_coeff 160 340. 1.08 # wlj
+bond_coeff 161 250. 2.08 # wlj
+bond_coeff 162 448. 1.365 # copy from above for CytH+ (jtr 5-14-91)
+bond_coeff 163 483. 1.339 # ADE,GUA,CYT
+bond_coeff 164 427. 1.381 # wlj
+bond_coeff 165 448. 1.365 # 
+bond_coeff 166 450. 1.370 # wlj
+bond_coeff 167 450. 1.370 # wlj
+bond_coeff 168 250. 1.76 # hept, copy from CW-S rcr HIVRT
+bond_coeff 169 428. 1.38 # TRP
+bond_coeff 170 260. 1.526 # "
+bond_coeff 171 260. 1.526 # "
+bond_coeff 172 337. 1.475 # jtr (12/7/01)
+bond_coeff 173 320. 1.38 # Acetal - wlj 2/93
+bond_coeff 174 385. 1.46 # MKD New Thiophene -MP2(full)/6-311G(d,p)
+bond_coeff 175 546. 1.38 # MKD New Thiophene -MP2(full)/6-311G(d,p)
+bond_coeff 176 278. 1.496 # JT-R 2014/04 2-alkyl thiophenes, MP2/aug-cc-pVTZ
+bond_coeff 177 367. 1.08 # MKD New Thiophene -MP2(full)/6-311G(d,p)
+bond_coeff 178 477. 1.343 # HIS
+bond_coeff 179 488. 1.335 # HIS(MOD)
+bond_coeff 180 481. 1.380 # JT-R 2014/04 2-amino thiophenes
+bond_coeff 181 278. 1.366 # JT-R 2014/04 2-alkyl thiophenes, MP2/aug-cc-pVTZ
+bond_coeff 182 340. 1.356 # JT-R 2014/04 thiophene ethers
+bond_coeff 183 250. 1.71 # MKD New Thiophene -MP2(full)/6-311G(d,p), JT-R 2014/04 change "S " to SA
+bond_coeff 184 250. 1.74 # wlj
+bond_coeff 185 220. 1.763 # JT-R 2014/04 thiophene thiol
+bond_coeff 186 250. 1.74 # wlj
+bond_coeff 187 367. 1.08 # 
+bond_coeff 188 367. 1.08 # 
+bond_coeff 189 481. 1.340 # wlj
+bond_coeff 190 502. 1.324 # 
+bond_coeff 191 427. 1.381 # wlj
+bond_coeff 192 300. 1.87 # wlj
+bond_coeff 193 520. 1.370 # wlj
+bond_coeff 194 300. 1.725 # wlj
+bond_coeff 195 420. 1.354 # wlj
+bond_coeff 196 367. 1.08 # 
+bond_coeff 197 367. 1.08 # 
+bond_coeff 198 250. 2.08 # wlj
+bond_coeff 199 481. 1.340 # wlj
+bond_coeff 200 477. 1.343 # HIS
+bond_coeff 201 488. 1.335 # HIS(MOD)
+bond_coeff 202 461. 1.354 # wlj
+bond_coeff 203 477. 1.343 # HIS
+bond_coeff 204 477. 1.343 # HIS
+bond_coeff 205 250. 1.76 # wlj
+bond_coeff 206 250. 1.76 # wlj
+bond_coeff 207 300. 1.87 # wlj
+bond_coeff 208 469. 1.424 # "
+bond_coeff 209 469. 1.424 # "
+bond_coeff 210 317. 1.495 # wlj
+bond_coeff 211 546. 1.367 # wlj/nm
+bond_coeff 212 300. 1.725 # wlj
+bond_coeff 213 420. 1.354 # wlj
+bond_coeff 214 367. 1.080 # "
+bond_coeff 215 250. 2.08 # wlj
+bond_coeff 216 400. 1.29 # wlj 07/11 diazo
+bond_coeff 217 245. 1.945 # wlj
+bond_coeff 218 532.8 1.460 # wlj - JACS 94, 4632 (1972)
+bond_coeff 219 260. 1.526 # Added DSM (from C2-CH)
+bond_coeff 220 260. 1.526 # Added DSM (from C3-CH)
+bond_coeff 221 268. 1.5290 # =CT-CT - wd 3/95
+bond_coeff 222 268. 1.529 # CHARMM 22 parameter file
+bond_coeff 223 317. 1.49 # MKD MP2(full)/6-311G(d,p) - 3-methyl-isoxazole
+bond_coeff 224 390. 1.470 # wlj 9/98 do 11/98
+bond_coeff 225 245. 1.781 # wlj - from MM2 (Tet 31, 1971 (75))
+bond_coeff 226 367. 1.36 # wlj compromise JPCA 7202 (2006)
+bond_coeff 227 340. 1.09 # CHARMM 22 parameter file
+bond_coeff 228 200. 2.19 # wlj see JPOC 7, 420 (1994)
+bond_coeff 229 337. 1.463 # ARG(OL)
+bond_coeff 230 367. 1.471 # LYS(OL)
+bond_coeff 231 337. 1.475 # copy from above for CytH+ (jtr 5-14-91)
+bond_coeff 232 337. 1.449 # wlj azide
+bond_coeff 233 337. 1.475 # 
+bond_coeff 234 337. 1.449 # 
+bond_coeff 235 375. 1.490 # wlj nitro
+bond_coeff 236 382. 1.448 # "
+bond_coeff 237 382. 1.448 # jtr - neutral Arg; MLL
+bond_coeff 238 390. 1.430 # wlj 10/04 isonitrile
+bond_coeff 239 337. 1.449 # wlj
+bond_coeff 240 337. 1.449 # 
+bond_coeff 241 337. 1.475 # 
+bond_coeff 242 320. 1.41 # 
+bond_coeff 243 320. 1.41 # 
+bond_coeff 244 212. 1.820 # wlj 9/97
+bond_coeff 245 212. 1.843 # wlj 11/95 MM3 based JACS 114, 8536 (92)
+bond_coeff 246 222. 1.81 # CYS(OL)
+bond_coeff 247 222. 1.81 # CYX(OL)
+bond_coeff 248 300. 1.87 # wlj
+bond_coeff 249 469. 1.421 # "
+bond_coeff 250 469. 1.424 # wlj
+bond_coeff 251 520. 1.370 # wlj
+bond_coeff 252 400. 1.451 # wlj 6/08
+bond_coeff 253 300. 1.725 # wlj
+bond_coeff 254 420. 1.354 # wlj
+bond_coeff 255 367. 1.080 # "
+bond_coeff 256 250. 2.08 # wlj
+bond_coeff 257 410. 1.320 # "
+bond_coeff 258 427. 1.381 # wlj
+bond_coeff 259 300. 1.87 # wlj
+bond_coeff 260 317. 1.504 # jtr: HIE CB-CG
+bond_coeff 261 520. 1.370 # wlj imidazole
+bond_coeff 262 300. 1.725 # wlj
+bond_coeff 263 420. 1.354 # wlj
+bond_coeff 264 367. 1.08 # 
+bond_coeff 265 367. 1.08 # 
+bond_coeff 266 250. 2.08 # wlj
+bond_coeff 267 410. 1.394 # ADE,GUA,HIS
+bond_coeff 268 300. 1.87 # wlj
+bond_coeff 269 549. 1.365 # 
+bond_coeff 270 481. 1.454 # JT-R 2014/04 2-vinyl furans
+bond_coeff 271 481. 1.454 # JT-R 2014/04 2-vinyl furans
+bond_coeff 272 278. 1.488 # jpt changed from 317. 1.504 jtr: HID CB-CG
+bond_coeff 273 512. 1.375 # 
+bond_coeff 274 317. 1.465 # wlj, JT-R 2014/04 copy for cyclopropyl-heterocycle
+bond_coeff 275 300. 1.725 # wlj
+bond_coeff 276 420. 1.354 # wlj
+bond_coeff 277 367. 1.08 # 
+bond_coeff 278 367. 1.08 # pyrrole - wlj
+bond_coeff 279 250. 2.08 # wlj
+bond_coeff 280 427. 1.381 # TRP,HIS
+bond_coeff 281 410. 1.394 # 
+bond_coeff 282 481. 1.385 # JT-R 2014/04 2-amino pyrroles, furans
+bond_coeff 283 427. 1.381 # wlj
+bond_coeff 284 340. 1.36 # JT-R 2014/04 Furan - wlj 4/97
+bond_coeff 285 340. 1.36 # Furan - wlj 4/97
+bond_coeff 286 250. 1.74 # wlj
+bond_coeff 287 250. 1.74 # wlj
+bond_coeff 288 317. 1.504 # jtr: HIP CB-CG
+bond_coeff 289 520. 1.370 # copy from CV-CW for HIP
+bond_coeff 290 367. 1.08 # jtr - HIP
+bond_coeff 291 427. 1.381 # jtr - HIP
+bond_coeff 292 280. 1.473 # JT-R 2014/04 cyclopropyl thiophene
+bond_coeff 293 280. 1.510 # "
+bond_coeff 294 260. 1.520 # cyclopropanes, cyclobutanes - wlj
+bond_coeff 295 400. 1.436 # wlj 6/23
+bond_coeff 296 340. 1.088 # "
+bond_coeff 297 382. 1.448 # nev, copy from CT-NT rcr HIVRT
+bond_coeff 298 337. 1.449 # wlj
+bond_coeff 299 337. 1.449 # wlj
+bond_coeff 300 260. 1.445 # oxetane MP2/6-311G(d,p) wlj 10/20
+bond_coeff 301 222. 1.81 # wlj
+bond_coeff 302 330. 1.784 # wlj
+bond_coeff 303 1150. 1.210 # do 11/98 - JPOC, 9, 191 (1996)
+bond_coeff 304 330. 1.637 # wlj
+bond_coeff 305 450. 1.279 # wlj
+bond_coeff 306 650. 1.157 # wlj 9/98
+bond_coeff 307 300. 1.685 # wlj 9/06
+bond_coeff 308 317. 1.522 # wlj
+bond_coeff 309 490. 1.335 # wlj
+bond_coeff 310 570. 1.229 # wlj
+bond_coeff 311 549. 1.365 # wlj 4/13
+bond_coeff 312 385. 1.460 # wlj 1,3-triene 6/08
+bond_coeff 313 317. 1.51 # wlj
+bond_coeff 314 400. 1.444 # wlj
+bond_coeff 315 549. 1.345 # wlj
+bond_coeff 316 340. 1.08 # wlj
+bond_coeff 317 340. 1.08 # wlj
+bond_coeff 318 457. 1.290 # imine
+bond_coeff 319 300. 1.98 # 
+bond_coeff 320 317. 1.522 # GLY,ASP,GLU
+bond_coeff 321 317. 1.522 # END
+bond_coeff 322 400. 1.490 # wlj 8/97
+bond_coeff 323 447. 1.419 # GUA
+bond_coeff 324 469. 1.40 # TYR
+bond_coeff 325 317. 1.522 # AA
+bond_coeff 326 410. 1.444 # URA
+bond_coeff 327 410. 1.444 # THY
+bond_coeff 328 317. 1.522 # 
+bond_coeff 329 400. 1.490 # wlj 6/14
+bond_coeff 330 400. 1.490 # bhap, copy from C -CA rcr HIVRT
+bond_coeff 331 400. 1.444 # wlj 9/06
+bond_coeff 332 300. 1.79 # wlj
+bond_coeff 333 350. 1.510 # wlj oxalic acid, etc.
+bond_coeff 334 420. 1.357 # wlj
+bond_coeff 335 457. 1.290 # imine
+bond_coeff 336 418. 1.388 # URAGUA
+bond_coeff 337 457. 1.358 # CYT
+bond_coeff 338 490. 1.335 # AA
+bond_coeff 339 317. 1.522 # nev, copy from C -CT rcr HIVRT
+bond_coeff 340 400. 1.29 # wlj 07/11 diazo
+bond_coeff 341 490. 1.335 # AA
+bond_coeff 342 424. 1.383 # CYT,URA
+bond_coeff 343 656. 1.25 # GLU,ASP
+bond_coeff 344 450. 1.364 # TYR
+bond_coeff 345 214. 1.327 # J.Comp.Chem.1990,11,1181 SKF8
+bond_coeff 346 570. 1.229 # URAGUA,CYT,AA
+bond_coeff 347 400. 1.640 # wlj thioamide, etc.
+bond_coeff 348 700. 1.305 # wlj 9/06 allene
+bond_coeff 349 700. 1.168 # wlj 9/06 ketene and CO2
+bond_coeff 350 340. 0.30 # JZV
+bond_coeff 351 300. 0.30 # wlj
+bond_coeff 352 367. 0.30 # wlj
+bond_coeff 353 340. 0.30 # wlj
+bond_coeff 354 340. 0.30 # wlj
+bond_coeff 355 340. 0.30 # wlj
+bond_coeff 356 300. 0.30 # wlj
+bond_coeff 357 340. 0.30 # JZV
+bond_coeff 358 340. 0.30 # wlj
+bond_coeff 359 300. 0.30 # wlj
+bond_coeff 360 340. 0.30 # wlj
+bond_coeff 361 340. 0.30 # wlj
+bond_coeff 362 340. 0.10 # wlj
+bond_coeff 363 340. 0.10 # wlj
+bond_coeff 364 340. 0.10 # wlj
+bond_coeff 365 300. 0.30 # wlj
+bond_coeff 366 340. 0.30 # wlj
+bond_coeff 367 367. 0.30 # wlj
+bond_coeff 368 367. 0.30 # wlj
+bond_coeff 369 340. 0.30 # wlj
+bond_coeff 370 367. 0.30 # wlj
+bond_coeff 371 340. 0.30 # wlj
+bond_coeff 372 340. 0.10 # wlj
+bond_coeff 373 340. 0.30 # wlj
+bond_coeff 374 340. 0.30 # wlj
+bond_coeff 375 553. 0.30 # wlj
+bond_coeff 376 340. 0.50 # wlj
+bond_coeff 377 340. 0.50 # wlj
+bond_coeff 378 434. 1.01 # ADE,GUA,CYT,GLN,ASN,ARG
+bond_coeff 379 434. 1.01 # AA
+bond_coeff 380 434. 1.01 # ADE,GUA,CYT,GLN,ASN,ARG
+bond_coeff 381 434. 1.01 # LYS(OL)
+bond_coeff 382 340. 1.09 # =CT-HC - wd 3/95
+bond_coeff 383 420. 1.080 # do 01/99 - JPOC, 9, 191 (1996)
+bond_coeff 384 340. 1.09 # wlj 7/96
+bond_coeff 385 0. 1.75 # wlj for FEP
+bond_coeff 386 553. 0.945 # SUG(OL) wlj mod 0.96 -> 0.945
+bond_coeff 387 553. 0.945 # SUG(OL) 6/6/94
+bond_coeff 388 274. 1.336 # CYS(OL)
+bond_coeff 389 434. 1.01 # URA,GUA,HIS
+bond_coeff 390 434. 1.01 # 
+bond_coeff 391 434. 1.01 # URA,GUA,HIS
+bond_coeff 392 434. 1.01 # 
+bond_coeff 393 434. 1.01 # AA
+bond_coeff 394 434. 1.01 # 
+bond_coeff 395 400. 1.349 # "
+bond_coeff 396 400. 1.280 # " could be N-N or N=N
+bond_coeff 397 250. 1.73 # wlj
+bond_coeff 398 250. 1.73 # wlj
+bond_coeff 399 434. 1.01 # jtr - neutral Arg; MLL
+bond_coeff 400 500. 1.320 # wlj pyridazine
+bond_coeff 401 550. 1.24 # wlj azide
+bond_coeff 402 550. 1.210 # wlj nitroso
+bond_coeff 403 418. 1.388 # MKD NE is synonym for NA in 5-membered rings such as hydantoin
+bond_coeff 404 434. 1.01 # 
+bond_coeff 405 550. 1.225 # wlj nitro
+bond_coeff 406 337. 1.475 # MKD synonym for CT-NA
+bond_coeff 407 427. 1.381 # MKD synonym for CW-NA
+bond_coeff 408 350. 1.430 # wlj revised 1/14
+bond_coeff 409 320. 1.45 # wlj
+bond_coeff 410 320. 1.45 # wlj
+bond_coeff 411 385. 1.44 # MKD synonym for NA-C!
+bond_coeff 412 427. 1.38 # MKD synonym for NA-CW
+bond_coeff 413 400. 1.35 # MKD synonym for NA-NB
+bond_coeff 414 434. 1.01 # jtr - neutral Arg; MLL
+bond_coeff 415 550. 1.13 # wlj azide & diazo
+bond_coeff 416 400. 1.38 # wlj
+bond_coeff 417 500. 1.270 # wlj pyridine N-oxide
+bond_coeff 418 320. 1.45 # wlj
+bond_coeff 419 250. 1.73 # wlj
+bond_coeff 420 525. 1.48 # SUG(OL)
+bond_coeff 421 462. 1.357 # "
+bond_coeff 422 462. 1.399 # "
+bond_coeff 423 320. 1.38 # =CO-OS - wd 3/96
+bond_coeff 424 230. 1.61 # SUG(OL)
+bond_coeff 425 462. 1.357 # "
+bond_coeff 426 200. 1.69 # wlj
+bond_coeff 427 462. 1.399 # "
+bond_coeff 428 250. 1.47 # wlj
+bond_coeff 429 250. 1.47 # wlj
+bond_coeff 430 230. 1.61 # SUG(OL)
+bond_coeff 431 525. 1.48 # 
+bond_coeff 432 222. 1.81 # 
+bond_coeff 433 222. 1.76 # 
+bond_coeff 434 340. 1.77 # 
+bond_coeff 435 340. 1.79 # 
+bond_coeff 436 340. 1.77 # 
+bond_coeff 437 450. 1.60 # 
+bond_coeff 438 340. 1.77 # nev, copy from SY-CT rcr HIVRT
+bond_coeff 439 434. 1.67 # 
+bond_coeff 440 450. 1.67 # 
+bond_coeff 441 450. 1.67 # 
+bond_coeff 442 700. 1.44 # 
+bond_coeff 443 340. 1.79 # 
+bond_coeff 444 700. 1.53 # 
+bond_coeff 445 151. 2.19 # wlj
+bond_coeff 446 280. 1.87 # wlj from MP2
+bond_coeff 447 240. 1.87 # wlj fit to expt
+bond_coeff 448 223. 2.02 # wlj
+bond_coeff 449 461. 1.57 # wlj
+bond_coeff 450 197. 1.485 # wlj fit to expt
+bond_coeff 451 108. 2.44 # wlj
+bond_coeff 452 266. 1.74 # wlj
+bond_coeff 453 374. 1.66 # wlj
+bond_coeff 454 374. 1.66 # wlj
+bond_coeff 455 108. 2.25 # wlj
+bond_coeff 456 125. 2.33 # wlj fit to expt
+bond_coeff 457 144. 2.15 # wlj
+bond_coeff 458 166. 2.038 # CYX(OL) SCHERAGA
+bond_coeff 459 500. 1.80 # J Phys Chem 97, 5685 (1993)
+bond_coeff 460 600. 1.60 # wlj for halogen bonding
+bond_coeff 461 600. 1.60 # wlj
+bond_coeff 462 600. 1.80 # wlj Sept 2011
+bond_coeff 463 40. 2.05 # Merz, JACS 113, 8262 (1991)
+bond_coeff 464 94. 1.80 # "
+bond_coeff 465 450.00 0.9572 # TIP3/4/5P/F O-H
+bond_coeff 466 450.00 1.000 # SPC-SPC/E O-H
+bond_coeff 467 450.00 0.8724 # OPC O-H
+angle_coeff 1 63.0 115.6 # TRP(OL)
+angle_coeff 2 85. 134.9 # TRP(OL)
+angle_coeff 3 85. 108.8 # TRP(OL)
+angle_coeff 4 85. 134.9 # TRP(OL)
+angle_coeff 5 85. 108.8 # TRP(OL)
+angle_coeff 6 70. 108.7 # TRP(OL)
+angle_coeff 7 70. 108.7 # TRP(OL)
+angle_coeff 8 63.0 115.6 # TRP(OL)
+angle_coeff 9 35. 109.5 # 
+angle_coeff 10 70. 128.6 # TRP(OL)
+angle_coeff 11 70. 125. # TRP(OL)
+angle_coeff 12 70. 125. # TRP(OL)
+angle_coeff 13 70. 125. # TRP(OL)
+angle_coeff 14 85. 106.4 # TRP(OL)
+angle_coeff 15 70. 128.6 # TRP(OL)
+angle_coeff 16 85. 106.4 # TRP(OL)
+angle_coeff 17 70. 125. # TRP(OL)
+angle_coeff 18 35. 126.8 # 
+angle_coeff 19 35. 126.8 # 
+angle_coeff 20 60. 114.0 # wlj
+angle_coeff 21 78. 111.7 # wlj
+angle_coeff 22 35. 110.5 # wlj
+angle_coeff 23 92.6 108.6 # wlj - temp borate B3LYP
+angle_coeff 24 63. 116.6 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 25 70. 120.0 # wlj 11/28/17
+angle_coeff 26 70. 118.1 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 27 35. 120.0 # wlj
+angle_coeff 28 63. 120. # wlj
+angle_coeff 29 35. 120. # wlj
+angle_coeff 30 70. 124.0 # wlj " " " "
+angle_coeff 31 70. 120. # MKD synonym for CA-CA-OH
+angle_coeff 32 85. 117.3 # ADE
+angle_coeff 33 70. 123.1 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 34 70. 125.2 # MKD MP2(full)/6-311G(d,p) changed from 130.0
+angle_coeff 35 70. 122.0 # wlj 12/06
+angle_coeff 36 35. 121.7 # wlj 6/13
+angle_coeff 37 70. 121.6 # wlj
+angle_coeff 38 70. 121.6 # MKD synonym for C!-CW-NA
+angle_coeff 39 70. 117.3 # MKD MP2(full)/6-311G(d,p) changed from 121.6
+angle_coeff 40 63. 125.2 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 41 35. 118.0 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 42 63. 119.9 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 43 5.0 120.0 # wlj 8/07
+angle_coeff 44 70. 117.0 # MKD synonym for CA-NC-NC
+angle_coeff 45 63. 124.0 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 46 63. 119.9 # MKD synonym for C!-NA-NB
+angle_coeff 47 70. 117. # wlj
+angle_coeff 48 63.0 112.4 # PRO,LYS
+angle_coeff 49 63.0 112.4 # alkanes
+angle_coeff 50 63.0 112.4 # from C2-C2-C3 alkanes for SKF8
+angle_coeff 51 63.0 112.4 # MET
+angle_coeff 52 63.0 112.4 # "
+angle_coeff 53 50. 109.5 # 
+angle_coeff 54 80.0 111.2 # ARG JCP 76, 1439
+angle_coeff 55 80.0 111.2 # LYS(OL) JCP 76, 1439
+angle_coeff 56 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 57 80.0 111.2 # PRO JCP 76, 1439
+angle_coeff 58 80.0 109.5 # alcohols
+angle_coeff 59 80.0 109.5 # THF fit
+angle_coeff 60 50. 114.7 # MET SCHERAGA JPC 79,1428
+angle_coeff 61 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 62 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 63 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 64 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 65 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 66 70. 120. # PHE(OL)
+angle_coeff 67 70. 128.6 # TRP(OL)
+angle_coeff 68 70. 120. # PHE(OL)
+angle_coeff 69 70. 131.9 # HIS(OL)
+angle_coeff 70 70. 129.05 # HIS(OL)
+angle_coeff 71 70. 131.9 # HIS(OL)
+angle_coeff 72 70. 129.05 # HIS(OL)
+angle_coeff 73 70. 122.2 # HIS(OL)
+angle_coeff 74 70. 121.05 # HIS(OL)
+angle_coeff 75 70. 120. # PHE(OL)
+angle_coeff 76 63.0 112.4 # alkanes
+angle_coeff 77 63.0 112.4 # alkanes
+angle_coeff 78 63.0 112.4 # from C2-CH-C3 alkanes for SKF8
+angle_coeff 79 63.0 111.5 # SUG,ILE
+angle_coeff 80 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 81 80.0 109.7 # ALA JACS 94, 2657
+angle_coeff 82 80.0 109.5 # SUG
+angle_coeff 83 80.0 109.5 # alcohols
+angle_coeff 84 80.0 109.5 # SUG
+angle_coeff 85 80.0 109.5 # "
+angle_coeff 86 70. 125. # 
+angle_coeff 87 70. 125. # 
+angle_coeff 88 70. 125. # 
+angle_coeff 89 40. 109.5 # 
+angle_coeff 90 40. 109.5 # 
+angle_coeff 91 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 92 70. 116.6 # GLY GELIN
+angle_coeff 93 70. 117. # GLU(OL) SCH JPC 79,2379
+angle_coeff 94 80. 120.4 # ASN(OL) GELIN
+angle_coeff 95 50. 123.2 # ARG(OL)
+angle_coeff 96 35. 118.4 # ARG(OL)
+angle_coeff 97 35. 118.4 # ARG(OL)
+angle_coeff 98 35. 109.5 # LYS
+angle_coeff 99 51.8 107.2 # "
+angle_coeff 100 51.8 107.2 # "
+angle_coeff 101 43.2 108.1 # wlj MM3 based
+angle_coeff 102 50. 121.9 # 
+angle_coeff 103 50. 118. # PRO(OL) DETAR JACS 99,1232
+angle_coeff 104 38. 118.4 # AA(OL)
+angle_coeff 105 55.0 108.5 # SUG,SER(OL,mod)
+angle_coeff 106 100.0 111.8 # DME based
+angle_coeff 107 100.0 111.8 # DME based
+angle_coeff 108 100.0 113.0 # "
+angle_coeff 109 55.0 108.5 # SUG
+angle_coeff 110 100.0 120.5 # SUG(OL)
+angle_coeff 111 44. 96.0 # CYS(OL)
+angle_coeff 112 150. 96.7 # 
+angle_coeff 113 62. 98.9 # MET(OL)
+angle_coeff 114 150. 96.7 # 
+angle_coeff 115 68. 103.7 # CYX(OL) SCHERAGA JPC 79,1428
+angle_coeff 116 63.0 112.4 # alkanes
+angle_coeff 117 63.0 112.4 # ILE
+angle_coeff 118 63.0 112.4 # "
+angle_coeff 119 63.0 112.4 # from C3-C2-CH ILE, alkanes for SKF8
+angle_coeff 120 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 121 80.0 109.5 # alcohols
+angle_coeff 122 80.0 109.5 # MEE
+angle_coeff 123 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 124 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 125 63.0 111.5 # VAL
+angle_coeff 126 63.0 111.5 # ILE
+angle_coeff 127 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 128 80. 109.5 # **
+angle_coeff 129 80.0 109.5 # THR
+angle_coeff 130 80.0 109.5 # wlj - guess
+angle_coeff 131 85. 119.7 # THY
+angle_coeff 132 40.0 109.5 # "
+angle_coeff 133 80.0 109.5 # "
+angle_coeff 134 40. 109.5 # 
+angle_coeff 135 63. 109.5 # from CA-CT-CT
+angle_coeff 136 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 137 70. 116.6 # ACET(OL) BENEDETTI
+angle_coeff 138 70. 117. # GLU(OL) SCH JPC 79,2379
+angle_coeff 139 80. 120.4 # ACET(OL)
+angle_coeff 140 50. 123.2 # ARG(OL)
+angle_coeff 141 35. 118.4 # ARG(OL)
+angle_coeff 142 35. 109.5 # 
+angle_coeff 143 51.8 107.2 # "
+angle_coeff 144 43.2 108.1 # wlj MM3 based
+angle_coeff 145 38. 118.4 # TEST!!!!!!!
+angle_coeff 146 70. 125.8 # 9 methylated guan,aden
+angle_coeff 147 70. 128.8 # Methylated purines
+angle_coeff 148 70. 128.8 # 
+angle_coeff 149 55.0 108.5 # SUG,SER(OL,mod)
+angle_coeff 150 100.0 113.0 # "
+angle_coeff 151 100.0 120.5 # DMPhos based
+angle_coeff 152 44. 96.0 # CYS(OL)
+angle_coeff 153 150. 96.7 # 
+angle_coeff 154 150. 96.7 # 
+angle_coeff 155 68. 103.7 # CYX(OL) SCHERAGA JPC 79,1428
+angle_coeff 156 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 157 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 158 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 159 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 160 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 161 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 162 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 163 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 164 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 165 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 166 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 167 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 168 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 169 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 170 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 171 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 172 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 173 62. 98.9 # 
+angle_coeff 174 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 175 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 176 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 177 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 178 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 179 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 180 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 181 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 182 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 183 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 184 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 185 70. 118. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 186 70. 118. # 
+angle_coeff 187 63. 123.9 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 188 63. 126.0 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 189 63. 124.2 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 190 63. 124.7 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 191 70. 119.6 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 192 63. 123.8 # MKD MP2(full)/6-311G(d,p) - new - external NA connected to pyridone
+angle_coeff 193 70. 124.0 # wlj
+angle_coeff 194 35. 120.0 # wlj
+angle_coeff 195 35. 120.0 # wlj
+angle_coeff 196 70. 121.5 # 
+angle_coeff 197 85. 117.0 # 
+angle_coeff 198 85. 121.7 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 199 35. 120.0 # wlj
+angle_coeff 200 35. 120.0 # wlj
+angle_coeff 201 70. 123. # wlj
+angle_coeff 202 70. 123. # wlj
+angle_coeff 203 35. 109.5 # wlj
+angle_coeff 204 160. 180. # wlj
+angle_coeff 205 150. 180. # wlj
+angle_coeff 206 70. 124.0 # wlj
+angle_coeff 207 35. 120.0 # wlj
+angle_coeff 208 70. 116. # wlj
+angle_coeff 209 80. 116. # wlj
+angle_coeff 210 80. 124. # wlj
+angle_coeff 211 35. 119.8 # wlj
+angle_coeff 212 10.0 109.47 # wlj 1/19
+angle_coeff 213 200. 180.0 # wlj 9/11 halogen bonding
+angle_coeff 214 63. 120. # wlj
+angle_coeff 215 63. 120. # wlj
+angle_coeff 216 63. 120. # wlj
+angle_coeff 217 63. 120. # wlj
+angle_coeff 218 63. 120. # wlj
+angle_coeff 219 63. 120. # wlj
+angle_coeff 220 63. 120. # wlj
+angle_coeff 221 63. 120. # wlj
+angle_coeff 222 70. 124.0 # wlj " " " "
+angle_coeff 223 63. 120.0 # MKD
+angle_coeff 224 63. 114. # PHE(OL) SCH JPC 79,2379
+angle_coeff 225 85. 117.0 # 
+angle_coeff 226 35. 123.3 # 
+angle_coeff 227 75. 120.0 # wlj
+angle_coeff 228 63. 120. # wlj
+angle_coeff 229 70. 124. # wlj
+angle_coeff 230 63. 120. # PHE(OL)
+angle_coeff 231 63. 120. # wlj
+angle_coeff 232 85. 120. # Added DSM (from CA-CA-CA)
+angle_coeff 233 70. 124. # wlj/mp
+angle_coeff 234 85. 120. # TRP(OL)
+angle_coeff 235 70. 120. # PHE(OL)
+angle_coeff 236 70. 107.4 # wlj 1/97 based on pyrrole
+angle_coeff 237 70. 120.7 # "
+angle_coeff 238 70. 120. # wlj
+angle_coeff 239 75. 120.0 # wlj
+angle_coeff 240 70. 124. # wlj/mp
+angle_coeff 241 10.0 90. # dummy
+angle_coeff 242 80. 120.0 # wlj
+angle_coeff 243 35. 120. # 
+angle_coeff 244 75. 120.0 # wlj
+angle_coeff 245 70. 120.1 # wlj
+angle_coeff 246 70. 120. # wlj anilinium
+angle_coeff 247 70. 108.7 # TRP(OL)
+angle_coeff 248 70. 108.7 # Added DSM (from CA-CA-NA)
+angle_coeff 249 70. 124.0 # wlj " " " "
+angle_coeff 250 85. 120.0 # wlj nitro
+angle_coeff 251 70. 120. # wlj/rr anilines
+angle_coeff 252 80. 120. # wlj 10/04 "
+angle_coeff 253 70. 120.0 # Added DSM (from CA-CA-NA)
+angle_coeff 254 70. 120. # 
+angle_coeff 255 70. 120. # wlj
+angle_coeff 256 70. 120. # wlj
+angle_coeff 257 45. 121.0 # wlj
+angle_coeff 258 85. 134.9 # TRP(OL)
+angle_coeff 259 85. 117.3 # ADE
+angle_coeff 260 85. 108.8 # TRP(OL)
+angle_coeff 261 85. 116.2 # TRP
+angle_coeff 262 70. 120. # Added DSM (from CA-CA-CT)
+angle_coeff 263 70. 132.4 # ADE
+angle_coeff 264 70. 118.4 # wlj 7/14
+angle_coeff 265 70. 132.8 # TRP(OL)
+angle_coeff 266 85. 120. # PHE
+angle_coeff 267 50. 109.5 # wlj
+angle_coeff 268 80.0 109.5 # SUG from AMBER/BOSS for SKF8
+angle_coeff 269 85. 117.0 # CYT
+angle_coeff 270 85. 117.0 # 
+angle_coeff 271 85. 119.7 # wlj/mp
+angle_coeff 272 35. 123.3 # 
+angle_coeff 273 85. 122.7 # TRP
+angle_coeff 274 70. 132.8 # TRP(OL)
+angle_coeff 275 69. 110.0 # wlj
+angle_coeff 276 63.0 114.0 # "
+angle_coeff 277 40.0 109.5 # "
+angle_coeff 278 63. 114. # PHE(OL) SCH JPC 79,2379
+angle_coeff 279 63.0 112.0 # wlj
+angle_coeff 280 50. 109.5 # wlj
+angle_coeff 281 35. 109.5 # 
+angle_coeff 282 80.0 111.2 # wlj
+angle_coeff 283 80.0 111.2 # wlj
+angle_coeff 284 80.0 111.2 # MKD parameter taken from CA-CT-NT
+angle_coeff 285 50. 109.5 # wlj
+angle_coeff 286 50. 109.5 # 
+angle_coeff 287 43. 109.5 # "
+angle_coeff 288 50. 114.7 # wlj
+angle_coeff 289 35. 128.6 # "
+angle_coeff 290 70. 116.0 # wlj 6/14 ai
+angle_coeff 291 70. 111.0 # wlj
+angle_coeff 292 70. 121.6 # wlj
+angle_coeff 293 37.5 114.0 # "
+angle_coeff 294 160. 180. # wlj
+angle_coeff 295 150. 180. # wlj
+angle_coeff 296 10.0 109.47 # wlj 1/19
+angle_coeff 297 200. 180.0 # wlj 9/11
+angle_coeff 298 85. 117.0 # 
+angle_coeff 299 35. 123.3 # 
+angle_coeff 300 85. 120. # TYR(OL) GELIN
+angle_coeff 301 35. 115.0 # wlj
+angle_coeff 302 70. 115.5 # wlj 8/97 benzamide
+angle_coeff 303 70. 117. # GLU(OL) SCH JPC 79,2379
+angle_coeff 304 70. 120. # TYR(OL) GELIN
+angle_coeff 305 80. 120.4 # wlj
+angle_coeff 306 10.0 109.47 # wlj 1/19
+angle_coeff 307 10.0 109.47 # wlj 1/19
+angle_coeff 308 200. 180.0 # wlj 9/11
+angle_coeff 309 50. 121.9 # wlj
+angle_coeff 310 50. 123.2 # ARG(OL)
+angle_coeff 311 35. 120. # ADE,CYT,GUA,ARG
+angle_coeff 312 35. 120. # ADE,CYT,GUA,ARG
+angle_coeff 313 35. 120. # ARG(OL)
+angle_coeff 314 55. 114.0 # wlj
+angle_coeff 315 35. 109.5 # wlj anilinium
+angle_coeff 316 70. 125.2 # Added DSM (from C -NA-CA)
+angle_coeff 317 70. 111.6 # TRP(OL)
+angle_coeff 318 70. 109.8 # wlj
+angle_coeff 319 35. 118.0 # GUA
+angle_coeff 320 70. 125.2 # Added DSM (from C -NA-CA)
+angle_coeff 321 70. 117.0 # wlj " " " "
+angle_coeff 322 70. 117.0 # wlj " " " "
+angle_coeff 323 70. 112.2 # GUA
+angle_coeff 324 70. 118.6 # ADE
+angle_coeff 325 70. 118.6 # 
+angle_coeff 326 50. 118. # wlj
+angle_coeff 327 5.0 120.0 # wlj 8/07
+angle_coeff 328 35. 113.0 # jtr: neutral ARG
+angle_coeff 329 70. 117.0 # wlj pyridazine
+angle_coeff 330 80. 117.5 # wlj nitro
+angle_coeff 331 50.0 116.0 # wlj anilines 9/06
+angle_coeff 332 50.0 116.0 # wlj anilines 9/06
+angle_coeff 333 50. 109.5 # nev, copy from CA-NT-CT rcr HIVRT
+angle_coeff 334 63.0 112.0 # nev, copy from CA-CT-C rcr HIVRT
+angle_coeff 335 10.0 109.5 # wlj
+angle_coeff 336 35.0 116.0 # wlj anilines 9/06
+angle_coeff 337 50.0 108.6 # nev, copy from CT-CT-SY rcr HIVRT
+angle_coeff 338 50. 120.5 # jtr: neutral ARG
+angle_coeff 339 50. 112.5 # jtr: neutral ARG
+angle_coeff 340 170. 180. # wlj 10/04 "
+angle_coeff 341 70. 118.0 # wlj pyridine N-oxide
+angle_coeff 342 70. 118.0 # wlj
+angle_coeff 343 50. 118. # wlj
+angle_coeff 344 70. 118.0 # wlj
+angle_coeff 345 70. 118.0 # wlj
+angle_coeff 346 35. 119.8 # Added DSM (from C -N -H)
+angle_coeff 347 70. 121.0 # wlj " " " "
+angle_coeff 348 10.0 109.47 # wlj
+angle_coeff 349 35. 113.0 # 
+angle_coeff 350 100.0 111.8 # AMBER(MMOD) 9/9/91
+angle_coeff 351 75. 116.3 # MKD MP2(full)/6-311G(d,p) - biaryl ethers, changed from 111.0
+angle_coeff 352 10.0 109.47 # wlj
+angle_coeff 353 100.0 120.5 # mll
+angle_coeff 354 62.0 123.0 # 
+angle_coeff 355 45.0 109.5 # wlj 11/95
+angle_coeff 356 45.0 109.5 # wlj 11/95
+angle_coeff 357 45.0 109.5 # wlj 11/95
+angle_coeff 358 50. 96.0 # wlj
+angle_coeff 359 62.0 102.0 # 
+angle_coeff 360 62.0 96.1 # wlj 9/19
+angle_coeff 361 74. 107.2 # wlj 9/19
+angle_coeff 362 40. 112.5 # wlj
+angle_coeff 363 62. 104.2 # hept, adjusted from CT-S -CT rcr HIVRT
+angle_coeff 364 65. 97.0 # thioanisole JT-R 2014/04 MP2/cc-pVTZ (was 62,104.2 adj. rcr HIVRT)
+angle_coeff 365 63. 120. # wlj
+angle_coeff 366 63. 120. # wlj
+angle_coeff 367 70. 128.6 # 
+angle_coeff 368 63.0 106.4 # 
+angle_coeff 369 35. 120.0 # 
+angle_coeff 370 70. 123.5 # ADE
+angle_coeff 371 70. 108.7 # Added DSM (from CA-CA-NA)
+angle_coeff 372 70. 117.3 # ADE
+angle_coeff 373 63. 120. # wlj
+angle_coeff 374 85. 120. # Added DSM (from CA-CA-CA)
+angle_coeff 375 70. 107.3 # "
+angle_coeff 376 70. 120. # Added DSM (from CA-CA-CT)
+angle_coeff 377 70. 106.2 # wlj
+angle_coeff 378 70. 111.0 # GUA,ADE
+angle_coeff 379 70. 127.7 # GUA,ADE
+angle_coeff 380 70. 127.7 # wlj
+angle_coeff 381 70. 106.2 # GUA,ADE
+angle_coeff 382 85. 122.7 # TRP
+angle_coeff 383 85. 122.7 # TRP
+angle_coeff 384 70. 104.4 # 
+angle_coeff 385 85. 120. # TRP(OL)
+angle_coeff 386 85. 122.7 # TRP
+angle_coeff 387 70. 104.4 # 
+angle_coeff 388 85. 106.4 # 
+angle_coeff 389 70. 107.3 # "
+angle_coeff 390 70. 128.6 # 
+angle_coeff 391 85. 106.4 # 
+angle_coeff 392 35. 120.0 # bhap, copy from CB-CA-HA rcr HIVRT
+angle_coeff 393 63. 114. # Added DSM (from CA-CT-CT)
+angle_coeff 394 35. 109.5 # Added DSM (from CA-CT-HC)
+angle_coeff 395 70. 111.3 # GUA
+angle_coeff 396 70. 111.0 # wlj 6/14 ai
+angle_coeff 397 70. 111.3 # GUA
+angle_coeff 398 70. 111.3 # wlj
+angle_coeff 399 80. 125.0 # GUA wlj changed from 128.8 5/17
+angle_coeff 400 70. 105.4 # wlj
+angle_coeff 401 70. 109.8 # wlj
+angle_coeff 402 70. 125.8 # wlj
+angle_coeff 403 70. 109.8 # wlj " " " "
+angle_coeff 404 30. 125.8 # wlj
+angle_coeff 405 56. 113.1 # "
+angle_coeff 406 70. 103.8 # GUA,ADE
+angle_coeff 407 70. 103.8 # 
+angle_coeff 408 70. 117.0 # wlj " " " "
+angle_coeff 409 70. 111.0 # ADE
+angle_coeff 410 70. 111.0 # 
+angle_coeff 411 70. 105.4 # GUA,ADE
+angle_coeff 412 70. 125.8 # GUA,ADE
+angle_coeff 413 70. 105.4 # 
+angle_coeff 414 70. 125.8 # jtr (12/7/01)
+angle_coeff 415 70. 125.8 # 
+angle_coeff 416 30. 125.8 # 
+angle_coeff 417 10.0 125. # wlj
+angle_coeff 418 74. 97.0 # wlj
+angle_coeff 419 74. 92.4 # wlj
+angle_coeff 420 63.0 113.1 # HIS(OL)
+angle_coeff 421 35. 120.0 # 
+angle_coeff 422 70. 109.9 # HIS(OL)
+angle_coeff 423 70. 105.9 # HIS(OL)
+angle_coeff 424 63.0 113.1 # HIS(OL)
+angle_coeff 425 35. 109.5 # 
+angle_coeff 426 70. 111.6 # TRP(OL)
+angle_coeff 427 70. 107.30 # HIS(OL)
+angle_coeff 428 70. 120.00 # HIS(OL)
+angle_coeff 429 35. 120.00 # HIS(OL)
+angle_coeff 430 70. 105.3 # HIS(OL)
+angle_coeff 431 70. 117.0 # HIS(OL)
+angle_coeff 432 63. 114. # PHE(OL) SCH JPC 79,2379
+angle_coeff 433 85. 120. # PHE(OL)
+angle_coeff 434 85. 116.2 # TRP
+angle_coeff 435 70. 132.8 # TRP(OL)
+angle_coeff 436 85. 120. # TRP(OL)
+angle_coeff 437 85. 120. # PHE(OL)
+angle_coeff 438 85. 120. # TRP(OL)
+angle_coeff 439 70. 132.8 # TRP(OL)
+angle_coeff 440 85. 120. # TYR(OL) GELIN
+angle_coeff 441 70. 120. # TYR(OL) GELIN
+angle_coeff 442 70. 128.8 # GUA,ADE
+angle_coeff 443 70. 128.8 # 
+angle_coeff 444 35. 127.3 # 
+angle_coeff 445 70. 105.9 # HIS(OL)
+angle_coeff 446 58.35 112.7 # wlj
+angle_coeff 447 50. 109.5 # wlj
+angle_coeff 448 70. 105.3 # HIS(OL)
+angle_coeff 449 70. 105.3 # HIS(OL)
+angle_coeff 450 70. 108.75 # HIS(OL)
+angle_coeff 451 70. 109.9 # HIS(OL)
+angle_coeff 452 70. 111.6 # TRP(OL)
+angle_coeff 453 70. 107.3 # HIS(OL)
+angle_coeff 454 70. 107.3 # HIS(OL)
+angle_coeff 455 35. 126.35 # HIS(OL)
+angle_coeff 456 63.0 112.4 # SUG,LEU
+angle_coeff 457 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 458 80.0 109.5 # SER,end sugar
+angle_coeff 459 80.0 109.5 # SUG
+angle_coeff 460 50.0 108.6 # CYS
+angle_coeff 461 50. 114.7 # CYX SCHERAGA JPC 79,1428
+angle_coeff 462 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 463 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 464 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 465 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 466 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 467 70. 120. # from C2-CA-CA PHE(OL) for SKF8
+angle_coeff 468 63.0 111.5 # SUG
+angle_coeff 469 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 470 80.0 109.7 # ILE JACS 94, 2657
+angle_coeff 471 80.0 109.5 # SUG
+angle_coeff 472 80.0 109.5 # THR,end sugar
+angle_coeff 473 80.0 109.5 # SUG
+angle_coeff 474 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 475 70. 116.6 # AA(OL)
+angle_coeff 476 65. 117. # AA(OL) SCH JPC 79,2379
+angle_coeff 477 70. 115. # ACID(OL) SCH JPC 79,2379
+angle_coeff 478 81. 111.4 # from FK506, SKF8
+angle_coeff 479 80. 120.4 # AA(OL)
+angle_coeff 480 51.8 107.2 # "
+angle_coeff 481 51.8 107.2 # "
+angle_coeff 482 51.8 107.2 # "
+angle_coeff 483 43.2 108.1 # wlj MM3 based
+angle_coeff 484 38. 118.4 # AA(OL)
+angle_coeff 485 70. 121.2 # URA,CYT
+angle_coeff 486 70. 128.8 # 
+angle_coeff 487 55.0 108.5 # THR(OL),SUG
+angle_coeff 488 100.0 111.8 # SUG(dme based)
+angle_coeff 489 100.0 113.0 # "
+angle_coeff 490 55.0 108.5 # SUG
+angle_coeff 491 100.0 120.5 # SUG
+angle_coeff 492 70. 120.1 # CYT
+angle_coeff 493 70. 121.5 # CYT
+angle_coeff 494 70. 121.2 # CYT
+angle_coeff 495 85. 119.7 # 
+angle_coeff 496 70. 114.1 # URA
+angle_coeff 497 80. 125.3 # URA
+angle_coeff 498 70. 121.2 # 
+angle_coeff 499 35. 119.2 # 
+angle_coeff 500 70. 128.8 # wlj
+angle_coeff 501 30. 128.8 # wlj
+angle_coeff 502 70. 128.8 # jtr (12/7/01)
+angle_coeff 503 70. 128.8 # 
+angle_coeff 504 30. 128.8 # 
+angle_coeff 505 200. 180.0 # wlj 9/11 halogen bonding
+angle_coeff 506 70. 124.0 # wlj
+angle_coeff 507 70. 124.0 # wlj
+angle_coeff 508 70. 118.7 # wlj
+angle_coeff 509 35. 120.0 # wlj
+angle_coeff 510 35. 120.0 # wlj
+angle_coeff 511 70. 121.2 # 
+angle_coeff 512 70. 121.5 # 
+angle_coeff 513 70. 120.1 # 
+angle_coeff 514 70. 120.1 # 
+angle_coeff 515 70. 121.5 # copy from above for CytH+ (jtr 5-14-91)
+angle_coeff 516 70. 121.5 # 
+angle_coeff 517 70. 121.2 # THY
+angle_coeff 518 75. 120.0 # wlj
+angle_coeff 519 70. 124.0 # wlj
+angle_coeff 520 70. 124.0 # hept, copy from CM-CM-CT rcr HIVRT
+angle_coeff 521 70. 124.0 # wlj
+angle_coeff 522 75. 121.5 # wlj
+angle_coeff 523 80. 121.5 # wlj
+angle_coeff 524 35. 119.7 # 
+angle_coeff 525 35. 120.0 # wlj
+angle_coeff 526 35. 120.0 # wlj
+angle_coeff 527 70. 121.2 # copy from above for CytH+ (jtr 5-14-91)
+angle_coeff 528 70. 121.2 # 
+angle_coeff 529 70. 123. # wlj
+angle_coeff 530 70. 123. # wlj
+angle_coeff 531 40.0 109.5 # hept, copy from CA-CT-CA rcr HIVRT
+angle_coeff 532 63. 112.4 # mwm
+angle_coeff 533 63.0 111.1 # " wlj
+angle_coeff 534 50. 109.5 # wlj
+angle_coeff 535 35. 109.5 # 
+angle_coeff 536 63. 114. # hept, copy from CA-CT-CT rcr HIVRT
+angle_coeff 537 35. 109.5 # hept, copy from CM-CT-HC rcr HIVRT
+angle_coeff 538 160. 180. # wlj
+angle_coeff 539 150. 180. # wlj
+angle_coeff 540 200. 180.0 # wlj 9/11
+angle_coeff 541 70. 114.1 # THY
+angle_coeff 542 70. 115.5 # wlj
+angle_coeff 543 80. 125.3 # THY
+angle_coeff 544 160. 180. # wlj 9/06
+angle_coeff 545 160. 180. # wlj 9/06
+angle_coeff 546 200. 180.0 # wlj 9/11
+angle_coeff 547 35. 119.2 # copy from above for CytH+ (jtr 5-14-91)
+angle_coeff 548 70. 112.2 # GUA
+angle_coeff 549 100. 180.0 # wlj diazo
+angle_coeff 550 35. 119.8 # wlj
+angle_coeff 551 70. 121.2 # jtr 12/11/01
+angle_coeff 552 70. 121.2 # 
+angle_coeff 553 35. 119.2 # 
+angle_coeff 554 35. 109.0 # wlj
+angle_coeff 555 75. 111.0 # hept, copy from CT-S -CT rcr HIVRT
+angle_coeff 556 35. 120.0 # 
+angle_coeff 557 70. 111.6 # TRP(OL)
+angle_coeff 558 35. 123.1 # TRP
+angle_coeff 559 58.35 112.7 # " : CT-CT-CT - wd 6/95 Glucose
+angle_coeff 560 37.5 110.7 # " : CT-CT-HC - wd 6/95 Glucose
+angle_coeff 561 50. 109.5 # " : CT-CT-OH - wd 6/95 Glucose
+angle_coeff 562 55. 108.5 # " : CT-OH-HO - wd 6/95 Glucose
+angle_coeff 563 60. 109.5 # " : CT-OS-CT - wd 6/95 Glucose
+angle_coeff 564 63. 123.8 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 565 63. 120.5 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 566 63. 117.2 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 567 63. 116.8 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 568 35. 123.3 # 
+angle_coeff 569 63. 123.6 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 570 35. 123.1 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 571 35.0 109.5 # JT-R 2014/04: thiophenes
+angle_coeff 572 35. 126.35 # HIS(OL)
+angle_coeff 573 50.0 116.0 # JT-R 2014/04 aminothiophenes, from wlj anilines 9/06
+angle_coeff 574 35.0 116.0 # JT-R 2014/04 aminothiophenes, from wlj anilines 9/06
+angle_coeff 575 35. 109.0 # JT-R 2014/04 hydroxy thiophene
+angle_coeff 576 60. 114.0 # JT-R 2014/04 methoxy thiophene MP2/aug-cc-pVTZ
+angle_coeff 577 70. 92.2 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 578 70. 92.2 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 579 60. 96.0 # JT-R 2014/04 thiophene thiol MP2/aug-cc-pVTZ
+angle_coeff 580 60. 99.9 # JT-R 2014/04 thiophene thioethers MP2/aug-cc-pVTZ
+angle_coeff 581 35. 120. # wlj
+angle_coeff 582 70. 118.6 # MKD synonym for CA-NC-CQ
+angle_coeff 583 70. 118.6 # wlj 1,3,5-triazine
+angle_coeff 584 5. 119.8 # wlj
+angle_coeff 585 70. 118.2 # MKD MP2(full)/6-311G(d,p)
+angle_coeff 586 35. 118.0 # wlj
+angle_coeff 587 63. 114.3 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 588 70. 116.6 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 589 70. 110.4 # wlj
+angle_coeff 590 70. 126.2 # MKD MP2/6-311G(d,p)
+angle_coeff 591 35. 124.00 # HIS(OL)
+angle_coeff 592 56. 113.1 # "
+angle_coeff 593 70. 110.0 # wlj
+angle_coeff 594 70. 110.0 # JT-R thiadiazoles
+angle_coeff 595 70. 110.0 # HIS(OL) wlj 1/97
+angle_coeff 596 70. 104.0 # wlj ai purine 6/14
+angle_coeff 597 70. 110.0 # 
+angle_coeff 598 10.0 125. # wlj
+angle_coeff 599 70. 109.0 # wlj 12/06
+angle_coeff 600 70. 107.3 # JT-R oxatriazoles
+angle_coeff 601 70. 110.8 # JT-R thiatriazole
+angle_coeff 602 70. 111.0 # wlj
+angle_coeff 603 70. 107.0 # wlj 12/06
+angle_coeff 604 70. 106.5 # wlj furan
+angle_coeff 605 70. 107.0 # wlj 12/06
+angle_coeff 606 70. 104.0 # "
+angle_coeff 607 10.0 125. # wlj
+angle_coeff 608 70. 92.2 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 609 70. 85.7 # JT-R thiatriazoles
+angle_coeff 610 62.0 102.0 # 
+angle_coeff 611 74. 97.0 # wlj
+angle_coeff 612 74. 90.0 # wlj
+angle_coeff 613 10.0 130. # wlj
+angle_coeff 614 63. 116.8 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 615 63. 117.0 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 616 85. 134.9 # 
+angle_coeff 617 85. 108.8 # 
+angle_coeff 618 85. 134.9 # 
+angle_coeff 619 85. 108.8 # 
+angle_coeff 620 63. 127.7 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 621 70. 128.5 # JT-R 2014/04 thiophenes MP2/aug-cc-pVTZ
+angle_coeff 622 70. 128.5 # JT-R 2014/04 thiophenes MP2/aug-cc-pVTZ
+angle_coeff 623 70. 128.5 # JT-R 2014/04
+angle_coeff 624 70. 128.4 # JT-R 2014/04 cyclopropyl thiophene MP2/aug-cc-pVTZ
+angle_coeff 625 35. 128.2 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 626 70. 128.6 # JT-R 2014/04 amino thiophene MP2/aug-cc-pVTZ
+angle_coeff 627 60. 128.0 # JT-R 2014/04 methoxy thiophene MP2/aug-cc-pVTZ
+angle_coeff 628 65. 127.1 # JT-R 2014/04 thiophene thiol MP2/aug-cc-pVTZ
+angle_coeff 629 65. 127.1 # JT-R 2014/04 thiophene thioethers MP2/aug-cc-pVTZ
+angle_coeff 630 70. 106.2 # wlj
+angle_coeff 631 70. 127.7 # wlj
+angle_coeff 632 70. 127.5 # "
+angle_coeff 633 70. 112.3 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 634 35. 127.5 # "
+angle_coeff 635 63.0 115.6 # wlj
+angle_coeff 636 35. 109.5 # wlj
+angle_coeff 637 70. 129.4 # MKD MP2(full)/6-311G(d,p) - 3-methylisoxazole
+angle_coeff 638 70. 132.1 # "
+angle_coeff 639 70. 132.1 # wlj/nm
+angle_coeff 640 70. 134.0 # JT-R 2014/04
+angle_coeff 641 35. 132.1 # "
+angle_coeff 642 70. 107.7 # MKD synonym for CS-CW-NA
+angle_coeff 643 60. 130.5 # JT-R 2014/04 amino pyrrole MP2/aug-cc-pVTZ
+angle_coeff 644 80. 128.2 # wlj
+angle_coeff 645 100. 180.0 # wlj diazo
+angle_coeff 646 35. 119.8 # wlj
+angle_coeff 647 10.0 109.47 # wlj 1/19
+angle_coeff 648 200. 180.0 # wlj 9/11 halogen bonding
+angle_coeff 649 172.8 120.0 # wlj JACS 94, 4632 (1972)
+angle_coeff 650 144.0 120.0 # wlj "
+angle_coeff 651 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 652 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 653 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 654 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 655 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 656 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 657 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 658 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 659 70. 124. # OPLS hydrocarbons ff (jtr 5-14-91)
+angle_coeff 660 70. 120.00 # Added DSM (from CT-CC-NA)
+angle_coeff 661 70. 120.00 # HIS(OL)
+angle_coeff 662 70. 120.00 # HIS(OL)
+angle_coeff 663 70. 120.00 # HIS(OL)
+angle_coeff 664 70. 120.00 # HIS(OL)
+angle_coeff 665 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 666 70. 124.0 # mwm
+angle_coeff 667 70. 130.0 # wlj
+angle_coeff 668 35. 117.0 # wlj
+angle_coeff 669 37.5 110.7 # " : CT-CT-HC - wd 6/95 Glucose
+angle_coeff 670 50. 109.5 # jtr (12/7/01)
+angle_coeff 671 50. 109.5 # " : CT-CT-OH - wd 6/95 Glucose
+angle_coeff 672 70. 125. # 
+angle_coeff 673 69. 110.0 # wlj
+angle_coeff 674 63.0 105.0 # wlj
+angle_coeff 675 58.35 112.7 # CHARMM 22 parameter file
+angle_coeff 676 58.35 112.7 # wlj
+angle_coeff 677 69. 109.8 # wlj - from MM2
+angle_coeff 678 50. 109.5 # PAK F-CT-HC (emd 5-09-94)
+angle_coeff 679 37.5 110.7 # CHARMM 22
+angle_coeff 680 75. 112.0 # wlj
+angle_coeff 681 80.0 111.2 # ARG JCP 76, 1439
+angle_coeff 682 80.0 111.2 # LYS(OL) JCP 76, 1439
+angle_coeff 683 65. 109.0 # wlj azide
+angle_coeff 684 70. 109.5 # MKD
+angle_coeff 685 80.0 109.7 # ALA JACS 94, 2657
+angle_coeff 686 63. 111.1 # wlj nitro
+angle_coeff 687 56.2 109.47 # wlj - MM3 based - JACS 112, 8314 (90)
+angle_coeff 688 80.0 111.2 # jtr: neutral ARG
+angle_coeff 689 80.0 109.7 # ALA JACS 94, 2657
+angle_coeff 690 50. 109.5 # 
+angle_coeff 691 50. 109.5 # 
+angle_coeff 692 50. 109.5 # 
+angle_coeff 693 43. 109.5 # wlj 9/97
+angle_coeff 694 43. 109.5 # "
+angle_coeff 695 50.0 108.6 # CYS
+angle_coeff 696 50.0 108.6 # 
+angle_coeff 697 50.0 108.6 # 
+angle_coeff 698 40. 114.0 # wlj fit to expt
+angle_coeff 699 50. 114.7 # CYX SCHERAGA JPC 79,1428
+angle_coeff 700 70. 130.7 # jtr: HIE CB-CG-CD2
+angle_coeff 701 70. 130.7 # jtr: HID CB-CG-CD2
+angle_coeff 702 70. 120.00 # 
+angle_coeff 703 70. 121.6 # wlj
+angle_coeff 704 70. 116.6 # JT-R 2014/04 MP2/aug-cc-pVTZ - changed from 12.16 wlj
+angle_coeff 705 70. 130.7 # jtr: HIP CB-CG-CD2
+angle_coeff 706 70. 121.6 # jtr - copy from CT-CW-NA for HIP
+angle_coeff 707 35. 114.3 # "
+angle_coeff 708 37.5 117.2 # "
+angle_coeff 709 37.5 114.0 # "
+angle_coeff 710 150. 180. # do 11/98 - JPOC, 9, 191(1996)
+angle_coeff 711 150. 180. # wlj
+angle_coeff 712 10.0 109.47 # wlj 1/19
+angle_coeff 713 200. 180.0 # wlj 9/11
+angle_coeff 714 75. 109.0 # wlj
+angle_coeff 715 70. 116. # wlj
+angle_coeff 716 70. 116. # wlj 7/96
+angle_coeff 717 75. 109.0 # wlj
+angle_coeff 718 80. 117.2 # (JP 1-6-91) SKF8
+angle_coeff 719 35. 115.0 # wlj
+angle_coeff 720 70. 105.8 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 721 70. 116.6 # 
+angle_coeff 722 70. 116.6 # 
+angle_coeff 723 70. 117. # GLU(OL) SCH JPC 79,2379
+angle_coeff 724 70. 108. # RCOOH wlj 2/15/95
+angle_coeff 725 80. 120.4 # 
+angle_coeff 726 70. 123.0 # wlj mod 9/08
+angle_coeff 727 10.0 109.47 # wlj 1/19
+angle_coeff 728 37.5 109.47 # wlj
+angle_coeff 729 0. 37.0 # wlj
+angle_coeff 730 10.0 109.47 # wlj 1/19
+angle_coeff 731 200. 180.0 # wlj 9/11
+angle_coeff 732 50. 118. # 
+angle_coeff 733 35. 118.4 # ARG(OL)
+angle_coeff 734 35. 118.4 # 
+angle_coeff 735 50. 113.0 # proline j.phys chem 1979 p 2361
+angle_coeff 736 35. 109.5 # LYS
+angle_coeff 737 70. 117.0 # wlj azo
+angle_coeff 738 70. 120.0 # wlj azide
+angle_coeff 739 70. 114.0 # wlj nitroso
+angle_coeff 740 70. 123.2 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 741 70. 112.5 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 742 50. 118. # PRO(OL)
+angle_coeff 743 80. 117.5 # wlj nitro
+angle_coeff 744 51.8 107.2 # "
+angle_coeff 745 51.8 107.2 # "
+angle_coeff 746 51.8 107.2 # "
+angle_coeff 747 51.8 107.2 # wlj - MM3 based JACS 112, 8314 (90)
+angle_coeff 748 35.0 109.5 # 
+angle_coeff 749 50.0 108.6 # bhap, copy from CT-CT-SY rcr HIVRT
+angle_coeff 750 35. 109.5 # jtr: neutral ARG
+angle_coeff 751 150. 180. # wlj 10/04 "
+angle_coeff 752 50. 118. # PRO(OL) DETAR JACS 99,1232
+angle_coeff 753 38. 118.4 # 
+angle_coeff 754 10.0 109.47 # wlj
+angle_coeff 755 55. 108.5 # 
+angle_coeff 756 100. 120.5 # jtr 12/10/01
+angle_coeff 757 75. 111.0 # wlj 9/97
+angle_coeff 758 75. 111.0 # wlj
+angle_coeff 759 60. 109.5 # 
+angle_coeff 760 10.0 109.47 # wlj
+angle_coeff 761 100. 120.5 # 
+angle_coeff 762 40. 121.0 # wlj
+angle_coeff 763 45. 109.5 # " AMBER OS-P-OS
+angle_coeff 764 45.0 109.5 # wlj 11/95
+angle_coeff 765 45.0 109.5 # wlj 11/95
+angle_coeff 766 45.0 109.5 # wlj 11/95
+angle_coeff 767 10.0 109.47 # wlj
+angle_coeff 768 44. 96.0 # CYS(OL)
+angle_coeff 769 150. 96.7 # 
+angle_coeff 770 62.0 102.0 # 
+angle_coeff 771 62.0 96.1 # wlj 9/19 MP2/6-311+Gdp
+angle_coeff 772 74.0 110.5 # wlj 9/19
+angle_coeff 773 62.0 96.0 # 
+angle_coeff 774 37. 112.5 # wlj fit to expt
+angle_coeff 775 60. 107.0 # wlj
+angle_coeff 776 60. 105.0 # wlj
+angle_coeff 777 40. 112.0 # wlj
+angle_coeff 778 62. 98.9 # MET(OL)
+angle_coeff 779 10.0 109.47 # wlj
+angle_coeff 780 150. 96.7 # 
+angle_coeff 781 68. 103.7 # CYX(OL) SCHERAGA JPC 79,1428
+angle_coeff 782 35. 128.2 # "
+angle_coeff 783 70. 103.8 # "
+angle_coeff 784 150. 180. # wlj
+angle_coeff 785 70. 104.1 # "
+angle_coeff 786 70. 104.1 # MKD synonym for CU-NB-NA
+angle_coeff 787 70. 105.3 # "
+angle_coeff 788 35. 119.8 # wlj
+angle_coeff 789 70. 116.6 # wlj 6/13
+angle_coeff 790 70. 120.0 # wlj 6/14 ai
+angle_coeff 791 70. 122.0 # wlj 6/14 ai
+angle_coeff 792 70. 106.2 # wlj
+angle_coeff 793 70. 126.0 # wlj 6/14 ai purine
+angle_coeff 794 70. 120.00 # HIS(OL)
+angle_coeff 795 63.0 114.0 # jtr: HIE CA-CB-CG
+angle_coeff 796 35.0 109.5 # jtr: HIE HB-CB-CG
+angle_coeff 797 70. 103.6 # wlj 6/13
+angle_coeff 798 70. 106.3 # wlj " " imidazole
+angle_coeff 799 70. 108.0 # "
+angle_coeff 800 70. 108.0 # "
+angle_coeff 801 70. 111.3 # GUA
+angle_coeff 802 80. 125.0 # GUA
+angle_coeff 803 70. 109.3 # wlj 6/13
+angle_coeff 804 70. 110.3 # wlj 6/13
+angle_coeff 805 70. 113.3 # JT-R thiadiazoles
+angle_coeff 806 70. 116.4 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 807 70. 117.1 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 808 35. 106.0 # wlj
+angle_coeff 809 70. 120.00 # HIS(OL)
+angle_coeff 810 70. 120.00 # HIS(OL)
+angle_coeff 811 70. 125.7 # "
+angle_coeff 812 70. 107.3 # "
+angle_coeff 813 70. 103.8 # "
+angle_coeff 814 35. 125.7 # "
+angle_coeff 815 63.0 114.0 # jtr: HID CA-CB-CG
+angle_coeff 816 63.0 111.0 # MKD MP2/6-311G(d,p)
+angle_coeff 817 35.0 109.5 # jtr: HID HB-CB-CG
+angle_coeff 818 50. 114.7 # wlj
+angle_coeff 819 70. 125.7 # "
+angle_coeff 820 70. 108.7 # wlj 6/13
+angle_coeff 821 70. 111.0 # wlj " " "
+angle_coeff 822 70. 120.0 # 
+angle_coeff 823 70. 120.0 # 
+angle_coeff 824 80. 120.4 # bhap, copy from CA-C -O rcr HIVRT
+angle_coeff 825 70. 109.8 # wlj " " "
+angle_coeff 826 70. 124.00 # wlj
+angle_coeff 827 70. 109.8 # wlj " " " "
+angle_coeff 828 35. 124.00 # JT-R 2014/04 changed back from 129.2 wlj 6/13
+angle_coeff 829 70. 104.1 # "
+angle_coeff 830 70. 124.00 # MKD synonym for CW-NA-CT
+angle_coeff 831 70. 109.8 # MKD synonym for CW-NA-CW
+angle_coeff 832 63. 125.2 # MKD synonym for C!-NA-CW
+angle_coeff 833 70. 109.8 # MKD synonym for CW-NA-CW
+angle_coeff 834 35. 119.8 # wlj
+angle_coeff 835 70. 107.4 # JT-R 2014/04 furan MP2/aug-cc-pVTZ was 70,106.5 wlj
+angle_coeff 836 70. 108.9 # "
+angle_coeff 837 70. 106.5 # wlj furan
+angle_coeff 838 10.0 125. # wlj
+angle_coeff 839 74. 97.0 # wlj
+angle_coeff 840 74. 97.0 # wlj
+angle_coeff 841 10.0 130. # wlj
+angle_coeff 842 63.0 114.0 # jtr: HIP CA-CB-CG
+angle_coeff 843 35.0 109.5 # jtr: HIP HB-CB-CG
+angle_coeff 844 70. 106.3 # jtr - copy from CV-CW-NA for HIP
+angle_coeff 845 70. 109.8 # jtr - copy from CW-NA-CR for HIP
+angle_coeff 846 35. 124.00 # jtr HIP
+angle_coeff 847 35. 135.0 # wlj
+angle_coeff 848 37.5 110.7 # "
+angle_coeff 849 70. 116.6 # JT-R 2014/04 MP2/aug-cc-pVTZ - changed from 12.16 wlj
+angle_coeff 850 37.5 121.3 # "
+angle_coeff 851 37.5 121.3 # "
+angle_coeff 852 37.5 117.2 # "
+angle_coeff 853 30.0 83.0 # "
+angle_coeff 854 65. 120.0 # wlj 6/23
+angle_coeff 855 63. 85.0 # "
+angle_coeff 856 37.5 117.2 # cyclopropanes - wlj 10/97
+angle_coeff 857 37.5 117.2 # nev, copy from CY-CY-CT rcr HIVRT
+angle_coeff 858 80. 89.0 # small rings - wlj
+angle_coeff 859 37.5 126.0 # "
+angle_coeff 860 50. 90.0 # "
+angle_coeff 861 55. 128.0 # "
+angle_coeff 862 150. 180.0 # "
+angle_coeff 863 80. 134.0 # "
+angle_coeff 864 50. 126.0 # "
+angle_coeff 865 50. 94.0 # "
+angle_coeff 866 55. 128.0 # "
+angle_coeff 867 40. 113.0 # "
+angle_coeff 868 60. 90.0 # "
+angle_coeff 869 62. 94.0 # "
+angle_coeff 870 35. 120.0 # wlj
+angle_coeff 871 35. 120.0 # wlj
+angle_coeff 872 35. 116.0 # "
+angle_coeff 873 80. 123.0 # 
+angle_coeff 874 65. 100.0 # wlj 9/06
+angle_coeff 875 55. 127.0 # "
+angle_coeff 876 60. 114.0 # wlj
+angle_coeff 877 78. 111.7 # " Tet 31, 1971 (75)
+angle_coeff 878 35. 110.5 # wlj
+angle_coeff 879 70. 124.0 # wlj
+angle_coeff 880 70. 124.0 # wlj
+angle_coeff 881 35. 120.0 # wlj
+angle_coeff 882 70. 124.0 # wlj
+angle_coeff 883 70. 124.0 # wlj
+angle_coeff 884 70. 124.0 # wlj
+angle_coeff 885 70. 124.0 # wlj
+angle_coeff 886 35. 120.0 # wlj
+angle_coeff 887 63.0 112.4 # GLU
+angle_coeff 888 63.0 112.4 # ASP
+angle_coeff 889 80.0 111.2 # GLY JCP 76, 1439
+angle_coeff 890 80.0 110.3 # GLY WORK DONE ON 6/23/82
+angle_coeff 891 85. 120. # TYR(OL)
+angle_coeff 892 70. 119.7 # wlj
+angle_coeff 893 35. 120.0 # 
+angle_coeff 894 70. 120.0 # wlj
+angle_coeff 895 85. 119.2 # GUA
+angle_coeff 896 70. 130. # wlj
+angle_coeff 897 70. 130. # GUA
+angle_coeff 898 70. 120.0 # wlj
+angle_coeff 899 85. 120. # TYR(OL)
+angle_coeff 900 63.0 111.1 # AA
+angle_coeff 901 63.0 111.1 # ALA
+angle_coeff 902 63.0 111.1 # ILE
+angle_coeff 903 80.0 109.7 # AA
+angle_coeff 904 63.0 110.1 # AA WORK DONE ON 6/23/82
+angle_coeff 905 85. 120.7 # URA
+angle_coeff 906 85. 119.7 # THY
+angle_coeff 907 85. 120.7 # THY
+angle_coeff 908 85. 120.7 # 
+angle_coeff 909 70. 119.7 # 
+angle_coeff 910 70. 119.7 # hept, copy from C -CM-CT rcr HIVRT
+angle_coeff 911 80. 121.5 # wlj
+angle_coeff 912 35. 119.7 # 
+angle_coeff 913 35. 119.7 # 
+angle_coeff 914 70. 130. # wlj
+angle_coeff 915 69. 109.8 # wlj
+angle_coeff 916 63. 111.1 # Added DSM (from C3-CT-C )
+angle_coeff 917 63.0 111.1 # AA
+angle_coeff 918 69. 109.8 # wlj
+angle_coeff 919 63.0 111.1 # lac, copy from C -CT-CT rcr HIVRT
+angle_coeff 920 50. 109.5 # bhap, copy from CT-CT-F rcr HIVRT
+angle_coeff 921 35. 109.5 # 
+angle_coeff 922 80.0 111.2 # Amino terminal residues
+angle_coeff 923 63.0 110.1 # wlj
+angle_coeff 924 70. 102.8 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 925 80.0 111.2 # wlj
+angle_coeff 926 63.0 110.1 # AA WORK DONE ON 6/23/82
+angle_coeff 927 50. 109.5 # lac, copy from CT-CT-OS rcr HIVRT
+angle_coeff 928 85. 119.2 # wlj
+angle_coeff 929 70. 130. # GUA
+angle_coeff 930 85. 120. # bhap, copy from C -CA-CA rcr HIVRT
+angle_coeff 931 85. 120. # bhap, copy from C -CA-CA rcr HIVRT
+angle_coeff 932 160. 180. # wlj
+angle_coeff 933 150. 180. # wlj
+angle_coeff 934 70. 116.6 # (JP 1-5-91) SKF8
+angle_coeff 935 80. 121.4 # ketone (JP 1-5-91) SKF8
+angle_coeff 936 70. 120.5 # imine - check
+angle_coeff 937 70. 126.6 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 938 70. 125.2 # GUA
+angle_coeff 939 70. 121.6 # copy from above for CytH+ (jtr 5-14-91)
+angle_coeff 940 70. 126.4 # URA
+angle_coeff 941 35. 116.8 # GUA,URA(2)
+angle_coeff 942 70. 120.5 # CYT
+angle_coeff 943 70. 120.5 # CYT
+angle_coeff 944 70. 120.5 # imine - check
+angle_coeff 945 70. 112.1 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 946 50. 121.9 # 
+angle_coeff 947 63.0 111.1 # bhap, copy from C -CT-CT rcr HIVRT
+angle_coeff 948 100. 180.0 # wlj diazo
+angle_coeff 949 50. 121.9 # PRO(OL)
+angle_coeff 950 50. 121.9 # TEST!!!!!!!!
+angle_coeff 951 50. 121.9 # wlj
+angle_coeff 952 50. 121.9 # AA(OL)
+angle_coeff 953 70. 125.2 # wlj
+angle_coeff 954 50. 121.9 # 
+angle_coeff 955 70. 126.4 # wlj
+angle_coeff 956 10.0 109.5 # wlj
+angle_coeff 957 35. 120. # GLN,ASN **
+angle_coeff 958 35. 119.8 # AA(OL)
+angle_coeff 959 46. 115.7 # wlj
+angle_coeff 960 70. 108.6 # "
+angle_coeff 961 70. 112. # wlj
+angle_coeff 962 20. 126. # Merz, JACS 113, 8262 (1991)
+angle_coeff 963 70. 117.6 # URA,CYT
+angle_coeff 964 70. 121.6 # URA,CYT
+angle_coeff 965 70. 121.6 # 
+angle_coeff 966 70. 117.6 # jtr 12/11/01
+angle_coeff 967 70. 117.6 # 
+angle_coeff 968 35. 119.2 # 
+angle_coeff 969 35. 113.0 # TYR(PHENOL) HARMONY MEOH
+angle_coeff 970 83. 116.9 # 
+angle_coeff 971 83. 116.9 # 
+angle_coeff 972 83. 116.9 # wlj
+angle_coeff 973 83. 116.9 # from FK506 C -OS-CZ for SKF8
+angle_coeff 974 83. 116.9 # "
+angle_coeff 975 35. 113.0 # 
+angle_coeff 976 80. 122.0 # wlj 9/06
+angle_coeff 977 80. 122.0 # wlj 9/06
+angle_coeff 978 80. 125.0 # wlj 9/06
+angle_coeff 979 40. 121.0 # wlj 9/06
+angle_coeff 980 33. 120.00 # JZV
+angle_coeff 981 33. 120.00 # JZV
+angle_coeff 982 33. 109.47 # JZV
+angle_coeff 983 33. 109.47 # wlj
+angle_coeff 984 2. 90.0 # wlj
+angle_coeff 985 2. 90.0 # wlj
+angle_coeff 986 10. 90.0 # wlj
+angle_coeff 987 2. 90.0 # wlj
+angle_coeff 988 2. 90.0 # wlj
+angle_coeff 989 10. 90.0 # wlj
+angle_coeff 990 5. 90.0 # wlj
+angle_coeff 991 5. 90.0 # wlj
+angle_coeff 992 5. 90.0 # wlj
+angle_coeff 993 33. 109.47 # wlj
+angle_coeff 994 33. 120.00 # JZV
+angle_coeff 995 10. 180.0 # wlj
+angle_coeff 996 10. 180.0 # wlj
+angle_coeff 997 33. 109.47 # JZV
+angle_coeff 998 33. 109.47 # wlj
+angle_coeff 999 10. 180.0 # wlj
+angle_coeff 1000 10. 180.0 # wlj
+angle_coeff 1001 33. 109.47 # wlj
+angle_coeff 1002 33. 109.47 # wlj
+angle_coeff 1003 33. 109.47 # wlj
+angle_coeff 1004 0. 109.47 # wlj
+angle_coeff 1005 33. 109.47 # wlj
+angle_coeff 1006 33. 109.47 # wlj
+angle_coeff 1007 33. 109.47 # wlj
+angle_coeff 1008 10. 109.5 # wlj
+angle_coeff 1009 33. 109.47 # wlj
+angle_coeff 1010 10.0 100. # wlj
+angle_coeff 1011 10.0 100. # wlj
+angle_coeff 1012 10.0 100. # wlj
+angle_coeff 1013 10.0 100. # wlj
+angle_coeff 1014 10.0 100. # wlj
+angle_coeff 1015 5. 109.47 # wlj
+angle_coeff 1016 10.0 109.5 # wlj
+angle_coeff 1017 5. 109.47 # wlj
+angle_coeff 1018 10. 117.0 # 
+angle_coeff 1019 5. 109.47 # wlj
+angle_coeff 1020 5. 109.47 # wlj
+angle_coeff 1021 77. 109.1 # wlj
+angle_coeff 1022 80. 108.0 # wlj
+angle_coeff 1023 50. 112.0 # wlj
+angle_coeff 1024 77. 109.1 # PAK F-CT-F (emd 5-09-94)
+angle_coeff 1025 80. 111.0 # wlj
+angle_coeff 1026 80. 121.0 # wlj
+angle_coeff 1027 35. 110.5 # wlj
+angle_coeff 1028 35. 120. # ADE,CYT,GUA,GLN,ASN,ARG
+angle_coeff 1029 35. 120. # ADE,CYT,GUA,GLN,ASN,ARG
+angle_coeff 1030 35. 109.5 # LYS
+angle_coeff 1031 35. 120. # ADE,CYT,GUA,GLN,ASN **
+angle_coeff 1032 35. 120.0 # 
+angle_coeff 1033 35. 115.45 # 
+angle_coeff 1034 35. 126.9 # wlj - pyrrole
+angle_coeff 1035 2.0 90. # dummy
+angle_coeff 1036 35. 120.0 # 
+angle_coeff 1037 35. 119.1 # Added DSM (from HC-CM-NA)
+angle_coeff 1038 35. 120.0 # wlj
+angle_coeff 1039 35. 120.0 # wlj
+angle_coeff 1040 35. 120.0 # 
+angle_coeff 1041 35. 120.0 # 
+angle_coeff 1042 35. 115.45 # 
+angle_coeff 1043 35. 120.0 # 
+angle_coeff 1044 35. 120.0 # 
+angle_coeff 1045 35. 117.0 # "
+angle_coeff 1046 35. 128.5 # MKD MP2(full)/6-311G(d,p) - new pyrazole
+angle_coeff 1047 35. 129.2 # MKD MP2(full)/6-311G(d,p) - new pyrazole
+angle_coeff 1048 35. 128.2 # wlj
+angle_coeff 1049 35. 121.7 # wlj 6/13
+angle_coeff 1050 35. 130.7 # wlj
+angle_coeff 1051 35. 130.7 # wlj
+angle_coeff 1052 35. 132.0 # wlj - imidazole & triazole
+angle_coeff 1053 35. 121.6 # wlj
+angle_coeff 1054 35. 130.7 # jtr - copy from HA-CW-CV for HIP
+angle_coeff 1055 35. 120.0 # jtr: HIP HD2-CD2-NE2
+angle_coeff 1056 35. 119.9 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 1057 35. 122.0 # wlj
+angle_coeff 1058 35. 117.0 # wlj
+angle_coeff 1059 35. 119.1 # copy from above for CytH+ (jtr 5-14-91)
+angle_coeff 1060 35. 119.1 # 
+angle_coeff 1061 33. 109.5 # " : HC-CT-HC - wd 6/95
+angle_coeff 1062 35. 109.5 # 
+angle_coeff 1063 35. 126.8 # 
+angle_coeff 1064 35. 126.8 # 
+angle_coeff 1065 51. 107.6 # wlj
+angle_coeff 1066 35.0 105.0 # wlj
+angle_coeff 1067 35. 109.5 # Added DSM (from C -CT-HC)
+angle_coeff 1068 35. 109.5 # MKD synonym for HC-CT-CA
+angle_coeff 1069 35. 110.3 # MKD MP2(full)/6-311G(d,p) - 3-methylisoxazole
+angle_coeff 1070 35. 108.5 # wlj
+angle_coeff 1071 51. 107.6 # " see also JACS 121,9198
+angle_coeff 1072 40. 107.0 # wlj
+angle_coeff 1073 33. 107.8 # CHARMM 22
+angle_coeff 1074 75. 111.0 # wlj
+angle_coeff 1075 35. 109.5 # 
+angle_coeff 1076 35. 109.5 # 
+angle_coeff 1077 35. 109.5 # copy from above for CytH+ (jtr 5-14-91)
+angle_coeff 1078 35. 109.5 # 
+angle_coeff 1079 35. 109.5 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 1080 35. 109.5 # 
+angle_coeff 1081 35. 105.0 # wlj nitro
+angle_coeff 1082 35. 109.5 # JACS 115, 9620 (93)
+angle_coeff 1083 35. 109.5 # jtr: neutral ARG
+angle_coeff 1084 35. 108.5 # wlj 10/04 isonitrile
+angle_coeff 1085 35. 109.5 # 
+angle_coeff 1086 35. 109.5 # jtr (12/7/01)
+angle_coeff 1087 35. 109.5 # 
+angle_coeff 1088 35.0 109.5 # SUG
+angle_coeff 1089 41. 109.5 # "
+angle_coeff 1090 41. 109.5 # wlj 11/95 MM3 based JACS 114, 8536 (92)
+angle_coeff 1091 35. 109.5 # 
+angle_coeff 1092 35. 109.5 # 
+angle_coeff 1093 35. 114.0 # "
+angle_coeff 1094 35. 114.0 # "
+angle_coeff 1095 35. 114.3 # "
+angle_coeff 1096 37.5 110.0 # "
+angle_coeff 1097 35. 114.3 # "
+angle_coeff 1098 35. 114.3 # nev, copy from HC-CY-CT rcr HIVRT
+angle_coeff 1099 35. 111.0 # "
+angle_coeff 1100 35. 108.0 # "
+angle_coeff 1101 37.5 117.2 # "
+angle_coeff 1102 37.5 114.0 # "
+angle_coeff 1103 37.5 108.0 # "
+angle_coeff 1104 112. 180. # do 1/99 - JPOC, 9, 191(1996)
+angle_coeff 1105 35. 115.0 # wlj check
+angle_coeff 1106 40. 114. # wlj
+angle_coeff 1107 40. 115. # "
+angle_coeff 1108 40. 115. # "
+angle_coeff 1109 10.0 109.47 # wlj
+angle_coeff 1110 55.0 108.5 # SUG(OL)
+angle_coeff 1111 100. 126. # 
+angle_coeff 1112 35. 92.07 # 
+angle_coeff 1113 150. 96.7 # 
+angle_coeff 1114 35. 120. # MKD MP2(full)/aug-ccpVTZ - aminoimidazol
+angle_coeff 1115 35. 120. # MKD MP2(full)/aug-ccpVTZ - aminoimidazol, changed from 113.0
+angle_coeff 1116 43.6 109.5 # wlj
+angle_coeff 1117 35. 123.2 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 1118 35. 112.5 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 1119 43.6 106.4 # wlj MM3 based
+angle_coeff 1120 43.6 106.4 # jtr: neutral ARG
+angle_coeff 1121 35. 120. # ADE,CYT,GUA,GLN,ASN **
+angle_coeff 1122 35. 110.2 # wlj
+angle_coeff 1123 100.0 111.0 # 
+angle_coeff 1124 30. 110.0 # wlj
+angle_coeff 1125 28. 110.5 # wlj fit to expt
+angle_coeff 1126 33. 109.0 # wlj fit to expt
+angle_coeff 1127 35. 111.0 # wlj
+angle_coeff 1128 35. 111.0 # wlj
+angle_coeff 1129 25. 110.5 # wlj
+angle_coeff 1130 35. 110.5 # wlj
+angle_coeff 1131 150.0 120.0 # 
+angle_coeff 1132 150.0 120.0 # 
+angle_coeff 1133 150.0 120.0 # 
+angle_coeff 1134 150.0 120.0 # 
+angle_coeff 1135 150.0 120.0 # 
+angle_coeff 1136 150.0 128.0 # 
+angle_coeff 1137 150.0 128.0 # 
+angle_coeff 1138 150.0 128.0 # 
+angle_coeff 1139 150.0 128.0 # 
+angle_coeff 1140 150.0 128.0 # 
+angle_coeff 1141 150.0 128.0 # 
+angle_coeff 1142 150.0 128.0 # 
+angle_coeff 1143 150.0 128.0 # 
+angle_coeff 1144 150.0 128.0 # 
+angle_coeff 1145 150.0 120.0 # 
+angle_coeff 1146 150.0 120.0 # 
+angle_coeff 1147 150.0 120.0 # wlj 7/14
+angle_coeff 1148 150.0 120.0 # 
+angle_coeff 1149 150.0 120.0 # 
+angle_coeff 1150 150.0 120.0 # 
+angle_coeff 1151 150.0 120.0 # 
+angle_coeff 1152 150.0 120.0 # 
+angle_coeff 1153 150.0 120.0 # 
+angle_coeff 1154 150.0 120.0 # 
+angle_coeff 1155 150.0 120.0 # 
+angle_coeff 1156 150.0 120.0 # 
+angle_coeff 1157 150.0 120.0 # 
+angle_coeff 1158 150.0 120.0 # 
+angle_coeff 1159 150.0 180.0 # 
+angle_coeff 1160 150.0 126.0 # 
+angle_coeff 1161 150.0 126.0 # 
+angle_coeff 1162 150.0 126.0 # 
+angle_coeff 1163 150.0 126.0 # 
+angle_coeff 1164 150.0 134.0 # 
+angle_coeff 1165 150.0 134.0 # 
+angle_coeff 1166 150.0 134.0 # 
+angle_coeff 1167 150.0 134.0 # 
+angle_coeff 1168 10. 160.0 # 
+angle_coeff 1169 10. 160.0 # 
+angle_coeff 1170 150. 96.7 # 
+angle_coeff 1171 70. 120. # ARG(OL)
+angle_coeff 1172 70. 116.0 # GUA
+angle_coeff 1173 70. 119.3 # ADE,GUA
+angle_coeff 1174 70. 119.3 # wlj
+angle_coeff 1175 70. 116.0 # wlj
+angle_coeff 1176 70. 126.65 # MKD MP2(full)/aug-ccpVTZ - aminoimidazol
+angle_coeff 1177 150. 180. # wlj
+angle_coeff 1178 35. 120.0 # wlj imine check
+angle_coeff 1179 35. 116.0 # wlj imine - check
+angle_coeff 1180 63. 119.8 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 1181 63. 115.7 # MKD MP2(full)/6-311G(d,p) new only give NA-C!-NX in paper?
+angle_coeff 1182 63. 116.2 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 1183 70. 123.3 # Added DSM (from NA-CA-NC)
+angle_coeff 1184 70. 123.3 # GUA
+angle_coeff 1185 70. 107.7 # wlj/ah
+angle_coeff 1186 70. 126.2 # wlj
+angle_coeff 1187 35. 123.05 # 
+angle_coeff 1188 70. 113.9 # wlj
+angle_coeff 1189 70. 120. # hept, copy from PHE(OL) rcr HIVRT
+angle_coeff 1190 35. 119.1 # 
+angle_coeff 1191 70. 123.3 # GUA
+angle_coeff 1192 70. 120.0 # wlj
+angle_coeff 1193 70. 120. # hept, copy from CA-CA-OS rcr HIVRT
+angle_coeff 1194 70. 110.75 # HISP(OL)
+angle_coeff 1195 70. 111.6 # HIS(OL)
+angle_coeff 1196 70. 125.0 # wlj
+angle_coeff 1197 70. 125.0 # wlj
+angle_coeff 1198 70. 106.7 # MKD MP2(full)/aug-ccpVTZ - aminoimidazol,HIP
+angle_coeff 1199 70. 114.0 # wlj ai purine 6/14
+angle_coeff 1200 70. 110.5 # MKD MP2(full)/6-311G(d,p) changed from 120.0
+angle_coeff 1201 70. 126.2 # wlj
+angle_coeff 1202 70. 120. # wlj
+angle_coeff 1203 63. 109.6 # MKD MP2/6-311G(d,p)
+angle_coeff 1204 70. 107.7 # wlj/nm
+angle_coeff 1205 60. 121.5 # JT-R 2014/04 amino pyrrole MP2/aug-cc-pVTZ
+angle_coeff 1206 65. 122.0 # JT-R 2014/04 hydroxy pyrrole MP2/aug-cc-pVTZ
+angle_coeff 1207 60. 120.0 # JT-R 2014/04 methoxy pyrrole MP2/aug-cc-pVTZ
+angle_coeff 1208 65. 122.0 # JT-R 2014/04 thiol pyrrole MP2/aug-cc-pVTZ
+angle_coeff 1209 65. 122.0 # JT-R 2014/04 thiomethyl pyrrole MP2/aug-cc-pVTZ
+angle_coeff 1210 70. 118.6 # copy from above for CytH+ (jtr 5-14-91)
+angle_coeff 1211 80. 120.6 # URA(2),GUA
+angle_coeff 1212 10.0 125. # wlj
+angle_coeff 1213 70. 126.2 # wlj
+angle_coeff 1214 35. 123.05 # 
+angle_coeff 1215 70. 125.0 # wlj
+angle_coeff 1216 70. 112.2 # MKD MP2(full)/6-311++G(d,p) - negatively charged tetrazole
+angle_coeff 1217 70. 126.1 # wlj
+angle_coeff 1218 70. 126.2 # wlj
+angle_coeff 1219 70. 115.0 # JT-R oxatriazoles
+angle_coeff 1220 70. 115.0 # "
+angle_coeff 1221 70. 115.0 # "
+angle_coeff 1222 70. 120. # wlj
+angle_coeff 1223 70. 115.0 # "
+angle_coeff 1224 70. 113.6 # wlj
+angle_coeff 1225 70. 111.9 # "
+angle_coeff 1226 70. 118.9 # "
+angle_coeff 1227 70. 118.9 # 
+angle_coeff 1228 35. 118.9 # "
+angle_coeff 1229 70. 124.5 # wlj
+angle_coeff 1230 70. 111.9 # "
+angle_coeff 1231 70. 118.9 # "
+angle_coeff 1232 70. 118.4 # "
+angle_coeff 1233 70. 118.4 # "
+angle_coeff 1234 56. 111.4 # wlj 6/13
+angle_coeff 1235 56. 113.1 # "
+angle_coeff 1236 56. 119.3 # " wlj 6/13
+angle_coeff 1237 10.0 125. # wlj
+angle_coeff 1238 70. 107.0 # wlj 6/13
+angle_coeff 1239 70. 109.4 # MKD MP2(full)/6-311++G(d,p) - negatively charged tetrazole
+angle_coeff 1240 70. 110.0 # JT-R oxatriazoles
+angle_coeff 1241 70. 114.0 # JT-R thiatriazole
+angle_coeff 1242 56. 113.1 # MKD synonym for NB-NA-CW
+angle_coeff 1243 70. 101.3 # JT-R oxatriazoles
+angle_coeff 1244 70. 103.4 # JT-R oxatriazole
+angle_coeff 1245 70. 101.3 # JT-R oxatriazoles
+angle_coeff 1246 10.0 125. # wlj
+angle_coeff 1247 70. 87.6 # JT-R thiatriazole
+angle_coeff 1248 10.0 130. # wlj
+angle_coeff 1249 70. 126.3 # MKD MP2(full)/6-311G(d,p) new
+angle_coeff 1250 70. 116.0 # wlj
+angle_coeff 1251 70. 116.0 # copy of above for cpr-pyridine JT-R 2014/04
+angle_coeff 1252 75. 120.0 # nev, copy from CA-CA-Cl rcr HIVRT
+angle_coeff 1253 35. 116.0 # wlj 12/96 based on pyridine
+angle_coeff 1254 70. 116.0 # nev, copy from NC-CA-CT rcr HIVRT
+angle_coeff 1255 70. 124.1 # jtr: neutral ARG
+angle_coeff 1256 70. 118.0 # wlj 6/14 ai
+angle_coeff 1257 70. 120. # wlj
+angle_coeff 1258 70. 120.0 # MKD MP2(full)/6-311G(d,p)
+angle_coeff 1259 70. 117.0 # JT-R 2014/04 thiol pyridine MP2/aug-cc-pVTZ
+angle_coeff 1260 70. 117.0 # JT-R 2014/04 thiomethyl pyridine MP2/aug-cc-pVTZ
+angle_coeff 1261 70. 129.1 # ADE
+angle_coeff 1262 70. 118.0 # wlj 6/14 ai
+angle_coeff 1263 70. 115.5 # wlj
+angle_coeff 1264 70. 129.1 # 
+angle_coeff 1265 35. 116.0 # wlj imine - check
+angle_coeff 1266 35. 122.0 # wlj
+angle_coeff 1267 70. 118.6 # 
+angle_coeff 1268 80. 122.5 # CYT
+angle_coeff 1269 100. 180.0 # wlj azide
+angle_coeff 1270 70. 105.8 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 1271 80. 122.9 # 
+angle_coeff 1272 10.0 109.5 # wlj
+angle_coeff 1273 35. 109.5 # MKD synonym for HC-CT-NA
+angle_coeff 1274 35. 121.6 # MKD synonym for NA-CW-HA
+angle_coeff 1275 50. 114.7 # nev, copy from CT-CT-S rcr HIVRT
+angle_coeff 1276 70. 116.0 # nev, copy from CT-C -CT rcr HIVRT
+angle_coeff 1277 70. 116.0 # bhap, copy from CT-C -CT rcr HIVRT
+angle_coeff 1278 80. 120.4 # nev, copy from CT-C -O rcr HIVRT
+angle_coeff 1279 35.0 106.0 # wlj 1/14
+angle_coeff 1280 62.0 102.0 # nev, copy from CT-SY-CT rcr HIVRT
+angle_coeff 1281 63. 119.8 # MKD synonym for NA-C!-CA
+angle_coeff 1282 63. 115.7 # MKD synonym for NA-C!-NA
+angle_coeff 1283 63. 116.2 # MKD synonym for NA-C!-NC
+angle_coeff 1284 70. 107.7 # MKD synonym for NA-CW-CS
+angle_coeff 1285 35. 121.6 # MKD synonym for HA-CW-NA
+angle_coeff 1286 70. 111.8 # jtr: neutral ARG
+angle_coeff 1287 10.0 90.0 # wlj
+angle_coeff 1288 80. 110.0 # "
+angle_coeff 1289 80. 113.0 # "
+angle_coeff 1290 35. 109.5 # "
+angle_coeff 1291 55. 109.0 # "
+angle_coeff 1292 70. 91.0 # "
+angle_coeff 1293 80. 134.0 # "
+angle_coeff 1294 70. 116.0 # GUA
+angle_coeff 1295 70. 119.3 # ADE,GUA
+angle_coeff 1296 35. 119.1 # wlj
+angle_coeff 1297 70. 123.3 # wlj
+angle_coeff 1298 80. 109.7 # Added DSM (from N -CT-C3)
+angle_coeff 1299 50. 109.5 # lac, copy from CT-CT-OS rcr HIVRT
+angle_coeff 1300 70. 117.0 # "
+angle_coeff 1301 70. 114.2 # copy from above for Urea (jtr 5-14-91)
+angle_coeff 1302 80. 122.9 # AA(OL)
+angle_coeff 1303 70. 127.0 # wlj mod 9/08
+angle_coeff 1304 49. 105.4 # wlj
+angle_coeff 1305 70. 104.5 # "
+angle_coeff 1306 100. 103.0 # 
+angle_coeff 1307 100.0 103.0 # 
+angle_coeff 1308 20. 109.5 # 
+angle_coeff 1309 20. 109.5 # 
+angle_coeff 1310 70. 126.2 # GUA,ADE
+angle_coeff 1311 70. 113.9 # ADE,GUA
+angle_coeff 1312 80.0 109.5 # SUG
+angle_coeff 1313 35. 123.05 # 
+angle_coeff 1314 70. 113.9 # 
+angle_coeff 1315 70. 120. # hept, copy from PHE(OL) rcr HIVRT
+angle_coeff 1316 35. 119.1 # jtr 12/11/01
+angle_coeff 1317 70. 120. # hept, copy from CA-CA-OS rcr HIVRT
+angle_coeff 1318 50. 109.5 # jtr (12/7/01)
+angle_coeff 1319 50. 109.5 # 
+angle_coeff 1320 70. 115.4 # URA
+angle_coeff 1321 70. 118.6 # CYT
+angle_coeff 1322 80. 120.9 # URA,CYT
+angle_coeff 1323 80. 126.0 # GLU(OL) SCH JPC 79,2379
+angle_coeff 1324 140.0 119.9 # SUG(OL)
+angle_coeff 1325 45.0 108.23 # SUG(OL)
+angle_coeff 1326 100.0 108.23 # SUG(OL)
+angle_coeff 1327 60. 117.1 # JT-R 2014/04 furan MP2/aug-cc-pVTZ
+angle_coeff 1328 60. 117.1 # JT-R 2014/04 furan MP2/aug-cc-pVTZ
+angle_coeff 1329 70. 109.8 # JT-R 2014/04 furan MP2/aug-cc-pVTZ was using 70,110.6 wlj
+angle_coeff 1330 35. 113.4 # wlj furan
+angle_coeff 1331 60. 116.8 # JT-R 2014/04 furan MP2/aug-cc-pVTZ
+angle_coeff 1332 60. 115.0 # JT-R 2014/04 furan MP2/aug-cc-pVTZ
+angle_coeff 1333 60. 115.9 # JT-R 2014/04 furan MP2/aug-cc-pVTZ
+angle_coeff 1334 60. 116.3 # JT-R 2014/04 furan MP2/aug-cc-pVTZ
+angle_coeff 1335 60. 116.8 # JT-R 2014/04 furan MP2/aug-cc-pVTZ
+angle_coeff 1336 35.0 109.5 # " : HC-CT-OS - wd 6/95 Glucose
+angle_coeff 1337 65. 127.7 # JT-R 2014/04 hydroxy thiophene MP2/aug-cc-pVTZ was using 70,120.0 wlj
+angle_coeff 1338 65. 130.0 # JT-R 2014/04 hydroxy pyrrole MP2/aug-cc-pVTZ was using 70,120.0 wlj
+angle_coeff 1339 10.0 109.47 # wlj
+angle_coeff 1340 45.0 102.6 # SUG(OL)
+angle_coeff 1341 45.0 102.6 # SUG(OL)
+angle_coeff 1342 75.0 96.4 # 
+angle_coeff 1343 75.0 96.4 # 
+angle_coeff 1344 80. 125.0 # wlj nitro
+angle_coeff 1345 80. 120.0 # wlj nitrate anion
+angle_coeff 1346 92.6 104.5 # wlj - temp borate B3LYP
+angle_coeff 1347 70. 110.6 # wlj
+angle_coeff 1348 35. 114.5 # 
+angle_coeff 1349 50. 109.5 # hexopyranoses : CT-CT-OS - wd 3/95 Glucose
+angle_coeff 1350 35.0 109.5 # " : HC-CT-OS - wd 6/95 Glucose
+angle_coeff 1351 92.6 111.55 # Ha,CarbRes 180,207(88)Merz,JCC 15,1019 (94)
+angle_coeff 1352 92.6 111.55 # ACETAL - wlj 2/93
+angle_coeff 1353 70. 110.0 # wlj furan
+angle_coeff 1354 60. 130.0 # JT-R 2014/04 methoxy pyrrole MP2/aug-cc-pVTZ was using 70,110.6 wlj
+angle_coeff 1355 81. 111.4 # wlj
+angle_coeff 1356 81. 111.4 # "
+angle_coeff 1357 81. 111.4 # bhap, copy from OS-C -CT rcr HIVRT
+angle_coeff 1358 45.0 102.6 # SUG(OL)
+angle_coeff 1359 62.0 107.0 # 
+angle_coeff 1360 62.0 107.0 # 
+angle_coeff 1361 60. 110.0 # wlj
+angle_coeff 1362 150.0 180.0 # J Phys Chem 97, 5685 (1993)
+angle_coeff 1363 74. 107.2 # 
+angle_coeff 1364 74.0 108.9 # 
+angle_coeff 1365 62.0 106.2 # wlj 9/19
+angle_coeff 1366 74.0 108.9 # nev, copy from OY-SY-CT rcr HIVRT
+angle_coeff 1367 120.0 107.0 # 
+angle_coeff 1368 74.0 108.7 # 
+angle_coeff 1369 104.0 119.0 # 
+angle_coeff 1370 104.0 123.0 # wlj 9/19 from MeSO2F
+angle_coeff 1371 74.0 107.0 # 
+angle_coeff 1372 10.0 90. # dummy
+angle_coeff 1373 75. 119.0 # wlj
+angle_coeff 1374 75. 119.0 # wlj
+angle_coeff 1375 35. 123.0 # wlj
+angle_coeff 1376 70. 127.5 # MKD MP2(full)/6-311G(d,p) - hydantoin
+angle_coeff 1377 80. 126.0 # adk
+angle_coeff 1378 80. 121.0 # RCOOH wlj 2/15/95
+angle_coeff 1379 83. 123.4 # J.Comp.Chem.1990,11,1181 for SKF8
+angle_coeff 1380 80. 126.0 # COO- terminal residues
+angle_coeff 1381 160. 180. # wlj 1/23 fro CO2 - check
+angle_coeff 1382 100.0 108.23 # SUG(OL)
+angle_coeff 1383 100.0 108.23 # SUG(OL)
+angle_coeff 1384 85. 119.4 # 
+angle_coeff 1385 100. 120.5 # 
+angle_coeff 1386 35. 127.0 # wlj
+angle_coeff 1387 63. 121.7 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 1388 70. 121.4 # JT-R 2014/04 thiophenes MP2/aug-cc-pVTZ
+angle_coeff 1389 70. 121.4 # JT-R 2014/04 thiophenes MP2/aug-cc-pVTZ
+angle_coeff 1390 70. 111.0 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 1391 70. 121.4 # JT-R 2014/04 thiophenes MP2/aug-cc-pVTZ
+angle_coeff 1392 70. 111.0 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 1393 70. 121.1 # JT-R 2014/04 cyclopropyl thiophene MP2/aug-cc-pVTZ
+angle_coeff 1394 35. 120.0 # MKD New Thiophene MP2(full)/6-311G(d,p)
+angle_coeff 1395 70. 120.8 # JT-R 2014/04 amino thiophene MP2/aug-cc-pVTZ
+angle_coeff 1396 70. 120.3 # JT-R 2014/04 thiophenes MP2/aug-cc-pVTZ
+angle_coeff 1397 60. 120.3 # JT-R 2014/04 methoxy thiophene MP2/aug-cc-pVTZ
+angle_coeff 1398 65. 121.6 # JT-R 2014/04 thiophene thiol MP2/aug-cc-pVTZ
+angle_coeff 1399 65. 121.6 # JT-R 2014/04 thiophene thioethers MP2/aug-cc-pVTZ
+angle_coeff 1400 35. 125.0 # wlj 12/07
+angle_coeff 1401 70. 125.0 # wlj 1/09
+angle_coeff 1402 65. 130.0 # JT-R 2014/04 thiol pyrrole MP2/aug-cc-pVTZ was using 70,120.0 wlj
+angle_coeff 1403 10.0 109.47 # wlj
+angle_coeff 1404 85. 119.4 # 
+angle_coeff 1405 50. 109.5 # bhap, copy from CT-CT-F rcr HIVRT
+angle_coeff 1406 35.0 109.5 # 
+angle_coeff 1407 35.0 115.0 # bhap, adjusted from CT-NT-H rcr HIVRT
+angle_coeff 1408 50. 120.0 # 
+angle_coeff 1409 74.0 110.0 # 
+angle_coeff 1410 35.0 109.5 # 
+angle_coeff 1411 35. 110.9 # wlj fit to expt
+angle_coeff 1412 40. 117.0 # wlj
+angle_coeff 1413 20. 145.0 # wlj
+angle_coeff 1414 85. 119.4 # thioanisole copy from SY-CA-CA rcr HIVRT
+angle_coeff 1415 70. 111.0 # wlj
+angle_coeff 1416 85. 119.4 # hept, copy from SY-CA-CA rcr HIVRT
+angle_coeff 1417 85. 119.4 # hept, copy from SY-CA-CA rcr HIVRT
+angle_coeff 1418 85. 119.4 # hept, copy from SY-CA-CA rcr HIVRT
+angle_coeff 1419 70. 125.0 # wlj 1/09
+angle_coeff 1420 70. 120.2 # wlj
+angle_coeff 1421 70. 125.0 # wlj 12/07
+angle_coeff 1422 65. 130.0 # JT-R 2014/04 thiomethyl pyrrole MP2/aug-cc-pVTZ was 70,111.0 wlj
+angle_coeff 1423 70. 111.0 # wlj
+angle_coeff 1424 35. 125.0 # wlj 12/07
+angle_coeff 1425 70. 125.0 # wlj 12/07
+angle_coeff 1426 140. 180. # wlj 9/06
+angle_coeff 1427 30.0 79.2 # "
+angle_coeff 1428 55.00 104.52 # TIP3/4/5P/F H-O-H
+angle_coeff 1429 55.00 109.47 # SPC-SPC/E H-O-H
+angle_coeff 1430 55.00 103.6 # OPC H-O-H
+dihedral_coeff 1 0.0 0.0 0.0 0.0 # sulfonamide 
+dihedral_coeff 2 0.0 3.35 0.0 0.0 #  
+dihedral_coeff 3 0.0 13.05 0.0 0.0 #  
+dihedral_coeff 4 0.000 0.000 0.000 0.0 # halogen bond 
+dihedral_coeff 5 0.000 0.000 0.000 0.0 # halogen bond 
+dihedral_coeff 6 0.000 0.000 0.000 0.0 # halogen bond 
+dihedral_coeff 7 0.0 7.250 0.0 0.0 # in aromatic ring 
+dihedral_coeff 8 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 9 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 10 0.0 6.0 0.0 0.0 #  
+dihedral_coeff 11 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 12 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 13 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 14 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 15 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 16 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 17 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 18 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 19 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 20 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 21 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 22 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 23 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 24 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 25 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 26 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 27 0.0 3.0 0.0 0.0 #  
+dihedral_coeff 28 0.0 2.80 0.0 0.0 #  
+dihedral_coeff 29 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 30 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 31 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 32 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 33 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 34 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 35 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 36 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 37 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 38 0.0 3.05 0.0 0.0 #  
+dihedral_coeff 39 0.0 4.65 0.0 0.0 #  
+dihedral_coeff 40 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 41 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 42 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 43 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 44 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 45 0.0 4.80 0.0 0.0 #  
+dihedral_coeff 46 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 47 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 48 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 49 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 50 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 51 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 52 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 53 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 54 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 55 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 56 0.000 0.000 0.000 0.0 # JACS 113, 8262 (91) 
+dihedral_coeff 57 0.000 0.000 0.000 0.0 # JACS 113, 8262 (91) 
+dihedral_coeff 58 0.0 0.0 0.0 0.0 # nitriles 
+dihedral_coeff 59 0.0 2.133 0.0 0.0 # aniline-like 
+dihedral_coeff 60 0.0 0.0 0.0 0.0 # isonitriles 
+dihedral_coeff 61 0.0 0.0 0.0 0.0 # sulfonamide 
+dihedral_coeff 62 0.0 2.133 0.0 0.0 # aniline-like 
+dihedral_coeff 63 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 64 0.0 0.0 0.0 0.0 # nitriles 
+dihedral_coeff 65 0.000 0.000 0.000 0.0 # peptides 
+dihedral_coeff 66 0.0 0.0 0.0 0.0 # isonitriles 
+dihedral_coeff 67 0.0 0.0 0.0 0.0 # sulfonamide 
+dihedral_coeff 68 0.0 0.0 0.0 0.0 # sulfonamide 
+dihedral_coeff 69 0.0 0.0 0.0 0.0 # nitriles 
+dihedral_coeff 70 0.0 0.0 0.0 0.0 # sulfonamide 
+dihedral_coeff 71 0.000 0.820 0.000 0.0 # carboxylate ?=C,N
+dihedral_coeff 72 0.000 0.820 0.000 0.0 # carboxylate ?=C,N
+dihedral_coeff 73 -1.697 -0.456 0.585 0.0 #  
+dihedral_coeff 74 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 75 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 76 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 77 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 78 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 79 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 80 0.000 0.000 0.000 0.0 # heterocycles 
+dihedral_coeff 81 0.000 0.000 0.000 0.0 # heterocycles 
+dihedral_coeff 82 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 83 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 84 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 85 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 86 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 87 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 88 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 89 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 90 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 91 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 92 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 93 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 94 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 95 0.000 0.000 0.000 0.0 # heterocycles 
+dihedral_coeff 96 0.000 0.000 0.000 0.0 # heterocycles 
+dihedral_coeff 97 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 98 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 99 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 100 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 101 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 102 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 103 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 104 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 105 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 106 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 107 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 108 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 109 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 110 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 111 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 112 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 113 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 114 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 115 0.000 0.610 0.000 0.0 # aromatic thiol 
+dihedral_coeff 116 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 117 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 118 0.00 -0.576 0.0 0.0 # Ping added for .. 
+dihedral_coeff 119 1.00 -0.35 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 120 0.00 -1.876 0.0 0.0 # Ping added for chi in nucleoside 
+dihedral_coeff 121 1.50 -1.50 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 122 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 123 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 124 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 125 1.00 -0.35 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 126 1.50 -1.50 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 127 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 128 0.000 3.80 0.0 0.0 # aniline-like 
+dihedral_coeff 129 0.000 3.80 0.0 0.0 # aniline-like 
+dihedral_coeff 130 0.850 2.660 0.000 0.0 # 2-thiopyridine, JT-R 2014/04 AA/CM1A 
+dihedral_coeff 131 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 132 -0.50 -1.50 1.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 133 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 134 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 135 0.000 0.000 0.000 0.0 # benzyl alcohols & ethers 
+dihedral_coeff 136 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 137 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 138 0.000 0.000 0.000 0.0 # 3-ethylindole 
+dihedral_coeff 139 -0.714 0.000 0.000 0.0 # 3-ethylindole 
+dihedral_coeff 140 0.000 0.000 0.000 0.0 # 3-methylindole 
+dihedral_coeff 141 0.000 0.000 -0.480 0.0 # 3-methylindole 
+dihedral_coeff 142 0.0 2.100 0.0 0.0 # N-phenylamide 
+dihedral_coeff 143 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 144 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 145 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 146 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 147 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 148 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 149 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 150 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 151 0.000 -0.400 0.000 0.0 # chloromethyl aromatic 
+dihedral_coeff 152 0.000 -0.400 0.000 0.0 # chloromethyl aromatic 
+dihedral_coeff 153 0.000 0.450 0.000 0.0 # fluoromethyl aromatic 
+dihedral_coeff 154 0.000 0.450 0.000 0.0 # fluoromethyl aromatic 
+dihedral_coeff 155 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 156 0.0 10.0 0.0 0.0 #  
+dihedral_coeff 157 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 158 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 159 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 160 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 161 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 162 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 163 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 164 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 165 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 166 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 167 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 168 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 169 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 170 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 171 0.000 0.000 0.000 0.0 # peptides 
+dihedral_coeff 172 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 173 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 174 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 175 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 176 -0.506 0.975 0.000 0.0 # Chi-1' Trp OPLS-AA/M 
+dihedral_coeff 177 0.000 0.000 0.462 0.0 # aromatics 
+dihedral_coeff 178 -0.588 1.020 0.665 0.0 # Chi-1  Trp OPLS-AA/M 
+dihedral_coeff 179 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 180 -2.500 1.250 3.100 0.0 # UA etherol with scl14 = 2,2 
+dihedral_coeff 181 -2.500 1.250 3.100 0.0 # UA etherol with scl14 = 2,2 
+dihedral_coeff 182 -2.500 1.250 3.100 0.0 # UA etherol with scl14 = 2,2 
+dihedral_coeff 183 0.500 0.0 0.0 0.0 # allyl alcohols, ethers 
+dihedral_coeff 184 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 185 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 186 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 187 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 188 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 189 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 190 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 191 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 192 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 193 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 194 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 195 0.000 0.000 0.000 0.0 # aromatics 
+dihedral_coeff 196 0.500 0.0 0.0 0.0 # allyl alcohols, ethers 
+dihedral_coeff 197 0.500 0.0 0.0 0.0 # allyl alcohols, ethers 
+dihedral_coeff 198 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 199 0.900 0.230 -0.505 0.0 # 2-Me-1,3-butadiene-like 
+dihedral_coeff 200 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 201 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 202 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 203 1.3 -0.50 0.0 0.0 # alcohols, ethers AA 
+dihedral_coeff 204 0.900 0.230 -0.505 0.0 # 2-Me-1,3-butadiene-like 
+dihedral_coeff 205 2.366 -0.262 0.505 0.0 # " 
+dihedral_coeff 206 1.3 -0.50 0.0 0.0 # alcohols, ethers OPLS/2020 
+dihedral_coeff 207 -1.336 0.0 0.0 0.0 # hexopyranoses 
+dihedral_coeff 208 1.3 -0.50 0.0 0.0 # alcohols, ethers OPLS/2020 
+dihedral_coeff 209 0.0 14.0 0.0 0.0 # oxime 
+dihedral_coeff 210 -0.521 -2.018 1.996 0.0 # acetals AA (Sugars:see 150-155) 
+dihedral_coeff 211 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 212 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 213 0.0 14.0 0.0 0.0 # enyne 
+dihedral_coeff 214 -3.323 0.529 0.000 0.0 # Chi-1 for Cys OPLS-AA/M 
+dihedral_coeff 215 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 216 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 217 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 218 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 219 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 220 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 221 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 222 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 223 0.0 0.0 0.300 0.0 # alcohols, ethers AA 
+dihedral_coeff 224 0.000 0.000 0.419 0.0 # HID, HIE, HIP, 5-ethylimidazole 
+dihedral_coeff 225 0.0 0.0 0.76 0.0 # ethers AA 
+dihedral_coeff 226 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 227 0.0 14.0 0.0 0.0 # oxime 
+dihedral_coeff 228 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 229 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 230 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 231 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 232 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 233 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 234 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 235 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 236 2.055 0.529 0.544 0.0 # Chi-1 for Cys OPLS-AA/M 
+dihedral_coeff 237 0.0 0.0 0.562 0.0 # MeOPO3 (2-) mll 
+dihedral_coeff 238 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 239 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 240 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 241 0.0 7.00 0.0 0.0 #  
+dihedral_coeff 242 0.000 0.000 0.000 0.0 # heterocycles 
+dihedral_coeff 243 0.000 0.000 0.000 0.0 # heterocycles 
+dihedral_coeff 244 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 245 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 246 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 247 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 248 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 249 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 250 -2.000 0.500 3.250 0.0 # UA bromoalkane "    "    " 
+dihedral_coeff 251 -3.400 1.250 3.100 0.0 # UA alkanes with scl14 = 2,2 
+dihedral_coeff 252 -2.000 0.700 3.000 0.0 # UA fluoroalkane "    "    " 
+dihedral_coeff 253 0.300 0.000 1.300 0.0 # Alcohols   with scl14 = 2,2 
+dihedral_coeff 254 -3.400 1.250 3.100 0.0 # UA alkanes with scl14 = 2,2 
+dihedral_coeff 255 0.300 0.000 0.500 0.0 # Alcohols   with scl14 = 2,2 
+dihedral_coeff 256 -3.400 1.250 3.100 0.0 # UA alkanes with scl14 = 2,2 
+dihedral_coeff 257 0.0 0.0 0.200 0.0 # Alcohols   with scl14 = 2,2 
+dihedral_coeff 258 -2.000 0.500 3.250 0.0 # UA bromoalkane "    "    " 
+dihedral_coeff 259 -3.400 1.250 3.100 0.0 # UA alkanes with scl14 = 2,2 
+dihedral_coeff 260 -3.400 1.250 3.100 0.0 # UA alkanes with scl14 = 2,2 
+dihedral_coeff 261 -2.000 0.700 3.000 0.0 # UA fluoroalkane "    "    " 
+dihedral_coeff 262 0.300 0.000 1.300 0.0 # Alcohols   with scl14 = 2,2 
+dihedral_coeff 263 -7.4 3.0 1.8 0.0 # UA ether   with scl14 = 2,2 
+dihedral_coeff 264 -8.4 3.0 1.8 0.0 # UA ether   with scl14 = 2,2 
+dihedral_coeff 265 0.300 0.000 0.500 0.0 # Alcohols   with scl14 = 2,2 
+dihedral_coeff 266 0.0 0.0 0.200 0.0 # Alcohols   with scl14 = 2,2 
+dihedral_coeff 267 0.0 2.01 0.0 0.0 # biaryl_22 
+dihedral_coeff 268 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 269 0.0 1.33 0.0 0.0 # biaryl_26 
+dihedral_coeff 270 0.0 2.0 0.0 0.0 # biaryl_29 
+dihedral_coeff 271 0.0 1.59 0.0 0.0 # biaryl_29 
+dihedral_coeff 272 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 273 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 274 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 275 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 276 0.0 2.0 0.0 0.0 # biaryl_27 
+dihedral_coeff 277 0.0 3.01 0.0 0.22 # biaryl_28 keep V4 
+dihedral_coeff 278 0.0 1.73 0.0 0.0 # biaryl_25 
+dihedral_coeff 279 0.0 1.47 0.0 -0.07 # biaryl_30 
+dihedral_coeff 280 0.346 0.405 -0.904 0.0 # alkenes - guess 
+dihedral_coeff 281 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 282 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 283 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 284 0.346 0.405 -0.904 0.0 # alkenes 
+dihedral_coeff 285 -3.5 3.0 0.0 0.0 # vinyl ether 
+dihedral_coeff 286 -0.9 0.0 0.0 0.0 # allyl alcohols 
+dihedral_coeff 287 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 288 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 289 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 290 0.0 1.65 0.0 -0.05 # biaryl_1      CCSD-compromise (sue, m 
+dihedral_coeff 291 0.0 1.6 0.0 -0.18 # biaryl_21 keep V4 
+dihedral_coeff 292 0.0 2.01 0.0 0.0 # biaryl_3 
+dihedral_coeff 293 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 294 0.0 1.49 0.0 0.0 # biaryl_5 
+dihedral_coeff 295 0.0 1.33 0.0 0.0 # biaryl_7 
+dihedral_coeff 296 0.0 2.0 0.0 0.0 # biaryl_9 
+dihedral_coeff 297 0.0 1.59 0.0 0.0 # biaryl_10 
+dihedral_coeff 298 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 299 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 300 0.0 1.49 0.0 0.0 # biaryl_5 
+dihedral_coeff 301 0.0 1.49 0.0 0.0 # biaryl_3,4 
+dihedral_coeff 302 0.0 1.49 0.0 0.0 # biaryl_4 
+dihedral_coeff 303 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 304 0.0 1.59 0.0 0.0 # 4-phenyltriazole 
+dihedral_coeff 305 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 306 0.0 1.49 0.0 0.0 # biaryl_5 
+dihedral_coeff 307 0.0 2.0 0.0 0.0 # biaryl_7 
+dihedral_coeff 308 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 309 0.0 3.01 0.0 0.22 # biaryl_8  keep V4 
+dihedral_coeff 310 0.0 1.73 0.0 0.0 # biaryl_6 
+dihedral_coeff 311 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 312 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 313 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 314 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 315 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 316 0.0 1.47 0.0 -0.07 # biaryl_10 
+dihedral_coeff 317 0.0 1.76 0.0 0.0 # biaryl_11 
+dihedral_coeff 318 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 319 0.0 1.76 0.0 0.23 # biaryl_62 
+dihedral_coeff 320 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 321 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 322 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 323 0.000 0.000 0.000 0.0 # halogen bond 
+dihedral_coeff 324 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 325 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 326 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 327 0.0 0.0 0.0 0.0 # styrene - generic - JT-R remove V3 - 
+dihedral_coeff 328 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 329 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 330 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 331 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 332 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 333 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 334 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 335 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 336 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 337 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 338 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 339 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 340 0.0 0.0 0.0 0.0 # styrene - generic - JT-R remove V3 - 
+dihedral_coeff 341 0.0 0.0 0.400 0.0 # alkyl bromide 
+dihedral_coeff 342 0.0 1.1 2.59 0.47 # VHL_compounds 
+dihedral_coeff 343 0.0 0.0 0.00 0.0 # phosphonates 
+dihedral_coeff 344 0.000 0.000 0.000 0.0 # halogen bond 
+dihedral_coeff 345 0.0 0.0 -0.372 0.0 # triene - generic 
+dihedral_coeff 346 0.0 0.2 0.0 0.0 # aryl ketone 
+dihedral_coeff 347 0.0 0.2 0.0 0.0 # aryl aldehyde 
+dihedral_coeff 348 0.000 1.100 0.0 0.0 # aryl amides 
+dihedral_coeff 349 0.0 2.100 0.0 0.0 # aryl acid, ester 
+dihedral_coeff 350 0.0 2.100 0.0 0.0 # aryl acid, ester 
+dihedral_coeff 351 0.0 2.100 0.0 0.0 # aryl carbonyl 
+dihedral_coeff 352 0.000 0.000 0.000 0.0 # halogen bond 
+dihedral_coeff 353 0.0 2.133 0.0 0.0 # aniline JT-R 2014/04 fit AA to MP2/au 
+dihedral_coeff 354 0.0 1.15 0.0 0.0 # nitrobenzene 
+dihedral_coeff 355 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 356 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 357 0.0 3.880 0.0 0.15 # substituted-aniline JT-R 2014/04 AA/C 
+dihedral_coeff 358 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 359 0.0 2.133 0.0 0.0 # aniline JT-R 2014/04 fit AA to MP2/au 
+dihedral_coeff 360 0.0 0.0 0.0 0.0 # isonitriles 
+dihedral_coeff 361 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 362 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 363 0.0 2.100 0.0 0.0 # N-phenylamide 
+dihedral_coeff 364 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 365 0.0 2.100 0.0 0.0 # N-phenylamide 
+dihedral_coeff 366 0.0 2.100 0.0 0.0 # N-phenylamide 
+dihedral_coeff 367 0.0 2.500 0.0 0.0 # phenyl acetate 
+dihedral_coeff 368 0.0 2.990 0.00 0.0 # PhOPO3 (2-) mll 
+dihedral_coeff 369 0.000 0.610 0.000 0.0 # aromatic thiol JT-R 2014/04 AA/CM1A f 
+dihedral_coeff 370 0.0 -0.9 0.0 0.0 # sulfone 10/00 B3LYP PhSO2Me 
+dihedral_coeff 371 1.656 -0.768 -0.117 0.0 # sulfonamide 
+dihedral_coeff 372 0.000 0.000 0.260 0.0 # silane 
+dihedral_coeff 373 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 374 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 375 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 376 -1.697 -0.456 0.585 0.0 # aldehyde & ketone & acyl halide 
+dihedral_coeff 377 1.000 0.0 0.0 0.0 # phenethylammonium - JACS 119,12292(97 
+dihedral_coeff 378 -0.800 0.0 0.0 0.0 # phenethylamines - fit    " 
+dihedral_coeff 379 0.000 0.546 0.000 0.0 # RCOOH acid 
+dihedral_coeff 380 0.75 0.0 0.0 0.0 # benzyl alcohols  OPLS/2020 
+dihedral_coeff 381 0.0 0.0 0.00 0.0 # phosphonates 
+dihedral_coeff 382 2.25 0.0 0.00 0.0 # phosphonates 
+dihedral_coeff 383 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 384 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 385 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 386 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 387 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 388 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 389 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 390 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 391 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 392 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 393 0.000 4.900 0.000 0.0 # amides 
+dihedral_coeff 394 4.000 5.000 0.00 0.0 # benzoic acids 
+dihedral_coeff 395 4.000 5.000 0.00 0.0 # benzoic esters 
+dihedral_coeff 396 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 397 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 398 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 399 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 400 0.000 0.000 0.000 0.0 # " 
+dihedral_coeff 401 0.000 0.000 0.000 0.0 # " 
+dihedral_coeff 402 3.25 2.16 1.28 0.36 # biaryl_ether_1 
+dihedral_coeff 403 0.500 0.000 0.000 0.0 # vinylsulfone wlj 2/22 
+dihedral_coeff 404 0.000 0.000 0.000 0.0 # vinylsulfone wlj 2/22 
+dihedral_coeff 405 2.0 0.0 0.0 0.0 # sulfonic acid 7/08 B3LYP 
+dihedral_coeff 406 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 407 0.0 2.133 0.0 0.0 # aniline-like 
+dihedral_coeff 408 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 409 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 410 0.500 0.000 0.000 0.0 # vinylsulfone wlj 2/22 
+dihedral_coeff 411 0.000 0.000 0.000 0.0 # vinylsulfone wlj 2/22 
+dihedral_coeff 412 6.622 0.948 -1.388 -2.118 # perfluoroalkane JPC 105, 4118 (2001) 
+dihedral_coeff 413 0.300 0.0 0.400 0.0 # perfluoroalkane JPC 105, 4118 (2001) 
+dihedral_coeff 414 -3.400 1.250 3.100 0.0 # UA alkanes with scl14 = 2,2 
+dihedral_coeff 415 -3.400 1.250 3.100 0.0 # UA alkanes with scl14 = 2,2 
+dihedral_coeff 416 0.300 0.000 1.300 0.0 # Alcohols   with scl14 = 2,2 
+dihedral_coeff 417 -1.00 -0.35 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 418 2.756 -0.872 -3.680 0.0 # Ping added,nucleoside 
+dihedral_coeff 419 -1.50 -1.50 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 420 -1.00 -0.35 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 421 -1.50 -1.50 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 422 3.132 -1.491 2.744 0.0 # Ping added,nucleoside 
+dihedral_coeff 423 1.423 4.055 0.858 0.0 # diene C=C-C=C 
+dihedral_coeff 424 0.0 0.0 -0.372 0.0 # diene - generic 
+dihedral_coeff 425 0.0 0.0 -0.372 0.0 # diene - generic 
+dihedral_coeff 426 0.0 3.431 0.0 0.0 # styrene JT-R 2014/04 to MP2/aug-ccpVT 
+dihedral_coeff 427 0.797 4.193 -0.564 -0.282 # vinylpyridine - JT-R 2014/04 fit AA t 
+dihedral_coeff 428 0.0 0.0 -0.372 0.0 # triene - generic 
+dihedral_coeff 429 0.0 0.0 -0.372 0.0 # triene - generic 
+dihedral_coeff 430 3.2 -3.0 0.0 0.0 # acrylic acid 
+dihedral_coeff 431 2.5 6.0 0.0 0.0 # acrolein 
+dihedral_coeff 432 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 433 0.0 3.431 0.0 0.0 # styrene JT-R 2014/04 fit to MP2/aug-c 
+dihedral_coeff 434 0.797 4.193 -0.564 -0.282 # vinylpyridine - JT-R 2014/04 fit AA t 
+dihedral_coeff 435 -2.0 4.2 -0.35 0.0 # 2-vinyl thiophenes JT-R 2014/04 fit A 
+dihedral_coeff 436 0.346 0.405 -0.904 0.0 # alkenes 
+dihedral_coeff 437 0.500 0.0 0.0 0.0 # allyl CF3 
+dihedral_coeff 438 0.0 3.431 0.0 0.0 # vinyl pyrrole JT-R 2014/04 
+dihedral_coeff 439 -0.70 3.60 0.0 0.0 # JT-R 2014/04  fit AA/CM1A to MP2/aug- 
+dihedral_coeff 440 0.0 3.2 -1.3 0.0 # 2-vinylfuran JT-R 2014/04 fit AA/CM1A 
+dihedral_coeff 441 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 442 2.000 0.000 0.0 0.0 # tertiary amide 
+dihedral_coeff 443 2.000 0.000 0.0 0.0 # vinyl amides 
+dihedral_coeff 444 3.2 -3.0 0.0 0.0 # acrylic acid-like 
+dihedral_coeff 445 2.5 6.0 0.0 0.0 # acrolein-like 
+dihedral_coeff 446 -3.5 5.0 0.0 0.0 # phenyl vinyl ether  wlj 1/19 
+dihedral_coeff 447 -3.5 3.0 0.0 0.0 # vinyl ether 
+dihedral_coeff 448 -0.9 0.0 0.0 0.0 # allyl alcohols 
+dihedral_coeff 449 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 450 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 451 0.000 4.900 0.000 0.0 # amides 
+dihedral_coeff 452 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Thiophenes 
+dihedral_coeff 453 0.000 0.000 0.000 0.0 #  
+dihedral_coeff 454 0.000 0.000 0.000 0.0 #  
+dihedral_coeff 455 -1.00 -0.35 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 456 3.42 0.2 -2.51 0.0 # VHL_5 
+dihedral_coeff 457 -1.50 -1.50 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 458 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 459 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 460 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 461 -1.00 -0.35 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 462 -1.50 -1.50 0.0 0.0 # imidazoles, indoles, purines 
+dihedral_coeff 463 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 464 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Thiophenes 
+dihedral_coeff 465 0.000 0.610 0.000 0.0 # aromatic thiol 
+dihedral_coeff 466 2.75 1.21 1.09 0.0 # biaryl_23,24 
+dihedral_coeff 467 0.000 1.100 0.0 0.0 # aryl amides 6/8/06 
+dihedral_coeff 468 0.0 2.100 0.0 0.0 # aryl carbonyl 6/8/06 
+dihedral_coeff 469 0.0 2.100 0.0 0.0 # aryl carbonyl 6/8/06 
+dihedral_coeff 470 2.75 1.21 1.09 0.0 # biaryl_25-27 
+dihedral_coeff 471 0.000 0.000 0.000 0.0 # aromatics   JT-R 2014/04 added to pre 
+dihedral_coeff 472 0.08 -0.16 -0.33 0.43 # VHL_2 
+dihedral_coeff 473 0.000 1.500 0.000 0.0 # hetero diketones  4/08 
+dihedral_coeff 474 0.750 1.500 0.000 0.0 # hetero diketones  4/08 
+dihedral_coeff 475 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 476 0.0 3.880 0.0 0.15 # substituted-aniline JT-R 2014/04 copy 
+dihedral_coeff 477 0.0 2.133 0.0 0.0 # aniline-like 2014/04 JT-R copy for 2- 
+dihedral_coeff 478 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 479 0.000 0.610 0.000 0.0 # aromatic thiol 
+dihedral_coeff 480 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 481 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 482 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 483 0.000 4.900 0.000 0.0 # amides 6/8/06 
+dihedral_coeff 484 -3.400 1.250 3.100 0.0 # UA alkanes with scl14 = 2,2 
+dihedral_coeff 485 0.900 0.230 -0.505 0.0 # 2-Me-1,3-butadiene 
+dihedral_coeff 486 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 487 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 488 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 489 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 490 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 491 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 492 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 493 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 494 0.205 -0.531 0.000 0.0 # 1-methylstyrene 
+dihedral_coeff 495 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 496 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 497 0.0 14.0 0.0 0.0 # vinyl alcohol 
+dihedral_coeff 498 0.0 14.0 0.0 0.0 # vinyl ether 
+dihedral_coeff 499 2.817 -0.169 0.543 0.0 # alkenes 
+dihedral_coeff 500 0.0 0.0 0.0 0.0 # allenes 
+dihedral_coeff 501 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Thiophenes 
+dihedral_coeff 502 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Thiophenes 
+dihedral_coeff 503 0.0 -1.0 0.00 0.0 # carbocation 
+dihedral_coeff 504 0.0 -1.0 0.00 0.0 # carbocation 
+dihedral_coeff 505 0.000 0.150 0.000 0.0 # ethyl benzene 
+dihedral_coeff 506 0.0 0.0 0.418 0.183 # 2-ethylpyridine JT-R 2014/04 fit AA t 
+dihedral_coeff 507 0.0 0.5 -0.5 0.0 # diazine 
+dihedral_coeff 508 0.0 0.0 0.400 0.0 # alkyl bromide 
+dihedral_coeff 509 0.000 0.000 0.000 0.0 # alkyl benzenes 
+dihedral_coeff 510 0.850 -0.200 0.200 0.0 # hydrocarbon OPLS/2020 
+dihedral_coeff 511 1.100 -0.200 0.200 0.0 # butane only OPLS/2020 
+dihedral_coeff 512 0.850 -0.200 0.200 0.0 # hydrocarbon OPLS/2020 
+dihedral_coeff 513 0.000 -0.650 0.0 0.0 # alkyne, nitrile 
+dihedral_coeff 514 0.0 0.0 0.400 0.0 # alkyl chloride 
+dihedral_coeff 515 -0.885 1.025 -1.293 0.0 # Chi-2  Glu OPLS-AA/M 
+dihedral_coeff 516 -1.267 0.479 -0.486 0.0 # Chi-2  Gln OPLS-AA/M 
+dihedral_coeff 517 -1.697 -0.456 0.585 0.0 # aldehyde & ketone & acyl halide 
+dihedral_coeff 518 -3.185 -0.825 0.493 0.0 # carboxylate ion 
+dihedral_coeff 519 0.300 -0.4 0.400 0.0 # alkyl fluoride 
+dihedral_coeff 520 0.0 0.0 0.400 0.0 # alkyl iodide 
+dihedral_coeff 521 2.732 -0.229 0.485 0.0 # ammonium ion all-atom 
+dihedral_coeff 522 2.392 -0.674 0.550 0.0 # amine all-atom 
+dihedral_coeff 523 -1.552 0.0 0.000 0.0 # polyols  AA 
+dihedral_coeff 524 2.0 -0.20 0.0 0.0 # alcohols         OPLS/2020 
+dihedral_coeff 525 1.3 -0.50 0.0 0.0 # ethers           OPLS/2020 
+dihedral_coeff 526 1.262 -0.198 0.465 0.0 # thiol all-atom  (mod 11/99) 
+dihedral_coeff 527 1.262 -0.198 0.465 0.0 # (mod 11/99) 
+dihedral_coeff 528 0.400 0.000 0.200 0.0 # silane  1-silabutane 
+dihedral_coeff 529 -1.565 -0.009 -0.450 0.0 # sulfide all-atom, Met OPLS-AA/M 
+dihedral_coeff 530 1.244 0.000 0.167 0.0 # 2-alkyl pyrrole - JT-R 2014/04 AA/CM1 
+dihedral_coeff 531 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 532 0.0 0.0 0.0 0.0 # acyl halide 
+dihedral_coeff 533 1.454 -0.144 -0.775 0.0 # ketone 
+dihedral_coeff 534 0.0 0.0 0.0 0.0 # acyl halide 
+dihedral_coeff 535 0.0 0.0 0.0 0.0 # acyl halide 
+dihedral_coeff 536 0.0 0.0 0.0 0.0 # aldehyde 
+dihedral_coeff 537 1.494 -0.511 0.125 0.0 # Chi-2  Asn OPLS-AA/M 
+dihedral_coeff 538 5.029 0.719 2.240 0.0 # Psi' Pro OPLS-AA/M 
+dihedral_coeff 539 3.260 0.440 0.600 0.0 # lastl (psi) torsion for beta-3-peptid 
+dihedral_coeff 540 2.844 -0.361 -0.325 0.0 # propanamide OPLS-AA/M 
+dihedral_coeff 541 1.779 0.419 -0.110 0.0 # Psi' peptides AA/M 
+dihedral_coeff 542 0.000 1.000 1.350 0.0 # Chi-2  Asp OPLS-AA/M 
+dihedral_coeff 543 0.0 1.412 0.00 0.0 # dicarboxylic acid 
+dihedral_coeff 544 1.000 0.546 0.450 0.0 # RCOOH acid 
+dihedral_coeff 545 0.000 0.000 -0.5530 0.0 # esters 
+dihedral_coeff 546 1.656 1.304 0.439 0.0 # Chi-2' Asn OPLS-AA/M 
+dihedral_coeff 547 -1.000 -1.900 -0.900 0.0 # 1,2-diacid monoanion 
+dihedral_coeff 548 -0.277 1.228 -0.694 0.0 # aldehyde & ketone & acyl halide 
+dihedral_coeff 549 -0.750 -0.550 -0.250 0.0 # dicarboxylic acid 
+dihedral_coeff 550 0.000 0.546 0.000 0.0 # RCOOH acid 
+dihedral_coeff 551 0.406 1.304 0.139 0.0 # propanamide OPLS-AA/M 
+dihedral_coeff 552 0.000 0.000 0.000 0.0 # peptides 
+dihedral_coeff 553 1.829 0.243 -0.498 0.0 # ethylguanidinium ion 
+dihedral_coeff 554 -0.190 -0.417 0.418 0.0 # guanidinium 
+dihedral_coeff 555 -0.190 -0.417 0.418 0.0 # guanidinium 
+dihedral_coeff 556 1.4379 -0.1238 0.2639 0.0 # 2ary ammonium 
+dihedral_coeff 557 0.000 0.000 0.347 0.0 # ammonium ion all-atom 
+dihedral_coeff 558 0.0 0.0 0.0 0.0 # azides 
+dihedral_coeff 559 2.859 2.058 -11.266 0.0 #  
+dihedral_coeff 560 0.0 0.40 0.0 0.0 # nitroethane 
+dihedral_coeff 561 1.522 -0.417 0.418 0.0 # cyclic 1,4-diamines 
+dihedral_coeff 562 0.819 -0.417 0.418 0.0 # cyclic amines 
+dihedral_coeff 563 0.200 -0.417 0.418 0.0 # pyrrolidine 5 membered cyclic amines 
+dihedral_coeff 564 0.000 4.000 0.000 0.0 # azetidine - 4 membered cyclic amines 
+dihedral_coeff 565 -0.190 -0.417 0.418 0.0 # amine all-atom See 197. 
+dihedral_coeff 566 2.859 2.058 -11.266 0.0 # "       chi4 CG-CD-N-CA 
+dihedral_coeff 567 2.929 -2.533 0.497 0.0 # sulfonamide 
+dihedral_coeff 568 2.674 -2.883 1.026 0.0 # hexopyranoses 
+dihedral_coeff 569 -0.5 0.2 0.3 0.0 # alcohols OPLS/2020 
+dihedral_coeff 570 -1.220 -0.126 0.4220 0.0 # esters 
+dihedral_coeff 571 -1.42 -0.62 0.1 0.0 # methyl ethyl phosphate 
+dihedral_coeff 572 1.000 -0.500 0.500 0.0 # " 
+dihedral_coeff 573 -0.759 -0.282 0.680 0.0 # thiol all-atom  (mod 11/99) 
+dihedral_coeff 574 0.0 0.0 0.0 0.0 # sulfone 
+dihedral_coeff 575 0.0 0.0 0.0 0.0 # sulfone 
+dihedral_coeff 576 0.800 0.000 0.200 0.0 # silane  2-silabutane 
+dihedral_coeff 577 0.000 0.000 0.260 0.0 # silane  1-silapropane 
+dihedral_coeff 578 0.925 -0.576 0.677 0.0 # sulfide all-atom 
+dihedral_coeff 579 1.941 -0.836 0.935 0.0 # disulfide all-atom 
+dihedral_coeff 580 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Furans 
+dihedral_coeff 581 0.000 0.500 0.000 0.0 # vinylcyclopropane 6/23 
+dihedral_coeff 582 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 583 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 584 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 585 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 586 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 587 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 588 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 589 0.205 -0.531 0.000 0.0 # 1-methylstyrene 
+dihedral_coeff 590 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 591 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 592 0.8 -3.0 0.0 0.0 # methyl vinyl ketone 
+dihedral_coeff 593 0.700 -1.500 0.000 0.0 # dicarbonyls    " 
+dihedral_coeff 594 0.0 14.0 0.0 0.0 # imine 
+dihedral_coeff 595 0.000 4.900 0.000 0.0 # tert. amides 2/29/04 
+dihedral_coeff 596 2.300 6.089 0.000 0.0 #  
+dihedral_coeff 597 2.300 6.089 0.000 0.0 # amides - V1 changed to 2.3 
+dihedral_coeff 598 0.000 4.900 0.000 0.0 # amides 
+dihedral_coeff 599 4.542 6.603 1.045 0.0 # hydroxamic acids 
+dihedral_coeff 600 3.200 4.900 0.000 0.0 # 1,2-diacid monoanion 
+dihedral_coeff 601 1.500 5.500 0.00 0.0 # carboxylic acid - aliphatic 
+dihedral_coeff 602 1.500 5.000 0.000 0.0 # phenyl acetate 
+dihedral_coeff 603 4.669 5.124 0.0000 0.0 # esters 
+dihedral_coeff 604 0.000 7.936 0.000 0.0 # methylguanidinium ion 
+dihedral_coeff 605 0.000 0.000 0.000 0.0 # tert. amide 
+dihedral_coeff 606 0.000 0.000 0.000 0.0 # anilinium ion 
+dihedral_coeff 607 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 608 0.0 0.0 0.0 0.0 # azides 
+dihedral_coeff 609 4.753 -0.734 0.00 0.0 #  
+dihedral_coeff 610 -1.737 1.251 -3.501 0.0 #  
+dihedral_coeff 611 0.000 0.000 0.000 0.0 # tert. amide 
+dihedral_coeff 612 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 613 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 614 -1.10 0.12 0.0 0.6 # 2-amino thiophenes JT-R 2014/04 fit A 
+dihedral_coeff 615 1.464 -0.128 0.695 0.0 # exocyclic 1,4-diamines 
+dihedral_coeff 616 1.536 -0.128 0.695 0.0 # exocyclic amines 
+dihedral_coeff 617 0.416 -0.128 0.695 0.0 # amine all-atom 
+dihedral_coeff 618 0.416 -0.128 0.695 0.0 # amine (repeated here so taken first b 
+dihedral_coeff 619 0.0 0.0 0.3 0.0 # generic hydrazines 
+dihedral_coeff 620 0.0 0.0 0.3 0.0 # generic 
+dihedral_coeff 621 0.0 0.0 0.3 0.0 # generic 
+dihedral_coeff 622 0.0 0.0 0.3 0.0 # generic hydroxylamines 
+dihedral_coeff 623 0.000 3.651 0.000 0.0 # neutral arg 
+dihedral_coeff 624 4.753 -0.734 0.00 0.0 # "            CD-N-CA-CB JT-R 2/10/97 
+dihedral_coeff 625 -1.737 1.251 -3.501 0.0 # Proline phi  CD-N-CA-C (fit to AM1) 
+dihedral_coeff 626 0.000 0.000 0.000 0.0 # tert. amide 
+dihedral_coeff 627 2.074 -2.966 2.473 0.0 # sulfonamide 
+dihedral_coeff 628 0.0 3.37 0.0 0.30 # anisole JT-R 2014/04 fit to MP2/aug-c 
+dihedral_coeff 629 0.0 4.7 0.0 0.0 # 2-methoxypyridine  JT-R 2014/04 fit C 
+dihedral_coeff 630 0.250 -0.25 0.500 0.0 # ethers AA OPLS/2020 
+dihedral_coeff 631 0.250 -0.25 0.500 0.0 # ethers AA OPLS/2020 
+dihedral_coeff 632 -0.375 -1.358 0.004 0.0 # hexopyranoses 
+dihedral_coeff 633 -0.375 -1.358 0.004 0.0 # hexopyranoses 
+dihedral_coeff 634 0.61 0.0 0.5 0.0 # 2-methoxy thiophenes JT-R 2014/04 fit 
+dihedral_coeff 635 0.0 5.2 0.0 0.0 # diazine 
+dihedral_coeff 636 0.250 -0.25 0.500 0.0 # ethers AA OPLS/2020 
+dihedral_coeff 637 0.0 3.37 0.0 0.30 # - JT-R 2014/04 added for 2-MeOPyrrol 
+dihedral_coeff 638 1.165 0.285 0.0 0.0 # 2-MeOPyrrole JT-R 2014/04 fit AA/CM1A 
+dihedral_coeff 639 3.5 -3.3 1.50 0.0 # phosphonates 
+dihedral_coeff 640 0.500 0.000 0.000 0.0 # vinylsulfone wlj 2/22 
+dihedral_coeff 641 0.000 0.000 0.000 0.0 # vinylsulfone wlj 2/22 
+dihedral_coeff 642 -0.75 0.0 0.0 0.0 # sulfonic acid 7/08 B3LYP 
+dihedral_coeff 643 0.000 0.000 0.180 0.0 # silane  2-silapropane 
+dihedral_coeff 644 0.000 0.000 0.180 0.0 # tentative 
+dihedral_coeff 645 1.000 0.000 0.000 0.0 # tentative 
+dihedral_coeff 646 1.000 -0.200 0.000 0.0 # disilane 
+dihedral_coeff 647 0.000 0.000 0.100 0.0 # disilane 
+dihedral_coeff 648 0.000 2.151 0.000 0.295 # thioanisole JT-R 2014/04 fit AA,CM1A 
+dihedral_coeff 649 1.51 4.0 0.7 0.0 # 2-thiomethylpyridine JT-R 2014/04 fit 
+dihedral_coeff 650 0.33 -2.30 0.275 0.0 # 2-thiol thiophenes JT-R 2014/04 fit A 
+dihedral_coeff 651 0.0 4.8 0.0 0.0 # diazine 
+dihedral_coeff 652 0.000 2.660 0.000 0.326 # copy for methylthiopyrrole JT-R 
+dihedral_coeff 653 0.556 -3.865 0.0 0.0 # 2-thiomethoxypyrrole JT-R 2014/04 fit 
+dihedral_coeff 654 0.000 -7.414 1.705 0.0 # disulfide all-atom 
+dihedral_coeff 655 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 656 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 657 1.5 1.5 0.87 0.0 # biaryl_23 
+dihedral_coeff 658 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 659 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Furans 
+dihedral_coeff 660 0.000 1.100 0.0 0.0 # aryl amides 6/8/06 
+dihedral_coeff 661 0.0 2.100 0.0 0.0 # aryl carbonyl 6/8/06 
+dihedral_coeff 662 0.0 2.100 0.0 0.0 # aryl carbonyl 6/8/06 
+dihedral_coeff 663 -0.400 -0.300 0.500 0.0 # biaryl 4-pyridyltriazole djc 3/15 
+dihedral_coeff 664 0.000 0.000 0.000 0.0 # VHL_3 
+dihedral_coeff 665 0.0 3.0 0.0 0.0 #  
+dihedral_coeff 666 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 667 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 668 2.300 6.089 0.000 0.0 # 6/8/06 
+dihedral_coeff 669 1.82 -0.78 -1.92 0.0 # VHL_5 
+dihedral_coeff 670 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 671 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 672 0.0 1.28 0.65 -0.23 # biaryl_30 
+dihedral_coeff 673 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 674 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2MeOFuran 
+dihedral_coeff 675 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2MeOFuran 
+dihedral_coeff 676 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 677 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 678 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Furans 
+dihedral_coeff 679 0.0 1.9 0.0 0.0 # cyclopropylbenzene 2014/04  JT-R fit 
+dihedral_coeff 680 -0.7 4.30 1.1 0.0 # cyclopropylpyridine JT-R 2014/04 fit 
+dihedral_coeff 681 1.000 2.000 1.000 0.0 # vinylcyclopropane 6/23 
+dihedral_coeff 682 0.0 1.9 0.0 0.0 # cyclopropylpyrrole 2014/04  JT-R fit 
+dihedral_coeff 683 -0.129 -0.71 2.18 0.0 # 2-cyclopropylfuran JT-R 2014/04 fit A 
+dihedral_coeff 684 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 685 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 686 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 687 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 688 2.300 6.089 0.000 0.0 # small ring amides 
+dihedral_coeff 689 2.300 6.089 0.000 0.0 # small ring amides 
+dihedral_coeff 690 2.300 6.089 0.000 0.0 # small ring amides 
+dihedral_coeff 691 0.000 4.900 0.000 0.0 # small ring amides 
+dihedral_coeff 692 2.300 6.089 0.000 0.0 # small ring amides 
+dihedral_coeff 693 0.0 14.0 0.0 0.0 # enyne 
+dihedral_coeff 694 0.0 14.0 0.0 0.0 # enyne 
+dihedral_coeff 695 0.000 0.000 0.000 0.0 # enynes 
+dihedral_coeff 696 0.000 0.000 0.000 0.0 # enynes 
+dihedral_coeff 697 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 698 -1.6 14.0 0.0 0.0 # chloroalkene 
+dihedral_coeff 699 0.0 14.0 0.0 0.0 # chloroalkene 
+dihedral_coeff 700 0.000 -0.400 0.000 0.0 # chloromethyl benzene - Theochem 418(1 
+dihedral_coeff 701 -0.25 0.0 0.000 0.0 # dichloride 
+dihedral_coeff 702 0.650 0.000 0.000 0.0 # 2-chloroamide wlj fit to 6-31G*
+dihedral_coeff 703 -0.650 0.000 0.000 0.0 # 2-chloroamide wlj fit to 6-31G*
+dihedral_coeff 704 0.0 2.01 0.0 0.0 # biaryl_22 
+dihedral_coeff 705 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 706 0.0 1.33 0.0 0.0 # biaryl_26 
+dihedral_coeff 707 0.0 2.0 0.0 0.0 # biaryl_29 
+dihedral_coeff 708 0.0 1.59 0.0 0.0 # biaryl_29 
+dihedral_coeff 709 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 710 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 711 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 712 0.0 1.49 0.0 0.0 # biaryl_23-28 
+dihedral_coeff 713 0.0 2.0 0.0 0.0 # biaryl_27 
+dihedral_coeff 714 0.0 3.01 0.0 0.22 # biaryl_28 keep V4 
+dihedral_coeff 715 0.0 1.73 0.0 0.0 # biaryl_25 
+dihedral_coeff 716 0.0 1.47 0.0 -0.07 # biaryl_30 
+dihedral_coeff 717 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 718 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 719 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 720 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 721 1.423 4.055 0.858 0.0 # triene C=C-C=C 
+dihedral_coeff 722 0.0 0.0 -0.372 0.0 # triene - generic 
+dihedral_coeff 723 0.0 0.0 -0.372 0.0 # triene - generic 
+dihedral_coeff 724 1.241 3.353 -0.286 0.0 # stilbene 
+dihedral_coeff 725 0.346 0.405 -0.904 0.0 # alkenes 
+dihedral_coeff 726 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 727 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 728 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 729 1.423 4.055 0.858 0.0 # polyene C=C-C=C 
+dihedral_coeff 730 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 731 3.2 -3.0 0.0 0.0 # acrylic acid-like 
+dihedral_coeff 732 2.5 6.0 0.0 0.0 # acrolein-like 
+dihedral_coeff 733 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 734 0.0 14.0 0.0 0.0 # conj. amide 
+dihedral_coeff 735 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 736 0.0 14.0 0.0 0.0 # conj. amide 
+dihedral_coeff 737 -1.406 1.777 0.000 0.0 # Chi-1' Phe, Tyr OPLS-AA/M 
+dihedral_coeff 738 -4.16 -0.76 0.96 0.16 # alkyl_hydantoin 
+dihedral_coeff 739 -1.971 0.770 0.000 0.0 # Chi-1' Arg OPLS-AA/M 
+dihedral_coeff 740 -2.538 0.911 0.000 0.0 # Chi-1' Gln,Glh,Lys,Lyn,Arn OPLS-AA/M 
+dihedral_coeff 741 -1.764 0.700 0.000 0.0 # Chi-1' Glu OPLS-AA/M 
+dihedral_coeff 742 -0.911 0.699 0.000 0.0 # Chi-1' Met OPLS-AA/M 
+dihedral_coeff 743 -1.422 1.068 0.000 0.0 # Chi-1' Val,Ile OPLS-AA/M 
+dihedral_coeff 744 2.994 0.252 0.300 0.0 # Chi-1 Val,Ile OPLS-AA/M 
+dihedral_coeff 745 -1.751 1.606 0.000 0.0 # Chi-1' Pro OPLS-AA/M 
+dihedral_coeff 746 -1.751 1.606 0.000 0.0 # Chi-1' Leu OPLS-AA/M 
+dihedral_coeff 747 -2.060 -0.313 0.315 0.0 # butanamide 
+dihedral_coeff 748 -1.282 1.645 -0.017 0.0 # Chi-1' Hie OPLS-AA/M 
+dihedral_coeff 749 -1.282 1.645 -0.017 0.0 # Chi-1' Hie OPLS-AA/M 
+dihedral_coeff 750 -1.708 1.516 -0.502 0.0 # Chi-1' Hip OPLS-AA/M 
+dihedral_coeff 751 0.598 1.558 0.255 0.0 # Chi-1' Asn OPLS-AA/M 
+dihedral_coeff 752 1.543 0.696 0.000 0.0 # Chi-1' Asp,Ash OPLS-AA/M 
+dihedral_coeff 753 0.800 0.000 0.900 0.0 # 1,2-diacid monoanion 
+dihedral_coeff 754 -0.550 0.000 1.000 0.0 # dicarboxylic acid 
+dihedral_coeff 755 0.0 0.0 0.074 0.0 # dicarboxylic acid 
+dihedral_coeff 756 -5.793 0.405 0.000 0.0 # Chi-1 for Ser & Thr OPLS-AA/M 
+dihedral_coeff 757 0.000 0.000 0.085 0.0 # dicarbonyls    " 
+dihedral_coeff 758 0.400 4.900 0.000 0.0 # dicarbonyls    " 
+dihedral_coeff 759 3.000 5.500 0.00 0.0 # oxalic acid, etc. 
+dihedral_coeff 760 0.000 1.300 2.200 0.0 # azadiene fit to Wiberg MP3 
+dihedral_coeff 761 3.0 3.0 0.0 0.0 # oxime B3LYP/6-31G*
+dihedral_coeff 762 3.0 3.0 0.0 0.0 # oxime   11/00 
+dihedral_coeff 763 -1.396 -0.427 0.000 0.0 # tertiary amide 
+dihedral_coeff 764 0.000 0.000 -0.139 0.0 # tertiary amide 
+dihedral_coeff 765 1.130 -1.420 0.440 0.0 # first (theta) torsion for beta-3-pept 
+dihedral_coeff 766 -1.396 -0.427 0.000 0.0 # N-ethylformamide 
+dihedral_coeff 767 -0.682 0.130 0.338 0.0 # Phi' peptides AA/M 
+dihedral_coeff 768 -2.511 0.210 -0.200 0.0 # Phi  peptides AA/M 
+dihedral_coeff 769 0.000 0.000 -0.139 0.0 # N-methylformamide 
+dihedral_coeff 770 0.0 0.0 0.0 0.0 # Phi" peptides AA 
+dihedral_coeff 771 -0.71 2.1 -1.83 0.0 # biaryl_ether_15_scan_2 
+dihedral_coeff 772 -1.396 -0.427 0.000 0.0 # small ring 
+dihedral_coeff 773 -1.396 -0.427 0.000 0.0 # small ring 
+dihedral_coeff 774 5.519 -6.700 0.581 0.0 # hydroxamic acids 
+dihedral_coeff 775 0.000 0.000 0.1980 0.0 # esters 
+dihedral_coeff 776 -2.5 0.0 0.250 0.0 # perfluoroalkane JPC 105, 4118 (2001) 
+dihedral_coeff 777 0.000 0.450 0.000 0.0 # fluoromethyl benzene - Theochem 418(1 
+dihedral_coeff 778 -1.0 0.0 0.250 0.0 # 1,2-chlorofluoro ethane 
+dihedral_coeff 779 -2.5 0.0 0.250 0.0 # 1,2-difluoride 
+dihedral_coeff 780 0.000 0.000 0.3137 0.0 # trifluoroethanol 
+dihedral_coeff 781 0.000 0.000 0.5401 0.0 # trifluoroethanol 
+dihedral_coeff 782 0.000 0.000 0.000 0.0 # anilinium 
+dihedral_coeff 783 0.000 0.000 0.300 0.0 # ammonium 
+dihedral_coeff 784 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 785 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 786 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 787 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 788 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 789 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 790 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 791 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 792 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 793 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 794 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 795 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 796 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 797 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 798 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 799 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Thiophenes 
+dihedral_coeff 800 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 801 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 802 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 803 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 804 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 805 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 806 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 807 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 808 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 809 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 810 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 811 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 812 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 813 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 814 0.000 0.000 0.000 0.0 # vinylpyridine - JT-R 2014/04 
+dihedral_coeff 815 0.000 0.000 0.000 0.0 # vinylthiophene - JT-R 2014/04 
+dihedral_coeff 816 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 817 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 818 0.0 0.0 -0.372 0.0 # azadiene 
+dihedral_coeff 819 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 820 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 821 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 822 0.000 0.000 0.000 0.0 # vinylpyridine - JT-R 2014/04 
+dihedral_coeff 823 0.0 14.0 0.0 0.0 # alkene 
+dihedral_coeff 824 0.0 14.0 0.0 0.0 # vinyl alcohol 
+dihedral_coeff 825 0.0 14.0 0.0 0.0 # vinyl ether 
+dihedral_coeff 826 0.000 0.000 0.000 0.0 # vinylthiophene - JT-R 2014/04 
+dihedral_coeff 827 0.000 0.000 0.300 0.0 # hydrocarbon 
+dihedral_coeff 828 0.000 0.000 0.318 0.0 # alkene 
+dihedral_coeff 829 0.000 0.000 0.000 0.0 #  
+dihedral_coeff 830 0.000 0.000 0.000 0.0 #  
+dihedral_coeff 831 0.000 0.000 0.000 0.0 #  
+dihedral_coeff 832 0.0 0.0 0.0 0.0 # allenes 
+dihedral_coeff 833 0.0 0.0 0.76 0.0 # ethers AA 
+dihedral_coeff 834 0.000 0.000 0.000 0.0 # phenylacetal 
+dihedral_coeff 835 0.000 0.000 0.300 0.0 # acetal 
+dihedral_coeff 836 0.0 0.0 0.76 0.0 # ethers AA 
+dihedral_coeff 837 0.0 0.0 -0.372 0.0 # alkenes all-atom also see 217 
+dihedral_coeff 838 0.0 0.0 -0.372 0.0 # alkenes all-atom also see 217 
+dihedral_coeff 839 0.0 0.0 -0.372 0.0 # alkenes all-atom also see 217 
+dihedral_coeff 840 0.000 0.000 0.000 0.0 # ethyl benzene, toluene 
+dihedral_coeff 841 0.0 0.0 -0.372 0.0 # alkenes all-atom also see 217 
+dihedral_coeff 842 0.0 0.0 -0.372 0.0 # alkenes all-atom also see 217 
+dihedral_coeff 843 0.0 0.0 0.300 0.0 # alkenes 
+dihedral_coeff 844 0.0 0.0 -0.250 0.0 # allenes B3LYP/631Gdp 
+dihedral_coeff 845 0.0 0.0 0.300 0.0 # alcohols, ethers AA 
+dihedral_coeff 846 0.0 0.0 0.400 0.0 # alkyl bromide 
+dihedral_coeff 847 0.000 0.000 0.462 0.0 # ethyl benzene 
+dihedral_coeff 848 0.000 0.000 0.462 0.0 # aromatics 
+dihedral_coeff 849 0.000 0.000 0.366 0.0 # alkene 
+dihedral_coeff 850 0.000 0.000 0.300 0.0 # acetal 
+dihedral_coeff 851 0.000 0.000 0.462 0.0 # aromatics 
+dihedral_coeff 852 0.000 0.000 0.462 0.0 # aromatics 
+dihedral_coeff 853 0.000 0.000 0.462 0.0 # aromatics 
+dihedral_coeff 854 0.000 0.000 0.300 0.0 # hydrocarbon 
+dihedral_coeff 855 0.000 0.000 0.462 0.0 # aromatics 
+dihedral_coeff 856 0.000 0.000 0.462 0.0 # aromatics 
+dihedral_coeff 857 0.000 0.000 0.462 0.0 # aromatics 
+dihedral_coeff 858 0.000 0.000 0.366 0.0 # alkyne, nitrile 
+dihedral_coeff 859 0.0 0.0 0.400 0.0 # alkyl chloride 
+dihedral_coeff 860 0.000 0.000 0.366 0.0 # alkene 
+dihedral_coeff 861 0.000 0.000 -0.100 0.0 # all carbonyls 
+dihedral_coeff 862 0.000 0.000 -0.076 0.0 # aldehyde & ketone & acyl halide 
+dihedral_coeff 863 0.0 0.0 0.400 0.0 # alkyl fluoride 
+dihedral_coeff 864 0.000 0.000 0.300 0.0 # hydrocarbon  11/99 
+dihedral_coeff 865 0.0 0.0 0.400 0.0 # alkyl iodide 
+dihedral_coeff 866 0.000 0.000 -0.582 0.0 # ethylguanidinium ion 
+dihedral_coeff 867 0.000 0.000 0.384 0.0 # ammonium ion all-atom 
+dihedral_coeff 868 0.000 0.000 -0.225 0.0 # nitroethane 
+dihedral_coeff 869 -1.013 -0.709 0.473 0.0 # amine all-atom 
+dihedral_coeff 870 0.0 0.0 0.300 0.0 # alcohols, ethers OPLS/2020 
+dihedral_coeff 871 0.0 0.0 0.300 0.0 # alcohols, ethers AA 
+dihedral_coeff 872 0.000 0.000 0.300 0.0 # " 
+dihedral_coeff 873 0.000 0.000 0.452 0.0 # thiol all-atom 
+dihedral_coeff 874 0.0 0.0 0.3500 0.0 # sulfone 
+dihedral_coeff 875 0.000 0.000 0.452 0.0 #  
+dihedral_coeff 876 0.000 0.000 0.452 0.0 # sulfide all-atom 
+dihedral_coeff 877 0.0 0.0 0.340 0.0 # 2-Methyl Furan JT-R 2014/04 fit AA/CM 
+dihedral_coeff 878 0.000 0.000 0.300 0.0 # small ring 
+dihedral_coeff 879 0.000 0.000 0.300 0.0 # small ring 
+dihedral_coeff 880 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 881 0.0 0.0 0.300 0.0 # alkenes 
+dihedral_coeff 882 0.0 0.0 -0.372 0.0 # alkenes all-atom also see 217 
+dihedral_coeff 883 0.0 0.0 0.360 0.0 # acyl halide 
+dihedral_coeff 884 0.0 0.0 0.275 0.0 # ketone 
+dihedral_coeff 885 0.0 0.0 0.275 0.0 # ketone 
+dihedral_coeff 886 0.0 0.0 0.360 0.0 # acyl halide 
+dihedral_coeff 887 0.0 0.0 0.360 0.0 # acyl halide 
+dihedral_coeff 888 0.0 0.0 0.360 0.0 # aldehyde 
+dihedral_coeff 889 0.000 0.000 0.000 0.0 #  
+dihedral_coeff 890 0.000 0.000 0.000 0.0 # Psi" peptides AA, all amides 
+dihedral_coeff 891 0.0 0.0 0.0 0.0 # caboxylates 
+dihedral_coeff 892 0.0 0.0 0.0 0.0 # acids 
+dihedral_coeff 893 0.000 0.000 0.1320 0.0 # esters 
+dihedral_coeff 894 0.000 0.000 0.000 0.0 # all carbonyls 
+dihedral_coeff 895 0.0 0.0 0.0 0.0 # thiocarbonyl 
+dihedral_coeff 896 0.000 0.000 0.177 0.0 # methylguanidinium ion 
+dihedral_coeff 897 0.000 0.000 0.000 0.0 # methylguanidinium ion 
+dihedral_coeff 898 0.000 0.000 0.462 0.0 # anilinium 
+dihedral_coeff 899 0.0 0.0 0.3017 0.0 # 2ary ammonium 
+dihedral_coeff 900 0.000 0.000 0.261 0.0 # ammonium ion all-atom 
+dihedral_coeff 901 0.000 0.000 0.000 0.0 # nitro compounds 
+dihedral_coeff 902 0.000 0.000 0.000 0.0 # heterocycles 
+dihedral_coeff 903 0.0 0.0 0.56 0.0 # amine all-atom 
+dihedral_coeff 904 0.0 0.0 0.56 0.0 # amine all-atom 
+dihedral_coeff 905 0.000 0.000 0.400 0.0 # amine all-atom See also 198. 
+dihedral_coeff 906 0.0 0.0 0.0 0.0 # isonitriles 
+dihedral_coeff 907 0.000 0.000 0.000 0.0 # N-methylformamide 
+dihedral_coeff 908 1.362 -1.457 0.149 0.0 # sulfonamide 
+dihedral_coeff 909 0.000 0.000 0.476 0.0 # trifluoroethanol 
+dihedral_coeff 910 -2.589 -1.123 0.270 0.0 # axial cyclohexanol 
+dihedral_coeff 911 0.0 0.0 0.3524 0.0 # alcohols AA 5/02 modified from 0.45 
+dihedral_coeff 912 0.0 0.0 0.76 0.0 # ethers AA 
+dihedral_coeff 913 0.0 0.0 0.76 0.0 # ethers AA 
+dihedral_coeff 914 0.0 0.0 0.76 0.0 # ethers AA 
+dihedral_coeff 915 0.000 0.000 0.180 0.0 # silane  silyl ether 
+dihedral_coeff 916 0.000 0.000 0.300 0.0 # phosphonium ion 
+dihedral_coeff 917 0.0 0.0 0.25 0.0 # phosphonates 
+dihedral_coeff 918 0.0 0.0 0.25 0.0 # phosphonates 
+dihedral_coeff 919 0.000 0.000 0.480 0.0 # thiol all-atom  (mod 11/99) 
+dihedral_coeff 920 0.0000 0.0000 0.3500 0.0 # sulfone 
+dihedral_coeff 921 0.0000 0.0000 0.3500 0.0 # sulfone 
+dihedral_coeff 922 0.0000 0.0000 0.3500 0.0 # sulfonic acid 
+dihedral_coeff 923 0.0000 0.0000 0.3500 0.0 # sulfone 
+dihedral_coeff 924 0.000 0.000 0.180 0.0 # silane  silaethane 
+dihedral_coeff 925 0.000 0.000 0.180 0.0 # silane  silanol 
+dihedral_coeff 926 0.000 0.000 0.180 0.0 # silane  silanol 
+dihedral_coeff 927 0.000 0.000 0.140 0.0 # disilane 
+dihedral_coeff 928 0.000 0.000 0.647 0.0 # sulfide all-atom 
+dihedral_coeff 929 0.000 0.000 0.647 0.0 # sulfide all-atom 
+dihedral_coeff 930 0.000 0.000 0.558 0.0 # disulfide all-atom 
+dihedral_coeff 931 0.000 0.000 0.000 0.0 # cyclopropylbenzene  11/10 
+dihedral_coeff 932 0.000 0.000 0.000 0.0 # cyclopropylpyridine 11/10 
+dihedral_coeff 933 0.000 0.500 0.000 0.0 # vinylcyclopropane 6/23 
+dihedral_coeff 934 0.000 0.500 0.000 0.0 # vinylcyclopropane 6/23 
+dihedral_coeff 935 0.000 0.000 0.000 0.0 # cyclopropylpyrrole - JT-R 2014/04 
+dihedral_coeff 936 0.000 0.000 0.000 0.0 # cyclopropylfuran - JT-R 2014/04 
+dihedral_coeff 937 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 938 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 939 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 940 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 941 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 942 0.000 0.000 0.000 0.0 # small ring 
+dihedral_coeff 943 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 944 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 945 0.0 0.0 0.0 0.0 # small ring JT-R 2014/04 copy for cPr- 
+dihedral_coeff 946 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 947 0.0 0.0 0.0 0.0 # small ring 
+dihedral_coeff 948 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 949 0.0 0.0 0.0 0.0 # alkynes 
+dihedral_coeff 950 0.000 0.000 0.318 0.0 # alkene 
+dihedral_coeff 951 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 952 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 953 0.0 14.0 0.0 0.0 # triene 
+dihedral_coeff 954 0.800 -0.760 0.000 0.0 # dicarbonyls    " 
+dihedral_coeff 955 0.800 0.000 0.000 0.0 # dicarbonyls    " 
+dihedral_coeff 956 0.000 0.000 0.300 0.0 #  
+dihedral_coeff 957 0.000 0.000 0.000 0.0 #  
+dihedral_coeff 958 0.0 14.0 0.0 0.0 # imine 
+dihedral_coeff 959 2.300 6.089 0.000 0.0 # amides - V1 changed to 2.3 
+dihedral_coeff 960 0.000 4.900 0.000 0.0 # amides 
+dihedral_coeff 961 1.500 5.500 0.00 0.0 # carboxylic acid - aliphatic 
+dihedral_coeff 962 4.669 5.124 0.0000 0.0 # esters 
+dihedral_coeff 963 0.0 0.0 0.0 0.0 # azides 
+dihedral_coeff 964 0.000 2.060 0.000 0.0 # phenol all-atom  JT-R 2014/04 AA+CM1A 
+dihedral_coeff 965 0.000 3.692 0.000 0.0 # 2-hydroxypyridine - JT-R 2014/04 fit 
+dihedral_coeff 966 0.000 1.682 0.000 0.0 # enol all-atom 
+dihedral_coeff 967 0.000 2.060 0.000 0.0 # JT-R 2014/04 added for 2-hydroxy thio 
+dihedral_coeff 968 2.63 -1.0 0.34 0.0 # 2-hydroxy thiophenes JT-R 2014/04 fit 
+dihedral_coeff 969 4.478 -2.1746 0.000 0.0 # trifluoroethanol 
+dihedral_coeff 970 0.000 2.060 0.000 0.0 # JT-R 2014/04 added for 2-hydroxy pyrr 
+dihedral_coeff 971 0.0 -1.5 0.1 0.0 # JT-R 2014/04 fit AA/CM1A to MP2/aug-c 
+dihedral_coeff 972 0.79 -3.58 0.3 0.0 # 2-thiol thiophenes JT-R 2014/04 fit A 
+dihedral_coeff 973 -0.95 -4.1 0.0 0.0 # 2-thio pyrrole JT-R 2014/04fit AA/CM1 
+dihedral_coeff 974 0.59 -2.50 0.46 0.0 # 2-thiolfuran JT-R 2014/04 fit AA/CM1A 
+dihedral_coeff 975 0.000 3.900 0.000 0.0 # guanidinium ion 
+dihedral_coeff 976 0.000 3.900 0.000 0.0 # guanidinium ion 
+dihedral_coeff 977 0.0 1.87 0.00 -0.18 # aminoimidazol 
+dihedral_coeff 978 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 979 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 980 0.0 5.00 0.0 0.0 #  
+dihedral_coeff 981 0.0 -1.19 0.0 0.0 # 2-amino thiophenes JT-R 2014/04 fit A 
+dihedral_coeff 982 0.0 -1.57 0.0 0.0 # 2-aminofuran JT-R fit 2014/04 AA/CM1A 
+dihedral_coeff 983 0.0 0.0 0.3 0.0 # generic 
+dihedral_coeff 984 0.0 0.0 0.3 0.0 # generic 
+dihedral_coeff 985 0.0 0.0 0.3 0.0 # generic 
+dihedral_coeff 986 0.000 0.000 0.000 0.0 # peptides 
+dihedral_coeff 987 0.000 0.000 0.000 0.0 # peptides 
+dihedral_coeff 988 0.000 4.900 0.000 0.0 # dicarbonyls    " 
+dihedral_coeff 989 2.722 -5.154 0.000 0.0 # hydroxamic acids 
+dihedral_coeff 990 1.671 -4.901 0.669 0.0 # sulfonamide 
+dihedral_coeff 991 0.000 0.000 0.180 0.0 # tentative 
+dihedral_coeff 992 0.000 0.000 0.180 0.0 # tentative 
+dihedral_coeff 993 0.000 0.000 0.140 0.0 # disilane 
+dihedral_coeff 994 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 995 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 996 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 997 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 998 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 999 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1000 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1001 0.000 1.620 0.000 -0.44 # benzamidine; fit to 6-31G* 8/02
+dihedral_coeff 1002 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1003 2.91 1.83 1.21 0.0 # biaryl_26 
+dihedral_coeff 1004 0.63 0.8 1.54 -0.74 # biaryl_26 keep V4 
+dihedral_coeff 1005 7.33 2.18 0.51 0.0 # biaryl_29 
+dihedral_coeff 1006 4.0 2.13 1.6 0.0 # biaryl_29 
+dihedral_coeff 1007 2.91 1.83 1.21 0.0 # biaryl_24 
+dihedral_coeff 1008 7.33 2.18 0.51 0.0 # biaryl_27 
+dihedral_coeff 1009 6.25 1.78 1.43 0.0 # biaryl_28 
+dihedral_coeff 1010 -2.000 1.000 0.000 0.0 # hetero diketones  4/08 
+dihedral_coeff 1011 2.000 1.000 0.000 0.0 # hetero diketones  4/08 
+dihedral_coeff 1012 0.071 0.0 0.188 0.0 # 2-alkylpyrrole  JT-R 2014/04 fit AA/C 
+dihedral_coeff 1013 1.10 -2.2 0.3 0.0 # 2-cyclopropyl pyrrole JT-R 2014/04 - 
+dihedral_coeff 1014 1.75 -1.12 0.0 0.74 # 2-Me2Npyrrole JT-R 2014/04 fit AA+CM1 
+dihedral_coeff 1015 0.0 -2.24 0.0 0.0 # 2-aminopyrroles JT-R 2014/04 fit AA+C 
+dihedral_coeff 1016 0.000 1.000 0.000 0.0 # hetero diketones  4/08 
+dihedral_coeff 1017 0.000 1.000 0.000 0.0 # hetero diketones  4/08 
+dihedral_coeff 1018 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1019 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1020 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1021 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1022 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1023 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1024 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1025 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1026 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1027 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1028 0.000 0.000 0.000 0.0 # VHL_3 
+dihedral_coeff 1029 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1030 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1031 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1032 0.0 2.84 0.0 0.0 # biaryl_22 
+dihedral_coeff 1033 0.0 1.11 0.0 -0.13 # biaryl_12 keep V4 
+dihedral_coeff 1034 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1035 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1036 0.0 1.95 0.0 0.0 # biaryl_13-18 
+dihedral_coeff 1037 0.0 2.65 0.0 0.0 # biaryl_16 
+dihedral_coeff 1038 0.0 3.33 0.0 0.0 # biaryl_17 
+dihedral_coeff 1039 0.0 1.03 0.0 0.0 # biaryl_19 
+dihedral_coeff 1040 0.0 1.95 0.0 0.0 # biaryl_13-18 
+dihedral_coeff 1041 0.0 1.95 0.0 0.0 # biaryl_13-18 
+dihedral_coeff 1042 0.0 1.95 0.0 0.0 # biaryl_13-18 
+dihedral_coeff 1043 0.0 1.03 0.0 0.0 # 2-pyridinyl-4-triazole 
+dihedral_coeff 1044 0.0 1.95 0.0 0.0 # biaryl_13-18 
+dihedral_coeff 1045 0.0 3.33 0.0 0.0 # biaryl_17 
+dihedral_coeff 1046 0.0 3.7 0.0 0.0 # biaryl_18 
+dihedral_coeff 1047 0.0 2.29 0.0 0.0 # biaryl_15 
+dihedral_coeff 1048 0.0 2.49 0.0 0.0 # biaryl_20 
+dihedral_coeff 1049 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 1050 0.0 2.17 0.0 0.0 # biphenyl-like 
+dihedral_coeff 1051 0.0 0.0 0.100 0.0 # 2-methylpyridine JT-R 2014/04 fit AA 
+dihedral_coeff 1052 -0.92 5.10 0.0 0.0 # 2-NMe2-pyridine JT-R 2014/04 fit AA/C 
+dihedral_coeff 1053 0.000 3.80 0.0 0.0 # 2-amino pyridine, JT-R 2014/04 fit AA 
+dihedral_coeff 1054 -3.76 5.03 0.61 0.46 # biaryl_ether_15_scan_1_Phi1 
+dihedral_coeff 1055 0.000 6.089 0.000 0.0 # quanidine 11/10 
+dihedral_coeff 1056 4.64 -1.27 0.45 0.08 # alkyl_hydantoin 
+dihedral_coeff 1057 1.964 0.000 0.659 0.0 # tertiary amide 
+dihedral_coeff 1058 0.000 0.000 0.464 0.0 # tertiary amide 
+dihedral_coeff 1059 2.0 0.0 0.0 0.0 # 2-chloroethylamines 
+dihedral_coeff 1060 11.035 -0.968 0.270 0.0 # amine all-atom 
+dihedral_coeff 1061 8.000 0.0 0.0 0.0 # 2-aminoethanol 6-31G* fit - wj
+dihedral_coeff 1062 5.260 0.820 0.0 0.0 # neutral amino acid 
+dihedral_coeff 1063 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-aminopyrro 
+dihedral_coeff 1064 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-aminopyrro 
+dihedral_coeff 1065 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2NH2Furan 
+dihedral_coeff 1066 1.712 0.725 0.366 0.0 # Chi-1 Phe, Tyr OPLS-AA/M 
+dihedral_coeff 1067 0.103 0.653 0.563 0.0 # Chi-1  Arg OPLS-AA/M 
+dihedral_coeff 1068 0.884 0.897 0.880 0.0 # Chi-1  Gln,Glh,Lys,Lyn,Arn OPLS-AA/M 
+dihedral_coeff 1069 1.987 0.457 0.820 0.0 # Chi-1  Glu OPLS-AA/M 
+dihedral_coeff 1070 0.214 0.541 0.392 0.0 # Chi-1  Met OPLS-AA/M 
+dihedral_coeff 1071 1.964 0.000 0.659 0.0 # N-propylformamide 
+dihedral_coeff 1072 1.572 0.159 0.200 0.0 # Chi-1  Pro OPLS-AA/M 
+dihedral_coeff 1073 1.572 0.159 0.200 0.0 # Chi-1 Leu OPLS-AA/M 
+dihedral_coeff 1074 -0.542 0.435 0.000 0.0 # Chi-1  Hie OPLS-AA/M 
+dihedral_coeff 1075 -0.542 0.435 0.000 0.0 # Chi-1  Hid OPLS-AA/M 
+dihedral_coeff 1076 -3.038 0.419 0.000 0.0 # Chi-1  Hip OPLS-AA/M 
+dihedral_coeff 1077 -5.501 1.527 0.000 0.0 # Chi-1  Asn OPLS-AA/M 
+dihedral_coeff 1078 -7.890 0.662 0.997 0.0 # Chi-1  Asp,Ash OPLS-AA/M 
+dihedral_coeff 1079 -9.000 2.000 0.800 0.0 # Central (phi) torsion for beta-3-pept 
+dihedral_coeff 1080 0.000 0.000 0.464 0.0 # N-ethylformamide 
+dihedral_coeff 1081 6.258 -1.037 1.367 0.0 # Chi-1 for Ser & Thr OPLS-AA/M 
+dihedral_coeff 1082 -0.940 2.755 -2.670 0.0 # Psi  Pro OPLS-AA/M 
+dihedral_coeff 1083 1.810 2.155 -0.470 0.0 # Psi  peptides AA/M 
+dihedral_coeff 1084 0.000 0.000 0.000 0.0 # peptides 
+dihedral_coeff 1085 -0.500 0.200 0.000 0.0 # dicarbonyls    " 
+dihedral_coeff 1086 -0.900 0.300 0.000 0.0 # dicarbonyls    " 
+dihedral_coeff 1087 0.000 0.000 0.000 0.0 # dicarbonyls    " 
+dihedral_coeff 1088 0.0 14.0 0.0 0.0 # quanidine 
+dihedral_coeff 1089 0.0 14.0 0.0 0.0 # quanidine 
+dihedral_coeff 1090 0.0 14.0 0.0 0.0 # quanidine 
+dihedral_coeff 1091 0.0 14.0 0.0 0.0 # quanidine 
+dihedral_coeff 1092 4.6 0.0 0.0 0.0 # alkyl urea   wlj 09/08 
+dihedral_coeff 1093 2.300 6.089 0.000 0.0 # imides 
+dihedral_coeff 1094 0.000 4.900 0.000 0.0 # imides 
+dihedral_coeff 1095 -2.000 5.000 0.0 0.0 # carbamates 
+dihedral_coeff 1096 -2.000 5.000 0.0 0.0 # carbamates 
+dihedral_coeff 1097 0.90 -2.93 2.64 0.0 # dimethyl phosphate 
+dihedral_coeff 1098 0.0 0.0 0.00 0.0 # phosphonates 
+dihedral_coeff 1099 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1100 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1101 0.0 2.133 0.0 0.0 # aniline-like 
+dihedral_coeff 1102 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1103 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Furans 
+dihedral_coeff 1104 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1105 0.14 -0.09 0.54 0.0 # 2-alkyl furans  JT-R 2014/04 fit AA+C 
+dihedral_coeff 1106 0.000 1.500 0.000 0.0 # hetero diketones  4/08 
+dihedral_coeff 1107 -0.750 1.500 0.000 0.0 # hetero diketones  4/08 
+dihedral_coeff 1108 0.0 -1.40 1.30 0.47 # 2-Me2N-furan JT-R 2014/04 fit AA/CM1A 
+dihedral_coeff 1109 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1110 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1111 1.3 -1.0 0.33 0.0 # 2-hydroxyfuran JT-R 2014/04 fit AA/CM 
+dihedral_coeff 1112 1.5 -0.574 1.3 0.0 # 2-methoxyfuran JT-R 2014/04 fit AA/CM 
+dihedral_coeff 1113 1.2 -2.84 1.2 0.0 # 2-thiomethylfuran JT-R 2014/04 fit AA 
+dihedral_coeff 1114 9.066 0.0 0.0 0.0 # hexopyranoses 
+dihedral_coeff 1115 12.234 0.00 0.000 0.0 # triols only AA 
+dihedral_coeff 1116 9.508 0.00 0.000 0.0 # diols only  AA 
+dihedral_coeff 1117 4.319 0.0 0.0 0.0 # hexopyranoses 
+dihedral_coeff 1118 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-hydroxypyr 
+dihedral_coeff 1119 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-hydroxypyr 
+dihedral_coeff 1120 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-hydroxypyr 
+dihedral_coeff 1121 2.300 6.089 0.0 0.0 # carbamates 
+dihedral_coeff 1122 0.000 4.900 0.0 0.0 # carbamates 
+dihedral_coeff 1123 0.0 0.0 0.00 0.0 # phosphonates 
+dihedral_coeff 1124 -1.257 -1.806 0.003 0.0 # hexopyranoses 
+dihedral_coeff 1125 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1126 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Thiophenes 
+dihedral_coeff 1127 -0.550 0.0 0.0 0.0 # polyethers, crown ethers 
+dihedral_coeff 1128 2.8 2.1 1.3 0.0 # biaryl_25 
+dihedral_coeff 1129 0.34 -0.27 0.63 0.0 # VHL_2 
+dihedral_coeff 1130 2.300 6.089 0.0 0.0 # carbamates 
+dihedral_coeff 1131 0.000 4.900 0.0 0.0 # carbamates 
+dihedral_coeff 1132 4.669 5.124 0.0000 0.0 # carbonates - tentative 
+dihedral_coeff 1133 0.000 0.000 0.000 0.0 # tentative 
+dihedral_coeff 1134 0.000 0.000 0.000 0.0 # vinylsulfone wlj 2/22 
+dihedral_coeff 1135 0.000 0.000 0.000 0.0 # vinylsulfone wlj 2/22 
+dihedral_coeff 1136 0.75 0.0 0.0 0.0 # sulfonic acid 7/08 B3LYP 
+dihedral_coeff 1137 0.000 6.089 0.000 0.0 # small ring amides 
+dihedral_coeff 1138 0.000 6.089 0.000 0.0 # small ring amides 
+dihedral_coeff 1139 0.000 20.000 0.000 0.0 # small ring amides 
+dihedral_coeff 1140 0.000 4.900 0.000 0.0 # small ring amides 
+dihedral_coeff 1141 0.000 0.500 0.000 0.0 # dicarbonyls Kahn & Bruice 
+dihedral_coeff 1142 0.000 0.200 0.000 0.0 # dicarbonyls BMC 8,1881(2000) 
+dihedral_coeff 1143 1.60 3.20 0.0 0.0 # dicarbonyls    " 
+dihedral_coeff 1144 0.000 4.900 0.000 0.0 # tert. amides 2/29/04 
+dihedral_coeff 1145 0.000 6.089 0.000 0.0 # amides 
+dihedral_coeff 1146 0.000 6.089 0.000 0.0 # amides 
+dihedral_coeff 1147 0.000 6.089 0.000 0.0 # amides 
+dihedral_coeff 1148 0.000 6.089 0.000 0.0 # small ring amides 
+dihedral_coeff 1149 0.000 4.900 0.000 0.0 # amides   wlj 6/20/97 
+dihedral_coeff 1150 0.000 6.603 0.000 0.0 # hydroxamic acids 
+dihedral_coeff 1151 0.000 5.000 0.00 0.0 # benzoic acids 
+dihedral_coeff 1152 0.000 5.500 0.00 0.0 # carboxylic acid - aliphatic 
+dihedral_coeff 1153 0.000 5.000 0.000 0.0 # phenyl acetate 
+dihedral_coeff 1154 0.000 5.000 0.00 0.0 # benzoic esters 
+dihedral_coeff 1155 0.000 5.124 0.0000 0.0 # esters 
+dihedral_coeff 1156 0.0 0.0 0.00 0.0 # phosphonates 
+dihedral_coeff 1157 0.0 0.0 0.00 0.0 # phosphonates 
+dihedral_coeff 1158 0.0 0.0 0.30 0.0 # phosphonates 
+dihedral_coeff 1159 0.000 6.500 0.000 0.0 # thioamides   MP3/6-31+G**
+dihedral_coeff 1160 0.000 6.500 0.000 0.0 # thioamides   (Wiberg & Rush) 
+dihedral_coeff 1161 0.000 6.500 0.000 0.0 # thioamides   fit to 
+dihedral_coeff 1162 -0.700 5.000 0.000 0.0 # thioamides   wlj 01/00; 09/08 
+dihedral_coeff 1163 0.000 5.500 0.00 0.0 # thioacids    guess 
+dihedral_coeff 1164 0.000 5.000 0.000 0.0 # thioesters   guess 
+dihedral_coeff 1165 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 1166 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Thiophenes 
+dihedral_coeff 1167 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 1168 0.0 0.26 0.1 0.0 # 2-alkyl thiophenes JT-R 2014/04 fit A 
+dihedral_coeff 1169 0.97 0.08 0.14 0.0 # 2-alkyl thiophenes JT-R 2014/04 fit A 
+dihedral_coeff 1170 0.0 -1.04 0.0 0.23 # 2-cyclopropyl thiophenes JT-R 2014/04 
+dihedral_coeff 1171 1.19 0.0 0.40 0.0 # 2-cyclopropyl thiophenes JT-R 2014/04 
+dihedral_coeff 1172 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1173 0.0 7.250 0.0 0.0 #  
+dihedral_coeff 1174 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1175 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1176 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1177 0.0 2.133 0.0 0.0 # aniline-like 
+dihedral_coeff 1178 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1179 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 1180 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 1181 0.0 10.75 0.0 0.0 #  
+dihedral_coeff 1182 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1183 0.0 2.100 0.0 0.0 # diarylamine 
+dihedral_coeff 1184 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-thiolpyrro 
+dihedral_coeff 1185 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-thiolpyrro 
+dihedral_coeff 1186 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-thiolpyrro 
+dihedral_coeff 1187 0.0 14.0 0.0 0.0 # vinyl sulfone 
+dihedral_coeff 1188 0.0 14.0 0.0 0.0 # vinyl sulfone 
+dihedral_coeff 1189 0.000 0.000 0.260 0.0 # silane  1-silapropane 
+dihedral_coeff 1190 5.200 -0.500 0.000 0.0 # silane 
+dihedral_coeff 1191 0.000 0.000 0.000 0.0 # tentative 
+dihedral_coeff 1192 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for Thiophenes 
+dihedral_coeff 1193 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-thiolpyrro 
+dihedral_coeff 1194 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-thiolpyrro 
+dihedral_coeff 1195 0.0 7.250 0.0 0.0 # JT-R 2014/04 added for 2-thiolpyrro 
+improper_coeff 1 2.5000 -1 2 # improper torsion 9/08 was 2.2
+improper_coeff 2 15.0000 -1 2 # improper torsion
+improper_coeff 3 2.5000 -1 2 # improper torsion 9/08 was 2.0
+improper_coeff 4 10.5000 -1 2 # improper torsion
+# UNTRUSTED: improper_coeff @improper:CT_CM_CM_CT -4.0000 -1 2 # allenes improper
+# UNTRUSTED: improper_coeff @improper:CT_CM_CM_HC -4.0000 -1 2 # allenes improper
+# UNTRUSTED: improper_coeff @improper:HC_CM_CM_CT -4.0000 -1 2 # allenes improper
+# UNTRUSTED: improper_coeff @improper:HC_CM_CM_HC -4.0000 -1 2 # allenes improper

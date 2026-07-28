@@ -1,0 +1,39 @@
+{
+  "_comment": "Reference values for lammps-npt-density-resolution. Calibrated on x86_64 with compchem-bench/lammps-npt-density-resolution:ci (LAMMPS 7Jan2022).",
+  "calibration_date": "2026-07-28",
+  "arch": "x86_64",
+  "image_digest": "sha256:23f984b91c9f5412e1901b92e0e60b47ad4282c722441a7a88ea61dd202fb88a",
+  "asset_hashes": {
+    "assets/after_equil.data": "sha256:941956e4845965868e2e938d6844fb02d79be9bfcc909e1f63d06444e7f16910",
+    "assets/npt_template.in": "sha256:3e8156bdd491f3f97acd9fd5a729244fb78bc7d5a8861a460d9062c86581758a",
+    "assets/system.in.charges": "sha256:cff37a68bd3920c9e26570c77815ad6cd1b4fee5e354b0550cc6096e6a5c85e6",
+    "assets/system.in.settings": "sha256:a9c10f6272216fa24363f946023ec48b2b9f50023b142502fcd2f9972cf93d6d"
+  },
+  "expected_steps": 20000,
+  "expected_thermo_rows": 201,
+  "expected_window_rows": 100,
+  "density_ref": {
+    "earth": 0.7725103886,
+    "mars": 0.7800499489
+  },
+  "density_tol": 0.025,
+  "block_sem_range": [
+    0.0003,
+    0.015
+  ],
+  "kappa_range": [
+    1e-10,
+    1e-08
+  ],
+  "resolvable_ref": 0,
+  "min_resolution_margin": 10.0,
+  "consistency_tol": 0.0001,
+  "kappa_consistency_rel_tol": 0.05,
+  "closure_tol": 1e-05,
+  "prediction_rel_tol": 0.01,
+  "box_density_tol": 0.0005,
+  "recompute_pe_tol": 1.0,
+  "_calibration_note": "Liquid ethanol, 216 molecules / 1944 atoms, OPLS-AA, pppm 1.0e-4, two 20000-step NPT productions (10 ps at 0.5 fs) from the same equilibrated configuration and the same stored velocities, differing only in the applied pressure; single-threaded. 5 oracle runs produced identical values for all 10 keys (spread 0.0): with no velocity re-seeding the trajectories are deterministic. WHY THIS TASK DOES NOT ASK ABOUT STATISTICAL SIGNIFICANCE: the calibrated runs give density_earth 0.77251 and density_mars 0.78005, i.e. the Mars run came out DENSER by 0.00754 g/cm^3 \u2014 the opposite sign to any compressibility effect, since Mars is the lower pressure. That difference is 151x the physically predicted shift (predicted_delta_rho 5.00e-5 from kappa_T = 6.43e-10 /Pa and delta_P = 100725 Pa) and 2.7x the correctly block-averaged combined SEM of 0.00276, so even a properly autocorrelation-aware two-sigma test would wrongly call it significant. The two runs are not independent measurements of the same quantity at this precision; they are one chaotic system sampled twice. The answerable question is therefore resolution, not significance: is the predicted effect above the noise floor? It is not, by a factor of 55 (min_resolution_margin 10.0 asserts the premise with wide headroom, and the verdict is insensitive to block count \u2014 4 or 10 blocks both give resolvable=0). density_tol 0.025 is set by trajectory divergence rather than by run-to-run noise, which is zero: two runs of the same system differ by ~0.008 here, so a build whose floating-point tail differs may shift a mean density by that order; 0.025 still rejects the un-equilibrated states this system passes through (0.258 g/cm^3 at the start of compression, ~0.50 part-way). block_sem_range and kappa_range are physical sanity bounds, not precision claims \u2014 kappa_range spans 0.1-10 GPa^-1 against an experimental ~1.1 GPa^-1 for ethanol, and rejects the cubic-angstrom-to-cubic-metre unit error by 30 orders of magnitude. consistency_tol 1e-4 is what separates block averaging from sigma/sqrt(N): the naive estimator gives roughly 0.0008 against the block value 0.0020 (see tests/cheat_naivesem.sh). box_density_tol 0.0005 is generous against an exact check \u2014 the summed per-type masses in the data file agree with 216 x 46.069 g/mol to 0.0000%, so the only error is the printed precision of the box bounds. ANTI-CHEAT HARDENING (after the first CI run, in which tests/cheat.sh passed): the layer-9 box-density check inspects only the final thermo row, so a forger who jitters the middle of a trace but leaves its endpoint intact defeats it \u2014 which is exactly what happened, the forged final row landing 0.00032 g/cm^3 from the true one by chance. Three whole-trace constraints were added. (1) density_volume_rel_tol 1e-4: LAMMPS' density column is total mass / volume by construction, and the shipped runs satisfy that identity to 1.2e-7 on every row, so any row where the two columns disagree is fabricated. (2) min_trace_divergence 0.001 g/cm^3: two NPT runs started from the same configuration at different pressures decorrelate \u2014 the calibrated pair differ by RMS 0.012 over the trace, 12x the floor \u2014 so near-identical traces mean one log was copied rather than run. (3) the two written configurations must not be byte-identical, since independent runs end in different states (calibrated final volumes differ by ~327 A^3). These matter because density_tol (0.025) is necessarily larger than the Earth-Mars density difference (0.0075), so the reference tolerance alone cannot tell the two conditions apart; the distinctness checks do it structurally instead.",
+  "density_volume_rel_tol": 0.0001,
+  "min_trace_divergence": 0.001
+}

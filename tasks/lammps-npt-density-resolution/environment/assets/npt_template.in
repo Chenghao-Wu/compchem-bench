@@ -1,0 +1,39 @@
+# =====================================================
+# npt_template.in — liquid-ethanol NPT production run
+#
+# Instantiate this template by replacing the two placeholders:
+#   __PRESSURE__  external pressure in atm
+#   __OUTDATA__   name of the data file to write at the end
+# Change nothing else.
+#
+# Run with: lmp_serial -in <your input> -log <your log>
+# =====================================================
+
+units           real
+atom_style      full
+bond_style      harmonic
+angle_style     harmonic
+dihedral_style  opls
+improper_style  cvff
+pair_style      lj/charmm/coul/long 9.0 11.0
+pair_modify     mix geometric
+special_bonds   lj/coul 0.0 0.0 0.5
+kspace_style    pppm 0.0001
+
+read_data       assets/after_equil.data
+include         assets/system.in.settings
+include         assets/system.in.charges
+
+neighbor        2.0 bin
+neigh_modify    delay 0 every 1 check yes
+
+timestep        0.5
+
+thermo_style    custom step temp press vol pe etotal density
+thermo          100
+
+fix             1 all npt temp 298.0 298.0 50.0 iso __PRESSURE__ __PRESSURE__ 500.0
+
+run             20000
+
+write_data      __OUTDATA__

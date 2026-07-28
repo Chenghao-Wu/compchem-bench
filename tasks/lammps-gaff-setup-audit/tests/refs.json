@@ -1,0 +1,32 @@
+{
+  "_comment": "Reference values for lammps-gaff-setup-audit. Calibrated on x86_64 with compchem-bench/lammps-gaff-setup-audit:ci (LAMMPS 7Jan2022).",
+  "calibration_date": "2026-07-27",
+  "arch": "x86_64",
+  "image_digest": "sha256:c85ce86bc4ac690ecfd3d1c4cf12882638d0c80fd19fd54efed91ddee51f3858",
+  "asset_hashes": {
+    "assets/porphin_energy.in": "sha256:01a917d0e028a1835a522ed80cbc0dcc6a0ac2cc802e0916eb6615918aa8120a",
+    "assets/system_gaff2.data": "sha256:17ead251c5afc93fe59d0aed313027c81f1b82bb910d1ba324561b0a3498087f",
+    "assets/system_gaff2.in.settings": "sha256:bbf4d92552dd88ae2abb4a39bc56c5131ce32f77574fb9c43a9d813f1ace3441"
+  },
+  "energy_ref": {
+    "e_pot_original": 1022.6682,
+    "e_vdwl_original": 732.67642,
+    "e_coul_original": 59.649143,
+    "e_pot_audited": 985.71771,
+    "e_vdwl_audited": 744.80212,
+    "e_coul_audited": 10.572935,
+    "delta_e_pot": -36.95049
+  },
+  "energy_tol": 0.1,
+  "scale_ref": {
+    "lj_14_scale": 0.5,
+    "coul_14_scale": 0.8333333333333334
+  },
+  "scale_tol": 0.002,
+  "bonded_invariance_tol": 1e-06,
+  "min_nonbonded_shift": 1.0,
+  "closure_tol": 0.005,
+  "consistency_tol": 0.001,
+  "recompute_tol": 0.1,
+  "_calibration_note": "Porphin (C20H14N4, 40 atoms, net neutral) with GAFF2, ewald 1.0e-4, lj/charmm/coul/long 8.0 10.0, single-threaded run 0. The shipped input issues no special_bonds, so LAMMPS applies its default lj/coul 0.0 0.0 0.0 and drops 1-4 pairs entirely; GAFF2 inherits AMBER's convention of retaining them at 0.5 (LJ) and 1/1.2 (Coulomb). The fix is one line, `special_bonds amber`. 5 oracle runs produced identical values for all 9 keys (spread 0.0 \u2014 a single point is fully deterministic). energy_tol/recompute_tol 0.1 kcal/mol is set by spelling latitude rather than by run-to-run noise: `special_bonds amber` and an explicit `coul 0.0 0.0 0.8333` differ by 0.002 kcal/mol in e_coul, and a coarser 0.833 by ~0.02, so 0.1 admits any reasonable spelling of the AMBER convention while remaining far tighter than the 36.95 kcal/mol defect itself. scale_tol 0.002 likewise accepts 0.833, 0.8333 and 1/1.2 but rejects the common CHARMM-style error of using 0.5 for both terms (see tests/cheat_wrongscale.sh), which misses e_coul_audited by ~19.6 kcal/mol. bonded_invariance_tol 1e-6 enforces that the correction moves only the non-bonded terms: ebond/eangle/edihed/eimp are identical across the two runs to printed precision. min_nonbonded_shift 1.0 rejects an 'audited' run whose non-bonded energy did not actually move. Calibrated twice on two independently built images (the apt/pip layer above the pinned base is not byte-reproducible, so image_digest changes across rebuilds while the LAMMPS binary does not); all 10 oracle runs across both images produced bit-identical values, so image_digest records the image these references were measured on rather than a constraint on the build."
+}

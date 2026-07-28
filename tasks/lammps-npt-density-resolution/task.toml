@@ -1,0 +1,21 @@
+version = "1.0"
+
+[metadata]
+name = "lammps-npt-density-resolution"
+difficulty = "hard"
+category = "workflow"
+tags = ["lammps", "classical-md", "npt", "statistics", "workflow", "cross-verify", "stochastic"]
+author = "compchem-bench"
+created = "2026-07-27"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 1
+memory_gb = 2
+network = false
+
+[agent]
+timeout_sec = 2400
+
+[verifier]
+timeout_sec = 600

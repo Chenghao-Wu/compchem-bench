@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Full 40-task CI re-run driver. Runs .ci/run_ci.sh per task with
+# Full 43-task CI re-run driver. Runs .ci/run_ci.sh per task with
 # limited parallelism, logs per task, prints a PASS/FAIL summary.
 set -u
 cd "$(dirname "$0")/.."
@@ -31,4 +31,4 @@ export LOGDIR
 printf '%s\n' $TASKS | xargs -P 6 -I{} bash -c 'run_one "$@"' _ {} > "$LOGDIR/summary.txt"
 echo "===== SUMMARY ====="
 sort "$LOGDIR/summary.txt" | tee "$LOGDIR/summary.sorted.txt"
-echo "PASS count: $(grep -c '^PASS' "$LOGDIR/summary.txt") / 40"
+echo "PASS count: $(grep -c '^PASS' "$LOGDIR/summary.txt") / 43"

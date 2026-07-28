@@ -1,0 +1,1027 @@
+set type 1    charge      0.000 # H  - H~   | Types 1-18, 35, 53 give generic L-J
+set type 2    charge      0.000 # He - He   | parameters for QM/MM calculations.
+set type 3    charge      0.000 # Li - Li   | LJ params for H on heteroatom are set
+set type 4    charge      0.000 # Be - Be   | to zero by BOSS.
+set type 5    charge      0.000 # B  - B~   | 
+set type 6    charge      0.000 # C  - C~   | 
+set type 7    charge      0.000 # N  - N~   | 
+set type 8    charge      0.000 # O  - O~   | 
+set type 9    charge      0.000 # F  - F~   | 
+set type 10   charge      0.000 # Ne - Ne   | 
+set type 11   charge      0.000 # Na - Na   | 
+set type 12   charge      0.000 # Mg - Mg   | 
+set type 13   charge      0.000 # Al - Al   | 
+set type 14   charge      0.000 # Si - Si   | 
+set type 15   charge      0.000 # P  - P~   | 
+set type 16   charge      0.000 # S  - S~   | 
+set type 17   charge      0.000 # Cl - Cl   | 
+set type 18   charge      0.000 # Ar - Ar   | 
+set type 19   charge      0.000 # Ne - Ne   | 2-A probe
+set type 20   charge      0.000 # Br - Br   | 
+set type 21   charge      0.000 # I  - I~   | 
+#                                                                                                   
+#   This file contains the non-bonded and torsional parameters that have been                       
+#   published for the OPLS-AA force field and other unpublished parameters.                         
+#        W. L. Jorgensen, D. S. Maxwell, and J. Tirado-Rives,                                       
+#        J. Am. Chem. Soc. 118, 11225-11236 (1996).                                                 
+#                                                                                                   
+#        New Alkane Parameters - OPLS/2020  - also see 711-716                                        
+#        Ghahremanpour, M.; Tirado-Rives, J.; Jorgensen, W. L. 
+#        J. Phys. Chem. B 2022, 126, 5896-5907.
+set type 22   charge     -0.180 # C  - CT   | n-CH3 all-atom C: alkanes
+set type 23   charge     -0.180 # C  - CT   | iso-CH3 all-atom C: alkanes
+set type 24   charge     -0.180 # C  - CT   | neo-CH3 all-atom C: alkanes
+set type 25   charge     -0.120 # C  - CT   | CH2 all-atom C: alkanes
+set type 26   charge     -0.060 # C  - CT   | CH all-atom C: alkanes
+set type 27   charge       0.00 # C  - CT   | C all-atom C: alkanes
+set type 28   charge      0.060 # H  - HC   | H all-atom H: alkanes
+set type 29   charge     -0.065 # C  - CT   | all-atom C: CH3, toluene
+set type 30   charge     -0.005 # C  - CT   | all-atom C: CH2, ethyl benzene
+set type 31   charge      0.055 # C  - CT   | all-atom C: CH, i-propyl benzene
+set type 32   charge      0.115 # C  - CT   | all-atom C: C, t-butyl benzene
+#                                          Types 66-134 include UA parameters for                      
+#                                          stored solvent models for BOSS and
+#                                          should not be removed.                                              
+set type 33   charge        0.0 # C  - C4   | CH4 66-77: JACS,106,6638 (1984)
+set type 34   charge        0.0 # C  - C3   | CH3 (C1) ETHANE
+set type 35   charge        0.0 # C  - C3   | CH3 (C2) N-ALKANES
+set type 36   charge        0.0 # C  - C3   | CH3 (C3) ISOBUTANE
+set type 37   charge        0.0 # C  - C3   | CH3 (C4) NEOPENTANE
+set type 38   charge        0.0 # C  - C2   | CH2 (SP3) ALKANES
+set type 39   charge        0.0 # C  - C9   | CH2 (SP2) 1-ALKENES
+set type 40   charge        0.0 # C  - CH   | CH (SP3) ISOBUTANE
+set type 41   charge        0.0 # C  - C8   | CH (SP2) 2-ALKENES
+set type 42   charge        0.0 # C  - CD   | CH (AROM) BENZENOID united atom
+set type 43   charge        0.0 # C  - CT   | C (SP3) NEOPENTANE
+set type 44   charge        0.0 # C  - C7   | C (SP2) ISOBUTENE
+set type 45   charge     -0.700 # O  - OH   | O ALCOHOLS JPC,90,1276 (1986)
+set type 46   charge      0.435 # H  - HO   | H(O) ALCOHOLS "
+set type 47   charge      0.265 # C  - C3   | CH3 IN METHANOL "
+set type 48   charge      0.265 # C  - C2   | CH2 IN ETHANOL "
+set type 49   charge     -0.470 # S  - SH   | S IN H2S JPC,90,6379 (1986)
+set type 50   charge     -0.450 # S  - SH   | S IN RSH "
+set type 51   charge     -0.470 # S  - S~   | S IN RSR "
+set type 52   charge     -0.300 # S  - S~   | S IN RSSR "
+set type 53   charge      0.235 # H  - HS   | H IN H2S "
+set type 54   charge      0.270 # H  - HS   | H(S) IN RSH "
+set type 55   charge      0.180 # C  - C3   | CH3 IN CH3SH "
+set type 56   charge      0.180 # C  - C2   | CH2 IN CH3CH2SH "
+set type 57   charge      0.235 # C  - C3   | CH3 IN CH3SR "
+set type 58   charge      0.235 # C  - C2   | CH2 IN RCH2SR "
+set type 59   charge      0.300 # C  - C3   | CH3 IN CH3SSR "
+set type 60   charge      0.300 # C  - C2   | CH2 IN RCH2SSR "
+set type 61   charge     -0.430 # N  - NZ   | N IN CH3CN Mol.Phys.,63,547 (1988)
+set type 62   charge      0.280 # C  - CZ   | C IN CH3CN "
+set type 63   charge      0.150 # C  - C3   | CH3 IN CH3CN united atom "
+set type 64  charge        0.0 # DM - DM   | DUMMY ATOM
+set type 65  charge      0.000 # He - He   | Helium - " "
+set type 66  charge        0.0 # Ne - Ne   | Neon - Hirschfelder (Wiley,1954)
+set type 67  charge      0.000 # Ar - Ar   | Ar - Verlet & Weis,
+set type 68  charge      0.000 # Kr - Kr   | Kr - Mol.Phys.,24,1013 (1972)
+set type 69  charge      0.000 # Xe - Xe   | Xe - "
+set type 70  charge      0.265 # C  - CH   | CH (SP3) ISOPROPANOL
+set type 71  charge      0.265 # C  - CT   | C (SP3) T-BUTANOL
+set type 72  charge      -0.50 # O  - OS   | ETHER O JCC,11,958 (1990) UA
+set type 73  charge       0.25 # C  - C3   | ETHER CH3 (-O) "
+set type 74  charge       0.25 # C  - C2   | ETHER CH2 (-O) "
+set type 75  charge      0.500 # C  - C2   | CH2 Methylenechloride C-Cl=1.772
+set type 76  charge     -0.250 # Cl - Cl   | Cl Methylenechloride ClCCl = 111.8
+set type 77  charge      0.420 # C  - CH   | CH Chloroform JPC,94,1683 (1990)
+set type 78  charge     -0.140 # Cl - Cl   | Cl Chloroform C-Cl=1.758 ClCCl = 111.3
+set type 79  charge      0.248 # C  - CT   | C CCl4
+set type 80  charge     -0.062 # Cl - Cl   | Cl CCl4
+set type 81  charge      0.139 # S  - SZ   | DMSO UA unpublished
+set type 82  charge     -0.459 # O  - OY   | DMSO
+set type 83  charge      0.160 # C  - C3   | DMSO
+set type 84  charge     -1.020 # N  - NT   | Ammonia - OPLS-AA
+set type 85  charge      0.340 # H  - H~   | Ammonia
+set type 86  charge     -0.500 # O  - O~   | O in DMF - united atom
+set type 87  charge     -0.570 # N  - N~   | N in DMF - united atom
+set type 88  charge      0.500 # C  - C~   | C in C=O for UA formamide, DMF.
+set type 89  charge      0.285 # C  - C3   | CH3 in HCON(CH3)2 DMF
+#             ALL-ATOM PARAMETERS below here         
+#             135 - 140 are old OPLS-AA alkane parameters
+set type 90  charge      -0.18 # C  - CT   | CH3 all-atom C: alkanes
+set type 91  charge      -0.12 # C  - CT   | CH2 all-atom C: alkanes
+set type 92  charge      -0.06 # C  - CT   | CH all-atom C: alkanes
+set type 93  charge      -0.24 # C  - CT   | CH4 all-atom C: methane mod 1/2020
+set type 94  charge       0.00 # C  - CT   | C all-atom C: alkanes
+set type 95  charge       0.06 # H  - HC   | H all-atom H: alkanes
+set type 96  charge      0.000 # C  - CM   | alkene C (R2-C=) all atom
+set type 97  charge     -0.115 # C  - CM   | alkene C (RH-C=) all atom
+set type 98  charge     -0.230 # C  - CM   | alkene C (H2-C=) all atom
+set type 99  charge      0.115 # H  - HC   | alkene H (H-C=) all atom
+#  145 06 CA   -0.115     3.550     0.070     Benzene C - 12 site JACS,112,4768-90                  
+set type 100  charge     -0.115 # C  - CA   | Benzene C - 12 site OPLS/2020
+set type 101  charge      0.115 # H  - HA   | Benzene H - 12 site "
+set type 102  charge      0.000 # C  - CB   | Naphthalene fusion C (C9)
+set type 103  charge     -0.065 # C  - CT   | all-atom C: CH3, toluene
+set type 104  charge     -0.005 # C  - CT   | all-atom C: CH2, ethyl benzene
+set type 105  charge     -0.115 # C  - C=   | diene =CH-CH=; see 178 also
+set type 106  charge     -0.200 # Cl - Cl   | Cl in alkyl chlorides JPCB 16264 (2004)
+set type 107  charge     -0.006 # C  - CT   | RCH2Cl " "
+set type 108  charge      0.103 # H  - HC   | H in RCH2Cl
+set type 109  charge     -0.683 # O  - OH   | all-atom O: mono alcohols
+set type 110  charge      0.418 # H  - HO   | all-atom H(O): mono alcohols
+set type 111  charge      0.040 # H  - HC   | all-atom H(C): methanol
+set type 112  charge      0.145 # C  - CT   | all-atom C: CH3 & CH2, prim. alcohols
+set type 113  charge      0.205 # C  - CT   | all-atom C: CH, sec. alcohols
+set type 114  charge      0.232 # C  - CT   | all-atom C: C, tert. alcohols OPLS/2020
+set type 115  charge     -0.650 # O  - OH   | all-atom O: mono tert. alcohols OPLS/2020
+set type 116  charge      0.000 # C  - CA   | Cipso in styrene
+set type 117  charge      0.100 # C  - CA   | C(OH) phenol Use with all
+set type 118  charge     -0.530 # O  - OH   | O phenol atom C, H
+set type 119  charge      0.430 # H  - HO   | H phenol 145 & 146
+set type 120  charge     -0.700 # O  - OH   | O: diols
+set type 121  charge      0.435 # H  - HO   | H(O): diols
+set type 122  charge     -0.730 # O  - OH   | O: triols
+set type 123  charge      0.465 # H  - HO   | H(O): triols
+set type 124  charge      0.145 # C  - CT   | C(H2OH): diols, triols
+set type 125  charge      0.205 # C  - CT   | C(HROH): "
+set type 126  charge      0.265 # C  - CT   | C(R2OH): "
+set type 127  charge      0.060 # H  - HC   | H(CXOH): " OPLS/2020
+set type 128  charge     -0.170 # O  - OS   | diphenyl ether OPLS/2020
+set type 129  charge      0.000 # C  - C=   | diene =CR-RC=; see 150 also
+set type 130  charge     -0.285 # O  - OS   | O: anisole OPLS/2020
+set type 131  charge     -0.400 # O  - OS   | O: dialkyl ether OPLS/2020
+set type 132  charge      0.110 # C  - CT   | C(H3OR): methyl ether
+set type 133  charge      0.140 # C  - CT   | C(H2OR): ethyl ether
+set type 134  charge      0.170 # C  - CT   | C(HOR): i-Pr ether
+set type 135  charge      0.200 # C  - CT   | C(OR): t-Bu ether
+set type 136  charge      0.030 # H  - HC   | H(COR): alpha H ether OPLS/2020 see 794
+set type 137  charge     -0.330 # O  - OS   | O: acetal/hemiacetal ether O OPLS/2020
+set type 138  charge     -0.700 # O  - OH   | O(H): hemiacetal
+set type 139  charge      0.435 # H  - HO   | H(O): hemiacetal
+set type 140  charge      0.060 # C  - CO   | C(H2O2): acetal OCH2O
+set type 141  charge      0.100 # H  - HC   | H(CHO2): acetal OCH2O
+set type 142  charge      0.195 # C  - CO   | C(H2O2): hemiacetal OCH2OH
+set type 143  charge      0.100 # H  - HC   | H(CHO2): hemiacetal OCH2OH
+set type 144  charge      0.160 # C  - CO   | C(HCO2): acetal OCHRO
+set type 145  charge      0.100 # H  - HC   | H(CHO2): acetal OCHRO
+set type 146  charge      0.295 # C  - CO   | C(HCO2): hemiacetal OCHROH
+set type 147  charge      0.100 # H  - HC   | H(C2O2): hemiacetal OCHROH
+set type 148  charge      0.260 # C  - CO   | C(C2O2): acetal OCRRO
+set type 149  charge      0.395 # C  - CO   | C(C2O2): hemiacetal OCRROH
+set type 150  charge      0.085 # C  - CA   | C(OMe) anisole OPLS/2020
+set type 151  charge     -0.335 # S  - SH   | all-atom S: OPLS-AA/L (JPC B 2001, 105, 6474)
+set type 152  charge     -0.470 # S  - SH   | S IN H2S JPC,90,6379 (1986)
+set type 153  charge     -0.335 # S  - S~   | all-atom S: sulfides OPLS-AA/L
+set type 154  charge    -0.2175 # S  - S~   | all-atom S: disulfides OPLS-AA/L
+set type 155  charge      0.155 # H  - HS   | all-atom H(S): thiols (mod 11/99)
+set type 156  charge      0.235 # H  - HS   | H IN H2S JPC,90,6379 (1986)
+set type 157  charge      0.060 # C  - CT   | all-atom C: CH2, thiols
+set type 158  charge      0.120 # C  - CT   | all-atom C: CH, thiols
+set type 159  charge      0.180 # C  - CT   | all-atom C: C, thiols
+set type 160  charge    -0.0125 # C  - CT   | all-atom C: CH3, sulfides OPLS-AA/L
+set type 161  charge     0.0475 # C  - CT   | all-atom C: CH2, sulfides OPLS-AA/L
+set type 162  charge     0.1175 # C  - CT   | all-atom C: CH, sulfides OPLS-AA/L
+set type 163  charge     0.1675 # C  - CT   | all-atom C: C, sulfides OPLS-AA/L
+set type 164  charge     0.0375 # C  - CT   | all-atom C: CH3, disulfides
+set type 165  charge     0.0975 # C  - CT   | all-atom C: CH2, disulfides
+set type 166  charge     0.1575 # C  - CT   | all-atom C: CH, disulfides
+set type 167  charge     0.2175 # C  - CT   | all-atom C: C, disulfides
+set type 168  charge      0.000 # C  - CT   | all-atom C: CH3, methanethiol
+set type 169  charge      0.200 # C  - CT   | C in CH2OH - benzyl alcohols
+set type 170  charge      0.260 # C  - CT   | C in CHROH - benzyl alcohols
+set type 171  charge      0.320 # C  - CT   | C in CR2OH - benzyl alcohols
+set type 172  charge     -0.055 # C  - CA   | C(CH2OH) - benzyl alcohols, nitriles
+set type 173  charge     -0.320 # S  - S~   | S in thioanisoles OPLS-AA/L
+set type 174  charge      0.080 # C  - CT   | C in RCH2NH2 and Gly CA (See 900 for amines)
+set type 175  charge      0.140 # C  - CT   | C in R2CHNH2 and Ala CA
+set type 176  charge      0.200 # C  - CT   | C in R3CNH2 and Aib CA
+set type 177  charge     -0.120 # Cl - Cl   | chloroalkene Cl (ClH-C=) - see also 398
+set type 178  charge      0.005 # C  - CM   | chloroalkene C (ClH-C=)
+set type 179  charge     0.1025 # C  - CA   | C(SMe) thioanisole
+set type 180  charge      0.140 # C  - CT   | C on N: secondary N-CHR2 amide
+set type 181  charge      0.200 # C  - CT   | C on N: secondary N-CR3 amide
+set type 182  charge      0.700 # C  - C~   | C: C=O in benzophenone
+set type 183  charge      0.565 # C  - C~   | C: C=O in benzaldehyde
+set type 184  charge      0.585 # C  - C~   | C: C=O in acetophenone
+set type 185  charge      0.615 # C  - C~   | C: C=O in benzamide
+set type 186  charge      0.500 # C  - C~   | C: C=O in amide. Acyl R in amides
+set type 187  charge     -0.500 # O  - O~   | O: C=O in amide. is neutral - use
+set type 188  charge     -0.760 # N  - N~   | N: primary amide. alkane parameters.
+set type 189  charge     -0.500 # N  - N~   | N: secondary amide 279 for formyl H.
+set type 190  charge     -0.140 # N  - N~   | N: tertiary amide NEW TERT AMIDE PARAMETERS:
+set type 191  charge      0.380 # H  - H~   | H on N: primary amide see 1035-1045
+set type 192  charge      0.300 # H  - H~   | H on N: secondary amide
+set type 193  charge      0.020 # C  - CT   | C on N: secondary N-Me amide
+set type 194  charge     -0.110 # C  - CT   | C on N: tertiary N-Me amide
+set type 195  charge      0.080 # C  - CT   | C on N: secondary N-CH2R amide
+set type 196  charge     -0.050 # C  - CT   | C on N: tertiary N-CH2R amide (Pro Cdelta)
+set type 197  charge      0.010 # C  - CT   | C on N: tertiary N-CHR2 amide (Pro Calpha)
+set type 198  charge      0.142 # C  - C~   | C in O=C(NH2)2 Urea
+set type 199  charge     -0.390 # O  - O~   | O in O=C(NH2)2 Urea Isr. J. Chem
+set type 200  charge     -0.542 # N  - N~   | N in O=C(NH2)2 Urea 33, 323 (93)
+set type 201  charge      0.333 # H  - H~   | H in O=C(NH2)2 Urea
+set type 202  charge     -0.490 # N  - N~   | N in imide
+set type 203  charge      0.420 # C  - C~   | C(=O) in imide
+set type 204  charge     -0.420 # O  - O~   | O in imide
+set type 205  charge      0.370 # H  - H~   | H(N) in imide
+set type 206  charge      0.060 # H  - HC   | H(C) in formimide
+set type 207  charge     -0.120 # C  - CT   | C in CH3 imide
+set type 208  charge     -0.060 # C  - CT   | C in RCH2 imide
+set type 209  charge      0.000 # C  - CT   | C in R2CH imide
+set type 210  charge      0.060 # C  - CT   | C in R3C imide
+set type 211  charge      0.035 # C  - CA   | C(CN) benzonitrile cyano
+set type 212  charge      0.395 # C  - CZ   | C(N) benzonitrile
+set type 213  charge     -0.430 # N  - NZ   | N benzonitrile
+set type 214  charge      0.180 # C  - CA   | C(Cl) chlorobenzene
+set type 215  charge     -0.180 # Cl - Cl   | Cl chlorobenzene
+set type 216  charge     -0.385 # N  - N~   | N: N-phenylacetamide
+set type 217  charge      0.085 # C  - CA   | ipso C in N-phenylacetamide
+set type 218  charge      0.520 # C  - C~   | Co in CCOOH carboxylic acid
+set type 219  charge     -0.530 # O  - OH   | Oh in CCOOH R in RCOOH is
+set type 220  charge     -0.440 # O  - O~   | Oc in CCOOH neutral; use 135-140
+set type 221  charge      0.450 # H  - HO   | H in CCOOH
+set type 222  charge      0.700 # C  - C~   | C in COO- carboxylate
+set type 223  charge     -0.800 # O  - O2   | O: O in COO- carboxylate
+set type 224  charge     -0.280 # C  - CT   | C: CH3, carboxylate ion
+set type 225  charge     -0.220 # C  - CT   | C: CH2, carboxylate ion
+set type 226  charge     -0.160 # C  - CT   | C: CH, carboxylate ion
+set type 227  charge     -0.100 # C  - CT   | C: C, carboxylate ion
+set type 228  charge      0.450 # C  - C~   | AA C: aldehyde & acyl halide - for C-alpha use
+set type 229  charge     -0.450 # O  - O~   | AA O: aldehyde & acyl halide - 135-139
+set type 230  charge      0.000 # H  - HC   | AA H-alpha in aldehyde & formamide
+set type 231  charge      0.470 # C  - C~   | AA C: ketone - for C-alpha use
+set type 232  charge     -0.470 # O  - O~   | AA O: ketone - 135-139
+set type 233  charge      0.060 # H  - HC   | AA H on C-alpha in ketone & aldehyde & acyl halide
+set type 234  charge      0.040 # C  - CT   | AA C-alpha on C-terminal ALA
+set type 235  charge     -0.020 # C  - CT   | AA C-alpha on C-terminal GLY
+set type 236  charge     -0.090 # C  - CT   | AA C-alpha on C-terminal PRO
+set type 237  charge      -0.40 # N  - N3   | N (NH4+) JPC,90,2174 (1986) N3 sigma and eps changed 5/
+set type 238  charge      -0.30 # N  - N3   | N (RNH3+) "
+set type 239  charge       0.00 # N  - N3   | N (R4N+) " Ammonium Ions
+set type 240  charge       0.35 # H  - H3   | H (NH4+) " see also 940-945,
+set type 241  charge       0.33 # H  - H3   | H (RNH3+) " 1120-1130, 309-310
+set type 242  charge      0.130 # C  - CT   | C in CH3NH3+
+set type 243  charge      0.190 # C  - CT   | C in RCH2NH3+ & CA in N-term Gly
+set type 244  charge      0.250 # C  - CT   | C in R2CHNH3+ & CA in N-term Ala, etc.
+set type 245  charge      0.310 # C  - CT   | C in R3CNH3+
+set type 246  charge      0.230 # C  - CT   | AA:C-alpha in N-term PRO
+set type 247  charge      0.170 # C  - CT   | AA:C-delta in N-term PRO
+set type 248  charge      0.110 # C  - CT   | CT in CH3NH2+R
+set type 249  charge      0.090 # C  - CT   | AA C-alpha in Gly zwitterion
+set type 250  charge      0.150 # C  - CT   | AA C-alpha in Ala zwitterion
+set type 251  charge     -0.800 # N  - N2   | N: guanidinium NH2
+set type 252  charge      0.460 # H  - H3   | H: guanidinium NH2
+set type 253  charge      0.640 # C  - CA   | C: guanidinium C+
+set type 254  charge     -0.700 # N  - N2   | N: guanidinium NHR
+set type 255  charge      0.440 # H  - H3   | H: guanidinium NHR
+set type 256  charge      0.200 # C  - CT   | C: CH3, methylguanidinium
+set type 257  charge     -0.110 # C  - CT   | C: CH3, ethylguanidinium
+set type 258  charge      0.190 # C  - CT   | C: CH2(D), ARG, ethylguanidinium
+set type 259  charge     -0.050 # C  - CT   | C: CH2(G), ARG
+set type 260  charge      -0.20 # N  - N3   | N (R2NH2+)
+set type 261  charge       0.31 # H  - H3   | H (R2NH2+)
+set type 262  charge      -0.46 # N  - NC   | DAP N1 Diamino-
+set type 263  charge       0.36 # C  - CA   | DAP C2 pyridine
+set type 264  charge      -0.85 # N  - N2   | DAP N-amine
+set type 265  charge       0.37 # H  - H~   | DAP H-amine
+set type 266  charge      -0.15 # C  - CA   | DAP C3
+set type 267  charge       0.10 # H  - HA   | DAP H3
+set type 268  charge      -0.04 # C  - CA   | DAP C4
+set type 269  charge       0.10 # H  - HA   | DAP H4
+set type 270  charge      -0.60 # N  - NA   | Uracil N1 -use 938 for nucleoside
+set type 271  charge       0.50 # C  - C~   | Uracil C2
+set type 272  charge      -0.51 # N  - NA   | Uracil N3
+set type 273  charge       0.45 # C  - C~   | Uracil C4
+set type 274  charge      -0.07 # C  - CM   | Uracil C5
+set type 275  charge       0.08 # C  - CM   | Uracil C6
+set type 276  charge       0.41 # H  - H~   | Uracil H-N1
+set type 277  charge      -0.40 # O  - O~   | Uracil O-C2
+set type 278  charge       0.36 # H  - H~   | Uracil H-N3
+set type 279  charge      -0.42 # O  - O~   | Uracil O-C4
+set type 280  charge       0.10 # H  - HC   | Uracil H-C5
+set type 281  charge       0.10 # H  - HC   | Uracil H-C6 Thymine
+set type 282  charge      -0.14 # C  - CT   | Thymine C-C5
+set type 283  charge       0.08 # H  - HC   | Thymine H-CC5
+set type 284  charge      -0.56 # N  - NA   | Cytosine N1 -use 937 for nucleoside
+set type 285  charge       0.55 # C  - C~   | Cytosine C2
+set type 286  charge      -0.54 # N  - NC   | Cytosine N3
+set type 287  charge       0.46 # C  - CA   | Cytosine C4 Nucleotide base
+set type 288  charge      -0.06 # C  - CM   | Cytosine C5 parameters:
+set type 289  charge       0.10 # C  - CM   | Cytosine C6 JACS,113,2810(1991)
+set type 290  charge       0.38 # H  - H~   | Cytosine H-N1
+set type 291  charge      -0.48 # O  - O~   | Cytosine O-C2
+set type 292  charge      -0.79 # N  - N2   | Cytosine N-C4
+set type 293  charge      0.385 # H  - H~   | Cytosine H-NC4/N3
+set type 294  charge      0.355 # H  - H~   | Cytosine H-NC4/C5
+set type 295  charge       0.10 # H  - HC   | Cytosine H-C5
+set type 296  charge       0.10 # H  - HA   | Cytosine H-C6
+set type 297  charge      -0.53 # N  - NC   | Adenine N1
+set type 298  charge       0.22 # C  - CQ   | Adenine C2
+set type 299  charge      -0.55 # N  - NC   | Adenine N3
+set type 300  charge       0.38 # C  - CB   | Adenine C4
+set type 301  charge       0.15 # C  - CB   | Adenine C5
+set type 302  charge       0.44 # C  - CA   | Adenine C6
+set type 303  charge      -0.49 # N  - NB   | Adenine N7 Guanine
+set type 304  charge       0.20 # C  - CR   | Adenine C8 Guanine
+set type 305  charge      -0.50 # N  - NA   | Adenine N9 Guanine -use 936 for
+set type 306  charge       0.20 # H  - HA   | Adenine H-C2 nucleoside
+set type 307  charge      -0.81 # N  - N2   | Adenine N-C6
+set type 308  charge      0.385 # H  - H~   | Adenine H-NC6/N1
+set type 309  charge      0.355 # H  - H~   | Adenine H-NC6/C5
+set type 310  charge       0.20 # H  - HA   | Adenine H-C8 Guanine
+set type 311  charge       0.35 # H  - H~   | Adenine H-N9 Guanine
+set type 312  charge      -0.56 # N  - NA   | Guanine N1
+set type 313  charge       0.46 # C  - CA   | Guanine C2
+set type 314  charge      -0.51 # N  - NC   | Guanine N3
+set type 315  charge       0.34 # C  - CB   | Guanine C4
+set type 316  charge       0.12 # C  - CB   | Guanine C5
+set type 317  charge       0.52 # C  - C~   | Guanine C6
+set type 318  charge       0.38 # H  - H~   | Guanine H-N1
+set type 319  charge      -0.80 # N  - N2   | Guanine N-C2
+set type 320  charge       0.40 # H  - H~   | Guanine H-NC2
+set type 321  charge      -0.51 # O  - O~   | Guanine O-C6
+set type 322  charge      -0.01 # C  - CT   | 9-Me A or G C-N9
+set type 323  charge       0.12 # H  - HC   | 9-Me A or G H-CN9
+set type 324  charge      -0.01 # C  - CT   | 1-Me U or T C-N1
+set type 325  charge       0.14 # H  - HC   | 1-Me U or T H-CN1
+set type 326  charge      -0.01 # C  - CT   | 1-Me Cytosine C-N1
+set type 327  charge       0.13 # H  - HC   | 1-Me Cytosine H-CN1
+set type 328  charge      -0.64 # N  - NA   | CytH+ N1 Use AT = N* for nucleoside.
+set type 329  charge       0.65 # C  - C~   | CytH+ C2
+set type 330  charge      -0.74 # N  - NA   | CytH+ N3 Protonated cytosine.
+set type 331  charge       0.66 # C  - CA   | CytH+ C4
+set type 332  charge      -0.06 # C  - CM   | CytH+ C5
+set type 333  charge       0.10 # C  - CM   | CytH+ C6
+set type 334  charge       0.49 # H  - H~   | CytH+ H-N1
+set type 335  charge      -0.30 # O  - O~   | CytH+ O-C2
+set type 336  charge       0.48 # H  - H~   | CytH+ H-N3
+set type 337  charge      -0.81 # N  - N2   | CytH+ N-C4
+set type 338  charge       0.46 # H  - H~   | CytH+ H-NC4/N3
+set type 339  charge       0.43 # H  - H~   | CytH+ H-NC4/C5
+set type 340  charge       0.14 # H  - HA   | CytH+ H-C5
+set type 341  charge       0.14 # H  - HA   | CytH+ H-C6
+set type 342  charge       0.01 # C  - CT   | 1-Me CytH+ C-N1
+set type 343  charge       0.16 # H  - HC   | 1-Me CytH+ H-CN1
+set type 344  charge      0.780 # P  - P~   | P dimethylphosphate anion
+set type 345  charge     -0.660 # O  - O2   | O(=) " OPLS UA
+set type 346  charge     -0.430 # O  - OS   | O " see 440
+set type 347  charge      0.020 # C  - CT   | C in CH3 " for AA
+set type 348  charge       0.18 # C  - CM   | F3C-C5 thymine; trifluorothymine
+set type 349  charge     -0.060 # Cl - Cl   | chloroalkene Cl (Cl2-C=) - tentative
+set type 350  charge      0.120 # C  - CM   | chloroalkene C (Cl2-C=) - tentaive
+#                                                                                                   
+set type 351  charge       -1.0 # F  - F~   | F-
+set type 352  charge       -1.0 # Cl - Cl   | Cl-
+set type 353  charge       -1.0 # Br - Br   | Br-
+set type 354  charge       -1.0 # I  - I~   | I- 400-410 new OPLS:
+set type 355  charge        1.0 # N  - N3   | NH4+ K Jensen
+set type 356  charge        1.0 # Li - Li   | Li+ JCTC 2, 1499 (2006)
+set type 357  charge        1.0 # Na - Na   | Na+
+set type 358  charge        1.0 # K  - K~   | K+
+set type 359  charge        1.0 # Rb - Rb   | Rb+
+set type 360  charge        1.0 # Cs - Cs   | Cs+
+#                                                Old ion parameters:                                
+# 400 09 F    -1.0       2.73295   0.72000   F-  JACS 106, 903 (1984)                               
+# 401 17 Cl   -1.0       4.41724   0.11779   Cl- JACS 106, 903 (1984)                               
+# 402 35 Br   -1.0       4.62376   0.09000   Br- JACS 107, 7793(1985)                               
+# 403 53 I    -1.0       5.40000   0.07000   I-  JACS 120, 5104(1998)                               
+# 404 03 Li    1.0       1.25992   6.25000   Li+ JACS 106, 903 (1984)                               
+# 405 11 Na    1.0       1.89744   1.60714   Na+ JACS 106, 903 (1984)                               
+# 406 03 Li    1.00     2.126452  0.018279   Li+                                                    
+# 407 11 Na    1.00     3.330445  0.002772   Na+    Aqvist's cation                                 
+# 408 19 K     1.00     4.934628  0.000328   K+     parameters:                                     
+# 409 37 Rb    1.00     5.621773  0.000171   Rb+    JPC,94, 8021 (90)                               
+# 410 55 Cs    1.00     6.715999  0.000081   Cs+                                                    
+set type 361  charge       2.00 # Mg - Mg   | Mg++
+set type 362  charge       2.00 # Ca - Ca   | Ca++
+set type 363  charge       2.00 # Sr - Sr   | Sr++
+set type 364  charge       2.00 # Ba - Ba   | Ba++
+#                                                                                                   
+set type 365  charge      -0.40 # C  - C3   | C in CH3S- thiolate
+set type 366  charge       0.10 # H  - HC   | H in CH3S-
+set type 367  charge      -0.90 # S  - SH   | S in CH3S-
+set type 368  charge      -0.20 # C  - C3   | C in CH3O- alkoxide
+set type 369  charge       0.06 # H  - HC   | H in CH3O-
+set type 370  charge      -0.98 # O  - OH   | O in CH3O-
+set type 371  charge      -1.07 # C  - CT   | C1 in CH2CN- RCN-
+set type 372  charge       0.19 # H  - HC   | H in CH2CN-
+set type 373  charge       0.51 # C  - CZ   | C2 in CH2CN- JACS 111,
+set type 374  charge      -0.82 # N  - NZ   | N in CH2CN- 4190 (89)
+set type 375  charge      -0.30 # C  - C3   | C in CH3NH-
+set type 376  charge       0.07 # H  - HC   | HC in CH3NH- RNH-
+set type 377  charge      -1.31 # N  - NC   | N in CH3NH-
+set type 378  charge       0.40 # H  - H~   | HN in CH3NH-
+set type 379  charge      -0.40 # C  - C3   | C2 in CH3CH2- RCH2-
+set type 380  charge       0.08 # H  - HC   | H in CH3CH2-
+set type 381  charge       0.00 # C  - CT   | C1 in CH3CH2-
+set type 382  charge       0.07 # H  - HC   | H1 in CH3CH2-
+set type 383  charge      -0.98 # He - LP   | LP in CH3CH2-
+set type 384  charge     -1.300 # O  - OH   | O in OH- Hyroxide O-H = 0.953 A
+set type 385  charge      0.300 # H  - HO   | H in OH- JACS 108, 2517 (86)
+set type 386  charge      2.500 # U  - U~   | U in UO2+ J Mol Struct 366, 55 (96)
+set type 387  charge     -0.250 # O  - OU   | O in UO2+ r(U-O) = 1.80 A
+set type 388  charge       0.27 # C  - CT   | C in dimetyl phosphate
+set type 389  charge     -0.865 # O  - OS   | O-(POn)2 in GTP (JT-R 4/4/05)
+set type 390  charge       1.62 # P  - P~   | P in Me2PO4-
+set type 391  charge      -0.92 # O  - O2   | O= in "
+set type 392  charge      -0.60 # O  - OS   | O in " dimethyl
+set type 393  charge       0.30 # C  - CT   | C in " phosphate
+set type 394  charge      -0.03 # H  - HC   | H in " 6-31+G* CHELPG
+set type 395  charge       1.92 # P  - P~   | P in MeOPO3--
+set type 396  charge      -1.12 # O  - O2   | O= in "
+set type 397  charge      -0.70 # O  - OS   | O in " methyl phosphate
+set type 398  charge       0.44 # C  - CT   | C in " 6-31+G* CHELPG
+set type 399  charge      -0.10 # H  - HC   | H in "
+set type 400  charge       1.62 # P  - P~   | P in MePO3Me-
+set type 401  charge      -0.97 # O  - O2   | O= in "
+set type 402  charge      -0.63 # O  - OS   | O in " methyl
+set type 403  charge       0.28 # C  - CT   | C(O) " methylphosphonate
+set type 404  charge      -0.02 # H  - HC   | H(CO) " 6-31+G* CHELPG
+set type 405  charge      -0.51 # C  - CT   | C(P) "
+set type 406  charge       0.08 # H  - HC   | H(CP) "
+set type 407  charge      -0.14 # C  - CA   | Cipso benzyl methylphosphonate
+set type 408  charge       0.32 # C  - CT   | C(O) " "
+set type 409  charge       0.02 # H  - HC   | H(CO) " "
+set type 410  charge      -0.04 # C  - CA   | Cipso methyl benzylphosphonate
+set type 411  charge      -0.47 # C  - CT   | C(P) " "
+set type 412  charge       0.12 # H  - HC   | H(CP) " "
+set type 413  charge       0.14 # C  - CA   | Cipso C6H5OPO3(2-) use with 445-7
+set type 414  charge       0.24 # C  - CT   | C6(R2) of barbiturate
+set type 415  charge      0.490 # C  - C~   | AA C: esters - for R on C=O, use
+set type 416  charge     -0.410 # O  - O~   | AA =O: esters ketone params (see 280-282)
+set type 417  charge     -0.330 # O  - OS   | AA -OR: ester -
+set type 418  charge      0.160 # C  - CT   | methoxy C in esters - see also 490-492 OPLS/2020
+set type 419  charge      0.030 # H  - HC   | alkoxy H's in esters
+set type 420  charge      0.635 # C  - C~   | Co in benzoic acid
+set type 421  charge      0.605 # C  - C~   | Co in methyl benzoate, aryl ester
+set type 422  charge      0.135 # C  - CA   | Cipso phenyl ester
+set type 423  charge     -0.215 # O  - OS   | AA -OR phenyl ester
+set type 424  charge       1.48 # S  - SY   | S in sulfonamide
+set type 425  charge      -0.68 # O  - OY   | O in sulfonamide
+set type 426  charge      -0.54 # C  - CT   | CH3 attached to S of sulfonamide
+set type 427  charge       0.18 # H  - HC   | H of Me attached to S of sulfonamide
+set type 428  charge      -1.00 # N  - N~   | N: primary amide of sulfonamide
+set type 429  charge       0.44 # H  - H~   | H on N: primary sulfonamide
+set type 430  charge      -0.80 # N  - N~   | N secondary amide of sulfonamide
+set type 431  charge       0.41 # H  - H~   | H on N: secondary sulfonamide
+set type 432  charge       0.18 # C  - CT   | alpha CH3-N of sulfonamide
+set type 433  charge       0.03 # H  - HC   | H of alpha CH3-N of sulfonamide
+set type 434  charge       0.39 # C  - CT   | alpha CH2-N of sulfonamide
+set type 435  charge      -0.06 # H  - HC   | H of alpha CH2-N of sulfonamide
+set type 436  charge      -0.18 # C  - CT   | beta CH3 of N-ethyl sulfonamide
+set type 437  charge       0.06 # H  - HC   | H of beta CH3 of N-ethyl sulfonamide
+set type 438  charge       0.00 # C  - CA   | benzene C attached to S of sulfonamide
+set type 439  charge       0.03 # C  - CA   | benzene C attached to S of alkyl aryl sulfoxide
+set type 440  charge       0.19 # C  - CT   | C(H2OS) ethyl ester
+set type 441  charge       0.22 # C  - CT   | C(HOS) i-pr ester
+set type 442  charge       0.25 # C  - CT   | C(OS) t-bu ester
+set type 443  charge      1.374 # S  - SY   | S in sulfone
+set type 444  charge     -0.687 # O  - OY   | O in sulfone
+set type 445  charge      0.245 # S  - SZ   | alkyl aryl sulfoxide - all atom
+set type 446  charge      0.130 # S  - SZ   | sulfoxide - all atom
+set type 447  charge     -0.420 # O  - OY   | sulfoxide - all atom
+set type 448  charge     -0.035 # C  - CT   | CH3 all-atom C: sulfoxide
+set type 449  charge      0.025 # C  - CT   | CH2 all-atom C: sulfoxide
+set type 450  charge      0.075 # C  - CS   | CG in TRP
+set type 451  charge     -0.055 # C  - CB   | CD C in TRP
+set type 452  charge      0.130 # C  - CN   | CE C in TRP
+set type 453  charge     -0.570 # N  - NA   | NE in TRP
+set type 454  charge      0.420 # H  - H~   | H on NE in TRP
+set type 455  charge     -0.005 # C  - CT   | CB in HIS
+set type 456  charge      0.295 # C  - CR   | CE1 in HID, HIE
+set type 457  charge     -0.015 # C  - CV   | CD2 in HID, CG in HIE
+set type 458  charge      0.015 # C  - CW   | CG in HID, CD2 in HIE
+set type 459  charge      0.385 # C  - CR   | CE1 in HIP
+set type 460  charge      0.215 # C  - CX   | CG, CD2 in HIP
+set type 461  charge     -0.490 # N  - NB   | NE in HID, ND in HIE
+set type 462  charge     -0.540 # N  - NA   | N in HIP
+set type 463  charge      0.460 # H  - H~   | H on N in HIP
+set type 464  charge     -0.115 # C  - CW   | CD1 in TRP
+set type 465  charge      0.055 # C  - CT   | all-atom C: CH, isopropyl benzene
+set type 466  charge      0.115 # C  - CT   | all-atom C: C, t-butyl benzene
+set type 467  charge     -0.030 # C  - CM   | vinyl ether HCOR
+set type 468  charge      0.085 # C  - CM   | vinyl ether RCOR
+set type 469  charge      0.000 # C  - C!   | biphenyl C1
+set type 470  charge     -0.678 # N  - NC   | N in pyridine 6-31G*
+set type 471  charge      0.473 # C  - CA   | C1 in pyridine CHELPG
+set type 472  charge     -0.447 # C  - CA   | C2 in pyridine charges
+set type 473  charge      0.227 # C  - CA   | C3 in pyridine for
+set type 474  charge      0.012 # H  - HA   | H1 in pyridine 520-656
+set type 475  charge      0.155 # H  - HA   | H2 in pyridine
+set type 476  charge      0.065 # H  - HA   | H3 in pyridine
+set type 477  charge     -0.468 # N  - NC   | N in pyrazine
+set type 478  charge      0.192 # C  - CA   | C in pyrazine
+set type 479  charge      0.042 # H  - HA   | H in pyrazine
+set type 480  charge     -0.839 # N  - NC   | N in pyrimidine
+set type 481  charge      0.874 # C  - CQ   | C2 in pyrimidine
+set type 482  charge      0.653 # C  - CA   | C4 in pyrimidine
+set type 483  charge     -0.689 # C  - CA   | C5 in pyrimidine
+set type 484  charge     -0.032 # H  - HA   | H2 in pyrimidine
+set type 485  charge      0.011 # H  - HA   | H4 in pyrimidine
+set type 486  charge      0.197 # H  - HA   | H5 in pyrimidine
+set type 487  charge     -0.331 # N  - NC   | N in pyridazine
+set type 488  charge      0.378 # C  - CA   | C3 in pyridazine
+set type 489  charge     -0.160 # C  - CA   | C4 in pyridazine
+set type 490  charge     -0.009 # H  - HA   | H3 in pyridazine
+set type 491  charge      0.122 # H  - HA   | H4 in pyridazine
+set type 492  charge     -0.239 # N  - NA   | N in pyrrole
+set type 493  charge     -0.163 # C  - CW   | C2 in pyrrole
+set type 494  charge     -0.149 # C  - CS   | C3 in pyrrole
+set type 495  charge      0.317 # H  - H~   | H1 in pyrrole
+set type 496  charge      0.155 # H  - HA   | H2 in pyrrole
+set type 497  charge      0.118 # H  - HA   | H3 in pyrrole
+set type 498  charge     -0.059 # N  - NA   | N1 in pyrazole
+set type 499  charge     -0.491 # N  - NB   | N2 in pyrazole
+set type 500  charge      0.246 # C  - CU   | C3 in pyrazole
+set type 501  charge     -0.320 # C  - CS   | C4 in pyrazole
+set type 502  charge     -0.034 # C  - CW   | C5 in pyrazole
+set type 503  charge      0.301 # H  - H~   | H1 in pyrazole
+set type 504  charge      0.072 # H  - HA   | H3 in pyrazole
+set type 505  charge      0.150 # H  - HA   | H4 in pyrazole
+set type 506  charge      0.135 # H  - HA   | H5 in pyrazole
+set type 507  charge     -0.257 # N  - NA   | N1 in imidazole
+set type 508  charge      0.275 # C  - CR   | C2 in imidazole
+set type 509  charge     -0.563 # N  - NB   | N3 in imidazole
+set type 510  charge      0.185 # C  - CV   | C4 in imidazole
+set type 511  charge     -0.286 # C  - CW   | C5 in imidazole
+set type 512  charge      0.306 # H  - H~   | H1 in imidazole
+set type 513  charge      0.078 # H  - HA   | H2 in imidazole
+set type 514  charge      0.075 # H  - HA   | H4 in imidazole
+set type 515  charge      0.187 # H  - HA   | H5 in imidazole
+set type 516  charge     -0.190 # O  - OA   | O in furan
+set type 517  charge     -0.019 # C  - CW   | C2 in furan
+set type 518  charge     -0.154 # C  - CS   | C3 in furan
+set type 519  charge      0.142 # H  - HA   | H2 in furan
+set type 520  charge      0.126 # H  - HA   | H3 in furan
+set type 521  charge     -0.257 # O  - OS   | O in oxazole
+set type 522  charge      0.511 # C  - CR   | C2 in oxazole
+set type 523  charge     -0.590 # N  - NB   | N in oxazole
+set type 524  charge      0.169 # C  - CV   | C4 in oxazole
+set type 525  charge     -0.148 # C  - CW   | C5 in oxazole
+set type 526  charge      0.043 # H  - HA   | H2 in oxazole
+set type 527  charge      0.091 # H  - HA   | H4 in oxazole
+set type 528  charge      0.181 # H  - HA   | H5 in oxazole
+set type 529  charge     -0.122 # O  - OS   | O in isoxazole
+set type 530  charge     -0.413 # N  - NB   | N in isoxazole
+set type 531  charge      0.405 # C  - CU   | C3 in isoxazole
+set type 532  charge     -0.455 # C  - CS   | C4 in isoxazole
+set type 533  charge      0.250 # C  - CW   | C5 in isoxazole
+set type 534  charge      0.053 # H  - HA   | H3 in isoxazole
+set type 535  charge      0.184 # H  - HA   | H4 in isoxazole
+set type 536  charge      0.098 # H  - HA   | H5 in isoxazole
+set type 537  charge     -0.500 # N  - NA   | N1 in indole
+set type 538  charge      0.001 # C  - CW   | C2 in indole
+set type 539  charge     -0.390 # C  - CS   | C3 in indole
+set type 540  charge     -0.270 # C  - CA   | C4 in indole
+set type 541  charge     -0.127 # C  - CA   | C5 in indole
+set type 542  charge     -0.108 # C  - CA   | C6 in indole
+set type 543  charge     -0.258 # C  - CA   | C7 in indole
+set type 544  charge      0.220 # C  - CW   | C8 in indole
+set type 545  charge      0.225 # C  - CS   | C9 in indole
+set type 546  charge      0.376 # H  - H~   | H1 in indole
+set type 547  charge      0.147 # H  - HA   | H2 in indole
+set type 548  charge      0.172 # H  - HA   | H3 in indole
+set type 549  charge      0.155 # H  - HA   | H4 in indole
+set type 550  charge      0.107 # H  - HA   | H5 in indole
+set type 551  charge      0.110 # H  - HA   | H6 in indole
+set type 552  charge      0.140 # H  - HA   | H7 in indole
+set type 553  charge     -0.694 # N  - NC   | N1 in quinoline
+set type 554  charge      0.425 # C  - CA   | C2 in quinoline
+set type 555  charge     -0.359 # C  - CA   | C3 in quinoline
+set type 556  charge     -0.008 # C  - CA   | C4 in quinoline
+set type 557  charge     -0.197 # C  - CA   | C5 in quinoline
+set type 558  charge     -0.112 # C  - CA   | C6 in quinoline
+set type 559  charge     -0.070 # C  - CA   | C7 in quinoline
+set type 560  charge     -0.307 # C  - CA   | C8 in quinoline
+set type 561  charge      0.563 # C  - CA   | C9 in quinoline
+set type 562  charge     -0.051 # C  - CA   | C10 in quinoline
+set type 563  charge      0.028 # H  - HA   | H2 in quinoline
+set type 564  charge      0.146 # H  - HA   | H3 in quinoline
+set type 565  charge      0.119 # H  - HA   | H4 in quinoline
+set type 566  charge      0.133 # H  - HA   | H5 in quinoline
+set type 567  charge      0.113 # H  - HA   | H6 in quinoline
+set type 568  charge      0.114 # H  - HA   | H7 in quinoline
+set type 569  charge      0.157 # H  - HA   | H8 in quinoline
+set type 570  charge     -0.760 # N  - NC   | N1 in purine (9H)
+set type 571  charge      0.679 # C  - CQ   | C2 in purine
+set type 572  charge     -0.788 # N  - NC   | N3 in purine
+set type 573  charge      0.736 # C  - CB   | C4 in purine
+set type 574  charge      0.038 # C  - CB   | C5 in purine
+set type 575  charge      0.343 # C  - CA   | C6 in purine
+set type 576  charge     -0.642 # N  - NB   | N7 in purine
+set type 577  charge      0.452 # C  - CR   | C8 in purine
+set type 578  charge     -0.682 # N  - NA   | N9 in purine
+set type 579  charge      0.024 # H  - HA   | H2 in purine
+set type 580  charge      0.101 # H  - HA   | H6 in purine
+set type 581  charge      0.086 # H  - HA   | H8 in purine
+set type 582  charge      0.413 # H  - H~   | H9 in purine
+set type 583  charge     -0.030 # S  - SA   | S in thiazole OPLS-AA/L
+set type 584  charge      0.242 # C  - CR   | C2 in thiazole
+set type 585  charge     -0.515 # N  - NB   | N in thiazole
+set type 586  charge      0.228 # C  - CV   | C4 in thiazole
+set type 587  charge     -0.299 # C  - CW   | C5 in thiazole
+set type 588  charge      0.101 # H  - HA   | H2 in thiazole
+set type 589  charge      0.068 # H  - HA   | H4 in thiazole
+set type 590  charge      0.205 # H  - HA   | H5 in thiazole
+set type 591  charge     -0.951 # N  - NC   | N in 1,3,5-triazine
+set type 592  charge      0.965 # C  - CQ   | C in 1,3,5-triazine
+set type 593  charge     -0.014 # H  - HA   | H in 1,3,5-triazine
+set type 594  charge      0.130 # C  - CA   | C5 in serotonin
+set type 595  charge      0.052 # C  - CT   | C on C3 in serotonin
+set type 596  charge     -0.599 # N  - NC   | N in 1,10-phenanthroline
+set type 597  charge      0.392 # C  - CA   | C2 in 1,10-phenanthroline
+set type 598  charge     -0.348 # C  - CA   | C3 in 1,10-phenanthroline
+set type 599  charge      0.020 # C  - CA   | C4 in 1,10-phenanthroline
+set type 600  charge     -0.042 # C  - CA   | C12 in 1,10-phenanthroline
+set type 601  charge      0.347 # C  - CA   | C11 in 1,10-phenanthroline
+set type 602  charge     -0.196 # C  - CA   | C5 in 1,10-phenanthroline
+set type 603  charge      0.032 # H  - HA   | H2 in 1,10-phenanthroline
+set type 604  charge      0.146 # H  - HA   | H3 in 1,10-phenanthroline
+set type 605  charge      0.108 # H  - HA   | H4 in 1,10-phenanthroline
+set type 606  charge      0.140 # H  - HA   | H5 in 1,10-phenanthroline
+set type 607  charge      0.122 # N  - NA   | N1 in 1-methylimidazole
+set type 608  charge      0.166 # C  - CR   | C2 in 1-methylimidazole
+set type 609  charge     -0.580 # N  - NB   | N3 in 1-methylimidazole
+set type 610  charge      0.173 # C  - CV   | C4 in 1-methylimidazole
+set type 611  charge     -0.395 # C  - CW   | C5 in 1-methylimidazole
+set type 612  charge     -0.199 # C  - CT   | C1 in 1-methylimidazole
+set type 613  charge      0.118 # H  - HA   | H2 in 1-methylimidazole
+set type 614  charge      0.093 # H  - HA   | H4 in 1-methylimidazole
+set type 615  charge      0.208 # H  - HA   | H5 in 1-methylimidazole
+set type 616  charge      0.098 # H  - HC   | HC1 in 1-methylimidazole
+set type 617  charge     -0.139 # C  - CT   | C1 in 1-ethylimidazole
+set type 618  charge     -0.079 # C  - CT   | C1 in 1-isopropylimidazole
+set type 619  charge      0.099 # C  - CT   | C1 in 1-MeO-Me-imidazole
+set type 620  charge     -0.168 # C  - CT   | CH3, 2-methyl pyridine
+set type 621  charge     -0.108 # C  - CT   | CH2, 2-ethyl pyridine
+set type 622  charge     -0.189 # C  - CT   | CH3, 3-methyl pyridazine
+set type 623  charge     -0.129 # C  - CT   | CH2, 3-ethyl pyridazine
+set type 624  charge     -0.169 # C  - CT   | CH3, 4-methyl pyrimidine
+set type 625  charge     -0.109 # C  - CT   | CH2, 4-ethyl pyrimidine
+set type 626  charge     -0.138 # C  - CT   | CH3, 2-methyl pyrazine
+set type 627  charge     -0.078 # C  - CT   | CH2, 2-ethyl pyrazine
+set type 628  charge     -0.025 # C  - CT   | CH3, 2-methyl pyrrole
+set type 629  charge      0.035 # C  - CT   | CH2, 2-ethyl pyrrole
+set type 630  charge     -0.038 # C  - CT   | CH3, 2-methyl furan
+set type 631  charge      0.022 # C  - CT   | CH2, 2-ethyl furan
+set type 632  charge     -0.334 # S  - SH   | S in 6-mercaptopurine OPLS-AA/L
+set type 633  charge      0.255 # H  - HS   | H(S) in 6-mercaptopurine
+set type 634  charge      0.523 # C  - CA   | C6 in 6-mercaptopurine
+set type 635  charge      0.500 # C  - C^   | C: C=O beta-lactam
+set type 636  charge     -0.140 # N  - N^   | N: beta-lactam; O is 236
+set type 637  charge     0.2275 # C  - CY   | CH(N): penicillin
+set type 638  charge      0.140 # C  - CY   | CH(CO): penicillin
+set type 639  charge     -0.008 # C  - CT   | CH3, 3-methyl indole
+set type 640  charge      0.588 # C  - C!   | 2-phenyl pyridine C2
+set type 641  charge     -0.103 # C  - C!   | 2-phenyl pyridine C2'
+set type 642  charge     -0.332 # C  - C!   | 3-phenyl pyridine C3
+set type 643  charge      0.040 # C  - C!   | 3-phenyl pyridine C3'
+set type 644  charge      0.342 # C  - C!   | 4-phenyl pyridine C4
+set type 645  charge     -0.050 # C  - C!   | 4-phenyl pyridine C4'
+set type 646  charge     -0.205 # S  - S~   | S in diphenylthioether OPLS-AA/L
+set type 647  charge      3.000 # Ac - Ac   | Ac+3 Actinide params -
+set type 648  charge      4.000 # Th - Th   | Th+4
+set type 649  charge      3.000 # Am - Am   | Am+3 F. van Veggel
+set type 650  charge      0.619 # C  - C+   | C+ in t-butyl+ B3LYP/6-31G*
+set type 651  charge     -0.395 # C  - CT   | C in t-butyl+ charges
+set type 652  charge      0.174 # H  - HC   | H in t-butyl+
+set type 653  charge      3.000 # La - La   | La+3
+set type 654  charge      3.000 # Nd - Nd   | Nd+3 Lanthanide params -
+set type 655  charge      3.000 # Eu - Eu   | Eu+3 F. van Veggel, Chem Eur J
+set type 656  charge      3.000 # Gd - Gd   | Gd+3 5, 90 (1999).
+set type 657  charge      3.000 # Yb - Yb   | Yb+3 see also JPC-A 104, 7659 (2000)
+set type 658  charge     -0.344 # C  - CM   | C in Cl..CH3..Cl- TS
+set type 659  charge     -0.628 # Cl - Cl   | Cl charges: JACS 117,2024 (95)
+set type 660  charge      0.200 # H  - HC   | H in Cl..CH3..Cl- TS
+set type 661  charge      -0.12 # C  - CY   | CH2 C: cyclopropane OPLS-2020
+set type 662  charge      -0.06 # C  - CY   | CHR C: cyclopropane OPLS-2020
+set type 663  charge       0.00 # C  - CY   | CR2 C: cyclopropane OPLS-2020
+set type 664  charge      -0.12 # C  - CY   | CH2 C: cyclobutane OPLS-2020
+set type 665  charge      -0.06 # C  - CY   | CHR C: cyclobutane OPLS-2020
+set type 666  charge       0.00 # C  - CY   | CR2 C: cyclobutane OPLS-2020
+set type 667  charge      0.280 # C  - CA   | C(F) fluorobenzene
+set type 668  charge     -0.280 # F  - F~   | F fluorobenzene
+set type 669  charge      0.130 # C  - CA   | C(F) hexafluorobenzene
+set type 670  charge     -0.130 # F  - F~   | F hexafluorobenzene
+set type 671  charge     -0.220 # Br - Br   | Br alkyl bromide (UA)
+set type 672  charge      0.220 # C  - C2   | CH2 alkyl bromide (UA)
+set type 673  charge      0.150 # C  - CA   | C(CF3) trifluoromethylbenzene
+set type 674  charge      0.450 # C  - CT   | CF3 "
+set type 675  charge     -0.200 # F  - F~   | F "
+set type 676  charge      0.200 # C  - CA   | C(F) difluorobenzenes
+set type 677  charge     -0.200 # F  - F~   | F difluorobenzenes
+set type 678  charge      0.150 # C  - CA   | C(Br) bromobenzene JCTC 2012, 8, 3895
+set type 679  charge     -0.150 # Br - Br   | Br bromobenzene
+set type 680  charge      0.100 # C  - CA   | C(I) iodobenzene sigma CA changed to 0.068
+set type 681  charge     -0.100 # I  - I~   | I iodobenzene in OPLS/2020
+set type 682  charge      0.055 # C  - CY   | all-atom C: CH, cyclopropyl/butyl benzene
+set type 683  charge     -0.220 # S  - SH   | all-atom S: thiophenol (HS is #204) OPLS-AA/L
+set type 684  charge      0.065 # C  - CA   | C(S) thiophenol
+set type 685  charge      0.013 # C  - CA   | CG of Benzamidine
+set type 686  charge     -0.106 # C  - CA   | CD of Benzamidine
+set type 687  charge     -0.090 # C  - CA   | CE of Benzamidine
+set type 688  charge     -0.119 # C  - CA   | CZ of Benzamidine
+set type 689  charge      0.141 # H  - HA   | HD of Benzamidine
+set type 690  charge      0.129 # H  - HA   | HE of Benzamidine
+set type 691  charge      0.827 # C  - CA   | C+ of Benzamidine
+set type 692  charge     -0.885 # N  - N2   | N-H2 of Benzamidine
+set type 693  charge      0.426 # H  - H~   | H1-N of Benzamidine
+set type 694  charge      0.465 # H  - H~   | H2-N of Benzamidine
+set type 695  charge      0.119 # H  - HA   | H-CG of Benzamidine
+set type 696  charge      -0.02 # C  - CT   | CH3 in neutral MeGDN
+set type 697  charge       0.04 # C  - CT   | CD of neutral ARG
+set type 698  charge     -0.620 # N  - NY   | NE "
+set type 699  charge     -0.785 # N  - NC   | N1 " " " (HN=CZ)
+set type 700  charge     -0.785 # N  - NY   | N2 " " " (H2N-CZ)
+set type 701  charge      0.550 # C  - CA   | CZ " " "
+set type 702  charge     -0.560 # N  - NZ   | N IN RCN all-atom nitriles
+set type 703  charge      0.460 # C  - CZ   | C IN RCN "
+set type 704  charge     -0.080 # C  - CT   | C of CH3 in CH3CN
+set type 705  charge     -0.020 # C  - CT   | C of CH2 in RCH2CN
+set type 706  charge      0.040 # C  - CT   | C of CH in R2CHCN
+set type 707  charge      0.100 # C  - CT   | C of C in R3CCN
+set type 708  charge       0.06 # H  - HC   | HC-CT-CN alpha-H in nitriles
+set type 709  charge       0.54 # N  - NO   | N in nitro R-NO2
+set type 710  charge      -0.37 # O  - ON   | O in nitro R-NO2
+set type 711  charge       0.02 # C  - CT   | CT-NO2 nitromethane
+set type 712  charge       0.06 # H  - HC   | HC-CT-NO2 alpha-H in nitroalkanes
+set type 713  charge       0.08 # C  - CT   | CT-NO2 nitroethane
+set type 714  charge       0.14 # C  - CT   | CT-NO2 2-nitropropane
+set type 715  charge       0.20 # C  - CT   | CT-NO2 2-methyl-2-nitropropane
+set type 716  charge       0.65 # N  - NO   | N in nitro Ar-NO2
+set type 717  charge       0.09 # C  - CA   | C(NO2) nitrobenzene
+set type 718  charge      0.035 # C  - CT   | C of CH2 in PhCH2CN
+set type 719  charge     -0.900 # N  - NC   | N in neutral benzamidine
+set type 720  charge     -0.500 # O  - O~   | propylene carbonate O
+set type 721  charge      0.860 # C  - C~   | " C=O Lucienne's
+set type 722  charge     -0.450 # O  - OS   | " OS parameters
+set type 723  charge      0.210 # C  - CT   | " C in CH2
+set type 724  charge      0.160 # C  - CT   | " C in CH
+set type 725  charge     -0.100 # C  - CT   | " C in CH3 see also 789
+set type 726  charge      0.030 # H  - HC   | " H in CH2
+set type 727  charge      0.030 # H  - HC   | " H in CH
+set type 728  charge      0.060 # H  - HC   | " H in CH3
+set type 729  charge     -0.780 # O  - OS   | O-(POn)2 in GTP (JT-R 10/18/05)
+set type 730  charge     0.9684 # P  - P+   | phosphonium R4P+
+set type 731  charge    -0.5081 # C  - CT   | CH3PR3+ 6-31G* CHELPG
+set type 732  charge    -0.0080 # C  - CT   | RCH2PR3+
+set type 733  charge     0.1720 # H  - HC   | H in CH3PR3+
+set type 734  charge     1.3400 # P  - P~   | P in PF6-
+set type 735  charge    -0.3900 # F  - F~   | F in PF6-
+set type 736  charge      0.794 # N  - N~   | N in NO3- F. van Veggel
+set type 737  charge     -0.598 # O  - O~   | O in NO3- r(NO) =
+set type 738  charge      0.180 # C  - CT   | methoxy C in carbonate
+set type 739  charge      0.150 # C  - CA   | C(CF3) trifluoromethylbenzene test
+set type 740  charge      0.450 # C  - CF   | CF3 " test
+set type 741  charge     -0.200 # F  - F~   | F " test
+set type 742  charge      0.380 # C  - CA   | C-ipso phenylguanidinium ion
+set type 743  charge      0.030 # H  - HC   | H(COR): alpha H ether 2020 for CH3-O-R
+set type 744  charge       0.00 # C  - CT   | CH4 all-atom C: q = 0
+set type 745  charge       0.00 # H  - HC   | H all-atom H: q = 0
+set type 746  charge     -0.900 # N  - NT   | N primary amines
+set type 747  charge     -0.780 # N  - NT   | N secondary amines
+set type 748  charge     -0.630 # N  - NT   | N tertiary amines
+set type 749  charge      0.000 # C  - CT   | CH3(N) primary aliphatic amines, H(C) type 911
+set type 750  charge      0.020 # C  - CT   | CH3(N) secondary aliphatic amines, H(C) type 911
+set type 751  charge      0.030 # C  - CT   | CH3(N) tertiary aliphatic amines, H(C) type 911
+set type 752  charge      0.060 # C  - CT   | CH2(N) primary aliphatic amines, H(C) type 911
+set type 753  charge      0.080 # C  - CT   | CH2(N) secondary aliphatic amines, H(C) type 911
+set type 754  charge      0.090 # C  - CT   | CH2(N) tertiary aliphatic amines, H(C) type 911
+set type 755  charge      0.360 # H  - H~   | H(N) primary amines
+set type 756  charge      0.380 # H  - H~   | H(N) secondary amines
+set type 757  charge       0.06 # H  - HC   | H(C) for Carbons directly bonded to N in amines, diamine
+set type 758  charge      0.120 # C  - CT   | CH primary isopropyl amine
+set type 759  charge      0.180 # C  - CT   | C primary t-butyl amine
+set type 760  charge      0.140 # C  - CT   | CH secondary isopropyl amine
+set type 761  charge      0.150 # C  - CT   | CH tertiary isopropyl amine
+set type 762  charge      0.180 # C  - CA   | C(NH2) aniline
+set type 763  charge      0.200 # C  - CA   | C(NHR) N-methylaniline
+set type 764  charge      0.210 # C  - CA   | C(NR2) N,N-dimethylaniline
+set type 765  charge      0.115 # C  - CT   | C in CH2NH2 - benzyl amines; C(CH2NH2) is #221
+set type 766  charge      0.175 # C  - CT   | C in CHRNH2 - benzyl amines
+set type 767  charge      0.235 # C  - CT   | C in CR2NH2 - benzyl amines
+set type 768  charge      0.195 # C  - CT   | C in CH2OR - benzyl ethers; C(CH2OR) is #221
+set type 769  charge     0.1525 # C  - CT   | C in CH2SR - benzyl sulfides; C(CH2SR) is #221
+set type 770  charge      0.135 # C  - CT   | C in CH2NHR - benzyl amines; C(CH2NH2) is #221
+set type 771  charge     -0.200 # C  - CZ   | alkyne C%C - acetylene
+set type 772  charge      0.200 # H  - HC   | alkyne RC%CH terminal H
+set type 773  charge      0.020 # C  - CT   | H3C-C%C
+set type 774  charge      0.080 # C  - CT   | RCH2-C%C
+set type 775  charge      0.140 # C  - CT   | R2CH-C%C
+set type 776  charge      0.200 # C  - CT   | R3C-C%C
+set type 777  charge      0.450 # C  - CO   | C1' of (ade, gua) by Deping
+set type 778  charge      0.480 # C  - CO   | C1' of cyt by Deping
+set type 779  charge      0.510 # C  - CO   | C1' of (ura, thy) by Deping
+set type 780  charge     -0.655 # O  - OH   | O5' by Deping
+set type 781  charge      0.390 # H  - HO   | H(3') OH by Deping
+set type 782  charge      -0.50 # N  - N§   | Adenine N9 Guanine nucleosides
+set type 783  charge      -0.56 # N  - N§   | Cytosine N1 nucleoside
+set type 784  charge      -0.60 # N  - N§   | Uracil N1 Thymine nucleosides
+set type 785  charge      0.000 # C  - CZ   | alkyne RC%CR - only did MC for MeCCMe
+set type 786  charge      -0.10 # N  - N3   | N (R3NH+)
+set type 787  charge       0.29 # H  - H3   | H (R3NH+)
+set type 788  charge      0.090 # C  - CT   | C in CH3NHR2+
+set type 789  charge      0.150 # C  - CT   | C in RCH2NHR2+
+set type 790  charge      0.210 # C  - CT   | C in R2CHNHR2+
+set type 791  charge      0.270 # C  - CT   | C in R3CNHR2+
+set type 792  charge      0.096 # C  - CW   | C2 in 2-phenylfuran
+set type 793  charge     -0.039 # C  - CS   | C3 in 3-phenylfuran
+set type 794  charge      0.027 # C  - C!   | C2' in 2-phenylfuran
+set type 795  charge      0.011 # C  - C!   | C3' in 2-phenylfuran
+set type 796  charge      0.074 # H  - HC   | glycine zwit. 6-31G* CHELPG charges
+set type 797  charge     -0.029 # C  - CT   | glycine zwit. 6-31G* CHELPG charges
+set type 798  charge      0.700 # C  - C~   | glycine zwit. 6-31G* CHELPG charges
+set type 799  charge     -0.352 # N  - N3   | glycine zwit. 6-31G* CHELPG charges
+set type 800  charge     -0.709 # O  - O2   | glycine zwit. 6-31G* CHELPG charges
+set type 801  charge      0.317 # H  - H3   | glycine zwit. 6-31G* CHELPG charges
+set type 802  charge     -0.220 # F  - F~   | F in monoalkyl fluorides tentative
+set type 803  charge      0.020 # C  - CT   | RCH2F " " tentative
+set type 804  charge      0.100 # H  - HC   | H in RCHF tentative
+set type 805  charge      0.120 # C  - CT   | R2CHF " " tentative
+set type 806  charge      0.220 # C  - CT   | R3CF " " tentative
+set type 807  charge       0.36 # C  - CF   | CF3 perfluoroalkanes JPC A, 105, 4118
+set type 808  charge       0.24 # C  - CF   | CF2 perfluoroalkanes "
+set type 809  charge       0.12 # C  - CF   | CF perfluoroalkanes "
+set type 810  charge       0.48 # C  - CF   | CF4 "
+set type 811  charge     -0.120 # F  - F~   | F F in perfluoroalkanes "
+set type 812  charge      0.250 # C  - CT   | CF2H difluoromethylbenzene
+set type 813  charge      0.150 # H  - HC   | H in CF2H "
+set type 814  charge     -0.080 # C  - CT   | FCH2COO- fluoroacetate tentative
+set type 815  charge     -0.106 # C  - CT   | ClCH2COO- chloroacetate "
+set type 816  charge     -0.200 # Cl - Cl   | Cl in alkyl chlorides repeat of 151
+set type 817  charge     -0.006 # C  - CT   | RCH2Cl " " 152
+set type 818  charge      0.103 # H  - HC   | H in RCHCl 153
+set type 819  charge      0.097 # C  - CT   | R2CHCl " " tentative
+set type 820  charge      0.200 # C  - CT   | R3CCl " " tentative
+set type 821  charge     -0.200 # Br - Br   | Br in alkyl bromides JPCB 16264 (2004)
+set type 822  charge     -0.006 # C  - CT   | RCH2Br " " "
+set type 823  charge      0.103 # H  - HC   | H in RCHBr "
+set type 824  charge      0.097 # C  - CT   | R2CHBr " " tentative
+set type 825  charge      0.200 # C  - CT   | R3CBr " " tentative
+set type 826  charge     -0.080 # F  - F~   | F in acyl fluoride tentative
+set type 827  charge     -0.080 # Cl - Cl   | Cl in acyl chloride tentative
+set type 828  charge     -0.080 # Br - Br   | Br in acyl bromide tentative
+set type 829  charge      0.100 # C  - CA   | C(OCF3): trifluoroanisole
+set type 830  charge     -0.250 # O  - OS   | O: trifluoroanisole
+set type 831  charge      0.600 # C  - CT   | C in CF3: trifluoroanisole
+set type 832  charge     -0.150 # F  - F~   | F: trifluoroanisole
+set type 833  charge     -0.025 # N  - N~   | N: N-methyl,N-phenylacetamide
+set type 834  charge     -0.045 # C  - CA   | ipso C in N-methyl,N-phenylacetamide
+set type 835  charge      0.145 # C  - CT   | C in CH2NR2 - benzyl amines; C(CH2NH2) is #221
+set type 836  charge      0.888 # C  - C~   | C in hydroxamic acid jtr 11/98
+set type 837  charge      1.003 # C  - C~   | C in aromatic hydroxamic aciT
+set type 838  charge     -0.658 # O  - O~   | O in hydroxamic acid
+set type 839  charge     -0.634 # N  - N~   | N in hydroxamic acid
+set type 840  charge      0.411 # H  - H~   | HN in hydroxamic acid
+set type 841  charge     -0.442 # O  - OH   | OH in hydroxamic acid
+set type 842  charge      0.435 # H  - HO   | HO in hydroxamic acid
+set type 843  charge      0.225 # C  - CT   | C in CHROR - benzyl ethers; C(CHROR) is #221
+set type 844  charge      0.255 # C  - CT   | C in CRROR - benzyl ethers; C(CRROR) is #221
+set type 845 charge     -0.034 # C  - C!   | 3-phenyl pyrrole C3
+set type 846 charge      0.003 # C  - C!   | 3-phenyl pyrrole C3'
+set type 847 charge      0.300 # C  - C!   | 4-phenyl imidazole C4
+set type 848 charge     -0.040 # C  - C!   | 4-phenyl imidazole C4'
+set type 849 charge    -0.0575 # C  - CA   | diphenylmethane Cipso
+set type 850 charge        2.0 # Zn - Zn   | JACS 113, 8262 (1991) Zinc
+#                                                                                                   
+#    Halogen Bonding - Jorgensen, W. L.; Schyman, P. JCTC 2012, 8, 3895-3901.
+set type 851 charge      0.075 # XX - XC   | chlorine plus site Jan 23, 2012
+set type 852 charge      0.100 # XX - XB   | bromine plus site Jan 23, 2012
+set type 853 charge      0.110 # XX - XI   | iodine plus site Jan 23, 2012
+set type 854 charge      0.175 # C  - CA   | C(Cl) chlorobenzene with X site
+set type 855 charge     -0.250 # Cl - Cl   | Cl chlorobenzene with X site
+#                                                                                                   
+set type 856 charge     -0.070 # C  - CT   | C(I) iodoalkane - tentative - primary
+set type 857 charge      0.030 # C  - CT   | C(I) iodoalkane - tentative - secondary
+set type 858 charge      0.130 # C  - CT   | C(I) iodoalkane - tentative - tertiary
+set type 859 charge     -0.130 # I  - I~   | I iodoalkane - tentative
+set type 860 charge      0.100 # H  - HC   | H in RCHI
+#                                                                                                   
+set type 861 charge      0.170 # C  - CA   | C(Br) bromobenzene with X site
+set type 862 charge     -0.270 # Br - Br   | Br bromobenzene with X site
+set type 863 charge      0.150 # C  - CA   | C(I) iodobenzene with X site
+set type 864 charge     -0.260 # I  - I~   | I iodobenzene with X site
+#                                                                                                   
+set type 865 charge     -0.685 # N  - N~   | N of secondary N-phenyl sulfonamide
+set type 866 charge      0.155 # C  - CA   | benzene C on N of N-phenyl sulfonamide
+set type 867 charge     -0.400 # O  - O^   | O epoxide oxirane
+set type 868 charge      0.140 # C  - CY   | CH2 epoxide
+set type 869 charge      0.170 # C  - CY   | CH epoxide
+set type 870 charge      0.200 # C  - CY   | C epoxide
+set type 871 charge      0.030 # H  - HC   | H epoxide on C-O
+set type 872 charge     -0.100 # C  - CA   | ipso C in benzoate ion
+set type 873 charge     -0.427 # N  - N~   | N: N-phenylurea
+set type 874 charge      0.218 # C  - CA   | ipso C in N-phenylurea
+set type 875 charge      0.600 # C  - C~   | C: C=O in tert amide. Acyl R in amides
+set type 876 charge     -0.600 # O  - O~   | O: C=O in tert amide. is neutral - use
+set type 877 charge     -0.360 # N  - NM   | N: tertiary amide JCC 25, 1322 (2004)
+set type 878 charge      0.000 # C  - CT   | C on N: tertiary amide CH3
+set type 879 charge      0.060 # C  - CT   | C on N: tertiary amide CH2R
+set type 880 charge      0.120 # C  - CT   | C on N: tertiary amide CHR2
+set type 881 charge      0.180 # C  - CT   | C on N: tertiary amide CR3
+set type 882 charge      0.060 # H  - HC   | H on CT:tertiary amide
+set type 883 charge      0.570 # C  - C~   | C: C=O in tert formamide.
+set type 884 charge     -0.570 # O  - O~   | O: C=O in tert formamide.
+set type 885 charge      0.000 # H  - HC   | H on CO: tert formamide
+#--------- backbone atoms for Beta-3-Peptides (xc 1049) JT-R Nov'05, some from DW                   
+set type 886 charge      0.020 # C  - CT   | CH; Calpha in beta-2-peptides
+set type 887 charge     -0.040 # C  - CT   | CH2; Calpha in all (M, N-ter)
+set type 888 charge      0.000 # C  - CT   | CH2; Cbeta in b-Gly (M, C-ter)
+set type 889 charge      0.060 # C  - CT   | CH; Cbeta in most (M, C-ter)
+set type 890 charge     -0.070 # C  - CT   | CH; Cbeta in b-Pro (M, C-ter)
+set type 891 charge     -0.140 # C  - CT   | CH2; Calpha for all (C-ter)
+set type 892 charge      0.170 # C  - CT   | CH; Cbeta for most (N-ter)
+set type 893 charge      0.110 # C  - CT   | CH; Cbeta for b-Gly (N-ter)
+set type 894 charge      0.150 # C  - CT   | CH; Cbeta for b-Pro (N-ter)
+set type 895 charge      0.170 # C  - CT   | CH2; Cepsilon for b-Pro (N-ter)
+#---------       silicon - wlj unpublished                                                         
+set type 896 charge      0.320 # Si - Si   | Si in tetraalkylsilane R4Si
+set type 897 charge      0.250 # Si - Si   | Si in R3SiH
+set type 898 charge      0.180 # Si - Si   | Si in R2SiH2
+set type 899 charge      0.110 # Si - Si   | Si in RSiH3
+set type 900 charge     -0.010 # H  - H~   | H on Si in silane, silanol, silyl ether
+set type 901 charge      -0.26 # C  - CT   | CH3 on Si in silane, "
+set type 902 charge      -0.20 # C  - CT   | CH2 on Si in silane, "
+set type 903 charge      -0.14 # C  - CT   | CH on Si in silane, "
+set type 904 charge      -0.08 # C  - CT   | C on Si in silane, "
+set type 905 charge      -0.08 # C  - CA   | C ipso in phenyl silane
+set type 906 charge       0.39 # Si - Si   | Si in R3SiOH
+set type 907 charge       0.32 # Si - Si   | Si in R2SiHOH
+set type 908 charge       0.25 # Si - Si   | Si in RSiH2OH
+set type 909 charge      -0.50 # O  - OH   | O in SiOH silanol
+set type 910 charge       0.35 # H  - HO   | H in SiOH silanol
+set type 911 charge       0.39 # Si - Si   | Si in R3SiOR silyl ether
+set type 912 charge       0.32 # Si - Si   | Si in R2SiHOR "
+set type 913 charge       0.25 # Si - Si   | Si in RSiH2OR "
+set type 914 charge      -0.35 # O  - OS   | O: alkyl silyl ether - R on O is 181-185
+set type 915 charge       0.24 # Si - Si   | Si in R3SiSi disilane
+set type 916 charge       0.17 # Si - Si   | Si in R2SiHSi disilane
+set type 917 charge       0.10 # Si - Si   | Si in RSiH2Si disilane
+set type 918 charge       0.03 # Si - Si   | Si in H3Si-Si disilane
+set type 919 charge      0.040 # Si - Si   | Si in SiH4
+set type 920 charge       0.18 # Si - Si   | Si in SiH3OH
+set type 921 charge     -0.230 # C  - CA   | C in C5H5- cyclopentadienyl anion
+set type 922 charge      0.030 # H  - HA   | H in C5H5- cyclopentadienyl anion
+set type 923 charge     -0.099 # C  - CA   | C in C5H5 cyclopentadienyl radical
+set type 924 charge      0.099 # H  - HA   | H in C5H5 cyclopentadienyl radical
+set type 925 charge       -1.0 # F  - F~   | F- 1100-1114 provide
+set type 926 charge       -1.0 # Cl - Cl   | Cl- sigmas that yield the
+set type 927 charge       -1.0 # Br - Br   | Br- correct free energies
+set type 928 charge       -1.0 # I  - I~   | I- of hydration for
+set type 929 charge       1.00 # Li - Li   | Li+ The epsilons are
+set type 930 charge       1.00 # Na - Na   | Na+ unchanged from
+set type 931 charge       1.00 # K  - K~   | K+ 400-414.
+set type 932 charge       1.00 # Rb - Rb   | Rb+
+set type 933 charge       1.00 # Cs - Cs   | Cs+
+set type 934 charge       2.00 # Mg - Mg   | Mg++
+set type 935 charge       2.00 # Ca - Ca   | Ca++
+set type 936 charge       2.00 # Sr - Sr   | Sr++
+set type 937 charge       2.00 # Ba - Ba   | Ba++
+set type 938 charge     -0.050 # C  - CT   | C in CH3NR3+ July 2005
+set type 939 charge      0.050 # C  - CT   | C in RCH2NR3+ WLJ
+set type 940 charge      0.150 # C  - CT   | C in R2CHNR3+ ammonium
+set type 941 charge      0.250 # C  - CT   | C in R3CNR3+
+set type 942 charge      0.100 # H  - HC   | H in CH3NR3+
+set type 943 charge      0.115 # N  - N3   | N (ArNR3+) Anilinium Ion
+set type 944 charge      0.135 # C  - CA   | Cipso (ArNR3+)
+set type 945 charge      0.015 # N  - N3   | N (ArNR2H+)
+set type 946 charge      0.155 # C  - CA   | Cipso (ArNR2H+)
+set type 947 charge      0.000 # C  - C|   | triene C (R2-C=) central C=C
+set type 948 charge     -0.115 # C  - C|   | triene C (RH-C=) central C=C
+set type 949 charge      0.150 # H  - HC   | allene H
+set type 950 charge     -0.250 # C  - CM   | allene C1 CH2
+set type 951 charge     -0.100 # C  - CM   | allene C1 CHR
+set type 952 charge      0.050 # C  - CM   | allene C1 CR2
+set type 953 charge     -0.100 # C  - C°   | allene C2
+set type 954 charge      0.200 # C  - C°   | ketene C2
+set type 955 charge     -0.250 # O  - O~   | ketene O
+set type 956 charge      0.700 # C  - C°   | CO2 Madura 2009 carbon dioxide
+set type 957 charge     -0.350 # O  - O~   | CO2 Madura 2009
+set type 958 charge      0.088 # C  - CT   | CB in N-Me HIS
+set type 959 charge      0.000 # S  - SA   | S thiazole jlj0003 OPLS-AA/L
+set type 960 charge      0.350 # C  - CR   | C2 thiazole jlj0003
+set type 961 charge     -0.400 # N  - NB   | N thiazole jlj0003
+set type 962 charge      0.000 # C  - CV   | C4 thiazole jlj0003
+set type 963 charge     -0.150 # C  - CW   | C5 thiazole jlj0003
+set type 964 charge      0.200 # H  - HA   | H4 thiazole jlj0003
+set type 965 charge      0.200 # H  - HA   | H5 thiazole jlj0003
+set type 966 charge     0.1263 # C  - CT   | CH2 Trifluoroethanol TFE
+set type 967 charge     0.5323 # C  - CT   | CF3 E Duffy Thesis 1994
+set type 968 charge    -0.6351 # O  - OH   | OH "
+set type 969 charge     0.4286 # H  - HO   | HO "
+set type 970 charge    -0.2057 # F  - F~   | F "
+set type 971 charge     0.0825 # H  - HC   | H "
+set type 972 charge     -0.005 # C  - CY   | CHCH=CH2 vinylcyclopropane OPLS-2020
+set type 973 charge     -0.170 # C  - CM   | vinylcyclopropane
+set type 974 charge      0.080 # C  - CY   | CHC%CH ethynylcyclopropane OPLS-2020
+set type 975 charge     -0.140 # C  - CZ   | ethynylcyclopropane
+#                                                                                                   
+set type 976 charge     -0.834 # O  - tipO | TIP3P water O, long-range Coulombic solver
+set type 977 charge     +0.417 # H  - tipH | TIP3P water H, long-range Coulombic solver
+set type 978 charge       0.00 # O  - tipO | TIP4P water O, long-range Coulombic solver
+set type 979 charge    +0.5242 # H  - tipH | TIP4P water H, long-range Coulombic solver
+set type 980 charge    -1.0484 # XX - tipM | TIP4P water M, long-range Coulombic solver
+set type 981 charge       0.00 # O  - tipO | TIP5P water O, long-range Coulombic solver
+set type 982 charge     +0.241 # H  - tipH | TIP5P water H, long-range Coulombic solver
+set type 983 charge     -0.241 # XX - tipL | TIP5P water L, long-range Coulombic solver
+set type 984 charge     -0.820 # O  - spcO | SPC water O
+set type 985 charge    -0.8476 # O  - spcO | SPC/E water O
+set type 986 charge     +0.410 # H  - spcH | SPC water H
+set type 987 charge    +0.4238 # H  - spcH | SPC/E water H
+set type 988 charge       0.00 # O  - opcO | OPC water O
+set type 989 charge  +0.679142 # H  - opcH | OPC water H
+set type 990 charge  -1.358284 # XX - opcE | OPC water E
