@@ -320,3 +320,11 @@ software = "qe"
 difficulty = "hard"
 category = "debugging"
 tags = ["qe", "dft", "debugging", "error-diagnosis"]
+
+[[task]]
+name = "lammps-minimize-var-bug"
+path = "tasks/lammps-minimize-var-bug"
+software = "lammps"
+difficulty = "hard"
+category = "debugging"
+tags = ["lammps", "classical-md", "minimization", "input-debugging", "debugging", "cross-verify"]
