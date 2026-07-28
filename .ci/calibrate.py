@@ -36,11 +36,17 @@ def main():
     ap.add_argument("--runs", type=int, default=5)
     ap.add_argument("--platform", default="linux/amd64")
     ap.add_argument("--skip-build", action="store_true")
+    ap.add_argument("--state",
+                    help="JSONL file of completed oracle runs. Each finished "
+                         "run is appended immediately, so an interrupted "
+                         "calibration resumes instead of starting over. "
+                         "Defaults to <task_dir>/.calibration-runs.jsonl")
     args = ap.parse_args()
 
     task_dir = os.path.realpath(args.task_dir)
     task_name = os.path.basename(task_dir)
     image = f"compchem-bench/{task_name}:ci"
+    state_path = args.state or os.path.join(task_dir, ".calibration-runs.jsonl")
 
     if not args.skip_build:
         print(f"[build] {image}", file=sys.stderr, flush=True)
@@ -65,8 +71,22 @@ def main():
             rel = os.path.relpath(full, os.path.join(task_dir, "environment"))
             asset_hashes[rel] = sha256_file(full)
 
+    # Resume: every completed run was appended to the state file, so only the
+    # outstanding ones are re-executed. A long calibration killed part-way
+    # through therefore costs nothing.
     runs = []
-    for i in range(args.runs):
+    if os.path.isfile(state_path):
+        with open(state_path) as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    runs.append(json.loads(line))
+        if runs:
+            print(f"[resume] {len(runs)} completed run(s) in {state_path}",
+                  file=sys.stderr, flush=True)
+    runs = runs[:args.runs]
+
+    for i in range(len(runs), args.runs):
         print(f"[oracle {i + 1}/{args.runs}]", file=sys.stderr, flush=True)
         cid = sh(["docker", "create", "--platform", args.platform,
                   "--cpus=2", "--memory=4g", "--network=none",
@@ -97,7 +117,10 @@ def main():
                       file=sys.stderr)
                 sys.exit(f"no results.json produced on run {i + 1}")
             with open(os.path.join(tmp, "results.json")) as f:
-                runs.append(json.load(f)["values"])
+                values = json.load(f)["values"]
+            runs.append(values)
+            with open(state_path, "a") as f:
+                f.write(json.dumps(values) + "\n")
 
     # Spread across runs, per key
     summary = {}

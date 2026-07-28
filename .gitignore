@@ -1,0 +1,5 @@
+# Calibration state written by .ci/calibrate.py (resumable oracle runs)
+.calibration-runs.jsonl
+__pycache__/
+*.pyc
+.DS_Store
