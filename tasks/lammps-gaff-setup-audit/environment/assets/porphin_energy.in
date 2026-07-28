@@ -1,0 +1,75 @@
+# ============================================
+# LAMMPS Input: Total Energy Calculation
+# ============================================
+# System: Porphin molecule with GAFF2 force field
+
+units           real
+atom_style      full
+boundary        p p p
+
+read_data       "assets/system_gaff2.data"
+
+# ---------------------
+# Force Field (GAFF2)
+# ---------------------
+bond_style      harmonic
+angle_style     harmonic
+dihedral_style  fourier
+improper_style  cvff
+pair_style      lj/charmm/coul/long 8.0 10.0
+kspace_style    ewald 0.0001
+
+# Load GAFF2 parameters
+include         "assets/system_gaff2.in.settings"
+
+# Neighbor list
+neighbor        2.0 bin
+neigh_modify    every 1 delay 0 check yes
+
+# ---------------------
+# Output Settings
+# ---------------------
+
+# Thermo output with energy components
+thermo_style    custom step temp pe ke etotal press vol ebond eangle edihed eimp evdwl ecoul
+thermo          1
+
+
+# ---------------------
+# Calculate Energy
+# ---------------------
+run             0
+
+# ---------------------
+# Print Energy Components
+# ---------------------
+variable        E_bond   equal ebond
+variable        E_angle  equal eangle
+variable        E_dihed  equal edihed
+variable        E_imp    equal eimp
+variable        E_vdw    equal evdwl
+variable        E_coul   equal ecoul
+variable        E_total  equal pe
+
+print           ""
+print           "============================================"
+print           "       TOTAL ENERGY CALCULATION"
+print           "============================================"
+print           "  Energy Component         Value (kcal/mol)"
+print           "  ----------------------------------------"
+print           "  Bond Energy:       ${E_bond}"
+print           "  Angle Energy:      ${E_angle}"
+print           "  Dihedral Energy:   ${E_dihed}"
+print           "  Improper Energy:   ${E_imp}"
+print           "  Van der Waals:     ${E_vdw}"
+print           "  Electrostatic:     ${E_coul}"
+print           "  ----------------------------------------"
+print           "  TOTAL ENERGY:      ${E_total}"
+print           "============================================"
+print           ""
+print           "  Units: kcal/mol (real units)"
+print           "============================================"
+
+print           ""
+print           "  Output files:"
+print           "============================================"

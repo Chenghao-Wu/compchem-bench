@@ -32,20 +32,20 @@ decisions differentiate it from static QA-style benchmarks:
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
 | ASE | 2 | 2 | 2 | 1 | 1 | **8** |
-| LAMMPS | 1 | 2 | 3 | 3 | 1 | **10** |
+| LAMMPS | 1 | 2 | 3 | 4 | 1 | **11** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **7** | **4** | **41** |
+| **Total** | **6** | **13** | **11** | **8** | **4** | **42** |
 
 ### Difficulty distribution
 
 | Difficulty | Count | Share |
 |---|---|---|
 | easy | 10 | 24% |
-| medium | 18 | 44% |
-| hard | 13 | 32% |
+| medium | 18 | 43% |
+| hard | 14 | 33% |
 
 ### Complete task list
 
@@ -62,7 +62,7 @@ decisions differentiate it from static QA-style benchmarks:
 | `ase-vibrations` | hard | analysis | Finite-displacement vibrational analysis of a Cu4 cluster. |
 | `ase-custom-calculator` | hard | workflow | Implement a custom Morse-potential ASE calculator and relax a cluster. |
 
-**LAMMPS (10)**
+**LAMMPS (11)**
 
 | Task | Difficulty | Category | Summary |
 |---|---|---|---|
@@ -76,6 +76,7 @@ decisions differentiate it from static QA-style benchmarks:
 | `lammps-thermostat-audit` | hard | debugging | Audit a thermostat setup for correctness. |
 | `lammps-polymer-setup` | hard | workflow | Build and equilibrate a bead-spring polymer melt. |
 | `lammps-minimize-var-bug` | hard | debugging | Repair a minimisation report that claims the energy never changed. |
+| `lammps-gaff-setup-audit` | hard | debugging | Find the missing non-bonded convention in a GAFF2 setup. |
 
 **CP2K (6)**
 
@@ -253,7 +254,7 @@ python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # lint one task
 | Quantum ESPRESSO | **7.4** (conda-forge build `hac89879_0`) | 7 |
 | xtb | **6.7.1** (official static linux-x86_64 tarball, sha256-verified) | 3 |
 | CP2K | **2024.1** (`cp2k/cp2k:2024.1_mpich_generic_psmp`) | 6 |
-| LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 10 |
+| LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 11 |
 | RDKit | **2024.9.5** (pip, on `python:3.11.9-slim`) | 7 |
 | ASE | **3.23.0** (pip, on `python:3.11.9-slim`, numpy 1.26.4) | 8 |
 

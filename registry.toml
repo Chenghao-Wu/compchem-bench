@@ -328,3 +328,11 @@ software = "lammps"
 difficulty = "hard"
 category = "debugging"
 tags = ["lammps", "classical-md", "minimization", "input-debugging", "debugging", "cross-verify"]
+
+[[task]]
+name = "lammps-gaff-setup-audit"
+path = "tasks/lammps-gaff-setup-audit"
+software = "lammps"
+difficulty = "hard"
+category = "debugging"
+tags = ["lammps", "classical-md", "force-field", "input-debugging", "debugging", "cross-verify"]
