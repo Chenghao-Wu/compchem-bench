@@ -1,7 +1,7 @@
 # CompChemBench — Dataset Card
 
 > **Status note:** all counts, task lists, and pinned versions below reflect
-> the v1.1 release state of the repository (`main`, 40/40 tasks complete).
+> the current 42-task repository state.
 
 ## 1. Overview and Motivation
 
@@ -15,7 +15,9 @@ any harness that speaks that format can run it out of the box. Two design
 decisions differentiate it from static QA-style benchmarks:
 
 1. **Real execution.** Tasks run inside Docker images with the real software
-   stack installed (LAMMPS, CP2K, Quantum ESPRESSO, xtb, ASE, RDKit). The
+   stack available (LAMMPS, CP2K, Quantum ESPRESSO, xtb, ASE, RDKit). An
+   explicit online-bootstrap task may require the agent to install its
+   declared runtime stack first. The
    oracle solution (`solution/solve.sh`) performs the actual calculation — no
    hardcoded answers — and agents are expected to do the same.
 2. **Anti-cheat evaluation with real cross-verification.** Scoring is not
@@ -31,25 +33,25 @@ decisions differentiate it from static QA-style benchmarks:
 
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
-| ASE | 2 | 2 | 2 | 1 | 1 | **8** |
+| ASE | 2 | 2 | 2 | 1 | 3 | **10** |
 | LAMMPS | 1 | 2 | 3 | 2 | 1 | **9** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **6** | **4** | **40** |
+| **Total** | **6** | **13** | **11** | **6** | **6** | **42** |
 
 ### Difficulty distribution
 
 | Difficulty | Count | Share |
 |---|---|---|
-| easy | 10 | 25% |
-| medium | 18 | 45% |
-| hard | 12 | 30% |
+| easy | 10 | 23.8% |
+| medium | 18 | 42.9% |
+| hard | 14 | 33.3% |
 
 ### Complete task list
 
-**ASE (8)**
+**ASE (10)**
 
 | Task | Difficulty | Category | Summary |
 |---|---|---|---|
@@ -61,6 +63,8 @@ decisions differentiate it from static QA-style benchmarks:
 | `ase-neb-adatom` | medium | execution | NEB barrier for an adatom hop on Cu(100) (EMT). |
 | `ase-vibrations` | hard | analysis | Finite-displacement vibrational analysis of a Cu4 cluster. |
 | `ase-custom-calculator` | hard | workflow | Implement a custom Morse-potential ASE calculator and relax a cluster. |
+| `ase-mlip-multihead-offline` | hard | workflow | Run preinstalled DPA-3.2-5M and MatterSim checkpoints on molecular and surface structures. |
+| `ase-mlip-multihead-online` | hard | workflow | Bootstrap the MLIP packages and checkpoints online, then run the same four CPU calculations. |
 
 **LAMMPS (9)**
 
@@ -173,8 +177,10 @@ Tasks follow the Harbor / TB 2.0 layout, so they can be run by any harness
 that consumes that format — point your Harbor runner at the `tasks/`
 directory (or a single `tasks/<task-name>/`) and select your agent. Each task
 is self-contained: the harness builds `environment/Dockerfile`, gives the
-agent `instruction.md` inside the container with `network=false`, then runs
-`tests/test.sh` after the agent finishes (or its timeout expires).
+agent `instruction.md` inside the container, then runs `tests/test.sh` after
+the agent finishes (or its timeout expires). Networking is disabled by
+default. A task tagged `online-bootstrap` may enable it during the agent
+phase; the CI runner disconnects networking before verification.
 
 ### Compute budget
 
@@ -190,6 +196,9 @@ binding constraint (calibrated against the first agent baseline; see
   2-CPU container to ~1 effective core. QE images likewise pin
   `OMP_NUM_THREADS=2`. With pinning, e.g. the full 20-step
   `cp2k-aimd-water` trajectory takes ~45 s at 2 CPUs.
+- **CPU MLIP workflow tasks** run with `cpus = 4`, `memory_gb = 16`, and
+  1800–3600 s agent timeouts. The online variant receives the longer timeout
+  for dependency and checkpoint acquisition.
 - **Easy tasks** across all software use a uniform 900 s agent timeout
   (pre-baseline: 300–600 s), comfortably above the slowest observed
   first-round easy run (~175 s) so slow-reasoning models are not
@@ -243,10 +252,12 @@ python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # lint one task
 | CP2K | **2024.1** (`cp2k/cp2k:2024.1_mpich_generic_psmp`) | 6 |
 | LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 9 |
 | RDKit | **2024.9.5** (pip, on `python:3.11.9-slim`) | 7 |
-| ASE | **3.23.0** (pip, on `python:3.11.9-slim`, numpy 1.26.4) | 8 |
+| ASE | **3.23.0** for existing tasks; MLIP workflows use **3.26.0** with CPU PyTorch 2.10.0 | 10 |
 
-- **Hermetic runtime.** `network=false` at run time; every dependency is baked
-  into the image.
+- **Network isolation by default.** Standard tasks use `network=false` and
+  bake every dependency into the image. Explicit `online-bootstrap` tasks
+  receive network access only while the agent prepares the environment; the
+  verifier runs after that network is disconnected.
 - **Determinism.** Fixed seeds; single-threaded or fixed-rank MPI (e.g. QE runs
   calibrate at 1 MPI rank × 2 OMP threads).
 - **Calibration protocol.** The oracle is run **≥ 5 times** on the CI image;
@@ -297,7 +308,7 @@ trained on it can no longer be meaningfully evaluated by it.
 - **Held-out plan.** A held-out split will be generated from these
   parameterized families — new instances with fresh parameters and
   re-calibrated references, kept out of the public repo — to probe
-  contamination and overfitting against the public 40.
+  contamination and overfitting against the public 42.
 
 ## 8. Repository Layout
 

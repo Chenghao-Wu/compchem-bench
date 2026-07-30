@@ -1,0 +1,22 @@
+version = "1.0"
+
+[metadata]
+name = "ase-mlip-multihead-online"
+difficulty = "hard"
+category = "workflow"
+tags = ["ase", "classical-md", "workflow", "mlip", "mattersim", "dpa-3", "multi-head", "single-point", "cross-verify", "online-bootstrap"]
+author = "compchem-bench"
+created = "2026-07-27"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 4
+memory_gb = 16
+network = true
+gpu = false
+
+[agent]
+timeout_sec = 3600
+
+[verifier]
+timeout_sec = 600

@@ -320,3 +320,19 @@ software = "qe"
 difficulty = "hard"
 category = "debugging"
 tags = ["qe", "dft", "debugging", "error-diagnosis"]
+
+[[task]]
+name = "ase-mlip-multihead-offline"
+path = "tasks/ase-mlip-multihead-offline"
+software = "ase"
+difficulty = "hard"
+category = "workflow"
+tags = ["ase", "classical-md", "workflow", "mlip", "mattersim", "dpa-3", "multi-head", "single-point", "cross-verify", "offline"]
+
+[[task]]
+name = "ase-mlip-multihead-online"
+path = "tasks/ase-mlip-multihead-online"
+software = "ase"
+difficulty = "hard"
+category = "workflow"
+tags = ["ase", "classical-md", "workflow", "mlip", "mattersim", "dpa-3", "multi-head", "single-point", "cross-verify", "online-bootstrap"]

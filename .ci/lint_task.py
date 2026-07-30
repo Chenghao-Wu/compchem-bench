@@ -23,9 +23,13 @@ Checks:
 
 import sys
 import os
-import tomllib
 import json
 import re
+
+try:
+    import tomllib
+except ModuleNotFoundError:  # Python 3.10
+    import tomli as tomllib
 
 REQUIRED_FILES = [
     "task.toml",
@@ -43,6 +47,10 @@ REQUIRED_TASK_TOML_KEYS = {
     ("metadata", "category"),
     ("metadata", "tags"),
     ("environment", "build"),
+    ("environment", "cpus"),
+    ("environment", "memory_gb"),
+    ("environment", "network"),
+    ("environment", "gpu"),
     ("agent", "timeout_sec"),
     ("verifier", "timeout_sec"),
 }
@@ -124,6 +132,28 @@ def check_task_toml(task_dir):
     fails += check_tags(name, tags, "task.toml")
     if meta.get("category") and meta["category"] not in tags:
         fails += error(f"task.toml: category {meta['category']!r} must also appear in tags")
+
+    environment = cfg.get("environment", {})
+    cpus = environment.get("cpus")
+    memory_gb = environment.get("memory_gb")
+    network = environment.get("network")
+    gpu = environment.get("gpu")
+    if type(cpus) is not int or cpus < 1:
+        fails += error("task.toml environment.cpus must be a positive integer")
+    if type(memory_gb) is not int or memory_gb < 1:
+        fails += error("task.toml environment.memory_gb must be a positive integer")
+    if type(network) is not bool:
+        fails += error("task.toml environment.network must be true or false")
+    if type(gpu) is not bool:
+        fails += error("task.toml environment.gpu must be true or false")
+    if network is True and "online-bootstrap" not in tags:
+        fails += error(
+            "task.toml: network=true tasks must include the 'online-bootstrap' tag"
+        )
+    if network is not True and "online-bootstrap" in tags:
+        fails += error(
+            "task.toml: the 'online-bootstrap' tag requires environment.network=true"
+        )
 
     return fails
 
@@ -314,7 +344,9 @@ def check_registry_consistency(task_dir):
             f"task.toml tags {sorted(meta.get('tags', []))}"
         )
     reg_path = entry.get("path", "")
-    expected_rel = os.path.relpath(task_dir, os.path.join(task_dir, "..", ".."))
+    expected_rel = os.path.relpath(
+        task_dir, os.path.join(task_dir, "..", "..")
+    ).replace(os.sep, "/")
     if reg_path != expected_rel:
         fails += error(f"registry.toml path={reg_path!r} != actual {expected_rel!r}")
 
