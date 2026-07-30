@@ -1,0 +1,28 @@
+{
+  "_comment": "Raw CPU MLIP energies. DPA-3.2-5M uses OMol25 for the molecule and OC20M for the surface.",
+  "calibration_date": "2026-07-30",
+  "arch": "x86_64",
+  "image_digest": "sha256:8bd6f31202738989d01f4fdba1cd78294b1135cb1d2527e5c79d79584ed68894",
+  "dpa3_mol_energy_eV_ref": -8232.624078,
+  "dpa3_mol_energy_eV_tol": 1e-05,
+  "mattersim_mol_energy_eV_ref": -68.459061,
+  "mattersim_mol_energy_eV_tol": 1e-05,
+  "dpa3_surf_energy_eV_ref": -291.356309,
+  "dpa3_surf_energy_eV_tol": 0.0001,
+  "mattersim_surf_energy_eV_ref": -313.558166,
+  "mattersim_surf_energy_eV_tol": 0.0001,
+  "cross_verify_atol": 0.001,
+  "dpa_model_path": "/opt/models/DPA-3.2-5M.pt",
+  "mattersim_model_path": "/opt/models/mattersim-v1.0.0-5M.pth",
+  "dpa_molecule_head": "OMol25",
+  "dpa_surface_head": "OC20M",
+  "model_hashes": {
+    "/opt/models/DPA-3.2-5M.pt": "sha256:876354744aeaae17b2639a6a690514470273784f2b4836280850f50cbb799165",
+    "/opt/models/mattersim-v1.0.0-5M.pth": "sha256:e3df9fa708725e3d453140646c7d1838324b347a3d1214cf1440522146f872b5"
+  },
+  "asset_hashes": {
+    "assets/mol_structure.xyz": "sha256:5d8a9dfa0f1205e4e2cf65b511d21dd8d5800e7320f67229fbda6d70c9b23534",
+    "assets/surf_structure.cif": "sha256:bdb4191985d4e3d11d5b27029b4a4076897321d9b78b3d71e18f5c3293681e95"
+  },
+  "_calibration_note": "Calibrated on x86_64 CPU with raw model outputs, no dispersion correction, and all runtime components preinstalled."
+}
