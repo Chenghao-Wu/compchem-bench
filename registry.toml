@@ -328,3 +328,11 @@ software = "ase"
 difficulty = "hard"
 category = "workflow"
 tags = ["ase", "classical-md", "workflow", "mlip", "mattersim", "dpa-3", "multi-head", "single-point", "cross-verify", "offline"]
+
+[[task]]
+name = "ase-mlip-multihead-online"
+path = "tasks/ase-mlip-multihead-online"
+software = "ase"
+difficulty = "hard"
+category = "workflow"
+tags = ["ase", "classical-md", "workflow", "mlip", "mattersim", "dpa-3", "multi-head", "single-point", "cross-verify", "online-bootstrap"]

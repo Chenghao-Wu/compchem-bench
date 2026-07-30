@@ -9,7 +9,7 @@ ESPRESSO, RDKit, and xtb**.
 Tasks follow the **Terminal-Bench / Harbor (TB 2.0) task format**, so any
 harness that speaks that format can run the benchmark out of the box. Scoring
 is terminal-state verification hardened by an *independent recompute*: the
-verifier re-evaluates the agent's final state with the in-image software, so
+verifier re-evaluates the agent's final state with the available runtime software, so
 the only way to pass is to have actually run the calculation.
 
 See **[DATASET_CARD.md](DATASET_CARD.md)** for the full dataset card —
@@ -22,19 +22,19 @@ for the current leaderboard.
 > **Please do not train on it.** See [Data contamination policy](#data-contamination-policy)
 > below.
 
-## Coverage (v1.1 — 40 tasks)
+## Coverage (42 tasks)
 
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
-| ASE | 2 | 2 | 2 | 1 | 1 | **8** |
+| ASE | 2 | 2 | 2 | 1 | 3 | **10** |
 | LAMMPS | 1 | 2 | 3 | 2 | 1 | **9** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **6** | **4** | **40** |
+| **Total** | **6** | **13** | **11** | **6** | **6** | **42** |
 
-Difficulty distribution: **10 easy / 18 medium / 12 hard** (25% / 45% / 30%).
+Difficulty distribution: **10 easy / 18 medium / 14 hard**.
 The full per-task list with summaries is in
 [DATASET_CARD.md §2](DATASET_CARD.md#2-coverage).
 
@@ -52,7 +52,7 @@ Local CI (requires Docker):
 ```bash
 python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # structural lint for one task
 .ci/run_ci.sh tasks/ase-geoopt-h2o              # full 5-step CI gate for one task
-.ci/run_all.sh                                  # re-run the CI gate over all 40 tasks
+.ci/run_all.sh                                  # re-run the CI gate over all 42 tasks
 ```
 
 ## Repository layout
@@ -95,7 +95,7 @@ asset-integrity layer — details in [DATASET_CARD.md §3](DATASET_CARD.md#3-ant
   before use; a mismatch is a hard fail. Enforced statically by lint.
 - **Existence → native-output integrity → numerical tolerance →
   cross-verification.** The final layer recomputes from the agent's final
-  state with the in-image software (ASE calculator, CP2K binary, LAMMPS,
+  state with the final container software (ASE calculator, CP2K binary, LAMMPS,
   `pw.x`, …) and requires the native log, the reported `results.json`, and the
   recomputed value to agree within a tight tolerance.
 - **Informed-cheat baseline.** Every task ships a cheat script producing a
@@ -107,8 +107,10 @@ asset-integrity layer — details in [DATASET_CARD.md §3](DATASET_CARD.md#3-ant
 
 - Canonical architecture **x86_64**; every image pins exact versions (tag +
   digest / tarball hash) — inventory in [DATASET_CARD.md §5](DATASET_CARD.md#5-reproducibility).
-- **Hermetic runtime**: `network=false` at run time; all dependencies are in
-  the image.
+- **Network isolation by default**: normal tasks run with `network=false` and
+  all dependencies in the image. Explicit `online-bootstrap` tasks may use
+  networking during the agent phase only; CI disconnects the container before
+  verification.
 - **Calibration protocol**: the oracle is run ≥ 5 times on the CI image;
   tolerance = max(3 × observed spread, physical minimum resolution); calibrated
   values, tolerances, image digest, calibration date, and arch are recorded in
@@ -138,7 +140,7 @@ policy:
   `solution/` enters the runtime image.
 - A **held-out private split** (fresh parameterized instances with
   re-calibrated references, kept out of this repository) is the planned
-  follow-up for probing contamination and overfitting against the public 40
+follow-up for probing contamination and overfitting against the public 42
   tasks. See [DATASET_CARD.md §7](DATASET_CARD.md#7-data-contamination-policy-and-held-out-plan).
 
 ## Commercial-software policy
