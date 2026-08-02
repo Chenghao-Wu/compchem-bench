@@ -1,0 +1,20 @@
+version = "1.0"
+
+[metadata]
+name = "lammps-polymer-validation"
+difficulty = "medium"
+category = "workflow"
+tags = ["lammps", "classical-md", "polymer", "validation", "physical-analysis"]
+author = "zhangyaya"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 1
+memory_gb = 4
+network = false
+
+[agent]
+timeout_sec = 1800
+
+[verifier]
+timeout_sec = 120

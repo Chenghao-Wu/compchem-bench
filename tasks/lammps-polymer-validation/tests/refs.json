@@ -1,0 +1,13 @@
+{
+  "expected_files": [
+    "log.lammps",
+    "trajectory.dump",
+    "results.json"
+  ],
+  "checks": [
+    "json_schema",
+    "lammps_log",
+    "trajectory_exists",
+    "physical_stability"
+  ]
+}

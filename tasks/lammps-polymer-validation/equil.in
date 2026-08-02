@@ -1,0 +1,31 @@
+units           lj
+atom_style      molecular
+boundary        p p p
+
+read_data       environment/assets/polymer.data
+
+pair_style      lj/cut 1.12246204830937
+pair_coeff      * * 1.0 1.0 1.12246204830937
+pair_modify     shift yes
+
+bond_style      fene
+bond_coeff      1 30.0 1.5 1.0 1.0
+special_bonds   fene
+
+neighbor        0.4 bin
+neigh_modify    every 1 delay 0 check yes
+
+velocity        all create 1.0 8675309
+
+timestep        0.006
+
+thermo          100
+thermo_style    custom step temp pe
+
+dump            1 all custom 100 trajectory.dump id mol type x y z
+
+fix             1 all nvt temp 1.0 1.0 1.0
+
+run             3000
+
+write_data      final.data

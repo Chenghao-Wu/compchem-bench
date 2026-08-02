@@ -1,0 +1,239 @@
+LAMMPS (22 Jul 2025 - Update 4)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+units           lj
+atom_style      molecular
+boundary        p p p
+
+read_data       environment/assets/polymer.data
+Reading data file ...
+  orthogonal box = (0 0 0) to (6.1735792 6.1735792 6.1735792)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  200 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  orthogonal box = (0 0 0) to (6.1735792 6.1735792 6.1735792)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  190 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.004 seconds
+
+pair_style      lj/cut 1.12246204830937
+pair_coeff      * * 1.0 1.0 1.12246204830937
+pair_modify     shift yes
+
+bond_style      fene
+bond_coeff      1 30.0 1.5 1.0 1.0
+special_bonds   fene
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        1        1       
+  special bond factors coul:  0        1        1       
+     2 = max # of 1-2 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+
+neighbor        0.4 bin
+neigh_modify    every 1 delay 0 check yes
+
+velocity        all create 1.0 8675309
+
+timestep        0.006
+
+thermo          100
+thermo_style    custom step temp pe
+
+dump            1 all custom 100 trajectory.dump id mol type x y z
+
+fix             1 all nvt temp 1.0 1.0 1.0
+
+run             3000
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+WARNING: Communication cutoff 1.5224620483093698 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/comm.cpp:743)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 1.522462
+  ghost atom cutoff = 1.522462
+  binsize = 0.76123102, bins = 9 9 9
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+WARNING: Communication cutoff 1.5224620483093698 is shorter than a bond length based estimate of 1.855. This may lead to errors. (src/comm.cpp:743)
+WARNING: Inconsistent image flags
+For more information see https://docs.lammps.org/err0027 (src/domain.cpp:1052)
+WARNING: FENE bond too long: 0 6 7 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 12 13 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 18 19 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 24 25 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 30 31 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 36 37 1.7821588036009681 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 42 43 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 48 49 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 54 55 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 66 67 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 72 73 1.7821588036009681 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 78 79 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 84 85 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 90 91 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 96 97 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 102 103 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 108 109 1.7821588036009681 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 114 115 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 126 127 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 132 133 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 138 139 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 144 145 1.7821588036009681 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 150 151 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 156 157 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 162 163 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 168 169 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 174 175 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 186 187 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 192 193 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 0 198 199 1.4551265698104372 (src/MOLECULE/bond_fene.cpp:89)
+Per MPI rank memory allocation (min/avg/max) = 6.328 | 6.328 | 6.328 Mbytes
+   Step          Temp          PotEng    
+         0   1              30.181144    
+WARNING: FENE bond too long: 1 6 7 1.4283754484836022 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 12 13 1.4354346495479549 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 18 19 1.4372595867946725 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 24 25 1.4429497124392627 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 30 31 1.4408778223344858 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 36 37 1.765521821713695 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 42 43 1.4567073938328905 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 48 49 1.4340061590962043 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 54 55 1.4402576372575535 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 66 67 1.445636732049211 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 72 73 1.762726097861071 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 78 79 1.4388163749564025 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 84 85 1.44757632132873 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 90 91 1.4349574001552654 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 96 97 1.4460605509745814 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 102 103 1.4467366289883556 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 108 109 1.767876170120541 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 114 115 1.458691715914706 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 126 127 1.4309846188936888 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 132 133 1.4368782117791532 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 138 139 1.4461541895475578 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 144 145 1.7788113185111076 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 150 151 1.4252556913605177 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 156 157 1.4627902218931297 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 162 163 1.4347162856758715 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 168 169 1.4421710251372726 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 174 175 1.4428747154375592 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 186 187 1.4425747224829792 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 192 193 1.4249952102711325 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 1 198 199 1.4562511503292095 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 2 36 37 1.7139636139715921 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 2 42 43 1.4298985270762135 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 2 72 73 1.708087182279389 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 2 108 109 1.718009435437538 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 2 114 115 1.4338110640701558 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 2 144 145 1.739447474467138 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 2 156 157 1.4417501121073988 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 2 198 199 1.4285346942684924 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 3 36 37 1.6294321733475543 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 3 72 73 1.620287895512914 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 3 108 109 1.6342078804397255 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 3 144 145 1.6653891755667074 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 4 36 37 1.5151753619925528 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 4 72 73 1.5027374087421577 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 4 108 109 1.5195881187867808 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 4 144 145 1.5593418301245745 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 5 144 145 1.4254222093484687 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 16 72 73 1.4640395573404534 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 16 108 109 1.4799102783319356 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 16 144 145 1.4701163548661 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 17 36 37 1.4677123615512602 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 17 72 73 1.546289268540251 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 17 108 109 1.567952732791382 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 17 144 145 1.54586366623441 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 18 36 37 1.5159472906615614 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 18 72 73 1.5835180224549488 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 18 108 109 1.6085289028146907 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 18 144 145 1.57121825562494 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 19 36 37 1.5147229462273786 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 19 72 73 1.573837359929744 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 19 108 109 1.5993429613210353 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 19 144 145 1.5485952690296947 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 20 36 37 1.4693426234049283 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 20 72 73 1.5219008582419564 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 20 108 109 1.5476820549506982 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 20 144 145 1.4853893274708243 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: FENE bond too long: 21 72 73 1.4352049869542942 (src/MOLECULE/bond_fene.cpp:89)
+WARNING: Too many warnings: 111 vs 100. All future warnings will be suppressed
+       100   5.0918738      24.292501    
+       200   3.289913       22.232231    
+       300   2.119768       21.318878    
+       400   1.473424       20.740138    
+       500   1.1843138      20.288005    
+       600   0.96281424     20.086497    
+       700   0.80822381     20.029556    
+       800   0.82522579     19.896735    
+       900   0.82291674     19.963922    
+      1000   0.90523611     20.064523    
+      1100   1.0090432      20.184198    
+      1200   1.1833997      20.159241    
+      1300   1.1873135      20.235111    
+      1400   1.1377422      20.184282    
+      1500   1.0693623      20.055801    
+      1600   0.93074158     20.05277     
+      1700   0.90955571     19.976719    
+      1800   0.8519377      20.076429    
+      1900   0.98470494     19.997113    
+      2000   0.97790106     20.184711    
+      2100   1.0735181      20.198806    
+      2200   1.1205283      20.197807    
+      2300   1.0510483      20.261262    
+      2400   0.98814613     20.227706    
+      2500   0.94091466     20.142533    
+      2600   0.91600471     20.05887     
+      2700   0.86940281     20.083425    
+      2800   0.9037035      20.073008    
+      2900   1.0258865      20.02142     
+      3000   1.0956225      20.08442     
+Loop time of 0.101921 on 1 procs for 3000 steps with 200 atoms
+
+Performance: 15258820.831 tau/day, 29434.454 timesteps/s, 5.887 Matom-step/s
+96.2% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.021962   | 0.021962   | 0.021962   |   0.0 | 21.55
+Bond    | 0.0058703  | 0.0058703  | 0.0058703  |   0.0 |  5.76
+Neigh   | 0.045763   | 0.045763   | 0.045763   |   0.0 | 44.90
+Comm    | 0.0091531  | 0.0091531  | 0.0091531  |   0.0 |  8.98
+Output  | 0.0067881  | 0.0067881  | 0.0067881  |   0.0 |  6.66
+Modify  | 0.0095714  | 0.0095714  | 0.0095714  |   0.0 |  9.39
+Other   |            | 0.002813   |            |       |  2.76
+
+Nlocal:            200 ave         200 max         200 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            488 ave         488 max         488 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:            996 ave         996 max         996 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 996
+Ave neighs/atom = 4.98
+Ave special neighs/atom = 1.9
+Neighbor list builds = 331
+Dangerous builds = 0
+
+write_data      final.data
+System init for write_data ...
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Total wall time: 0:00:00
