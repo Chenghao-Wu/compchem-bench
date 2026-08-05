@@ -320,3 +320,11 @@ software = "qe"
 difficulty = "hard"
 category = "debugging"
 tags = ["qe", "dft", "debugging", "error-diagnosis"]
+
+[[task]]
+name = "lammps-thermal-conductivity"
+path = "tasks/lammps-thermal-conductivity"
+software = "lammps"
+difficulty = "hard"
+category = "analysis"
+tags = ["lammps", "classical-md", "thermal-conductivity", "green-kubo", "analysis", "cross-verify", "multirun"]

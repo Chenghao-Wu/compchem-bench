@@ -1,0 +1,45 @@
+# UNITS: lj CONTRIBUTOR: Songyue Liu and Thomas C. O'Connor, thomaso@andrew.cmu.edu 
+
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "lj" units:
+#   A,B = epsilon; lambda1,lambda2,lambda3 = 1/sigma; R,D = sigma
+#   other quantities are unitless
+
+# This is the Liu & O'Connor tersoff-type model for the following paper:
+# A Reactive Bead–Spring Model for Associative Polymer Melts In and Out of Equilibrium
+# Flow-driven Stretch Fluctuations Cause Anomalous Rate-Thinning In Elongating Associative Polymers
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3, m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A    
+
+# Here u is the cohesive energy or bond strength of stickers
+
+#u=6kT
+#B1     B1      B1        1.0 1 0.0 0.0 1.0 0 1.45172414 31.44969705 4.242640687119285  835.0965416477004  1.1414213562373097  0.14142135623730956  8.48528137423857  29057.759744664556
+
+#u=9kT
+#B1     B1      B1        1.0 1 0.0 0.0 1.0 0 1.45172414 31.44969705 3.464101615137755  575.0594191059289  1.1732050807568877  0.17320508075688767  6.92820323027551  9185.925986179122
+
+#u=12kT
+#B1     B1      B1        1.0 1 0.0 0.0 1.0 0 1.45172414 31.44969705 3.0  482.05288615650403  1.2  0.19999999999999996  6.0  4841.145521912821
+
+#u=15kT
+#B1     B1      B1        1.0 1 0.0 0.0 1.0 0 1.45172414 31.44969705 2.6832815729997477  438.9910188484456  1.223606797749979  0.22360679774997894  5.366563145999495  3211.8852438266053
+
+#u=18kT
+B1     B1      B1        1.0 1 0.0 0.0 1.0 0 1.45172414 31.44969705 2.4494897427831783 416.9676668402649 1.2449489742783177 0.24494897427831774 4.898979485566357 2414.750488752974
+
+
+
+
+
+
+
+
+
+
+
+
+
+
