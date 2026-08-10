@@ -27,14 +27,14 @@ for the current leaderboard.
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
 | ASE | 2 | 2 | 2 | 1 | 1 | **8** |
-| LAMMPS | 1 | 2 | 3 | 2 | 1 | **9** |
+| LAMMPS | 1 | 2 | 3 | 2 | 2 | **10** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **6** | **4** | **40** |
+| **Total** | **6** | **13** | **11** | **6** | **5** | **41** |
 
-Difficulty distribution: **10 easy / 18 medium / 12 hard** (25% / 45% / 30%).
+Difficulty distribution: **10 easy / 18 medium / 13 hard** (24% / 44% / 32%).
 The full per-task list with summaries is in
 [DATASET_CARD.md §2](DATASET_CARD.md#2-coverage).
 

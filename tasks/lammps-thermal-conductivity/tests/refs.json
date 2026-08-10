@@ -1,0 +1,32 @@
+{
+  "_comment": "Reference values for lammps-thermal-conductivity (reworked: the agent builds the 1200-bead system with the provided template script, equilibrates at T*=1.0, quenches to T*=0.4 starting from the T*=1.0 state, runs the 200000-step T*=0.4 NVE production, and reports kappa at T*=0.4). kappa_T04_ref = default-protocol oracle value on the CI image; kappa_tol_frac covers the allowed equilibration-protocol spread (see _calibration_note).",
+  "calibration_date": "2026-08-10",
+  "arch": "x86_64",
+  "image_digest": "sha256:9eb4a8cb5f92672ec41bb13e305c01bb0741d440a887a2670e238e3c75f4dee9",
+  "n_atoms_ref": 1200,
+  "n_bonds_ref": 1170,
+  "n_angles_ref": 1140,
+  "n_sticker_ref": 60,
+  "box_side_ref": 17.800466,
+  "box_side_tol": 0.05,
+  "n_thermo_rows_ref": 101,
+  "eq_min_thermo_rows": 10,
+  "n_blocks_ref": 8,
+  "ncount_lag0_ref": 5001,
+  "n_flux_rows_min": 38000,
+  "temp_T1_ref": 1.0,
+  "temp_T04_ref": 0.4,
+  "temp_tol_frac": 0.1,
+  "etotal_cons_tol_frac": 0.02,
+  "vol_T04": 5640.194954,
+  "kappa_T04_ref": 2.488754,
+  "kappa_tol_frac": 0.15,
+  "consistency_kappa_tol_frac": 0.05,
+  "l6_kappa_tol_frac": 0.1,
+  "l6_G0_tol_frac": 0.1,
+  "asset_hashes": {
+    "assets/generate_bench_system.py": "sha256:4a74ae6c905c893c01588305f58b6dc35a089e483950756dc3830bb167a1b451",
+    "assets/bead2.tersoff": "sha256:7618efd8e403f5e542f79610985d87f13c7921eddaac1e8515dd6c57892b291f"
+  },
+  "_calibration_note": "Calibrated 2026-08-10 on the CI image (Ubuntu 20.04, gcc 9 build of the modified lammps_Ex0; x86_64). The oracle (generate -> equilibrate T*=1.0 -> quench T*=0.4 -> 200k NVE production -> kappa) was run 5x across the allowed equilibration range (150k-500k steps/stage, three Langevin seeds): kappa_T04 = 2.4888 / 2.4571 / 2.5268 / 2.3854 / 2.3738 -> mean 2.446, 1-sigma 0.066 (2.7%). kappa_T04_ref = 2.488754 is the default-protocol oracle value; kappa_tol_frac = 0.15 = max(3 x spread, physical floor) covers every valid equilibration protocol plus the agent's own block-SEM noise. Generated-system box (fixed by the deterministic generator): side=17.800466, V=5640.194954. kappa lower at high T / weaker sticker association; the short quench (vs the 1M-step HPC assets) associates the sticker network less, so kappa here (~2.49) is slightly below the earlier 2.55. The verifier re-runs the pinned generator to byte-verify data.in (L1b) and recomputes kappa from the raw flux series (L6); a fabricated pipeline is caught at L4 (hidden reference) and/or L6."
+}
