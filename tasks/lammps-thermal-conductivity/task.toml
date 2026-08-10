@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-thermal-conductivity"
 difficulty = "hard"
-category = "analysis"
-tags = ["lammps", "classical-md", "thermal-conductivity", "green-kubo", "analysis", "cross-verify", "multirun"]
+category = "workflow"
+tags = ["lammps", "classical-md", "thermal-conductivity", "green-kubo", "workflow", "cross-verify", "multirun"]
 author = "compchem-bench"
 created = "2026-08-04"
 

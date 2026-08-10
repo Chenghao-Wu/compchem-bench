@@ -32,12 +32,12 @@ decisions differentiate it from static QA-style benchmarks:
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
 | ASE | 2 | 2 | 2 | 1 | 1 | **8** |
-| LAMMPS | 1 | 2 | 4 | 2 | 1 | **10** |
+| LAMMPS | 1 | 2 | 3 | 2 | 2 | **10** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **12** | **6** | **4** | **41** |
+| **Total** | **6** | **13** | **11** | **6** | **5** | **41** |
 
 ### Difficulty distribution
 
@@ -75,7 +75,7 @@ decisions differentiate it from static QA-style benchmarks:
 | `lammps-msd-diffusion` | hard | analysis | Self-diffusion coefficient from mean-squared displacement. |
 | `lammps-thermostat-audit` | hard | debugging | Audit a thermostat setup for correctness. |
 | `lammps-polymer-setup` | hard | workflow | Build and equilibrate a bead-spring polymer melt. |
-| `lammps-thermal-conductivity` | hard | analysis | Thermal conductivity of a sticker melt by Green-Kubo (LAMMPS). |
+| `lammps-thermal-conductivity` | hard | workflow | Green-Kubo thermal conductivity of a sticker melt at T\*=0.4: build the system, equilibrate T\*=1.0, quench to T\*=0.4, run production, compute κ. |
 
 **CP2K (6)**
 
