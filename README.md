@@ -1,3 +1,5 @@
+
+
 # CompChemBench
 
 A benchmark for evaluating AI agents on **real computational chemistry work** —
@@ -43,9 +45,9 @@ The full per-task list with summaries is in
 Tasks are self-contained Harbor/TB 2.0 directories. Point your Harbor runner
 at `tasks/` (or a single `tasks/<task-name>/`) and select your agent — the
 harness builds `environment/Dockerfile`, gives the agent `instruction.md`
-inside the container, then runs `tests/test.sh`, which writes
-`/logs/verifier/reward.txt`: **`1` = pass, `0` = fail** (binary, no partial
-credit).
+inside the container (with `network=false`), then runs `tests/test.sh`, which
+writes `/logs/verifier/reward.txt`: **`1` = pass, `0` = fail** (binary, no
+partial credit).
 
 Local CI (requires Docker):
 
