@@ -22,19 +22,19 @@ for the current leaderboard.
 > **Please do not train on it.** See [Data contamination policy](#data-contamination-policy)
 > below.
 
-## Coverage (v1.1 — 40 tasks)
+## Coverage (v1.1 — 42 tasks)
 
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
-| ASE | 2 | 2 | 2 | 1 | 1 | **8** |
-| LAMMPS | 1 | 2 | 3 | 2 | 1 | **9** |
+| ASE | 2 | 2 | 2 | 1 | 2 | **9** |
+| LAMMPS | 1 | 2 | 3 | 3 | 1 | **10** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **6** | **4** | **40** |
+| **Total** | **6** | **13** | **11** | **7** | **5** | **42** |
 
-Difficulty distribution: **10 easy / 18 medium / 12 hard** (25% / 45% / 30%).
+Difficulty distribution: **10 easy / 18 medium / 14 hard** (24% / 43% / 33%).
 The full per-task list with summaries is in
 [DATASET_CARD.md §2](DATASET_CARD.md#2-coverage).
 
@@ -52,7 +52,7 @@ Local CI (requires Docker):
 ```bash
 python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # structural lint for one task
 .ci/run_ci.sh tasks/ase-geoopt-h2o              # full 5-step CI gate for one task
-.ci/run_all.sh                                  # re-run the CI gate over all 40 tasks
+.ci/run_all.sh                                  # re-run the CI gate over all 42 tasks
 ```
 
 ## Repository layout
@@ -138,7 +138,7 @@ policy:
   `solution/` enters the runtime image.
 - A **held-out private split** (fresh parameterized instances with
   re-calibrated references, kept out of this repository) is the planned
-  follow-up for probing contamination and overfitting against the public 40
+  follow-up for probing contamination and overfitting against the public 41
   tasks. See [DATASET_CARD.md §7](DATASET_CARD.md#7-data-contamination-policy-and-held-out-plan).
 
 ## Commercial-software policy

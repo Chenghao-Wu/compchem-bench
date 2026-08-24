@@ -1,7 +1,7 @@
 # CompChemBench — Dataset Card
 
 > **Status note:** all counts, task lists, and pinned versions below reflect
-> the v1.1 release state of the repository (`main`, 40/40 tasks complete).
+> the v1.1 release state of the repository (`main`, 42/42 tasks complete).
 
 ## 1. Overview and Motivation
 
@@ -31,25 +31,25 @@ decisions differentiate it from static QA-style benchmarks:
 
 | Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
 |---|---|---|---|---|---|---|
-| ASE | 2 | 2 | 2 | 1 | 1 | **8** |
-| LAMMPS | 1 | 2 | 3 | 2 | 1 | **9** |
+| ASE | 2 | 2 | 2 | 1 | 2 | **9** |
+| LAMMPS | 1 | 2 | 3 | 3 | 1 | **10** |
 | CP2K | — | 4 | 1 | 1 | — | **6** |
 | QE | 1 | 2 | 2 | 1 | 1 | **7** |
 | RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
 | xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **6** | **4** | **40** |
+| **Total** | **6** | **13** | **11** | **7** | **5** | **42** |
 
 ### Difficulty distribution
 
 | Difficulty | Count | Share |
 |---|---|---|
-| easy | 10 | 25% |
-| medium | 18 | 45% |
-| hard | 12 | 30% |
+| easy | 10 | 24% |
+| medium | 18 | 43% |
+| hard | 14 | 33% |
 
 ### Complete task list
 
-**ASE (8)**
+**ASE (9)**
 
 | Task | Difficulty | Category | Summary |
 |---|---|---|---|
@@ -61,8 +61,9 @@ decisions differentiate it from static QA-style benchmarks:
 | `ase-neb-adatom` | medium | execution | NEB barrier for an adatom hop on Cu(100) (EMT). |
 | `ase-vibrations` | hard | analysis | Finite-displacement vibrational analysis of a Cu4 cluster. |
 | `ase-custom-calculator` | hard | workflow | Implement a custom Morse-potential ASE calculator and relax a cluster. |
+| `ase-peo-md-equilibration` | hard | workflow | Build a PEO chain (RDKit), sample with ASE Langevin MD, assess equilibration via ensemble-averaged Rg. |
 
-**LAMMPS (9)**
+**LAMMPS (10)**
 
 | Task | Difficulty | Category | Summary |
 |---|---|---|---|
@@ -74,6 +75,7 @@ decisions differentiate it from static QA-style benchmarks:
 | `lammps-restart-continue` | medium | execution | Continue a simulation from a restart file. |
 | `lammps-msd-diffusion` | hard | analysis | Self-diffusion coefficient from mean-squared displacement. |
 | `lammps-thermostat-audit` | hard | debugging | Audit a thermostat setup for correctness. |
+| `lammps-msd-diffusion-audit` | hard | debugging | Audit a colleague's TIP3P water diffusion analysis: wrong Einstein factor, wrong fit window. |
 | `lammps-polymer-setup` | hard | workflow | Build and equilibrate a bead-spring polymer melt. |
 
 **CP2K (6)**
@@ -241,9 +243,9 @@ python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # lint one task
 | Quantum ESPRESSO | **7.4** (conda-forge build `hac89879_0`) | 7 |
 | xtb | **6.7.1** (official static linux-x86_64 tarball, sha256-verified) | 3 |
 | CP2K | **2024.1** (`cp2k/cp2k:2024.1_mpich_generic_psmp`) | 6 |
-| LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 9 |
+| LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 10 |
 | RDKit | **2024.9.5** (pip, on `python:3.11.9-slim`) | 7 |
-| ASE | **3.23.0** (pip, on `python:3.11.9-slim`, numpy 1.26.4) | 8 |
+| ASE | **3.23.0** (pip, on `python:3.11.9-slim`, numpy 1.26.4) | 9 |
 
 - **Hermetic runtime.** `network=false` at run time; every dependency is baked
   into the image.
@@ -297,7 +299,7 @@ trained on it can no longer be meaningfully evaluated by it.
 - **Held-out plan.** A held-out split will be generated from these
   parameterized families — new instances with fresh parameters and
   re-calibrated references, kept out of the public repo — to probe
-  contamination and overfitting against the public 40.
+  contamination and overfitting against the public 41.
 
 ## 8. Repository Layout
 

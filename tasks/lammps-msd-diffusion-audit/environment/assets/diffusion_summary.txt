@@ -1,0 +1,5 @@
+TIP3P liquid water, 1000 molecules, NVT 300 K, 1 ns production
+fit window: 50-100 ps
+slope = 3.4248 A^2/ps, R^2 = 0.999229
+D = 1.712e-04 cm^2/s (17.12 x 1e-5 cm^2/s)
+component D (x,y,z) = 6.711e-05, 5.151e-05, 5.262e-05 cm^2/s

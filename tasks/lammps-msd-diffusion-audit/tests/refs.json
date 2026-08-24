@@ -1,0 +1,30 @@
+{
+  "_comment": "Reference parameters for lammps-msd-diffusion-audit. The verifier re-derives every reference number at verify time by re-fitting the hash-pinned assets/msd.dat itself; this file carries only tolerances, the fit window, the expected audit verdicts, and asset hashes. Calibrated on x86_64 with compchem-bench/lammps-msd-diffusion-audit:ci (lammps/lammps:patch_7Jan2022 base, python 3.8, numpy 1.24.4).",
+  "calibration_date": "2026-08-24",
+  "arch": "x86_64",
+  "image_digest": "sha256:1f418f079ed76702b8757de576be35d5126cfc62b66b2b782c942263e61dccd5",
+  "fit_window_ps": [50.0, 100.0],
+  "n_fit_points_expected": 101,
+  "n_fit_points_agent_range": [99, 101],
+  "D_tol_frac": 0.02,
+  "slope_tol_frac": 0.02,
+  "r2_tol_abs": 0.005,
+  "decoy_guard_tol_frac": 0.02,
+  "expected_verdicts": {
+    "colleague_D_correct": false,
+    "colleague_window_correct": false,
+    "colleague_plausibility_claim_correct": false
+  },
+  "expected_errors": ["wrong_einstein_factor", "window_mismatch"],
+  "allowed_error_vocab": ["wrong_einstein_factor", "window_mismatch", "wrong_unit_conversion", "ballistic_contamination", "bad_reference_frame"],
+  "audit_min_chars": 200,
+  "asset_hashes": {
+    "assets/analyze_msd.py": "sha256:bf80ef47583cfdcf1a3c0d1cec4bcfbe93c9367a566b255751d863c61cc0da15",
+    "assets/in.lammps": "sha256:d16890272c9fce13289c6c050c5526259a39c0e45e93407bf0f691df0cf1268d",
+    "assets/log.lammps": "sha256:dd8a5076948ba61cddbe42ea19b194865e41ebcf8c465efd0f1a4e6ea7df134b",
+    "assets/msd.dat": "sha256:786034ff2cd14f293edf2b9a1d64a101f7c3f807b721033a2739b70853b3ae80",
+    "assets/README.md": "sha256:be0da5ffb471e2c9b3c21f03851a550d8a7a9ba7924eeaf0cd758e74803995ad"
+  },
+  "_asset_note": "Only the evidence files are hash-pinned. diffusion_summary.txt and msd_analysis.png are deliberately left unpinned: rerunning the colleague's analyze_msd.py regenerates (overwrites) both, and the agent is allowed — encouraged — to do that while auditing. The verifier's reference fit reads only the pinned files (msd.dat, in.lammps).",
+  "_calibration_note": "Verifier self-fit of assets/msd.dat (50-100 ps closed interval, straight line with intercept, dt = 2.0 fs parsed from in.lammps): slope = 3.6765 A^2/ps, intercept = -24.36 A^2, R^2 = 0.99771, D = 6.128e-5 cm^2/s, n = 101 (agent-reported n accepted in 99-101 to cover endpoint conventions; the 2% D/slope bands absorb the 0.3% difference). Decoys: colleague headline 1.7124e-4 cm^2/s (slope/2 over the 100-500 ps window coded in assets/analyze_msd.py) and right-factor-wrong-window 5.708e-5 cm^2/s; both lie >6% outside the 2% acceptance band around 6.128e-5. A forced-origin fit (5.606e-5, 8.5% off) also fails the D band. Data is static, so the oracle is deterministic (3/3 identical). Agent-facing schema is the minimal 4-key results.json (D, slope, R^2, n_fit_points)."
+}

@@ -1,0 +1,21 @@
+version = "1.0"
+
+[metadata]
+name = "lammps-msd-diffusion-audit"
+difficulty = "hard"
+category = "debugging"
+tags = ["lammps", "classical-md", "diffusion", "msd", "debugging", "cross-verify"]
+author = "compchem-bench"
+created = "2026-08-24"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 1
+memory_gb = 2
+network = false
+
+[agent]
+timeout_sec = 1200
+
+[verifier]
+timeout_sec = 180

@@ -1,0 +1,65 @@
+# Liquid water (TIP3P, 1000 molecules) -- 300 K
+# Protocol: minimize -> NVT 50 ps -> NPT 200 ps (300 K, 1 atm) -> NVT production 1 ns
+# MSD of water oxygens computed over the production run.
+
+units           real
+atom_style      full
+boundary        p p p
+special_bonds   lj 0.0 0.0 0.0 coul 0.0 0.0 0.0
+
+read_data       water.data
+
+# ---- TIP3P force field (Jorgensen et al. 1983) ----
+pair_style      lj/cut/coul/long 9.0
+pair_modify     tail yes
+kspace_style    pppm 1.0e-4
+pair_coeff      1 1 0.1521 3.1507   # OW
+pair_coeff      2 2 0.0000 0.0000   # HW
+bond_style      harmonic
+bond_coeff      1 450.0 0.9572
+angle_style     harmonic
+angle_coeff     1 55.0 104.52
+
+group           oxy type 1
+
+neighbor        2.0 bin
+neigh_modify    delay 0 every 1 check yes
+timestep        2.0
+
+fix             shake all shake 1.0e-4 200 0 b 1 a 1
+
+# ---- 1) energy minimization ----
+min_style       cg
+minimize        1.0e-4 1.0e-6 1000 10000
+reset_timestep  0
+
+# ---- 2) NVT equilibration: 50 ps at 300 K ----
+velocity        all create 300.0 4928459 dist gaussian mom yes rot yes
+fix             nvt1 all nvt temp 300.0 300.0 100.0
+thermo          500
+thermo_style    custom step temp pe etotal press vol density
+run             25000          # 50 ps
+unfix           nvt1
+
+# ---- 3) NPT equilibration: 200 ps at 300 K, 1 atm ----
+fix             npt1 all npt temp 300.0 300.0 100.0 iso 1.0 1.0 1000.0
+run             100000         # 200 ps
+unfix           npt1
+
+# ---- 4) NVT production: 1 ns at 300 K, MSD ----
+reset_timestep  0
+fix             nvt2 all nvt temp 300.0 300.0 100.0
+
+# MSD of oxygens (COM drift removed); reference = start of production
+# columns in msd.dat: step, msd_x, msd_y, msd_z, msd_total
+compute         msd oxy msd com yes
+fix             msdout all ave/time 250 1 250 c_msd[1] c_msd[2] c_msd[3] c_msd[4] file msd.dat
+
+dump            d1 all custom 1000 traj.lammpstrj id mol type xu yu zu
+dump_modify     d1 sort id
+
+thermo          5000
+run             500000         # 1 ns at 2 fs
+
+write_data      water_final.data nocoeff
+write_restart   water.restart

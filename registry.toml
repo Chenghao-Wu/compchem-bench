@@ -170,6 +170,14 @@ category = "debugging"
 tags = ["lammps", "classical-md", "thermostat", "debugging", "cross-verify"]
 
 [[task]]
+name = "lammps-msd-diffusion-audit"
+path = "tasks/lammps-msd-diffusion-audit"
+software = "lammps"
+difficulty = "hard"
+category = "debugging"
+tags = ["lammps", "classical-md", "diffusion", "msd", "debugging", "cross-verify"]
+
+[[task]]
 name = "lammps-polymer-setup"
 path = "tasks/lammps-polymer-setup"
 software = "lammps"
