@@ -114,6 +114,14 @@ category = "workflow"
 tags = ["ase", "classical-md", "calculator-implementation", "workflow", "cross-verify"]
 
 [[task]]
+name = "ase-peo-md-equilibration"
+path = "tasks/ase-peo-md-equilibration"
+software = "ase"
+difficulty = "hard"
+category = "workflow"
+tags = ["ase", "classical-md", "polymer", "rdkit", "equilibration", "workflow", "cross-verify"]
+
+[[task]]
 name = "lammps-input-fix"
 path = "tasks/lammps-input-fix"
 software = "lammps"
