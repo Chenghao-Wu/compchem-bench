@@ -194,6 +194,14 @@ category = "debugging"
 tags = ["cp2k", "dft", "debugging"]
 
 [[task]]
+name = "cp2k-no2-geoopt-debug"
+path = "tasks/cp2k-no2-geoopt-debug"
+software = "cp2k"
+difficulty = "hard"
+category = "debugging"
+tags = ["cp2k", "dft", "debugging", "geometry-optimization"]
+
+[[task]]
 name = "cp2k-cell-opt-nacl"
 path = "tasks/cp2k-cell-opt-nacl"
 software = "cp2k"

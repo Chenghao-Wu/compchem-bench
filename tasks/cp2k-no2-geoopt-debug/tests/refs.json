@@ -1,0 +1,10 @@
+{
+  "_comment": "Reference values for cp2k-no2-geoopt-debug (CP2K 2024.1 psmp, PBE/DZVP-MOLOPT-GTH, UKS doublet NO2 GEO_OPT, CUTOFF 400 Ha). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-08-24",
+  "image_digest": "sha256:cc7bca0cc5c9b6ef5c595c30360dbd8f3ecfdc7e85be85340d24e9c8c1e4de4b",
+  "total_energy_Ha_ref": -41.88221106,
+  "total_energy_Ha_tol": 1e-05,
+  "consistency_energy_tol_Ha": 1e-08,
+  "_calibration_note": "Intended level of theory unchanged by the fault design, so the reference carries over: 4 oracle runs in-image (Broyden alpha 0.4, nbuffers 8) plus 2 host ssmp runs (alpha 0.4/0.3) plus 3 gate runs on 2026-08-24 all land within -41.8822110(2)..-41.8822111(0) Ha — spread < 1e-7 Ha across thread counts (2 vs 8) and mixing parameters. Tolerance 1e-5 Ha cleanly separates any converged UKS-doublet DZVP run from every failure mode: wrong-multiplicity and OT/DIIS paths abort before GEO_OPT completes; a 4-5 decimal informed guess sits ~2.7e-3 Ha away; and the planted silent fault (O carrying DZVP-MOLOPT-SR-GTH) runs to a fully clean GEO_OPT COMPLETED (8/8 SCFs converged, normal termination, measured 2026-08-24) but yields -41.87978316 Ha — 2.43 mHa (~243x tol) above the reference. Dead ends recorded for the design: swapping the GTH potentials between N and O aborts (the requested q-variant does not exist for the other element in GTH_POTENTIALS), and a minimal SZV-MOLOPT-GTH basis on O degrades SCF stability enough to abort the geoopt mid-run (~17 steps in, at E ~ -41.8168 Ha) — neither is silent."
+}
