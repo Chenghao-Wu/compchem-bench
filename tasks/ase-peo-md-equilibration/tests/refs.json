@@ -1,0 +1,24 @@
+{
+  "_comment": "Reference values for ase-peo-md-equilibration (ASE 3.23.0, RDKit 2024.9.5, numpy 1.26.4 on python:3.11.9-slim). Open-ended, seed-agnostic design: the agent samples a single RDKit-built PEO(10) chain with Langevin MD under the pinned toy force field (assets/peo_ff.py: BOND_K=25 eV/A^2, ANGLE_K=0.5 eV/rad^2, WCA eps=0.05 eV sigma=2.5 A) at 500 K, and evaluates equilibration from the ensemble-averaged Rg. The chain construction (ETKDGv3 seed 0xf00d + converged MMFF94 + RemoveHs) is deterministic; the equilibrium-ensemble intervals are calibrated across agent-chosen seeds. Calibrated on x86_64.",
+  "calibration_date": "2026-08-23",
+  "arch": "x86_64",
+  "image_digest": "sha256:2e7531754291875d84c485e8dda37f7535f004d61ae2180885557187ef04f75a",
+  "asset_hashes": {
+    "assets/peo_ff.py": "sha256:f97c0a78ba5ad9524e9959bccdf8c330956924f9bc12ff2fb2f7ae1f751c9600"
+  },
+  "n_atoms_expected": 31,
+  "init_pos_tol_A": 0.01,
+  "recompute_rg_tol_A": 0.001,
+  "recompute_drift_tol": 0.0001,
+  "recompute_energy_tol_eV": 0.01,
+  "drift_threshold": 0.10,
+  "rg_std_min_A": 0.25,
+  "min_last_frame_displacement_A": 1.5,
+  "rg_mean_ref_A": 6.1963,
+  "rg_mean_tol_A": 0.75,
+  "rg_std_ref_A": 0.8724,
+  "rg_std_tol_A": 0.45,
+  "final_energy_min_eV": 0.4,
+  "final_energy_max_eV": 2.8,
+  "_calibration_note": "Protocol gate: oracle (auto-refinement loop) run across 4 independent velocity/thermostat seed pairs (20260811/20260812, 971/433, 5/17, 12345/67890), 1 fs timestep, friction 0.005/fs, interval 1000 steps, converged at 600k-800k steps with drift 0.016-0.069 (all < 0.10 criterion on the first passing segment). Production (last 50% of frames) mean Rg across seeds = 6.196 +/- 0.187 (range 5.984-6.436); Rg std = 0.872 +/- 0.085; final-frame FF energy = 0.90-1.44 eV (production-frame equilibrium distribution spans 0.4-2.3 eV). Intervals set well beyond the observed seed scatter to admit any faithful 500 K sampling while rejecting un-relaxed runs (initial-chain Rg = 7.061, ~14% above the equilibrium mean; initial FF energy = 0.0 eV) and forged ensembles (Rg std ~ 0.03-0.2, final energy near 0). rg_mean tol = 4x observed cross-seed std; rg_std tol = 5x; energy range = equilibrium spread with margin. Rg autocorrelation time ~ 13k steps, so runs >= 600k steps carry tens of independent Rg samples per production block. min_last_frame_displacement = 1.5 A is far below the observed 2.05-2.97 A min per-atom displacement of real runs and far above a fabricated wiggle (< 1 A). Deterministic layers (chain regeneration, Rg/energy recompute, protocol) use physical-minimum-resolution tolerances."
+}
