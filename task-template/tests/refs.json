@@ -1,0 +1,17 @@
+{
+  "_comment": "Reference values for <task-name> (<software> <version>, <level of theory / settings>, <system>). Calibrated on x86_64. NOTE: template placeholders — replace every <...> with a REAL calibrated value before this task is added to registry.toml and CI'd. Do NOT use the strings NEEDS_CALIBRATION / PENDING_BACKFILL (lint rejects them).",
+  "arch": "x86_64",
+  "calibration_date": "<YYYY-MM-DD>",
+  "image_digest": "sha256:<64 hex from `docker inspect --format '{{.Id}}'`>",
+
+  "<observable>_ref": "<calibrated value>",
+  "<observable>_tol": "<max(3*spread, physical minimum resolution)>",
+
+  "crossverify_energy_tol_eV": "<L4 recompute agreement tolerance>",
+
+  "asset_hashes": {
+    "assets/<input-file>": "sha256:<64 hex>"
+  },
+
+  "_calibration_note": "Describe the protocol outcome: how many oracle runs, the observed spread, why the tolerance separates the intended answer from every failure mode / plausible guess. For debugging/auditing tasks, record the measured energies of the planted faults and any dead ends (faults that aborted rather than failing silently). See tasks/cp2k-no2-geoopt-debug/tests/refs.json and tasks/qe-dihedral-scan-hexane/tests/refs.json for exemplars."
+}

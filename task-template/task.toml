@@ -1,0 +1,47 @@
+version = "1.0"
+
+# ── Metadata ──────────────────────────────────────────────────────────────────
+# Rules (enforced by .ci/lint_task.py):
+#   * name MUST equal the task directory basename ("<software>-<topic>-<qualifier>").
+#   * difficulty ∈ {easy, medium, hard}
+#   * capability ∈ {system-construction, adaptive-convergence,
+#     property-estimation, scientific-auditing, failure-recovery,
+#     cross-code-orchestration}
+#   * tags[0] MUST equal <software> (the first "-" segment) and be one of
+#     {ase, lammps, cp2k, xtb, qe, rdkit}.
+#   * exactly ONE method tag from {dft, classical-md, semi-empirical, aimd,
+#     cheminformatics}.
+#   * NO retired category tags: {input-prep, execution, analysis, debugging,
+#     workflow}.
+#   * Every field here must agree exactly with the [[task]] entry you add to
+#     registry.toml (name, difficulty, capability, capabilities_secondary,
+#     tags, path).
+
+[metadata]
+name = "ase-example-task"          # TODO(author): <software>-<topic>-<qualifier>
+difficulty = "easy"                # TODO(author): easy | medium | hard
+capability = "property-estimation" # TODO(author): pick ONE primary capability
+# capabilities_secondary = ["system-construction"]   # optional, must NOT repeat
+#                                                    # the primary capability
+tags = ["ase", "classical-md", "geometry-optimization"]  # TODO(author): see rules above
+author = "compchem-bench"
+created = "2026-08-25"             # TODO(author): date created
+
+# ── Environment ───────────────────────────────────────────────────────────────
+[environment]
+build = "environment/Dockerfile"
+cpus = 1                           # TODO(author): 1 for easy, 2 for heavy software
+memory_gb = 2                      # TODO(author): size to the calculation
+network = false
+
+# ── Agent budget ──────────────────────────────────────────────────────────────
+# Easy tasks: 900 s. Heavy-software (CP2K/QE) hard tasks: 1200–3600 s, sized so
+# the agent's skill (not wall-clock speed) is the binding constraint.
+[agent]
+timeout_sec = 900                  # TODO(author): see DATASET_CARD §4
+
+# ── Verifier budget ───────────────────────────────────────────────────────────
+# Must cover the full verify.py run, including any L4 recompute. QE/CP2K L4
+# recomputes need minutes, so hard tasks carry verifier timeouts of 1200 s.
+[verifier]
+timeout_sec = 60                   # TODO(author): see DATASET_CARD §4
