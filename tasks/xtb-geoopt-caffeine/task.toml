@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "xtb-geoopt-caffeine"
 difficulty = "medium"
-category = "execution"
-tags = ["xtb", "semi-empirical", "geometry-optimization", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["xtb", "semi-empirical", "geometry-optimization", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

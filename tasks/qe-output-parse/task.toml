@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "qe-output-parse"
 difficulty = "medium"
-category = "analysis"
-tags = ["qe", "dft", "analysis", "output-parsing"]
+capability = "property-estimation"
+tags = ["qe", "dft", "output-parsing"]
 author = "compchem-bench"
 created = "2026-07-20"
 

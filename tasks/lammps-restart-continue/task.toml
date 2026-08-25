@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-restart-continue"
 difficulty = "medium"
-category = "execution"
-tags = ["lammps", "classical-md", "restart", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "restart", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

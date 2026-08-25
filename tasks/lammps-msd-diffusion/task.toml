@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-msd-diffusion"
 difficulty = "hard"
-category = "analysis"
-tags = ["lammps", "classical-md", "diffusion", "msd", "analysis", "cross-verify", "stochastic"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "diffusion", "msd", "cross-verify", "stochastic"]
 author = "compchem-bench"
 created = "2026-07-20"
 

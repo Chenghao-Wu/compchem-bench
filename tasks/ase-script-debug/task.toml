@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "ase-script-debug"
 difficulty = "medium"
-category = "debugging"
-tags = ["ase", "classical-md", "debugging", "emt"]
+capability = "failure-recovery"
+tags = ["ase", "classical-md", "emt"]
 author = "compchem-bench"
 created = "2026-07-20"
 

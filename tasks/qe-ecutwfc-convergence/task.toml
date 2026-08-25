@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "qe-ecutwfc-convergence"
 difficulty = "medium"
-category = "analysis"
-tags = ["qe", "dft", "analysis", "convergence-test", "cross-verify"]
+capability = "adaptive-convergence"
+tags = ["qe", "dft", "convergence-test", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

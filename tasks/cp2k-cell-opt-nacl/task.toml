@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "cp2k-cell-opt-nacl"
 difficulty = "medium"
-category = "execution"
-tags = ["cp2k", "dft", "cell-optimization", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["cp2k", "dft", "cell-optimization", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

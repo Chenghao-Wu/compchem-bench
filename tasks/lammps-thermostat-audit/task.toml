@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-thermostat-audit"
 difficulty = "hard"
-category = "debugging"
-tags = ["lammps", "classical-md", "thermostat", "debugging", "cross-verify"]
+capability = "scientific-auditing"
+tags = ["lammps", "classical-md", "thermostat", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "cp2k-aimd-water"
 difficulty = "hard"
-category = "execution"
-tags = ["cp2k", "aimd", "nve", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["cp2k", "aimd", "nve", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

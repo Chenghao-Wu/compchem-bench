@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "ase-structure-build"
 difficulty = "easy"
-category = "input-prep"
-tags = ["ase", "classical-md", "structure-building", "input-prep"]
+capability = "system-construction"
+tags = ["ase", "classical-md", "structure-building"]
 author = "compchem-bench"
 created = "2026-07-20"
 

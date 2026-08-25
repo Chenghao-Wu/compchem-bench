@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-input-fix"
 difficulty = "easy"
-category = "debugging"
-tags = ["lammps", "classical-md", "lennard-jones", "debugging"]
+capability = "failure-recovery"
+tags = ["lammps", "classical-md", "lennard-jones"]
 author = "compchem-bench"
 created = "2026-07-20"
 

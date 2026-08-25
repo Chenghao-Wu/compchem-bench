@@ -24,21 +24,24 @@ for the current leaderboard.
 > **Please do not train on it.** See [Data contamination policy](#data-contamination-policy)
 > below.
 
-## Coverage (v1.1 — 42 tasks)
+## Coverage (v1.1 — 44 tasks)
 
-| Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
-|---|---|---|---|---|---|---|
-| ASE | 2 | 2 | 2 | 1 | 2 | **9** |
-| LAMMPS | 1 | 2 | 3 | 3 | 1 | **10** |
-| CP2K | — | 4 | 1 | 1 | — | **6** |
-| QE | 1 | 2 | 2 | 1 | 1 | **7** |
-| RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
-| xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **7** | **5** | **42** |
+Tasks are organized by **capability** — the cognitive skill being measured —
+with software as a secondary tag.
 
-Difficulty distribution: **10 easy / 18 medium / 14 hard** (24% / 43% / 33%).
-The full per-task list with summaries is in
-[DATASET_CARD.md §2](DATASET_CARD.md#2-coverage).
+| Capability \ Difficulty | easy | medium | hard | Total |
+|---|---|---|---|---|
+| system-construction | 2 | 5 | 2 | **9** |
+| adaptive-convergence | — | 1 | 1 | **2** |
+| property-estimation | 6 | 10 | 8 | **24** |
+| scientific-auditing | — | — | 2 | **2** |
+| failure-recovery | 2 | 2 | 2 | **6** |
+| cross-code-orchestration | — | — | 1 | **1** |
+| **Total** | **10** | **18** | **16** | **44** |
+
+Difficulty distribution: **10 easy / 18 medium / 16 hard** (23% / 41% / 36%).
+The full per-task list, capability definitions, and the software × capability
+cross-tab are in [DATASET_CARD.md §2](DATASET_CARD.md#2-coverage).
 
 ## Quick start
 
@@ -54,7 +57,7 @@ Local CI (requires Docker):
 ```bash
 python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # structural lint for one task
 .ci/run_ci.sh tasks/ase-geoopt-h2o              # full 5-step CI gate for one task
-.ci/run_all.sh                                  # re-run the CI gate over all 42 tasks
+.ci/run_all.sh                                  # re-run the CI gate over all 44 tasks
 ```
 
 ## Repository layout
@@ -63,7 +66,7 @@ python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # structural lint for one task
 compchem-bench/
 ├── README.md
 ├── DATASET_CARD.md               # dataset card (task list, anti-cheat, reproducibility)
-├── registry.toml                 # dataset index (name, tags, difficulty)
+├── registry.toml                 # dataset index (name, software, capability, difficulty, tags)
 ├── baselines/                    # leaderboard + baseline run reports (JSON + Markdown)
 ├── shared/                       # cross-task assets (copied into images as needed)
 │   ├── potentials/               #   EAM/force-field files, GTH pseudopotentials, basis sets
@@ -140,7 +143,7 @@ policy:
   `solution/` enters the runtime image.
 - A **held-out private split** (fresh parameterized instances with
   re-calibrated references, kept out of this repository) is the planned
-  follow-up for probing contamination and overfitting against the public 41
+  follow-up for probing contamination and overfitting against the public 44
   tasks. See [DATASET_CARD.md §7](DATASET_CARD.md#7-data-contamination-policy-and-held-out-plan).
 
 ## Commercial-software policy
@@ -163,7 +166,7 @@ and `shared/potentials/`.
 ## Contributing
 
 Issues and pull requests are welcome — especially new tasks in uncovered
-software × category cells, and new baseline results (see
+capability × software cells, and new baseline results (see
 [baselines/README.md](baselines/README.md) for the submission format). New
 tasks must pass the full CI gate (lint, oracle 3/3, null-agent fail,
 informed-cheat fail) described in

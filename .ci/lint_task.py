@@ -7,15 +7,17 @@ Exit 0 = pass, non-zero = fail.
 
 Checks:
   1. Required files present
-  2. task.toml schema (required keys, valid difficulty/category)
-  3. Tag vocabulary: tags[0] = software, exactly one method tag, category ∈ tags
+  2. task.toml schema (required keys, valid difficulty/capability)
+  3. Tag vocabulary: tags[0] = software, exactly one method tag, no legacy
+     category tags (category is retired; capability fields replace it)
   4. Dockerfile: no COPY of tests/ or solution/, no ADD, no COPY --from
   5. instruction.md: no reference-value leaks; documents the results.json
      values/units schema when the task produces results.json
   6. refs.json calibration gate: calibration_date is an ISO date,
      image_digest is a real sha256, and NO placeholder strings
      (NEEDS_CALIBRATION / PENDING_BACKFILL) anywhere in the file
-  7. registry.toml ↔ task.toml consistency (name, difficulty, category, tags)
+  7. registry.toml ↔ task.toml consistency (name, difficulty, capability,
+     capabilities_secondary, tags)
   8. Asset-integrity convention: if tests/verify.py reads from the workspace
      assets directory, tests/refs.json MUST pin every such asset by sha256
      under "asset_hashes" (verifiers never trust /workspace/assets copies)
@@ -40,7 +42,7 @@ REQUIRED_FILES = [
 REQUIRED_TASK_TOML_KEYS = {
     ("metadata", "name"),
     ("metadata", "difficulty"),
-    ("metadata", "category"),
+    ("metadata", "capability"),
     ("metadata", "tags"),
     ("environment", "build"),
     ("agent", "timeout_sec"),
@@ -48,12 +50,26 @@ REQUIRED_TASK_TOML_KEYS = {
 }
 
 VALID_DIFFICULTIES = {"easy", "medium", "hard"}
-VALID_CATEGORIES = {"input-prep", "execution", "analysis", "debugging", "workflow"}
+
+# Capability = the cognitive skill the task measures (the primary
+# organization axis; software is a secondary tag). Each task carries exactly
+# one primary capability plus optional secondary aspects.
+VALID_CAPABILITIES = {
+    "system-construction",
+    "adaptive-convergence",
+    "property-estimation",
+    "scientific-auditing",
+    "failure-recovery",
+    "cross-code-orchestration",
+}
+
+# Pre-capability taxonomy. These words must never appear as tags again —
+# the capability field is the single source of truth for this axis.
+LEGACY_CATEGORY_TAGS = {"input-prep", "execution", "analysis", "debugging", "workflow"}
 
 # Tag vocabulary (see README §Conventions):
-#   tags[0]      = software
-#   exactly one  = method
-#   category tag = one of VALID_CATEGORIES, must be present
+#   tags[0]     = software
+#   exactly one = method
 SOFTWARE_TAGS = {"ase", "lammps", "cp2k", "xtb", "qe", "rdkit"}
 METHOD_TAGS = {"dft", "classical-md", "semi-empirical", "aimd", "cheminformatics"}
 
@@ -95,6 +111,12 @@ def check_tags(task_name, tags, source):
             f"{source}: exactly one method tag from {sorted(METHOD_TAGS)} "
             f"required, found {method}"
         )
+    legacy = [t for t in tags if t in LEGACY_CATEGORY_TAGS]
+    if legacy:
+        fails += error(
+            f"{source}: legacy category tags {legacy} are retired — the "
+            f"capability field replaces them"
+        )
     return fails
 
 
@@ -116,14 +138,30 @@ def check_task_toml(task_dir):
     meta = cfg.get("metadata", {})
     if meta.get("difficulty") not in VALID_DIFFICULTIES:
         fails += error(f"task.toml metadata.difficulty must be one of {VALID_DIFFICULTIES}")
-    if meta.get("category") not in VALID_CATEGORIES:
-        fails += error(f"task.toml metadata.category must be one of {VALID_CATEGORIES}")
+    if meta.get("capability") not in VALID_CAPABILITIES:
+        fails += error(
+            f"task.toml metadata.capability must be one of {sorted(VALID_CAPABILITIES)}"
+        )
+    secondary = meta.get("capabilities_secondary", [])
+    if not isinstance(secondary, list):
+        fails += error("task.toml metadata.capabilities_secondary must be a list")
+    else:
+        bad = [s for s in secondary if s not in VALID_CAPABILITIES]
+        if bad:
+            fails += error(
+                f"task.toml capabilities_secondary must be one of "
+                f"{sorted(VALID_CAPABILITIES)}, got {bad}"
+            )
+        if len(secondary) != len(set(secondary)):
+            fails += error("task.toml capabilities_secondary contains duplicates")
+        if meta.get("capability") in secondary:
+            fails += error(
+                "task.toml capabilities_secondary must not repeat the primary capability"
+            )
 
     name = meta.get("name", os.path.basename(task_dir))
     tags = meta.get("tags", [])
     fails += check_tags(name, tags, "task.toml")
-    if meta.get("category") and meta["category"] not in tags:
-        fails += error(f"task.toml: category {meta['category']!r} must also appear in tags")
 
     return fails
 
@@ -302,12 +340,17 @@ def check_registry_consistency(task_dir):
         return error(f"registry.toml has no [[task]] entry for {name!r}")
     entry = entries[0]
 
-    for field in ("difficulty", "category"):
+    for field in ("difficulty", "capability"):
         if entry.get(field) != meta.get(field):
             fails += error(
                 f"registry.toml {field}={entry.get(field)!r} != "
                 f"task.toml {field}={meta.get(field)!r}"
             )
+    if set(entry.get("capabilities_secondary", [])) != set(meta.get("capabilities_secondary", [])):
+        fails += error(
+            f"registry.toml capabilities_secondary={entry.get('capabilities_secondary')!r} != "
+            f"task.toml capabilities_secondary={meta.get('capabilities_secondary')!r}"
+        )
     if set(entry.get("tags", [])) != set(meta.get("tags", [])):
         fails += error(
             f"registry.toml tags {sorted(entry.get('tags', []))} != "

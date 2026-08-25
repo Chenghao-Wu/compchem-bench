@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "ase-neb-adatom"
 difficulty = "medium"
-category = "execution"
-tags = ["ase", "classical-md", "neb", "emt", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["ase", "classical-md", "neb", "emt", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

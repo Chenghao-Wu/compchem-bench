@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "ase-geoopt-h2o"
 difficulty = "easy"
-category = "execution"
-tags = ["ase", "classical-md", "geometry-optimization", "execution"]
+capability = "property-estimation"
+tags = ["ase", "classical-md", "geometry-optimization"]
 author = "compchem-bench"
 created = "2026-07-10"
 

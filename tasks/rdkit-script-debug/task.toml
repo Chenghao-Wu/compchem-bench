@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "rdkit-script-debug"
 difficulty = "medium"
-category = "debugging"
-tags = ["rdkit", "cheminformatics", "debugging", "sanitization"]
+capability = "failure-recovery"
+tags = ["rdkit", "cheminformatics", "sanitization"]
 author = "compchem-bench"
 created = "2026-07-20"
 

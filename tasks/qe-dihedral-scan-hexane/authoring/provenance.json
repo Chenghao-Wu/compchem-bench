@@ -1,0 +1,41 @@
+{
+  "task": "qe-dihedral-scan-hexane",
+  "created": "2026-08-23",
+  "source_inputs": {
+    "authoring/build_starting_geometry.py": "sha256:d9b36cb876f0904922ff0e8b2846bc16bc5bf66f406fe848600b99a31b982db7",
+    "authoring/relax_and_emit_asset.py": "sha256:ec38a08f039122694a1aecaa7ce39ca7ae5747875dba715944c980ec8d6af038",
+    "authoring/hexane_idealized.xyz": "sha256:5f96aac9b78e581cbcd6025ac0b6264963e7a95bd52fda9c9156ad8553fcd7d5",
+    "environment/assets/hexane_anti.xyz": "sha256:d64b5f0856bc0bc0c60afcb00c7be034b258986bd234f24781851159557c06b2",
+    "environment/assets/pseudo/C.pbe-n-kjpaw_psl.1.0.0.UPF": "sha256:8a25fbf64c4fa257c68c01dc9a96e5b23c6a5ac0b09f45f271e1c946a65ed657",
+    "environment/assets/pseudo/H.pbe-rrkjus_psl.1.0.0.UPF": "sha256:e03cd098d78e3eeb37cc9f790690f5827234cbc019fb621913391689a9ddacf7"
+  },
+  "pseudopotential_provenance": {
+    "C.pbe-n-kjpaw_psl.1.0.0.UPF": "PSlibrary 1.0.0 (kjpaw PAW), shared benchmark inventory (same file as qe-relax-co)",
+    "H.pbe-rrkjus_psl.1.0.0.UPF": "PSlibrary 1.0.0 (rrkjus USPP), downloaded 2026-08-23 from https://pseudopotentials.quantum-espresso.org/upf_files/H.pbe-rrkjus_psl.1.0.0.UPF"
+  },
+  "image": {
+    "tag": "compchem-bench/qe-dihedral-scan-hexane:ci",
+    "digest": "sha256:7787bd174d3b5225274625e8622f0dcdf4074eb74b569a98c7b597ff576af673",
+    "qe_build": "conda-forge qe-7.4-hac89879_0 (openmpi), 1 MPI rank + OMP_NUM_THREADS=2"
+  },
+  "protocol": {
+    "method": "PBE plane-wave DFT, pw.x SCF single points",
+    "cell": "ibrav=1, celldm(1)=30 bohr (15.8753 Angstrom cubic)",
+    "cutoffs_Ry": {"ecutwfc": 50.0, "ecutrho": 400.0},
+    "occupations": "fixed (closed-shell C6H14)",
+    "conv_thr": 1e-09,
+    "k_points": "gamma",
+    "scan": "rigid torsion of the C4-side fragment (atoms 4-6, 14-20) about the C3-C4 axis; C2-C3-C4-C5 dihedral 0/30/60/90/120/150/180 deg; all other internal coordinates frozen to the relaxed anti reference (environment/assets/hexane_anti.xyz)"
+  },
+  "calibration": {
+    "reference_source": "oracle solution/solve.sh run on the pinned image, x86_64, 2026-08-23",
+    "per_angle_energy_rule": "abs(E_reported - E_ref) <= 1e-5 Ry (benchmark-wide QE print-resolution floor)",
+    "derived_key_rule": "abs(key - key_ref) <= 0.05 kcal/mol",
+    "crossverify_rule": "verifier re-runs pw.x SCF on the geometries parsed from the agent's own logs at phi = 0, 60, 180 deg; recomputed energy must match log and results.json to 1e-6 Ry",
+    "geometry_rules": {
+      "dihedral": "abs(observed C2-C3-C4-C5 dihedral - nominal) <= 2 deg (7-decimal alat tau-table round-trip observed ~0.4 deg)",
+      "bond_fingerprint": "all 19 bonds (5 C-C + 14 C-H, detected on the sha256-pinned asset) within 0.02 Angstrom of the asset (round-trip observed ~6e-4 Angstrom)"
+    },
+    "physical_sanity": "anti (180 deg) is the unique minimum; every other grid point at least 0.1 kcal/mol above it"
+  }
+}

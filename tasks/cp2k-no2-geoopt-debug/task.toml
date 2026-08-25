@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "cp2k-no2-geoopt-debug"
 difficulty = "hard"
-category = "debugging"
-tags = ["cp2k", "dft", "debugging", "geometry-optimization"]
+capability = "failure-recovery"
+tags = ["cp2k", "dft", "geometry-optimization"]
 author = "compchem-bench"
 created = "2026-08-23"
 

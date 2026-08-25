@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "rdkit-descriptors-batch"
 difficulty = "easy"
-category = "analysis"
-tags = ["rdkit", "cheminformatics", "descriptors", "analysis"]
+capability = "property-estimation"
+tags = ["rdkit", "cheminformatics", "descriptors"]
 author = "compchem-bench"
 created = "2026-07-20"
 

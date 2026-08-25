@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-polymer-setup"
 difficulty = "hard"
-category = "workflow"
-tags = ["lammps", "classical-md", "polymer", "bead-spring", "workflow", "cross-verify"]
+capability = "system-construction"
+tags = ["lammps", "classical-md", "polymer", "bead-spring", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

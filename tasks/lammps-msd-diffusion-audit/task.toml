@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-msd-diffusion-audit"
 difficulty = "hard"
-category = "debugging"
-tags = ["lammps", "classical-md", "diffusion", "msd", "debugging", "cross-verify"]
+capability = "scientific-auditing"
+tags = ["lammps", "classical-md", "diffusion", "msd", "cross-verify"]
 author = "compchem-bench"
 created = "2026-08-24"
 

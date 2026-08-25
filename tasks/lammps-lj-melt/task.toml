@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-lj-melt"
 difficulty = "easy"
-category = "execution"
-tags = ["lammps", "classical-md", "lennard-jones", "execution"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "lennard-jones"]
 author = "compchem-bench"
 created = "2026-07-10"
 

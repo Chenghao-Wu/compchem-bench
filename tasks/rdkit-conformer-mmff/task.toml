@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "rdkit-conformer-mmff"
 difficulty = "medium"
-category = "execution"
-tags = ["rdkit", "cheminformatics", "conformer-generation", "mmff", "execution"]
+capability = "system-construction"
+tags = ["rdkit", "cheminformatics", "conformer-generation", "mmff"]
 author = "compchem-bench"
 created = "2026-07-20"
 

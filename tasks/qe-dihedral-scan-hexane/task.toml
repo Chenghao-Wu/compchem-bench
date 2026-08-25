@@ -1,0 +1,21 @@
+version = "1.0"
+
+[metadata]
+name = "qe-dihedral-scan-hexane"
+difficulty = "hard"
+capability = "property-estimation"
+tags = ["qe", "dft", "dihedral-scan", "potential-energy-surface", "cross-verify"]
+author = "compchem-bench"
+created = "2026-08-23"
+
+[environment]
+build = "environment/Dockerfile"
+cpus = 2
+memory_gb = 4
+network = false
+
+[agent]
+timeout_sec = 3600
+
+[verifier]
+timeout_sec = 1200

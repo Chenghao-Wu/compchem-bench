@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "cp2k-basis-convergence"
 difficulty = "hard"
-category = "analysis"
-tags = ["cp2k", "dft", "basis-set", "analysis", "cross-verify"]
+capability = "adaptive-convergence"
+tags = ["cp2k", "dft", "basis-set", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

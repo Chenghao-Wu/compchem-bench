@@ -3,8 +3,9 @@ version = "1.0"
 [metadata]
 name = "ase-format-convert"
 difficulty = "medium"
-category = "input-prep"
-tags = ["ase", "classical-md", "format-conversion", "input-prep", "cross-verify"]
+capability = "system-construction"
+capabilities_secondary = ["cross-code-orchestration"]
+tags = ["ase", "classical-md", "format-conversion", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

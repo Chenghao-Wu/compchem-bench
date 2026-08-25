@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "qe-bands-si"
 difficulty = "hard"
-category = "workflow"
-tags = ["qe", "dft", "workflow", "band-structure", "cross-verify"]
+capability = "property-estimation"
+tags = ["qe", "dft", "band-structure", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

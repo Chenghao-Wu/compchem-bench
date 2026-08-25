@@ -1,7 +1,7 @@
 # CompChemBench — Dataset Card
 
 > **Status note:** all counts, task lists, and pinned versions below reflect
-> the v1.1 release state of the repository (`main`, 42/42 tasks complete).
+> the v1.1 release state of the repository (`main`, 44/44 tasks complete).
 
 ## 1. Overview and Motivation
 
@@ -27,103 +27,139 @@ decisions differentiate it from static QA-style benchmarks:
 
 ## 2. Coverage
 
-### Software × category matrix
+### Capability × difficulty matrix
 
-| Software \ Category | input-prep | execution | analysis | debugging | workflow | Total |
-|---|---|---|---|---|---|---|
-| ASE | 2 | 2 | 2 | 1 | 2 | **9** |
-| LAMMPS | 1 | 2 | 3 | 3 | 1 | **10** |
-| CP2K | — | 4 | 1 | 2 | — | **7** |
-| QE | 1 | 2 | 2 | 1 | 1 | **7** |
-| RDKit | 2 | 1 | 2 | 1 | 1 | **7** |
-| xtb | — | 2 | 1 | — | — | **3** |
-| **Total** | **6** | **13** | **11** | **8** | **5** | **43** |
+Tasks are organized by **capability** — the cognitive skill the task measures.
+Software is a secondary tag; see the cross-tab below.
+
+| Capability \ Difficulty | easy | medium | hard | Total |
+|---|---|---|---|---|
+| system-construction | 2 | 5 | 2 | **9** |
+| adaptive-convergence | — | 1 | 1 | **2** |
+| property-estimation | 6 | 10 | 8 | **24** |
+| scientific-auditing | — | — | 2 | **2** |
+| failure-recovery | 2 | 2 | 2 | **6** |
+| cross-code-orchestration | — | — | 1 | **1** |
+| **Total** | **10** | **18** | **16** | **44** |
+
+### Capability definitions
+
+- **system-construction** — build, convert, or validate structures and
+  inputs (structures, data files, input decks) from a specification.
+- **adaptive-convergence** — iterate a numerical parameter until a
+  self-imposed criterion is met (plane-wave cutoffs, basis sets, k-points).
+- **property-estimation** — produce the number, curve, or ensemble the task
+  asks for, whether read directly from a run or derived by post-processing.
+- **scientific-auditing** — judge a setup or analysis that *looks* fine:
+  nothing fails loudly; the agent must find the flaw by reasoning.
+- **failure-recovery** — diagnose, fix, or resume when the software itself
+  reports a problem (crash, error message, non-convergence).
+- **cross-code-orchestration** — chain stages through literally different
+  programs, carrying data across interfaces.
+
+The auditing/recovery boundary: recovery tasks fail loudly; auditing tasks
+fail silently. Tasks with genuine secondary aspects carry them in
+`capabilities_secondary` (registry + `task.toml`), e.g.
+`ase-peo-md-equilibration` is cross-code primary with auditing secondary.
+
+### Software × capability matrix
+
+| Software \ Capability | construction | convergence | property | auditing | recovery | cross-code | Total |
+|---|---|---|---|---|---|---|---|
+| ASE | 2 | — | 5 | — | 1 | 1 | **9** |
+| LAMMPS | 2 | — | 5 | 2 | 1 | — | **10** |
+| CP2K | — | 1 | 4 | — | 2 | — | **7** |
+| QE | 1 | 1 | 5 | — | 1 | — | **8** |
+| RDKit | 4 | — | 2 | — | 1 | — | **7** |
+| xtb | — | — | 3 | — | — | — | **3** |
+| **Total** | **9** | **2** | **24** | **2** | **6** | **1** | **44** |
 
 ### Difficulty distribution
 
 | Difficulty | Count | Share |
 |---|---|---|
 | easy | 10 | 23% |
-| medium | 18 | 42% |
-| hard | 15 | 35% |
+| medium | 18 | 41% |
+| hard | 16 | 36% |
 
-### Complete task list
+### Complete task list (by capability)
 
-**ASE (9)**
+**system-construction (9)**
 
-| Task | Difficulty | Category | Summary |
+| Task | Software | Difficulty | Summary |
 |---|---|---|---|
-| `ase-geoopt-h2o` | easy | execution | Geometry-optimize a water molecule (ASE/LJ). |
-| `ase-eos-cu` | medium | analysis | Fit the equation of state of fcc Cu (EMT). |
-| `ase-structure-build` | easy | input-prep | Build an fcc Cu supercell. |
-| `ase-format-convert` | medium | input-prep | Convert a CIF to extxyz and LAMMPS data formats. |
-| `ase-script-debug` | medium | debugging | Fix a broken ASE analysis script. |
-| `ase-neb-adatom` | medium | execution | NEB barrier for an adatom hop on Cu(100) (EMT). |
-| `ase-vibrations` | hard | analysis | Finite-displacement vibrational analysis of a Cu4 cluster. |
-| `ase-custom-calculator` | hard | workflow | Implement a custom Morse-potential ASE calculator and relax a cluster. |
-| `ase-peo-md-equilibration` | hard | workflow | Build a PEO chain (RDKit), sample with ASE Langevin MD, assess equilibration via ensemble-averaged Rg. |
+| `rdkit-smiles-canonicalize` | RDKit | easy | Canonicalize SMILES. |
+| `ase-structure-build` | ASE | easy | Build an fcc Cu supercell. |
+| `ase-format-convert` | ASE | medium | Convert a CIF to extxyz and LAMMPS data formats. |
+| `lammps-data-build` | LAMMPS | medium | Build a LAMMPS data file for bulk Cu. |
+| `rdkit-conformer-mmff` | RDKit | medium | Conformer generation and MMFF optimization. |
+| `rdkit-mol-standardize` | RDKit | medium | Standardize a messy SDF. |
+| `qe-input-relax` | QE | medium | Write a `vc-relax` input for zinc-blende SiC. |
+| `lammps-polymer-setup` | LAMMPS | hard | Build and equilibrate a bead-spring polymer melt. |
+| `rdkit-reaction-enumerate` | RDKit | hard | Reaction-based library enumeration. |
 
-**LAMMPS (10)**
+**adaptive-convergence (2)**
 
-| Task | Difficulty | Category | Summary |
+| Task | Software | Difficulty | Summary |
 |---|---|---|---|
-| `lammps-lj-melt` | easy | execution | Run a Lennard-Jones melt simulation. |
-| `lammps-nvt-rdf` | medium | analysis | NVT MD and radial distribution function. |
-| `lammps-input-fix` | easy | debugging | Fix a broken LAMMPS input script. |
-| `lammps-data-build` | medium | input-prep | Build a LAMMPS data file for bulk Cu. |
-| `lammps-eam-lattice` | medium | analysis | Equilibrium lattice constant and cohesive energy of Cu (EAM). |
-| `lammps-restart-continue` | medium | execution | Continue a simulation from a restart file. |
-| `lammps-msd-diffusion` | hard | analysis | Self-diffusion coefficient from mean-squared displacement. |
-| `lammps-thermostat-audit` | hard | debugging | Audit a thermostat setup for correctness. |
-| `lammps-msd-diffusion-audit` | hard | debugging | Audit a colleague's TIP3P water diffusion analysis: wrong Einstein factor, wrong fit window. |
-| `lammps-polymer-setup` | hard | workflow | Build and equilibrate a bead-spring polymer melt. |
+| `qe-ecutwfc-convergence` | QE | medium | Plane-wave cutoff convergence for silicon. |
+| `cp2k-basis-convergence` | CP2K | hard | Basis-set convergence of the methanol energy. |
 
-**CP2K (7)**
+**property-estimation (24)**
 
-| Task | Difficulty | Category | Summary |
+| Task | Software | Difficulty | Summary |
 |---|---|---|---|
-| `cp2k-h2o-sp` | easy | execution | DFT single-point energy of water. |
-| `cp2k-geoopt-nh3` | medium | execution | DFT geometry optimization of ammonia. |
-| `cp2k-input-debug` | easy | debugging | Fix a broken CP2K input file. |
-| `cp2k-cell-opt-nacl` | medium | execution | DFT cell optimization of rocksalt NaCl. |
-| `cp2k-aimd-water` | hard | execution | Ab initio MD of a single water molecule (NVE). |
-| `cp2k-basis-convergence` | hard | analysis | Basis-set convergence of the methanol energy. |
-| `cp2k-no2-geoopt-debug` | hard | debugging | Diagnose and fix a failing NO2 geometry optimization. |
+| `ase-geoopt-h2o` | ASE | easy | Geometry-optimize a water molecule (ASE/LJ). |
+| `lammps-lj-melt` | LAMMPS | easy | Run a Lennard-Jones melt simulation. |
+| `cp2k-h2o-sp` | CP2K | easy | DFT single-point energy of water. |
+| `rdkit-descriptors-batch` | RDKit | easy | Batch molecular descriptor calculation. |
+| `xtb-singlepoint-gfn2` | xtb | easy | GFN2-xTB single-point energy of acetonitrile. |
+| `qe-scf-si` | QE | easy | Plane-wave DFT SCF of crystalline silicon. |
+| `ase-eos-cu` | ASE | medium | Fit the equation of state of fcc Cu (EMT). |
+| `ase-neb-adatom` | ASE | medium | NEB barrier for an adatom hop on Cu(100) (EMT). |
+| `lammps-nvt-rdf` | LAMMPS | medium | NVT MD and radial distribution function. |
+| `lammps-eam-lattice` | LAMMPS | medium | Equilibrium lattice constant and cohesive energy of Cu (EAM). |
+| `lammps-restart-continue` | LAMMPS | medium | Continue a simulation from a restart file. |
+| `cp2k-geoopt-nh3` | CP2K | medium | DFT geometry optimization of ammonia. |
+| `cp2k-cell-opt-nacl` | CP2K | medium | DFT cell optimization of rocksalt NaCl. |
+| `qe-relax-co` | QE | medium | Plane-wave DFT geometry relaxation of carbon monoxide. |
+| `qe-output-parse` | QE | medium | Parse a real `pw.x` output file. |
+| `xtb-geoopt-caffeine` | xtb | medium | GFN2-xTB geometry optimization of caffeine. |
+| `ase-vibrations` | ASE | hard | Finite-displacement vibrational analysis of a Cu4 cluster. |
+| `ase-custom-calculator` | ASE | hard | Implement a custom Morse-potential ASE calculator and relax a cluster. |
+| `lammps-msd-diffusion` | LAMMPS | hard | Self-diffusion coefficient from mean-squared displacement. |
+| `cp2k-aimd-water` | CP2K | hard | Ab initio MD of a single water molecule (NVE). |
+| `rdkit-conformer-cluster` | RDKit | hard | Conformer ensemble generation and Butina clustering. |
+| `xtb-freq-thermo` | xtb | hard | GFN2-xTB vibrational frequencies and thermochemistry of ethanol. |
+| `qe-bands-si` | QE | hard | Band structure of silicon: scf → bands → `bands.x`. |
+| `qe-dihedral-scan-hexane` | QE | hard | Rigid torsion scan of n-hexane: seven `pw.x` single points → dihedral potential-energy profile. |
 
-**Quantum ESPRESSO (7)**
+**scientific-auditing (2)**
 
-| Task | Difficulty | Category | Summary |
+| Task | Software | Difficulty | Summary |
 |---|---|---|---|
-| `qe-scf-si` | easy | execution | Plane-wave DFT SCF of crystalline silicon. |
-| `qe-relax-co` | medium | execution | Plane-wave DFT geometry relaxation of carbon monoxide. |
-| `qe-output-parse` | medium | analysis | Parse a real `pw.x` output file. |
-| `qe-input-relax` | medium | input-prep | Write a `vc-relax` input for zinc-blende SiC. |
-| `qe-ecutwfc-convergence` | medium | analysis | Plane-wave cutoff convergence for silicon. |
-| `qe-bands-si` | hard | workflow | Band structure of silicon: scf → bands → `bands.x`. |
-| `qe-error-diagnose` | hard | debugging | Diagnose and fix three failing `pw.x` runs. |
+| `lammps-thermostat-audit` | LAMMPS | hard | Audit a thermostat setup for correctness. |
+| `lammps-msd-diffusion-audit` | LAMMPS | hard | Audit a water self-diffusion analysis: Einstein factor, fit window, isotropy, plausibility. |
 
-**RDKit (7)**
+**failure-recovery (6)**
 
-| Task | Difficulty | Category | Summary |
+| Task | Software | Difficulty | Summary |
 |---|---|---|---|
-| `rdkit-smiles-canonicalize` | easy | input-prep | Canonicalize SMILES. |
-| `rdkit-conformer-mmff` | medium | execution | Conformer generation and MMFF optimization. |
-| `rdkit-descriptors-batch` | easy | analysis | Batch molecular descriptor calculation. |
-| `rdkit-mol-standardize` | medium | input-prep | Standardize a messy SDF. |
-| `rdkit-script-debug` | medium | debugging | Fix a broken RDKit analysis script. |
-| `rdkit-reaction-enumerate` | hard | workflow | Reaction-based library enumeration. |
-| `rdkit-conformer-cluster` | hard | analysis | Conformer ensemble generation and Butina clustering. |
+| `lammps-input-fix` | LAMMPS | easy | Fix a broken LAMMPS input script. |
+| `cp2k-input-debug` | CP2K | easy | Fix a broken CP2K input file. |
+| `ase-script-debug` | ASE | medium | Fix a broken ASE analysis script. |
+| `rdkit-script-debug` | RDKit | medium | Fix a broken RDKit analysis script. |
+| `cp2k-no2-geoopt-debug` | CP2K | hard | Fix and run a broken CP2K geometry optimization of NO2. |
+| `qe-error-diagnose` | QE | hard | Diagnose and fix three failing `pw.x` runs. |
 
-**xtb (3)**
+**cross-code-orchestration (1)**
 
-| Task | Difficulty | Category | Summary |
+| Task | Software | Difficulty | Summary |
 |---|---|---|---|
-| `xtb-singlepoint-gfn2` | easy | execution | GFN2-xTB single-point energy of acetonitrile. |
-| `xtb-geoopt-caffeine` | medium | execution | GFN2-xTB geometry optimization of caffeine. |
-| `xtb-freq-thermo` | hard | analysis | GFN2-xTB vibrational frequencies and thermochemistry of ethanol. |
+| `ase-peo-md-equilibration` | ASE × RDKit | hard | Build a PEO chain (RDKit), sample with ASE Langevin MD, assess equilibration via ensemble-averaged Rg. |
 
-The roster above is generated to agree with `registry.toml` (name, difficulty,
-category); lint enforces that agreement mechanically.
+The roster above is generated to agree with `registry.toml` (name, software,
+difficulty, capability, tags); lint enforces that agreement mechanically.
 
 ## 3. Anti-Cheat Design
 
@@ -162,7 +198,9 @@ asset-integrity layer and CI baselines that every task must pass before merge.
 5. **cheat agent** — the informed forgery must fail.
 
 **Lint calibration gates** (`.ci/lint_task.py`): required files; fixed tag
-vocabulary (software → method → category → qualifiers); `task.toml` ↔
+vocabulary (software → method → qualifiers); capability fields (`capability`
+primary, optional `capabilities_secondary`, both validated against the
+six-value vocabulary; legacy category tags are rejected); `task.toml` ↔
 `registry.toml` consistency; Dockerfile must not COPY `tests/` or `solution/`
 (including via `COPY --from`); `instruction.md` must not leak reference values
 (any refs.json key or value appearing in the instruction is a lint failure);
@@ -243,7 +281,7 @@ python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # lint one task
 |---|---|---|
 | Quantum ESPRESSO | **7.4** (conda-forge build `hac89879_0`) | 7 |
 | xtb | **6.7.1** (official static linux-x86_64 tarball, sha256-verified) | 3 |
-| CP2K | **2024.1** (`cp2k/cp2k:2024.1_mpich_generic_psmp`) | 7 |
+| CP2K | **2024.1** (`cp2k/cp2k:2024.1_mpich_generic_psmp`) | 6 |
 | LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 10 |
 | RDKit | **2024.9.5** (pip, on `python:3.11.9-slim`) | 7 |
 | ASE | **3.23.0** (pip, on `python:3.11.9-slim`, numpy 1.26.4) | 9 |
@@ -300,7 +338,7 @@ trained on it can no longer be meaningfully evaluated by it.
 - **Held-out plan.** A held-out split will be generated from these
   parameterized families — new instances with fresh parameters and
   re-calibrated references, kept out of the public repo — to probe
-  contamination and overfitting against the public 41.
+  contamination and overfitting against the public 44.
 
 ## 8. Repository Layout
 
@@ -308,11 +346,11 @@ trained on it can no longer be meaningfully evaluated by it.
 compchem-bench/
 ├── README.md
 ├── DATASET_CARD.md               # this file
-├── registry.toml                 # dataset index (name, tags, difficulty)
+├── registry.toml                 # dataset index (name, software, capability, difficulty, tags)
 ├── shared/                       # cross-task assets (copied into images as needed)
 │   ├── potentials/               #   EAM/force-field files, GTH pseudopotentials, basis sets
 │   └── structures/               #   common CIF/xyz starting structures
-├── tasks/                        # 40 task directories (see §2)
+├── tasks/                        # 44 task directories (see §2)
 └── .ci/
     ├── run_ci.sh                 # local CI runner (requires Docker)
     └── lint_task.py              # structural lint checks

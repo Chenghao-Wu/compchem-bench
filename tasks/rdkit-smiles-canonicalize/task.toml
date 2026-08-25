@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "rdkit-smiles-canonicalize"
 difficulty = "easy"
-category = "input-prep"
-tags = ["rdkit", "cheminformatics", "smiles", "input-prep"]
+capability = "system-construction"
+tags = ["rdkit", "cheminformatics", "smiles"]
 author = "compchem-bench"
 created = "2026-07-20"
 

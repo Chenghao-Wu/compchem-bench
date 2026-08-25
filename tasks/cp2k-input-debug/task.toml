@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "cp2k-input-debug"
 difficulty = "easy"
-category = "debugging"
-tags = ["cp2k", "dft", "debugging"]
+capability = "failure-recovery"
+tags = ["cp2k", "dft"]
 author = "compchem-bench"
 created = "2026-07-20"
 

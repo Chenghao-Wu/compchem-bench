@@ -6,341 +6,352 @@ name = "ase-geoopt-h2o"
 path = "tasks/ase-geoopt-h2o"
 software = "ase"
 difficulty = "easy"
-category = "execution"
-tags = ["ase", "classical-md", "geometry-optimization", "execution"]
+capability = "property-estimation"
+tags = ["ase", "classical-md", "geometry-optimization"]
 
 [[task]]
 name = "ase-eos-cu"
 path = "tasks/ase-eos-cu"
 software = "ase"
 difficulty = "medium"
-category = "analysis"
-tags = ["ase", "classical-md", "equation-of-state", "emt", "analysis"]
+capability = "property-estimation"
+tags = ["ase", "classical-md", "equation-of-state", "emt"]
 
 [[task]]
 name = "lammps-lj-melt"
 path = "tasks/lammps-lj-melt"
 software = "lammps"
 difficulty = "easy"
-category = "execution"
-tags = ["lammps", "classical-md", "lennard-jones", "execution"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "lennard-jones"]
 
 [[task]]
 name = "lammps-nvt-rdf"
 path = "tasks/lammps-nvt-rdf"
 software = "lammps"
 difficulty = "medium"
-category = "analysis"
-tags = ["lammps", "classical-md", "rdf", "analysis", "stochastic"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "rdf", "stochastic"]
 
 [[task]]
 name = "cp2k-h2o-sp"
 path = "tasks/cp2k-h2o-sp"
 software = "cp2k"
 difficulty = "easy"
-category = "execution"
-tags = ["cp2k", "dft", "single-point", "execution"]
+capability = "property-estimation"
+tags = ["cp2k", "dft", "single-point"]
 
 [[task]]
 name = "cp2k-geoopt-nh3"
 path = "tasks/cp2k-geoopt-nh3"
 software = "cp2k"
 difficulty = "medium"
-category = "execution"
-tags = ["cp2k", "dft", "geometry-optimization", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["cp2k", "dft", "geometry-optimization", "cross-verify"]
 
 [[task]]
 name = "rdkit-smiles-canonicalize"
 path = "tasks/rdkit-smiles-canonicalize"
 software = "rdkit"
 difficulty = "easy"
-category = "input-prep"
-tags = ["rdkit", "cheminformatics", "smiles", "input-prep"]
+capability = "system-construction"
+tags = ["rdkit", "cheminformatics", "smiles"]
 
 [[task]]
 name = "rdkit-conformer-mmff"
 path = "tasks/rdkit-conformer-mmff"
 software = "rdkit"
 difficulty = "medium"
-category = "execution"
-tags = ["rdkit", "cheminformatics", "conformer-generation", "mmff", "execution"]
+capability = "system-construction"
+tags = ["rdkit", "cheminformatics", "conformer-generation", "mmff"]
 
 [[task]]
 name = "ase-structure-build"
 path = "tasks/ase-structure-build"
 software = "ase"
 difficulty = "easy"
-category = "input-prep"
-tags = ["ase", "classical-md", "structure-building", "input-prep"]
+capability = "system-construction"
+tags = ["ase", "classical-md", "structure-building"]
 
 [[task]]
 name = "ase-format-convert"
 path = "tasks/ase-format-convert"
 software = "ase"
 difficulty = "medium"
-category = "input-prep"
-tags = ["ase", "classical-md", "format-conversion", "input-prep", "cross-verify"]
+capability = "system-construction"
+capabilities_secondary = ["cross-code-orchestration"]
+tags = ["ase", "classical-md", "format-conversion", "cross-verify"]
 
 [[task]]
 name = "ase-script-debug"
 path = "tasks/ase-script-debug"
 software = "ase"
 difficulty = "medium"
-category = "debugging"
-tags = ["ase", "classical-md", "debugging", "emt"]
+capability = "failure-recovery"
+tags = ["ase", "classical-md", "emt"]
 
 [[task]]
 name = "ase-neb-adatom"
 path = "tasks/ase-neb-adatom"
 software = "ase"
 difficulty = "medium"
-category = "execution"
-tags = ["ase", "classical-md", "neb", "emt", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["ase", "classical-md", "neb", "emt", "cross-verify"]
 
 [[task]]
 name = "ase-vibrations"
 path = "tasks/ase-vibrations"
 software = "ase"
 difficulty = "hard"
-category = "analysis"
-tags = ["ase", "classical-md", "vibrations", "analysis", "cross-verify"]
+capability = "property-estimation"
+tags = ["ase", "classical-md", "vibrations", "cross-verify"]
 
 [[task]]
 name = "ase-custom-calculator"
 path = "tasks/ase-custom-calculator"
 software = "ase"
 difficulty = "hard"
-category = "workflow"
-tags = ["ase", "classical-md", "calculator-implementation", "workflow", "cross-verify"]
+capability = "property-estimation"
+capabilities_secondary = ["system-construction"]
+tags = ["ase", "classical-md", "calculator-implementation", "cross-verify"]
 
 [[task]]
 name = "ase-peo-md-equilibration"
 path = "tasks/ase-peo-md-equilibration"
 software = "ase"
 difficulty = "hard"
-category = "workflow"
-tags = ["ase", "classical-md", "polymer", "rdkit", "equilibration", "workflow", "cross-verify"]
+capability = "cross-code-orchestration"
+capabilities_secondary = ["scientific-auditing"]
+tags = ["ase", "classical-md", "polymer", "rdkit", "equilibration", "cross-verify"]
 
 [[task]]
 name = "lammps-input-fix"
 path = "tasks/lammps-input-fix"
 software = "lammps"
 difficulty = "easy"
-category = "debugging"
-tags = ["lammps", "classical-md", "lennard-jones", "debugging"]
+capability = "failure-recovery"
+tags = ["lammps", "classical-md", "lennard-jones"]
 
 [[task]]
 name = "lammps-data-build"
 path = "tasks/lammps-data-build"
 software = "lammps"
 difficulty = "medium"
-category = "input-prep"
-tags = ["lammps", "classical-md", "data-file", "input-prep", "cross-verify"]
+capability = "system-construction"
+tags = ["lammps", "classical-md", "data-file", "cross-verify"]
 
 [[task]]
 name = "lammps-eam-lattice"
 path = "tasks/lammps-eam-lattice"
 software = "lammps"
 difficulty = "medium"
-category = "analysis"
-tags = ["lammps", "classical-md", "eam", "lattice-constant", "analysis", "cross-verify"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "eam", "lattice-constant", "cross-verify"]
 
 [[task]]
 name = "lammps-restart-continue"
 path = "tasks/lammps-restart-continue"
 software = "lammps"
 difficulty = "medium"
-category = "execution"
-tags = ["lammps", "classical-md", "restart", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "restart", "cross-verify"]
 
 [[task]]
 name = "lammps-msd-diffusion"
 path = "tasks/lammps-msd-diffusion"
 software = "lammps"
 difficulty = "hard"
-category = "analysis"
-tags = ["lammps", "classical-md", "diffusion", "msd", "analysis", "cross-verify", "stochastic"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "diffusion", "msd", "cross-verify", "stochastic"]
 
 [[task]]
 name = "lammps-thermostat-audit"
 path = "tasks/lammps-thermostat-audit"
 software = "lammps"
 difficulty = "hard"
-category = "debugging"
-tags = ["lammps", "classical-md", "thermostat", "debugging", "cross-verify"]
+capability = "scientific-auditing"
+tags = ["lammps", "classical-md", "thermostat", "cross-verify"]
 
 [[task]]
 name = "lammps-msd-diffusion-audit"
 path = "tasks/lammps-msd-diffusion-audit"
 software = "lammps"
 difficulty = "hard"
-category = "debugging"
-tags = ["lammps", "classical-md", "diffusion", "msd", "debugging", "cross-verify"]
+capability = "scientific-auditing"
+tags = ["lammps", "classical-md", "diffusion", "msd", "cross-verify"]
 
 [[task]]
 name = "lammps-polymer-setup"
 path = "tasks/lammps-polymer-setup"
 software = "lammps"
 difficulty = "hard"
-category = "workflow"
-tags = ["lammps", "classical-md", "polymer", "bead-spring", "workflow", "cross-verify"]
+capability = "system-construction"
+tags = ["lammps", "classical-md", "polymer", "bead-spring", "cross-verify"]
 
 [[task]]
 name = "cp2k-input-debug"
 path = "tasks/cp2k-input-debug"
 software = "cp2k"
 difficulty = "easy"
-category = "debugging"
-tags = ["cp2k", "dft", "debugging"]
-
-[[task]]
-name = "cp2k-no2-geoopt-debug"
-path = "tasks/cp2k-no2-geoopt-debug"
-software = "cp2k"
-difficulty = "hard"
-category = "debugging"
-tags = ["cp2k", "dft", "debugging", "geometry-optimization"]
+capability = "failure-recovery"
+tags = ["cp2k", "dft"]
 
 [[task]]
 name = "cp2k-cell-opt-nacl"
 path = "tasks/cp2k-cell-opt-nacl"
 software = "cp2k"
 difficulty = "medium"
-category = "execution"
-tags = ["cp2k", "dft", "cell-optimization", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["cp2k", "dft", "cell-optimization", "cross-verify"]
 
 [[task]]
 name = "cp2k-aimd-water"
 path = "tasks/cp2k-aimd-water"
 software = "cp2k"
 difficulty = "hard"
-category = "execution"
-tags = ["cp2k", "aimd", "nve", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["cp2k", "aimd", "nve", "cross-verify"]
 
 [[task]]
 name = "cp2k-basis-convergence"
 path = "tasks/cp2k-basis-convergence"
 software = "cp2k"
 difficulty = "hard"
-category = "analysis"
-tags = ["cp2k", "dft", "basis-set", "analysis", "cross-verify"]
+capability = "adaptive-convergence"
+tags = ["cp2k", "dft", "basis-set", "cross-verify"]
+
+[[task]]
+name = "cp2k-no2-geoopt-debug"
+path = "tasks/cp2k-no2-geoopt-debug"
+software = "cp2k"
+difficulty = "hard"
+capability = "failure-recovery"
+tags = ["cp2k", "dft", "geometry-optimization"]
 
 [[task]]
 name = "xtb-singlepoint-gfn2"
 path = "tasks/xtb-singlepoint-gfn2"
 software = "xtb"
 difficulty = "easy"
-category = "execution"
-tags = ["xtb", "semi-empirical", "single-point", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["xtb", "semi-empirical", "single-point", "cross-verify"]
 
 [[task]]
 name = "xtb-geoopt-caffeine"
 path = "tasks/xtb-geoopt-caffeine"
 software = "xtb"
 difficulty = "medium"
-category = "execution"
-tags = ["xtb", "semi-empirical", "geometry-optimization", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["xtb", "semi-empirical", "geometry-optimization", "cross-verify"]
 
 [[task]]
 name = "xtb-freq-thermo"
 path = "tasks/xtb-freq-thermo"
 software = "xtb"
 difficulty = "hard"
-category = "analysis"
-tags = ["xtb", "semi-empirical", "vibrations", "analysis", "cross-verify"]
+capability = "property-estimation"
+tags = ["xtb", "semi-empirical", "vibrations", "cross-verify"]
 
 [[task]]
 name = "rdkit-descriptors-batch"
 path = "tasks/rdkit-descriptors-batch"
 software = "rdkit"
 difficulty = "easy"
-category = "analysis"
-tags = ["rdkit", "cheminformatics", "descriptors", "analysis"]
+capability = "property-estimation"
+tags = ["rdkit", "cheminformatics", "descriptors"]
 
 [[task]]
 name = "rdkit-mol-standardize"
 path = "tasks/rdkit-mol-standardize"
 software = "rdkit"
 difficulty = "medium"
-category = "input-prep"
-tags = ["rdkit", "cheminformatics", "standardization", "input-prep"]
+capability = "system-construction"
+tags = ["rdkit", "cheminformatics", "standardization"]
 
 [[task]]
 name = "rdkit-script-debug"
 path = "tasks/rdkit-script-debug"
 software = "rdkit"
 difficulty = "medium"
-category = "debugging"
-tags = ["rdkit", "cheminformatics", "debugging", "sanitization"]
+capability = "failure-recovery"
+tags = ["rdkit", "cheminformatics", "sanitization"]
 
 [[task]]
 name = "rdkit-reaction-enumerate"
 path = "tasks/rdkit-reaction-enumerate"
 software = "rdkit"
 difficulty = "hard"
-category = "workflow"
-tags = ["rdkit", "cheminformatics", "reaction-enumeration", "workflow"]
+capability = "system-construction"
+tags = ["rdkit", "cheminformatics", "reaction-enumeration"]
 
 [[task]]
 name = "rdkit-conformer-cluster"
 path = "tasks/rdkit-conformer-cluster"
 software = "rdkit"
 difficulty = "hard"
-category = "analysis"
-tags = ["rdkit", "cheminformatics", "conformer-generation", "clustering", "analysis", "cross-verify"]
+capability = "property-estimation"
+tags = ["rdkit", "cheminformatics", "conformer-generation", "clustering", "cross-verify"]
 
 [[task]]
 name = "qe-scf-si"
 path = "tasks/qe-scf-si"
 software = "qe"
 difficulty = "easy"
-category = "execution"
-tags = ["qe", "dft", "execution", "single-point"]
+capability = "property-estimation"
+tags = ["qe", "dft", "single-point"]
 
 [[task]]
 name = "qe-relax-co"
 path = "tasks/qe-relax-co"
 software = "qe"
 difficulty = "medium"
-category = "execution"
-tags = ["qe", "dft", "execution", "geometry-optimization", "cross-verify"]
+capability = "property-estimation"
+tags = ["qe", "dft", "geometry-optimization", "cross-verify"]
 
 [[task]]
 name = "qe-output-parse"
 path = "tasks/qe-output-parse"
 software = "qe"
 difficulty = "medium"
-category = "analysis"
-tags = ["qe", "dft", "analysis", "output-parsing"]
+capability = "property-estimation"
+tags = ["qe", "dft", "output-parsing"]
 
 [[task]]
 name = "qe-input-relax"
 path = "tasks/qe-input-relax"
 software = "qe"
 difficulty = "medium"
-category = "input-prep"
-tags = ["qe", "dft", "input-prep", "relax"]
+capability = "system-construction"
+tags = ["qe", "dft", "relax"]
 
 [[task]]
 name = "qe-ecutwfc-convergence"
 path = "tasks/qe-ecutwfc-convergence"
 software = "qe"
 difficulty = "medium"
-category = "analysis"
-tags = ["qe", "dft", "analysis", "convergence-test", "cross-verify"]
+capability = "adaptive-convergence"
+tags = ["qe", "dft", "convergence-test", "cross-verify"]
 
 [[task]]
 name = "qe-bands-si"
 path = "tasks/qe-bands-si"
 software = "qe"
 difficulty = "hard"
-category = "workflow"
-tags = ["qe", "dft", "workflow", "band-structure", "cross-verify"]
+capability = "property-estimation"
+tags = ["qe", "dft", "band-structure", "cross-verify"]
 
 [[task]]
 name = "qe-error-diagnose"
 path = "tasks/qe-error-diagnose"
 software = "qe"
 difficulty = "hard"
-category = "debugging"
-tags = ["qe", "dft", "debugging", "error-diagnosis"]
+capability = "failure-recovery"
+tags = ["qe", "dft", "error-diagnosis"]
+
+[[task]]
+name = "qe-dihedral-scan-hexane"
+path = "tasks/qe-dihedral-scan-hexane"
+software = "qe"
+difficulty = "hard"
+capability = "property-estimation"
+tags = ["qe", "dft", "dihedral-scan", "potential-energy-surface", "cross-verify"]

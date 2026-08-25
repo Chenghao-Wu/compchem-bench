@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "xtb-singlepoint-gfn2"
 difficulty = "easy"
-category = "execution"
-tags = ["xtb", "semi-empirical", "single-point", "execution", "cross-verify"]
+capability = "property-estimation"
+tags = ["xtb", "semi-empirical", "single-point", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 

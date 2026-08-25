@@ -1,0 +1,34 @@
+{
+  "_comment": "Reference values for qe-dihedral-scan-hexane (QE 7.4 conda-forge build hac89879_0, PBE, n-hexane C6H14 rigid torsion scan about the C3-C4 bond, 30-bohr cubic cell, ecutwfc=50 Ry / ecutrho=400 Ry, Gamma-only, occupations fixed, conv_thr 1e-9). Calibrated on x86_64.",
+  "arch": "x86_64",
+  "calibration_date": "2026-08-23",
+  "image_digest": "sha256:7787bd174d3b5225274625e8622f0dcdf4074eb74b569a98c7b597ff576af673",
+  "energy_Ry_ref": {
+    "0": -127.25348829,
+    "30": -127.26403234,
+    "60": -127.27366492,
+    "90": -127.27205823,
+    "120": -127.26813540,
+    "150": -127.27291683,
+    "180": -127.27743676
+  },
+  "energy_Ry_tol": 1e-05,
+  "syn_barrier_kcal_mol_ref": 15.0278918143,
+  "syn_barrier_kcal_mol_tol": 0.05,
+  "gauche_energy_kcal_mol_ref": 2.3668653346,
+  "gauche_energy_kcal_mol_tol": 0.05,
+  "eclipsed_barrier_kcal_mol_ref": 5.8366915217,
+  "eclipsed_barrier_kcal_mol_tol": 0.05,
+  "consistency_energy_tol_Ry": 1e-08,
+  "relative_energy_tol_kcal_mol": 0.02,
+  "dihedral_tol_deg": 2.0,
+  "bond_tol_A": 0.02,
+  "crossverify_energy_tol_Ry": 1e-06,
+  "crossverify_angles_deg": [0, 60, 180],
+  "asset_hashes": {
+    "assets/hexane_anti.xyz": "sha256:d64b5f0856bc0bc0c60afcb00c7be034b258986bd234f24781851159557c06b2",
+    "assets/pseudo/C.pbe-n-kjpaw_psl.1.0.0.UPF": "sha256:8a25fbf64c4fa257c68c01dc9a96e5b23c6a5ac0b09f45f271e1c946a65ed657",
+    "assets/pseudo/H.pbe-rrkjus_psl.1.0.0.UPF": "sha256:e03cd098d78e3eeb37cc9f790690f5827234cbc019fb621913391689a9ddacf7"
+  },
+  "_calibration_note": "Oracle solution/solve.sh on the pinned image (1 MPI rank + OMP_NUM_THREADS=2), ~1.5-2 min per point. Repeat oracle runs on this host reproduce every energy EXACTLY at the 1e-8 Ry print resolution (two back-to-back phi=180 runs bit-identical), and two fully independent host-side calibrations differ by at most 9.5e-4 Ry (1.6e-5 Ry at the better-behaved angles; the residual is host-dependent LAPACK-thread noise at the fully eclipsed phi=0 geometry). Per-angle tolerance 1e-5 Ry matches the benchmark-wide QE convention and is ~10x below the observed cross-host spread, so refs stay pinned to the pinned-image values. Profile: syn (0 deg) +15.03 kcal/mol (fully eclipsed terminal groups), eclipsed barrier (120 deg) +5.84, gauche (60 deg) +2.37, anti (180 deg) 0. Derived-key tolerances kcal/mol are the 1e-5 Ry energy tolerance plus conversion rounding; the relative-energy reconstruction from the logs is checked at 0.02 kcal/mol. Dihedral tolerance 2 deg absorbs the 7-decimal alat tau table round-trip (observed ~0.4 deg); bond fingerprint tolerance 0.02 A likewise (~6e-4 A observed). L4 recompute of phi=0/60/180 from the agent's own logged coordinates must match log and results.json to 1e-6 Ry."
+}

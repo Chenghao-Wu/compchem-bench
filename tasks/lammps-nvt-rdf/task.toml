@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "lammps-nvt-rdf"
 difficulty = "medium"
-category = "analysis"
-tags = ["lammps", "classical-md", "rdf", "analysis", "stochastic"]
+capability = "property-estimation"
+tags = ["lammps", "classical-md", "rdf", "stochastic"]
 author = "compchem-bench"
 created = "2026-07-10"
 

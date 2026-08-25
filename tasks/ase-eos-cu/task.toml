@@ -3,8 +3,8 @@ version = "1.0"
 [metadata]
 name = "ase-eos-cu"
 difficulty = "medium"
-category = "analysis"
-tags = ["ase", "classical-md", "equation-of-state", "emt", "analysis"]
+capability = "property-estimation"
+tags = ["ase", "classical-md", "equation-of-state", "emt"]
 author = "compchem-bench"
 created = "2026-07-10"
 

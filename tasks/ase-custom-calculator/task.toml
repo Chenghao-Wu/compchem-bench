@@ -3,8 +3,9 @@ version = "1.0"
 [metadata]
 name = "ase-custom-calculator"
 difficulty = "hard"
-category = "workflow"
-tags = ["ase", "classical-md", "calculator-implementation", "workflow", "cross-verify"]
+capability = "property-estimation"
+capabilities_secondary = ["system-construction"]
+tags = ["ase", "classical-md", "calculator-implementation", "cross-verify"]
 author = "compchem-bench"
 created = "2026-07-20"
 
