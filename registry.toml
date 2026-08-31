@@ -116,15 +116,6 @@ capabilities_secondary = ["system-construction"]
 tags = ["ase", "classical-md", "calculator-implementation", "cross-verify"]
 
 [[task]]
-name = "ase-peo-md-equilibration"
-path = "tasks/ase-peo-md-equilibration"
-software = "ase"
-difficulty = "hard"
-capability = "cross-code-orchestration"
-capabilities_secondary = ["scientific-auditing"]
-tags = ["ase", "classical-md", "polymer", "rdkit", "equilibration", "cross-verify"]
-
-[[task]]
 name = "lammps-input-fix"
 path = "tasks/lammps-input-fix"
 software = "lammps"
@@ -253,6 +244,14 @@ capability = "property-estimation"
 tags = ["xtb", "semi-empirical", "vibrations", "cross-verify"]
 
 [[task]]
+name = "xtb-geoopt-minimum-audit"
+path = "tasks/xtb-geoopt-minimum-audit"
+software = "xtb"
+difficulty = "hard"
+capability = "scientific-auditing"
+tags = ["xtb", "semi-empirical", "ase", "vibrations", "geometry-optimization", "cross-verify"]
+
+[[task]]
 name = "rdkit-descriptors-batch"
 path = "tasks/rdkit-descriptors-batch"
 software = "rdkit"
@@ -355,3 +354,19 @@ software = "qe"
 difficulty = "hard"
 capability = "property-estimation"
 tags = ["qe", "dft", "dihedral-scan", "potential-energy-surface", "cross-verify"]
+
+[[task]]
+name = "qe-energy-ranking-audit"
+path = "tasks/qe-energy-ranking-audit"
+software = "qe"
+difficulty = "hard"
+capability = "scientific-auditing"
+tags = ["qe", "dft", "cp2k", "total-energy", "single-point", "cross-verify"]
+
+[[task]]
+name = "qe-relax-force-audit"
+path = "tasks/qe-relax-force-audit"
+software = "qe"
+difficulty = "hard"
+capability = "scientific-auditing"
+tags = ["qe", "dft", "geometry-optimization", "scf-convergence", "cross-verify"]

@@ -1,7 +1,7 @@
 # CompChemBench — Dataset Card
 
 > **Status note:** all counts, task lists, and pinned versions below reflect
-> the v1.1 release state of the repository (`main`, 44/44 tasks complete).
+> the v1.1 release state of the repository (`main`, 46/46 tasks complete).
 
 ## 1. Overview and Motivation
 
@@ -37,10 +37,10 @@ Software is a secondary tag; see the cross-tab below.
 | system-construction | 2 | 5 | 2 | **9** |
 | adaptive-convergence | — | 1 | 1 | **2** |
 | property-estimation | 6 | 10 | 8 | **24** |
-| scientific-auditing | — | — | 2 | **2** |
+| scientific-auditing | — | — | 5 | **5** |
 | failure-recovery | 2 | 2 | 2 | **6** |
-| cross-code-orchestration | — | — | 1 | **1** |
-| **Total** | **10** | **18** | **16** | **44** |
+| cross-code-orchestration | — | — | — | **0** |
+| **Total** | **10** | **18** | **18** | **46** |
 
 ### Capability definitions
 
@@ -60,27 +60,28 @@ Software is a secondary tag; see the cross-tab below.
 The auditing/recovery boundary: recovery tasks fail loudly; auditing tasks
 fail silently. Tasks with genuine secondary aspects carry them in
 `capabilities_secondary` (registry + `task.toml`), e.g.
-`ase-peo-md-equilibration` is cross-code primary with auditing secondary.
+`ase-custom-calculator` is property-estimation primary with
+system-construction secondary.
 
 ### Software × capability matrix
 
 | Software \ Capability | construction | convergence | property | auditing | recovery | cross-code | Total |
 |---|---|---|---|---|---|---|---|
-| ASE | 2 | — | 5 | — | 1 | 1 | **9** |
+| ASE | 2 | — | 5 | — | 1 | — | **8** |
 | LAMMPS | 2 | — | 5 | 2 | 1 | — | **10** |
 | CP2K | — | 1 | 4 | — | 2 | — | **7** |
-| QE | 1 | 1 | 5 | — | 1 | — | **8** |
+| QE | 1 | 1 | 5 | 2 | 1 | — | **10** |
 | RDKit | 4 | — | 2 | — | 1 | — | **7** |
-| xtb | — | — | 3 | — | — | — | **3** |
-| **Total** | **9** | **2** | **24** | **2** | **6** | **1** | **44** |
+| xtb | — | — | 3 | 1 | — | — | **4** |
+| **Total** | **9** | **2** | **24** | **5** | **6** | **0** | **46** |
 
 ### Difficulty distribution
 
 | Difficulty | Count | Share |
 |---|---|---|
-| easy | 10 | 23% |
-| medium | 18 | 41% |
-| hard | 16 | 36% |
+| easy | 10 | 22% |
+| medium | 18 | 39% |
+| hard | 18 | 39% |
 
 ### Complete task list (by capability)
 
@@ -134,12 +135,15 @@ fail silently. Tasks with genuine secondary aspects carry them in
 | `qe-bands-si` | QE | hard | Band structure of silicon: scf → bands → `bands.x`. |
 | `qe-dihedral-scan-hexane` | QE | hard | Rigid torsion scan of n-hexane: seven `pw.x` single points → dihedral potential-energy profile. |
 
-**scientific-auditing (2)**
+**scientific-auditing (5)**
 
 | Task | Software | Difficulty | Summary |
 |---|---|---|---|
 | `lammps-thermostat-audit` | LAMMPS | hard | Audit a thermostat setup for correctness. |
 | `lammps-msd-diffusion-audit` | LAMMPS | hard | Audit a water self-diffusion analysis: Einstein factor, fit window, isotropy, plausibility. |
+| `xtb-geoopt-minimum-audit` | xtb × ASE | hard | Audit two "optimized" structures: classify each imaginary mode as internal instability vs translational/rotational noise, and correct the non-minimum. |
+| `qe-relax-force-audit` | QE | hard | Audit a "converged" H2O2 relaxation: verify the geometry with a tight-SCF force evaluation, and fix the SCF threshold that made the forces unreliable. |
+| `qe-energy-ranking-audit` | QE × CP2K | hard | Audit a silicon stability ranking built on three single-point energies from two codes: decide which energies are comparable and whether the conclusion holds. |
 
 **failure-recovery (6)**
 
@@ -151,12 +155,6 @@ fail silently. Tasks with genuine secondary aspects carry them in
 | `rdkit-script-debug` | RDKit | medium | Fix a broken RDKit analysis script. |
 | `cp2k-no2-geoopt-debug` | CP2K | hard | Fix and run a broken CP2K geometry optimization of NO2. |
 | `qe-error-diagnose` | QE | hard | Diagnose and fix three failing `pw.x` runs. |
-
-**cross-code-orchestration (1)**
-
-| Task | Software | Difficulty | Summary |
-|---|---|---|---|
-| `ase-peo-md-equilibration` | ASE × RDKit | hard | Build a PEO chain (RDKit), sample with ASE Langevin MD, assess equilibration via ensemble-averaged Rg. |
 
 The roster above is generated to agree with `registry.toml` (name, software,
 difficulty, capability, tags); lint enforces that agreement mechanically.
@@ -279,12 +277,12 @@ python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # lint one task
 
 | Software | Pin | Tasks |
 |---|---|---|
-| Quantum ESPRESSO | **7.4** (conda-forge build `hac89879_0`) | 7 |
-| xtb | **6.7.1** (official static linux-x86_64 tarball, sha256-verified) | 3 |
-| CP2K | **2024.1** (`cp2k/cp2k:2024.1_mpich_generic_psmp`) | 6 |
+| Quantum ESPRESSO | **7.4** (conda-forge build `hac89879_0`) | 10 |
+| xtb | **6.7.1** (official static linux-x86_64 tarball, sha256-verified) | 4 |
+| CP2K | **2024.1** (`cp2k/cp2k:2024.1_mpich_generic_psmp`) | 7 |
 | LAMMPS | **patch_7Jan2022** (`lammps/lammps:patch_7Jan2022_ubuntu20.04_openmpi_py3`) | 10 |
 | RDKit | **2024.9.5** (pip, on `python:3.11.9-slim`) | 7 |
-| ASE | **3.23.0** (pip, on `python:3.11.9-slim`, numpy 1.26.4) | 9 |
+| ASE | **3.23.0** (pip, on `python:3.11.9-slim`, numpy 1.26.4) | 8 |
 
 - **Hermetic runtime.** `network=false` at run time; every dependency is baked
   into the image.
@@ -338,7 +336,7 @@ trained on it can no longer be meaningfully evaluated by it.
 - **Held-out plan.** A held-out split will be generated from these
   parameterized families — new instances with fresh parameters and
   re-calibrated references, kept out of the public repo — to probe
-  contamination and overfitting against the public 44.
+  contamination and overfitting against the public 46.
 
 ## 8. Repository Layout
 
@@ -350,7 +348,7 @@ compchem-bench/
 ├── shared/                       # cross-task assets (copied into images as needed)
 │   ├── potentials/               #   EAM/force-field files, GTH pseudopotentials, basis sets
 │   └── structures/               #   common CIF/xyz starting structures
-├── tasks/                        # 44 task directories (see §2)
+├── tasks/                        # 46 task directories (see §2)
 └── .ci/
     ├── run_ci.sh                 # local CI runner (requires Docker)
     └── lint_task.py              # structural lint checks

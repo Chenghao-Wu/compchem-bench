@@ -24,7 +24,7 @@ for the current leaderboard.
 > **Please do not train on it.** See [Data contamination policy](#data-contamination-policy)
 > below.
 
-## Coverage (v1.1 — 44 tasks)
+## Coverage (v1.1 — 46 tasks)
 
 Tasks are organized by **capability** — the cognitive skill being measured —
 with software as a secondary tag.
@@ -34,12 +34,12 @@ with software as a secondary tag.
 | system-construction | 2 | 5 | 2 | **9** |
 | adaptive-convergence | — | 1 | 1 | **2** |
 | property-estimation | 6 | 10 | 8 | **24** |
-| scientific-auditing | — | — | 2 | **2** |
+| scientific-auditing | — | — | 5 | **5** |
 | failure-recovery | 2 | 2 | 2 | **6** |
-| cross-code-orchestration | — | — | 1 | **1** |
-| **Total** | **10** | **18** | **16** | **44** |
+| cross-code-orchestration | — | — | — | **0** |
+| **Total** | **10** | **18** | **18** | **46** |
 
-Difficulty distribution: **10 easy / 18 medium / 16 hard** (23% / 41% / 36%).
+Difficulty distribution: **10 easy / 18 medium / 18 hard** (22% / 39% / 39%).
 The full per-task list, capability definitions, and the software × capability
 cross-tab are in [DATASET_CARD.md §2](DATASET_CARD.md#2-coverage).
 
@@ -57,7 +57,7 @@ Local CI (requires Docker):
 ```bash
 python3 .ci/lint_task.py tasks/ase-geoopt-h2o   # structural lint for one task
 .ci/run_ci.sh tasks/ase-geoopt-h2o              # full 5-step CI gate for one task
-.ci/run_all.sh                                  # re-run the CI gate over all 44 tasks
+.ci/run_all.sh                                  # re-run the CI gate over all 46 tasks
 ```
 
 ## Repository layout
@@ -143,7 +143,7 @@ policy:
   `solution/` enters the runtime image.
 - A **held-out private split** (fresh parameterized instances with
   re-calibrated references, kept out of this repository) is the planned
-  follow-up for probing contamination and overfitting against the public 44
+  follow-up for probing contamination and overfitting against the public 46
   tasks. See [DATASET_CARD.md §7](DATASET_CARD.md#7-data-contamination-policy-and-held-out-plan).
 
 ## Commercial-software policy
