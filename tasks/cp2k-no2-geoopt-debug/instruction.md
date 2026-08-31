@@ -4,7 +4,7 @@
 
 A CP2K input for a geometry optimization of the NO2 molecule (PBE /
 DZVP-MOLOPT-GTH / GTH-PBE, non-periodic 10 Å box) has been prepared at
-`/workspace/assets/no2_geoopt.inp`. Run the calculation to a converged
+`/workspace/assets/no2_geoopt.inp`. Check the input files first. Run the calculation to a converged
 geometry and report the converged total energy.
 
 The basis-set and pseudopotential data files are part of the CP2K
